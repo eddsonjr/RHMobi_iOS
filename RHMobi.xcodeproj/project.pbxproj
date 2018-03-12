@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
-		AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ViewController.swift */; };
+		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
 		AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD88479B20571EA8000DD6A1 /* RHMobi.xcdatamodeld */; };
 		AD88479F20571EA8000DD6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD88479E20571EA8000DD6A1 /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD88479620571EA8000DD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
 		AD88479920571EA8000DD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD88479C20571EA8000DD6A1 /* RHMobi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RHMobi.xcdatamodel; sourceTree = "<group>"; };
 		AD88479E20571EA8000DD6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		AD8847C7205740FB000DD6A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AD88479620571EA8000DD6A1 /* ViewController.swift */,
+				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
-				AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */,
+				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
