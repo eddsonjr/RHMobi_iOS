@@ -15,6 +15,9 @@
 		AD8847A220571EA8000DD6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */; };
 		AD8847AD20571EA9000DD6A1 /* RHMobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847AC20571EA9000DD6A1 /* RHMobiTests.swift */; };
 		AD8847B820571EA9000DD6A1 /* RHMobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847B720571EA9000DD6A1 /* RHMobiUITests.swift */; };
+		AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */; };
+		AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847CE2057421E000DD6A1 /* Requisitos.swift */; };
+		AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D02057427E000DD6A1 /* Vaga.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		AD8847B320571EA9000DD6A1 /* RHMobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHMobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8847B720571EA9000DD6A1 /* RHMobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHMobiUITests.swift; sourceTree = "<group>"; };
 		AD8847B920571EA9000DD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasInteresse.swift; sourceTree = "<group>"; };
+		AD8847CE2057421E000DD6A1 /* Requisitos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requisitos.swift; sourceTree = "<group>"; };
+		AD8847D02057427E000DD6A1 /* Vaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaga.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,12 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
-				AD88479420571EA8000DD6A1 /* AppDelegate.swift */,
-				AD88479620571EA8000DD6A1 /* ViewController.swift */,
-				AD88479820571EA8000DD6A1 /* Main.storyboard */,
+				AD8847CB2057414A000DD6A1 /* Extensions */,
+				AD8847CA2057413E000DD6A1 /* Model */,
+				AD8847C92057411F000DD6A1 /* View */,
+				AD8847C820574109000DD6A1 /* Delegates */,
+				AD8847C7205740FB000DD6A1 /* Controller */,
 				AD88479E20571EA8000DD6A1 /* Assets.xcassets */,
-				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
 				AD8847A320571EA8000DD6A1 /* Info.plist */,
 				AD88479B20571EA8000DD6A1 /* RHMobi.xcdatamodeld */,
 			);
@@ -126,6 +133,49 @@
 				AD8847B920571EA9000DD6A1 /* Info.plist */,
 			);
 			path = RHMobiUITests;
+			sourceTree = "<group>";
+		};
+		AD8847C7205740FB000DD6A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD88479620571EA8000DD6A1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD8847C820574109000DD6A1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AD88479420571EA8000DD6A1 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AD8847C92057411F000DD6A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
+				AD88479820571EA8000DD6A1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD8847CA2057413E000DD6A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */,
+				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
+				AD8847D02057427E000DD6A1 /* Vaga.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD8847CB2057414A000DD6A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
+				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
