@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
+		AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ViewController.swift */; };
+		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
+		AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD88479B20571EA8000DD6A1 /* RHMobi.xcdatamodeld */; };
+		AD88479F20571EA8000DD6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD88479E20571EA8000DD6A1 /* Assets.xcassets */; };
+		AD8847A220571EA8000DD6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */; };
+		AD8847AD20571EA9000DD6A1 /* RHMobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847AC20571EA9000DD6A1 /* RHMobiTests.swift */; };
+		AD8847B820571EA9000DD6A1 /* RHMobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847B720571EA9000DD6A1 /* RHMobiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD8847A920571EA9000DD6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD88478920571EA8000DD6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD88479020571EA8000DD6A1;
+			remoteInfo = RHMobi;
+		};
+		AD8847B420571EA9000DD6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD88478920571EA8000DD6A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD88479020571EA8000DD6A1;
+			remoteInfo = RHMobi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD88479620571EA8000DD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD88479920571EA8000DD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD88479C20571EA8000DD6A1 /* RHMobi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RHMobi.xcdatamodel; sourceTree = "<group>"; };
+		AD88479E20571EA8000DD6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD8847A120571EA8000DD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD8847A320571EA8000DD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8847A820571EA9000DD6A1 /* RHMobiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHMobiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8847AC20571EA9000DD6A1 /* RHMobiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHMobiTests.swift; sourceTree = "<group>"; };
+		AD8847AE20571EA9000DD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8847B320571EA9000DD6A1 /* RHMobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHMobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8847B720571EA9000DD6A1 /* RHMobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHMobiUITests.swift; sourceTree = "<group>"; };
+		AD8847B920571EA9000DD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD88478E20571EA8000DD6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847A520571EA9000DD6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847B020571EA9000DD6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD88478820571EA8000DD6A1 = {
+			isa = PBXGroup;
+			children = (
+				AD88479320571EA8000DD6A1 /* RHMobi */,
+				AD8847AB20571EA9000DD6A1 /* RHMobiTests */,
+				AD8847B620571EA9000DD6A1 /* RHMobiUITests */,
+				AD88479220571EA8000DD6A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD88479220571EA8000DD6A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD88479120571EA8000DD6A1 /* RHMobi.app */,
+				AD8847A820571EA9000DD6A1 /* RHMobiTests.xctest */,
+				AD8847B320571EA9000DD6A1 /* RHMobiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD88479320571EA8000DD6A1 /* RHMobi */ = {
+			isa = PBXGroup;
+			children = (
+				AD88479420571EA8000DD6A1 /* AppDelegate.swift */,
+				AD88479620571EA8000DD6A1 /* ViewController.swift */,
+				AD88479820571EA8000DD6A1 /* Main.storyboard */,
+				AD88479E20571EA8000DD6A1 /* Assets.xcassets */,
+				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
+				AD8847A320571EA8000DD6A1 /* Info.plist */,
+				AD88479B20571EA8000DD6A1 /* RHMobi.xcdatamodeld */,
+			);
+			path = RHMobi;
+			sourceTree = "<group>";
+		};
+		AD8847AB20571EA9000DD6A1 /* RHMobiTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847AC20571EA9000DD6A1 /* RHMobiTests.swift */,
+				AD8847AE20571EA9000DD6A1 /* Info.plist */,
+			);
+			path = RHMobiTests;
+			sourceTree = "<group>";
+		};
+		AD8847B620571EA9000DD6A1 /* RHMobiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847B720571EA9000DD6A1 /* RHMobiUITests.swift */,
+				AD8847B920571EA9000DD6A1 /* Info.plist */,
+			);
+			path = RHMobiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD88479020571EA8000DD6A1 /* RHMobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8847BC20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobi" */;
+			buildPhases = (
+				AD88478D20571EA8000DD6A1 /* Sources */,
+				AD88478E20571EA8000DD6A1 /* Frameworks */,
+				AD88478F20571EA8000DD6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHMobi;
+			productName = RHMobi;
+			productReference = AD88479120571EA8000DD6A1 /* RHMobi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD8847A720571EA9000DD6A1 /* RHMobiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8847BF20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiTests" */;
+			buildPhases = (
+				AD8847A420571EA9000DD6A1 /* Sources */,
+				AD8847A520571EA9000DD6A1 /* Frameworks */,
+				AD8847A620571EA9000DD6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8847AA20571EA9000DD6A1 /* PBXTargetDependency */,
+			);
+			name = RHMobiTests;
+			productName = RHMobiTests;
+			productReference = AD8847A820571EA9000DD6A1 /* RHMobiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD8847B220571EA9000DD6A1 /* RHMobiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8847C220571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiUITests" */;
+			buildPhases = (
+				AD8847AF20571EA9000DD6A1 /* Sources */,
+				AD8847B020571EA9000DD6A1 /* Frameworks */,
+				AD8847B120571EA9000DD6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8847B520571EA9000DD6A1 /* PBXTargetDependency */,
+			);
+			name = RHMobiUITests;
+			productName = RHMobiUITests;
+			productReference = AD8847B320571EA9000DD6A1 /* RHMobiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD88478920571EA8000DD6A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Edson  Jr";
+				TargetAttributes = {
+					AD88479020571EA8000DD6A1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AD8847A720571EA9000DD6A1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD88479020571EA8000DD6A1;
+					};
+					AD8847B220571EA9000DD6A1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD88479020571EA8000DD6A1;
+					};
+				};
+			};
+			buildConfigurationList = AD88478C20571EA8000DD6A1 /* Build configuration list for PBXProject "RHMobi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD88478820571EA8000DD6A1;
+			productRefGroup = AD88479220571EA8000DD6A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD88479020571EA8000DD6A1 /* RHMobi */,
+				AD8847A720571EA9000DD6A1 /* RHMobiTests */,
+				AD8847B220571EA9000DD6A1 /* RHMobiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD88478F20571EA8000DD6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8847A220571EA8000DD6A1 /* LaunchScreen.storyboard in Resources */,
+				AD88479F20571EA8000DD6A1 /* Assets.xcassets in Resources */,
+				AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847A620571EA9000DD6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847B120571EA9000DD6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD88478D20571EA8000DD6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */,
+				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847A420571EA9000DD6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8847AD20571EA9000DD6A1 /* RHMobiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8847AF20571EA9000DD6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8847B820571EA9000DD6A1 /* RHMobiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD8847AA20571EA9000DD6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD88479020571EA8000DD6A1 /* RHMobi */;
+			targetProxy = AD8847A920571EA9000DD6A1 /* PBXContainerItemProxy */;
+		};
+		AD8847B520571EA9000DD6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD88479020571EA8000DD6A1 /* RHMobi */;
+			targetProxy = AD8847B420571EA9000DD6A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD88479820571EA8000DD6A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD88479920571EA8000DD6A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD8847A120571EA8000DD6A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD8847BA20571EA9000DD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD8847BB20571EA9000DD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD8847BD20571EA9000DD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD8847BE20571EA9000DD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD8847C020571EA9000DD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHMobi.app/RHMobi";
+			};
+			name = Debug;
+		};
+		AD8847C120571EA9000DD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHMobi.app/RHMobi";
+			};
+			name = Release;
+		};
+		AD8847C320571EA9000DD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RHMobi;
+			};
+			name = Debug;
+		};
+		AD8847C420571EA9000DD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WV8M257CC;
+				INFOPLIST_FILE = RHMobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdsonJr.RHMobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RHMobi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD88478C20571EA8000DD6A1 /* Build configuration list for PBXProject "RHMobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8847BA20571EA9000DD6A1 /* Debug */,
+				AD8847BB20571EA9000DD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8847BC20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8847BD20571EA9000DD6A1 /* Debug */,
+				AD8847BE20571EA9000DD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8847BF20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8847C020571EA9000DD6A1 /* Debug */,
+				AD8847C120571EA9000DD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8847C220571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8847C320571EA9000DD6A1 /* Debug */,
+				AD8847C420571EA9000DD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD88479B20571EA8000DD6A1 /* RHMobi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD88479C20571EA8000DD6A1 /* RHMobi.xcdatamodel */,
+			);
+			currentVersion = AD88479C20571EA8000DD6A1 /* RHMobi.xcdatamodel */;
+			path = RHMobi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD88478920571EA8000DD6A1 /* Project object */;
+}
