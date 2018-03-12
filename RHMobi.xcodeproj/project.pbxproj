@@ -18,6 +18,7 @@
 		AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */; };
 		AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847CE2057421E000DD6A1 /* Requisitos.swift */; };
 		AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D02057427E000DD6A1 /* Vaga.swift */; };
+		AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasInteresse.swift; sourceTree = "<group>"; };
 		AD8847CE2057421E000DD6A1 /* Requisitos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requisitos.swift; sourceTree = "<group>"; };
 		AD8847D02057427E000DD6A1 /* Vaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaga.swift; sourceTree = "<group>"; };
+		AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension+DownloadImgFromWeb.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		AD8847CB2057414A000DD6A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
+				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
