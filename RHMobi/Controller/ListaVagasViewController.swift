@@ -20,9 +20,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     var procurando = false //Controla se a pessoa esta pesquisando
     var dadosFiltradosBusca = [Vaga]()
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,6 +90,8 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     
     
     
+    
+    
     //Mark: Funcoes para conformar com os protocolos da tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -148,8 +148,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     
     //Funcao para realizar busca
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
         print("Procurando...")
         if(vagasSearchBar.text == nil || vagasSearchBar.text == "") {
                 self.procurando = false
