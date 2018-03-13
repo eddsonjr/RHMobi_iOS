@@ -32,7 +32,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hd-ERm" userLabel="VagaCellView">
                                                     <rect key="frame" x="5" y="5" width="333" height="139.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
                                                             <rect key="frame" x="10" y="19" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="APG-Ux-aMj"/>
@@ -203,4 +203,7 @@
             <point key="canvasLocation" x="266" y="-659"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noImage" width="1872" height="1872"/>
+    </resources>
 </document>

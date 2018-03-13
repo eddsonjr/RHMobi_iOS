@@ -21,6 +21,7 @@
 		AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */; };
 		AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D420574A89000DD6A1 /* JsonDelegate.swift */; };
 		AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */; };
+		AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension+DownloadImgFromWeb.swift"; sourceTree = "<group>"; };
 		AD8847D420574A89000DD6A1 /* JsonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDelegate.swift; sourceTree = "<group>"; };
 		AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagasTableViewCell.swift; sourceTree = "<group>"; };
+		AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEnumHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
+				AD8847D920575389000DD6A1 /* Helpers */,
 				AD8847CB2057414A000DD6A1 /* Extensions */,
 				AD8847CA2057413E000DD6A1 /* Model */,
 				AD8847C92057411F000DD6A1 /* View */,
@@ -193,6 +196,14 @@
 				AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		AD8847D920575389000DD6A1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 			files = (
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
