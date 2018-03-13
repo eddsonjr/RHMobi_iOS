@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
+		AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */; };
+		AD4C3C47205859340047DFFE /* RequisitosVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */; };
+		AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */; };
+		AD4C3C4B2058596C0047DFFE /* DescricaoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */; };
+		AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */; };
+		AD4C3C4F205859920047DFFE /* ResumoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -45,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
+		AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaViewController.swift; sourceTree = "<group>"; };
+		AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequisitosVagaViewController.xib; sourceTree = "<group>"; };
+		AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoVagaViewController.swift; sourceTree = "<group>"; };
+		AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescricaoVagaViewController.xib; sourceTree = "<group>"; };
+		AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosVagaViewController.swift; sourceTree = "<group>"; };
+		AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumoVagaViewController.xib; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +106,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD4C3C42205858DD0047DFFE /* FragmentosTela_xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */,
+				AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */,
+				AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */,
+			);
+			path = FragmentosTela_xibs;
+			sourceTree = "<group>";
+		};
+		AD4C3C43205859070047DFFE /* Controladores de Fragmentos_xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */,
+				AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */,
+				AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */,
+			);
+			path = "Controladores de Fragmentos_xibs";
+			sourceTree = "<group>";
+		};
 		AD88478820571EA8000DD6A1 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +183,7 @@
 		AD8847C7205740FB000DD6A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AD4C3C43205859070047DFFE /* Controladores de Fragmentos_xibs */,
 				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
 				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
 			);
@@ -170,6 +203,7 @@
 		AD8847C92057411F000DD6A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD4C3C42205858DD0047DFFE /* FragmentosTela_xibs */,
 				AD8847D620574F5C000DD6A1 /* CustomCells */,
 				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
 				AD88479820571EA8000DD6A1 /* Main.storyboard */,
@@ -321,6 +355,9 @@
 			files = (
 				AD8847A220571EA8000DD6A1 /* LaunchScreen.storyboard in Resources */,
 				AD88479F20571EA8000DD6A1 /* Assets.xcassets in Resources */,
+				AD4C3C4F205859920047DFFE /* ResumoVagaViewController.xib in Resources */,
+				AD4C3C4B2058596C0047DFFE /* DescricaoVagaViewController.xib in Resources */,
+				AD4C3C47205859340047DFFE /* RequisitosVagaViewController.xib in Resources */,
 				AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,11 +390,14 @@
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
+				AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
+				AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
+				AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
