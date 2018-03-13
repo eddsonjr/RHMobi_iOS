@@ -10,9 +10,14 @@ import UIKit
 
 class DetalhesVagaViewController: UIViewController {
 
+    
+    @IBOutlet weak var viewContainer: UIView!
+    
+    
+    
+    
     //mensagem de debug
     var dbgmsg = "[DetalhesVagaViewController]: "
-    
     
     //Mark: Variavel que contera a vaga selecionada na tableview na tela anterior
     var vaga: Vaga?
@@ -31,5 +36,9 @@ class DetalhesVagaViewController: UIViewController {
         
     }
 
-
+    
+    @IBAction func switchInfosVagas(_ sender: UISegmentedControl) {
+    }
+    
+    
 }
