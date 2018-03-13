@@ -31,7 +31,51 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hd-ERm" userLabel="VagaCellView">
                                                     <rect key="frame" x="5" y="5" width="333" height="139.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
+                                                            <rect key="frame" x="10" y="19" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="APG-Ux-aMj"/>
+                                                                <constraint firstAttribute="height" constant="100" id="ZVs-15-h5X"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Vaga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVV-ic-jvD">
+                                                            <rect key="frame" x="141" y="19" width="112" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area interesse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzH-jb-nXu">
+                                                            <rect key="frame" x="137" y="69" width="113" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Submissão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf4-uz-lGL">
+                                                            <rect key="frame" x="137" y="98" width="89" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="06/05/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-6N-dwr">
+                                                            <rect key="frame" x="226" y="98" width="91" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Gf4-uz-lGL" firstAttribute="leading" secondItem="Wb2-Wv-Ns7" secondAttribute="trailing" constant="27" id="ABa-3M-eTB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LAh-6N-dwr" secondAttribute="trailing" constant="16" id="Ago-vm-hPl"/>
+                                                        <constraint firstItem="GVV-ic-jvD" firstAttribute="top" secondItem="Wb2-Wv-Ns7" secondAttribute="top" id="Nbe-Op-bfa"/>
+                                                        <constraint firstItem="LAh-6N-dwr" firstAttribute="bottom" secondItem="Gf4-uz-lGL" secondAttribute="bottom" id="S70-C0-mpz"/>
+                                                        <constraint firstItem="Wb2-Wv-Ns7" firstAttribute="centerY" secondItem="LK3-Hd-ERm" secondAttribute="centerY" id="eNI-Jv-ANb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GVV-ic-jvD" secondAttribute="trailing" constant="80" id="jBk-H5-l1f"/>
+                                                        <constraint firstItem="Gf4-uz-lGL" firstAttribute="bottom" secondItem="Wb2-Wv-Ns7" secondAttribute="bottom" id="owX-QP-RBT"/>
+                                                        <constraint firstItem="Wb2-Wv-Ns7" firstAttribute="leading" secondItem="LK3-Hd-ERm" secondAttribute="leading" constant="10" id="wT6-4s-4V4"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
