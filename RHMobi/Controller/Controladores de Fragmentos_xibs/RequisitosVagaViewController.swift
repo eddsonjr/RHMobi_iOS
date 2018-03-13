@@ -10,10 +10,27 @@ import UIKit
 
 class RequisitosVagaViewController: UIViewController {
 
+    //Mark: variavel que ira armazenar a vaga
+    static var vaga: Vaga?
+    
+    
+    //Mark: Variaveis de elementos da tela
+    @IBOutlet weak var nomeVagaLabel: UILabel!
+    @IBOutlet weak var cargoLabel: UILabel!
+    @IBOutlet weak var requisitosTextArea: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print("Carregada a *fragment* de Requisitos")
+        
+        //Populando os elementos da tela
+        self.nomeVagaLabel.text = RequisitosVagaViewController.vaga?.nome
+        self.cargoLabel.text = RequisitosVagaViewController.vaga?.cargo
+        self.requisitosTextArea.text = extrairRequisitos()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +38,14 @@ class RequisitosVagaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func extrairRequisitos() -> String{
+    
+        var req: String = ""
+        for v in (RequisitosVagaViewController.vaga?.requisitos)! {
+            req = req + v.nome + "\n"
+        }
+        return req
     }
-    */
-
+    
 }

@@ -24,6 +24,8 @@ class DetalhesVagaViewController: UIViewController {
     
     //Mark: Variavel que contera a vaga selecionada na tableview na tela anterior
     var vaga: Vaga?
+    
+   
 
     
     
@@ -31,6 +33,11 @@ class DetalhesVagaViewController: UIViewController {
         super.viewDidLoad()
         print(dbgmsg + " View controller carregada")
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
+        
+        ResumoVagaViewController.vaga = self.vaga
+        DescricaoVagaViewController.vaga = self.vaga
+        RequisitosVagaViewController.vaga = self.vaga
+        
         
         //Inicializacao das views de resumo, descricao e requisitos da vaga
         self.resumoVagaView = ResumoVagaViewController().view
@@ -44,8 +51,7 @@ class DetalhesVagaViewController: UIViewController {
         
         
         
-        
-        
+
        
     }
 
