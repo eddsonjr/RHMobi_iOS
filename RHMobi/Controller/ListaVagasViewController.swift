@@ -80,10 +80,8 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             }
             
             }.resume()
-        
-        
     }
-
+    
     
     func encode(jsonUrl: String) {
         //Nothing todo here!
@@ -130,7 +128,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             
         }
         
-       
         
         return cell!
         
@@ -140,6 +137,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Disparar acao ao selecionar uma celula
+        performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
 
     }
     
@@ -168,6 +166,17 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
               
             }
             
+        }
+    }
+    
+    
+    
+    
+    
+    //Mark: Funcao de enviar dados para a proxima tela
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let destination = segue.destination as? DetalhesVagaViewController {
+            destination.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
         }
     }
     

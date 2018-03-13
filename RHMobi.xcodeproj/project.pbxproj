@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
+				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			files = (
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,

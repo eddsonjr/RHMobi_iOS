@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Vagas-->
         <scene sceneID="zfj-Uk-MmH">
             <objects>
                 <viewController id="jh3-jI-Oaj" customClass="ListaVagasViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,20 +114,21 @@
                         <viewLayoutGuide key="safeArea" id="U7K-PE-mqt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8IL-pQ-fpp"/>
-                    <navigationItem key="navigationItem" id="yaT-Yu-Crm"/>
+                    <navigationItem key="navigationItem" title="Vagas" id="yaT-Yu-Crm"/>
                     <connections>
                         <outlet property="vagasSearchBar" destination="pds-1l-hPz" id="aMf-3b-9cm"/>
                         <outlet property="vagasTableView" destination="P6Y-DC-odb" id="QpT-XY-niO"/>
+                        <segue destination="eSN-jX-dOO" kind="show" identifier="segueDetalhesVaga" id="2xI-FF-8hZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRj-ec-sel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1184.8" y="-659.82008995502258"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhes Vaga View Controller-->
         <scene sceneID="QwC-5l-Zya">
             <objects>
-                <viewController id="eSN-jX-dOO" sceneMemberID="viewController">
+                <viewController id="eSN-jX-dOO" customClass="DetalhesVagaViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJS-Mn-L7j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,6 +192,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hgO-W8-1fv"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="miE-IM-uJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

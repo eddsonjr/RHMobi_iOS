@@ -29,7 +29,6 @@ class Vaga: Decodable,Encodable {
          prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse],
          idUsuario: Int, imgUrl: String) {
         
-        
         self.id = id
         self.nome = nome
         self.tipoContrato = tipoContrato
