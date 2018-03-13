@@ -116,6 +116,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="8IL-pQ-fpp"/>
                     <navigationItem key="navigationItem" id="yaT-Yu-Crm"/>
                     <connections>
+                        <outlet property="vagasSearchBar" destination="pds-1l-hPz" id="aMf-3b-9cm"/>
                         <outlet property="vagasTableView" destination="P6Y-DC-odb" id="QpT-XY-niO"/>
                     </connections>
                 </viewController>

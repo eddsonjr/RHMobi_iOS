@@ -22,6 +22,7 @@
 		AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D420574A89000DD6A1 /* JsonDelegate.swift */; };
 		AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */; };
 		AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */; };
+		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		AD8847D420574A89000DD6A1 /* JsonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDelegate.swift; sourceTree = "<group>"; };
 		AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagasTableViewCell.swift; sourceTree = "<group>"; };
 		AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEnumHelper.swift; sourceTree = "<group>"; };
+		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */,
+				AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
+				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
