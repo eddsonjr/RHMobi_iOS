@@ -19,6 +19,7 @@
 		AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847CE2057421E000DD6A1 /* Requisitos.swift */; };
 		AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D02057427E000DD6A1 /* Vaga.swift */; };
 		AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */; };
+		AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D420574A89000DD6A1 /* JsonDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AD8847CE2057421E000DD6A1 /* Requisitos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requisitos.swift; sourceTree = "<group>"; };
 		AD8847D02057427E000DD6A1 /* Vaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaga.swift; sourceTree = "<group>"; };
 		AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension+DownloadImgFromWeb.swift"; sourceTree = "<group>"; };
+		AD8847D420574A89000DD6A1 /* JsonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				AD88479420571EA8000DD6A1 /* AppDelegate.swift */,
+				AD8847D420574A89000DD6A1 /* JsonDelegate.swift */,
 			);
 			name = Delegates;
 			path = "New Group";
@@ -317,6 +320,7 @@
 			files = (
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,

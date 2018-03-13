@@ -18,16 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ2-pq-e38">
-                                <rect key="frame" x="151" y="259" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="eSN-jX-dOO" kind="show" id="9Nv-pp-tSp"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P6Y-DC-odb">
+                                <rect key="frame" x="16" y="120" width="343" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="150" id="Ni6-PL-nRD">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hd-ERm" userLabel="VagaCellView">
+                                                    <rect key="frame" x="5" y="5" width="333" height="139.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="LK3-Hd-ERm" secondAttribute="bottom" constant="5" id="68J-3Y-vR5"/>
+                                                <constraint firstItem="LK3-Hd-ERm" firstAttribute="leading" secondItem="jwv-Oz-BbC" secondAttribute="leading" constant="5" id="KbE-Lj-OGD"/>
+                                                <constraint firstItem="LK3-Hd-ERm" firstAttribute="top" secondItem="jwv-Oz-BbC" secondAttribute="top" constant="5" id="Yxd-6h-d19"/>
+                                                <constraint firstAttribute="trailing" secondItem="LK3-Hd-ERm" secondAttribute="trailing" constant="5" id="oTS-uL-hf3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pds-1l-hPz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P6Y-DC-odb" firstAttribute="bottom" secondItem="U7K-PE-mqt" secondAttribute="bottom" id="Jhg-TT-gbJ"/>
+                            <constraint firstItem="pds-1l-hPz" firstAttribute="trailing" secondItem="U7K-PE-mqt" secondAttribute="trailing" id="OPt-hx-st0"/>
+                            <constraint firstItem="pds-1l-hPz" firstAttribute="leading" secondItem="U7K-PE-mqt" secondAttribute="leading" id="ZqW-Js-8JC"/>
+                            <constraint firstItem="P6Y-DC-odb" firstAttribute="top" secondItem="pds-1l-hPz" secondAttribute="bottom" id="edE-v9-0Ni"/>
+                            <constraint firstItem="pds-1l-hPz" firstAttribute="top" secondItem="U7K-PE-mqt" secondAttribute="top" id="g8p-nJ-qOZ"/>
+                            <constraint firstItem="U7K-PE-mqt" firstAttribute="trailing" secondItem="P6Y-DC-odb" secondAttribute="trailing" constant="16" id="kKA-BZ-UEG"/>
+                            <constraint firstItem="P6Y-DC-odb" firstAttribute="top" secondItem="pds-1l-hPz" secondAttribute="bottom" id="ol8-G4-kui"/>
+                            <constraint firstItem="P6Y-DC-odb" firstAttribute="leading" secondItem="U7K-PE-mqt" secondAttribute="leading" constant="16" id="wba-dS-a6h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U7K-PE-mqt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8IL-pQ-fpp"/>
@@ -35,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRj-ec-sel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1185" y="-659"/>
+            <point key="canvasLocation" x="1184.8" y="-659.82008995502258"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QwC-5l-Zya">
@@ -86,6 +118,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fd2-03-xFX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="tZ7-6f-ir2" kind="relationship" relationship="rootViewController" id="zcH-za-fmt"/>
                     </connections>
