@@ -9,6 +9,11 @@
 import UIKit
 
 class ResumoVagaViewController: UIViewController {
+    
+
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
