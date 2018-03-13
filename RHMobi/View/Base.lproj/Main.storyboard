@@ -22,7 +22,7 @@
                                 <rect key="frame" x="16" y="120" width="343" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="150" id="Ni6-PL-nRD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="150" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
@@ -85,6 +85,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="LK3-Hd-ERm" secondAttribute="trailing" constant="5" id="oTS-uL-hf3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="vagaAreaInteresseLabel" destination="gzH-jb-nXu" id="dXt-VR-ekm"/>
+                                            <outlet property="vagaDataSubmissao" destination="LAh-6N-dwr" id="FB4-7z-nYj"/>
+                                            <outlet property="vagaImageView" destination="Wb2-Wv-Ns7" id="bY1-Rg-4K4"/>
+                                            <outlet property="vagaNomeLabel" destination="GVV-ic-jvD" id="eY8-ck-tfT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

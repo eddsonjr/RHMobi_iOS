@@ -20,6 +20,7 @@
 		AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D02057427E000DD6A1 /* Vaga.swift */; };
 		AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */; };
 		AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D420574A89000DD6A1 /* JsonDelegate.swift */; };
+		AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		AD8847D02057427E000DD6A1 /* Vaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaga.swift; sourceTree = "<group>"; };
 		AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension+DownloadImgFromWeb.swift"; sourceTree = "<group>"; };
 		AD8847D420574A89000DD6A1 /* JsonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDelegate.swift; sourceTree = "<group>"; };
+		AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagasTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		AD8847C92057411F000DD6A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD8847D620574F5C000DD6A1 /* CustomCells */,
 				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
 				AD88479820571EA8000DD6A1 /* Main.storyboard */,
 			);
@@ -182,6 +185,14 @@
 				AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD8847D620574F5C000DD6A1 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
+				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 			);
