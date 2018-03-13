@@ -10,6 +10,9 @@ import UIKit
 
 class ListaVagasViewController: UIViewController {
 
+    @IBOutlet weak var vagasTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        

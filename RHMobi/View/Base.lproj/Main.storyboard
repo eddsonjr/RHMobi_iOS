@@ -87,6 +87,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="vagaAreaInteresseLabel" destination="gzH-jb-nXu" id="dXt-VR-ekm"/>
+                                            <outlet property="vagaCellUIView" destination="LK3-Hd-ERm" id="WHk-la-m8F"/>
                                             <outlet property="vagaDataSubmissao" destination="LAh-6N-dwr" id="FB4-7z-nYj"/>
                                             <outlet property="vagaImageView" destination="Wb2-Wv-Ns7" id="bY1-Rg-4K4"/>
                                             <outlet property="vagaNomeLabel" destination="GVV-ic-jvD" id="eY8-ck-tfT"/>
@@ -114,6 +115,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8IL-pQ-fpp"/>
                     <navigationItem key="navigationItem" id="yaT-Yu-Crm"/>
+                    <connections>
+                        <outlet property="vagasTableView" destination="P6Y-DC-odb" id="QpT-XY-niO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRj-ec-sel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
