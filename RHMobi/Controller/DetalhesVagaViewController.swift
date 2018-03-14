@@ -80,16 +80,7 @@ class DetalhesVagaViewController: UIViewController {
     
     //Mark: Acao do botao de cadindatar - se
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {
-        
-        TrocaTelaHelper.chamarTelaLogin(viewController: self)
-        
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//        self.navigationController?.pushViewController(controller, animated: false)
-//        self.present(controller, animated: true, completion: nil)
-        
-        
+        performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
     }
     
     
