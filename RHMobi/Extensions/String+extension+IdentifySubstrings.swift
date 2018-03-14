@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//Esta extensao tem por objetivo verificar se existe uma substring dentro de uma string
 extension String {
     func contains(find: String) -> Bool{
         return self.range(of: find) != nil

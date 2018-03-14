@@ -38,7 +38,6 @@ class DetalhesVagaViewController: UIViewController {
         DescricaoVagaViewController.vaga = self.vaga
         RequisitosVagaViewController.vaga = self.vaga
         
-        
         //Inicializacao das views de resumo, descricao e requisitos da vaga
         self.resumoVagaView = ResumoVagaViewController().view
         self.descricaoVagaView = DescricaoVagaViewController().view
@@ -48,9 +47,6 @@ class DetalhesVagaViewController: UIViewController {
         self.viewContainer.addSubview(self.requisitosVagaView)
         self.viewContainer.addSubview(self.descricaoVagaView)
         self.viewContainer.addSubview(self.resumoVagaView)
-        
-        
-        
 
        
     }
@@ -61,6 +57,7 @@ class DetalhesVagaViewController: UIViewController {
     }
 
     
+    //Mark: Funcao para selecionar o tipo de informacao do detalhe da vaga
     @IBAction func switchInfosVagas(_ sender: UISegmentedControl) {
         
         switch sender.selectedSegmentIndex {
@@ -78,6 +75,14 @@ class DetalhesVagaViewController: UIViewController {
         
         
     }
+    
+    
+    
+    //Mark: Acao do botao de cadindatar - se
+    @IBAction func candidatar_se_a_vaga(_ sender: Any) {
+        TrocaTelaHelper.chamarTelaLogin(viewController: self)
+    }
+    
     
     
 }

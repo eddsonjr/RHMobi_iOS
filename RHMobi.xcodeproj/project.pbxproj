@@ -30,6 +30,10 @@
 		AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */; };
 		AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */; };
 		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
+		ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */; };
+		ADA3BE9520595F460012E03B /* UIViewController+Extensions+StoryboardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9420595F460012E03B /* UIViewController+Extensions+StoryboardID.swift */; };
+		ADA3BE9720595FA20012E03B /* TrocaTelaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9620595FA20012E03B /* TrocaTelaHelper.swift */; };
+		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagasTableViewCell.swift; sourceTree = "<group>"; };
 		AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEnumHelper.swift; sourceTree = "<group>"; };
 		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
+		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
+		ADA3BE9420595F460012E03B /* UIViewController+Extensions+StoryboardID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions+StoryboardID.swift"; sourceTree = "<group>"; };
+		ADA3BE9620595FA20012E03B /* TrocaTelaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocaTelaHelper.swift; sourceTree = "<group>"; };
+		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,7 @@
 				AD4C3C43205859070047DFFE /* Controladores de Fragmentos_xibs */,
 				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
 				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
+				ADA3BE98205964F40012E03B /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 		AD8847CB2057414A000DD6A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ADA3BE9420595F460012E03B /* UIViewController+Extensions+StoryboardID.swift */,
 				AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */,
 				AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */,
 			);
@@ -242,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
+				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
+				ADA3BE9620595FA20012E03B /* TrocaTelaHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -384,15 +396,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
+				ADA3BE9720595FA20012E03B /* TrocaTelaHelper.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
 				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
+				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
+				ADA3BE9520595F460012E03B /* UIViewController+Extensions+StoryboardID.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
+				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
