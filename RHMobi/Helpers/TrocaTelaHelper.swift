@@ -19,10 +19,9 @@ class TrocaTelaHelper {
     
     //Funcao para chamar a tela de login do aplicativo
     static func chamarTelaLogin(viewController: UIViewController){
+        
         print(dbgmsg + "Carregando tela de login...")
         let controller = LoginViewController.instantiateFromStoryboard()
-        
-
         viewController.present(controller, animated: true, completion: nil)
         
     }
