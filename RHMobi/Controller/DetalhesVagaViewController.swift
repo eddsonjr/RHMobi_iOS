@@ -73,10 +73,7 @@ class DetalhesVagaViewController: UIViewController {
             break
         }
         
-        
     }
-    
-    
     
     //Mark: Acao do botao de cadindatar - se
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {

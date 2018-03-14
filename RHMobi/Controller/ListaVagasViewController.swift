@@ -83,11 +83,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
 
     
     
-    
-    
-    
-    
-    
     //Mark: Funcoes para conformar com os protocolos da tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -158,8 +153,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             
         }
     }
-    
-    
     
     
     
