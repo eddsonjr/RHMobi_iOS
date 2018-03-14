@@ -25,6 +25,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         super.viewDidLoad()
         
         
+        
         //Configurando o delegate e o datasource da tableView
         self.vagasTableView.delegate = self
         self.vagasTableView.dataSource = self
@@ -48,11 +49,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         super.didReceiveMemoryWarning()
         
     }
-    
-    
-    
-    
-    
     
     
     //Mark: Funcoes do delegate JsonDelegate
@@ -106,7 +102,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VagasCell") as? VagasTableViewCell
         
-        
         if procurando {
             //Acessando os atributos da celula
             cell?.vagaNomeLabel.text = self.dadosFiltradosBusca[indexPath.row].nome
@@ -128,10 +123,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             
         }
         
-        
         return cell!
-        
-        
     }
 
 

@@ -183,6 +183,7 @@
 		AD8847C7205740FB000DD6A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AD8847D620574F5C000DD6A1 /* CustomCells */,
 				AD4C3C43205859070047DFFE /* Controladores de Fragmentos_xibs */,
 				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
 				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
@@ -204,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				AD4C3C42205858DD0047DFFE /* FragmentosTela_xibs */,
-				AD8847D620574F5C000DD6A1 /* CustomCells */,
 				AD8847A020571EA8000DD6A1 /* LaunchScreen.storyboard */,
 				AD88479820571EA8000DD6A1 /* Main.storyboard */,
 			);
