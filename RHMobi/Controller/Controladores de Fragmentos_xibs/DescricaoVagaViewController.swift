@@ -15,19 +15,13 @@ class DescricaoVagaViewController: UIViewController {
     
 
     //Mark: Variavel dos elementos da tela
-    @IBOutlet weak var nomeVagaLabel: UILabel!
-    @IBOutlet weak var cargoLabel: UILabel!
-    @IBOutlet weak var prazoLabel: UILabel!
     @IBOutlet weak var descricaoVagaTextArea: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Carregada a *fragment* de descricao da vaga")
-       
+        
         //Populando os elementos na tela
-        self.nomeVagaLabel.text = DescricaoVagaViewController.vaga?.nome
-        self.cargoLabel.text = DescricaoVagaViewController.vaga?.cargo
-        self.prazoLabel.text = DescricaoVagaViewController.vaga?.prazo
         self.descricaoVagaTextArea.text = DescricaoVagaViewController.vaga?.descricao
       
         

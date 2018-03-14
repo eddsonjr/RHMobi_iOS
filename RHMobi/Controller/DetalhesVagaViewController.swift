@@ -19,14 +19,19 @@ class DetalhesVagaViewController: UIViewController {
     var requisitosVagaView: UIView!
     
     
+    @IBOutlet weak var nomeVagaLabel: UILabel!
+    @IBOutlet weak var cargoLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
+    
+    
+    
     //mensagem de debug
     var dbgmsg = "[DetalhesVagaViewController]: "
     
     //Mark: Variavel que contera a vaga selecionada na tableview na tela anterior
     var vaga: Vaga?
     
-   
-
+    
     
     
     override func viewDidLoad() {
@@ -34,20 +39,10 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + " View controller carregada")
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
         
-        ResumoVagaViewController.vaga = self.vaga
-        DescricaoVagaViewController.vaga = self.vaga
-        RequisitosVagaViewController.vaga = self.vaga
+        configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         
-        //Inicializacao das views de resumo, descricao e requisitos da vaga
-        self.resumoVagaView = ResumoVagaViewController().view
-        self.descricaoVagaView = DescricaoVagaViewController().view
-        self.requisitosVagaView = RequisitosVagaViewController().view
+        popularCamposBasicosDetalheVaga()
         
-         //Adicionando as views de resumo, descricao e requisitos como subviews da ancora
-        self.viewContainer.addSubview(self.requisitosVagaView)
-        self.viewContainer.addSubview(self.descricaoVagaView)
-        self.viewContainer.addSubview(self.resumoVagaView)
-
        
     }
 
@@ -78,6 +73,46 @@ class DetalhesVagaViewController: UIViewController {
     //Mark: Acao do botao de cadindatar - se
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {
         performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
+    }
+    
+    
+    
+    //Mark: Funcao para configurar os dados dos xibs
+    func configurarXibs() {
+        
+        ResumoVagaViewController.vaga = self.vaga
+        DescricaoVagaViewController.vaga = self.vaga
+        RequisitosVagaViewController.vaga = self.vaga
+        
+        //Inicializacao das views de resumo, descricao e requisitos da vaga
+        self.resumoVagaView = ResumoVagaViewController().view
+        self.descricaoVagaView = DescricaoVagaViewController().view
+        self.requisitosVagaView = RequisitosVagaViewController().view
+        
+        //Adicionando as views de resumo, descricao e requisitos como subviews da ancora
+        self.viewContainer.addSubview(self.requisitosVagaView)
+        self.viewContainer.addSubview(self.descricaoVagaView)
+        self.viewContainer.addSubview(self.resumoVagaView)
+
+    }
+    
+    
+    
+    
+    //Mark: Funcao para popular os dados de nome da vaga, cargo e data de submissao
+    func popularCamposBasicosDetalheVaga(){
+        self.nomeVagaLabel.text = vaga?.nome
+        self.dataLabel.text = vaga?.prazo
+        self.cargoLabel.text = vaga?.cargo
+    }
+    
+
+    
+    
+    
+    //Mark: Botao da acao para favoritar
+    @IBAction func favoritar(_ sender: Any) {
+        
     }
     
     

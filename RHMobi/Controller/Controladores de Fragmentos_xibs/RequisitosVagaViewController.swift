@@ -15,8 +15,6 @@ class RequisitosVagaViewController: UIViewController {
     
     
     //Mark: Variaveis de elementos da tela
-    @IBOutlet weak var nomeVagaLabel: UILabel!
-    @IBOutlet weak var cargoLabel: UILabel!
     @IBOutlet weak var requisitosTextArea: UITextView!
     
     
@@ -27,8 +25,6 @@ class RequisitosVagaViewController: UIViewController {
         print("Carregada a *fragment* de Requisitos")
         
         //Populando os elementos da tela
-        self.nomeVagaLabel.text = RequisitosVagaViewController.vaga?.nome
-        self.cargoLabel.text = RequisitosVagaViewController.vaga?.cargo
         self.requisitosTextArea.text = extrairRequisitos()
         
     }

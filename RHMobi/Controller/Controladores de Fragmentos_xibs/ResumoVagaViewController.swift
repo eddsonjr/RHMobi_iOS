@@ -16,9 +16,6 @@ class ResumoVagaViewController: UIViewController {
 
     
     //Mark: Variaveis que representam os elementos na tela
-    @IBOutlet weak var nomeVagaLabel: UILabel!
-    @IBOutlet weak var cargoPretendidoLabel: UILabel!
-    @IBOutlet weak var prazoLabel: UILabel!
     @IBOutlet weak var tipoContratoLabel: UILabel!
     @IBOutlet weak var enderecoLabel: UILabel!
     @IBOutlet weak var tipoEmpregoLabel: UILabel!
@@ -31,15 +28,10 @@ class ResumoVagaViewController: UIViewController {
         
         print("Carregada a *fragment* de resumo")
         
-        self.nomeVagaLabel.text = ResumoVagaViewController.vaga?.nome
-        self.cargoPretendidoLabel.text = ResumoVagaViewController.vaga?.cargo
-        self.prazoLabel.text = ResumoVagaViewController.vaga?.prazo
         self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.tipoContrato
         self.enderecoLabel.text = "Local de testes"
         self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.tipoContrato
         self.experienciaLabel.text = ResumoVagaViewController.vaga?.experiencia
-        
-     
         
     
     }
@@ -49,12 +41,6 @@ class ResumoVagaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-   
-    @IBAction func favoritar(_ sender: Any) {
-        print("FAVORITANDO VAGA...")
-    
-    }
     
 
   
