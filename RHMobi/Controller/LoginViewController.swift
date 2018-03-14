@@ -30,21 +30,21 @@ class LoginViewController: UIViewController {
     
     func setNavigationBar() {
         let screenSize: CGRect = UIScreen.main.bounds
-        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: 44))
-        let navItem = UINavigationItem(title: "")
-        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(done))
-        //navItem.rightBarButtonItem = doneItem
-        navItem.leftBarButtonItem = doneItem
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 60, width: screenSize.width, height: 96))
+        let navItem = UINavigationItem(title: "Login")
+        let back = UIBarButtonItem(title: "Back",style: .plain, target: nil,action: #selector(goBack))
+        navItem.leftBarButtonItem = back
         navBar.setItems([navItem], animated: false)
         self.view.addSubview(navBar)
     }
     
     
-    @objc func done() {
-        print("")
+    
+    @objc func goBack() {
+        print("Go Back pressionado")
+        self.dismiss(animated: true, completion: nil)
         
     }
-    
     
 
 }

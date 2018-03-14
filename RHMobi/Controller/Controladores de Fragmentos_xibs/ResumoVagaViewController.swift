@@ -51,6 +51,10 @@ class ResumoVagaViewController: UIViewController {
     
     
    
+    @IBAction func favoritar(_ sender: Any) {
+        print("FAVORITANDO VAGA...")
+    
+    }
     
 
   

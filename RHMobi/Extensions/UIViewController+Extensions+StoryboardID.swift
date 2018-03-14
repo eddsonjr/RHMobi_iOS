@@ -23,7 +23,6 @@ extension UIViewController {
     fileprivate class func instantiateFromStoryboardHelper<T>(_ name: String) -> T
     {
         let storyboardID = String(describing: self)
-        
         let storyboard = UIStoryboard(name: name, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: storyboardID) as! T
         return controller
