@@ -32,8 +32,7 @@ class DetalhesVagaViewController: UIViewController {
     var vaga: Vaga?
     
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print(dbgmsg + " View controller carregada")
@@ -41,7 +40,7 @@ class DetalhesVagaViewController: UIViewController {
         
         configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         
-        popularCamposBasicosDetalheVaga()
+        popularCamposBasicosDetalheVaga() //Popula os campos basicos da vaga: nome, cargo e data de submissao
         
        
     }
@@ -74,6 +73,13 @@ class DetalhesVagaViewController: UIViewController {
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {
         performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
     }
+
+    
+    //Mark: Botao da acao para favoritar
+    @IBAction func favoritar(_ sender: Any) {
+        
+    }
+    
     
     
     
@@ -93,11 +99,8 @@ class DetalhesVagaViewController: UIViewController {
         self.viewContainer.addSubview(self.requisitosVagaView)
         self.viewContainer.addSubview(self.descricaoVagaView)
         self.viewContainer.addSubview(self.resumoVagaView)
-
+        
     }
-    
-    
-    
     
     //Mark: Funcao para popular os dados de nome da vaga, cargo e data de submissao
     func popularCamposBasicosDetalheVaga(){
@@ -106,14 +109,6 @@ class DetalhesVagaViewController: UIViewController {
         self.cargoLabel.text = vaga?.cargo
     }
     
-
-    
-    
-    
-    //Mark: Botao da acao para favoritar
-    @IBAction func favoritar(_ sender: Any) {
-        
-    }
     
     
     
