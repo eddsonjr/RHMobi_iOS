@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10199B205ABA9C00FDF2EC /* Endereco.swift */; };
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
 		AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */; };
 		AD4C3C47205859340047DFFE /* RequisitosVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD10199B205ABA9C00FDF2EC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
 		AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaViewController.swift; sourceTree = "<group>"; };
 		AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequisitosVagaViewController.xib; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */,
 				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
 				AD8847D02057427E000DD6A1 /* Vaga.swift */,
+				AD10199B205ABA9C00FDF2EC /* Endereco.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
+				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */,
