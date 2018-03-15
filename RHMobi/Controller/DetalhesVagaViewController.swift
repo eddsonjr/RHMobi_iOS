@@ -106,7 +106,7 @@ class DetalhesVagaViewController: UIViewController {
     func popularCamposBasicosDetalheVaga(){
         self.nomeVagaLabel.text = vaga?.nome
         self.dataLabel.text = vaga?.prazo
-        self.cargoLabel.text = vaga?.cargo
+        self.cargoLabel.text = vaga?.funcao
     }
     
     

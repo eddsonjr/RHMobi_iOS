@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F25205B2E2900912130 /* FotoHelper.swift */; };
+		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
+		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
 		AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10199B205ABA9C00FDF2EC /* Endereco.swift */; };
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
 		AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0D2F25205B2E2900912130 /* FotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoHelper.swift; sourceTree = "<group>"; };
+		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
+		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		AD10199B205ABA9C00FDF2EC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
 		AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 				AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */,
 				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
 				ADA3BE98205964F40012E03B /* LoginViewController.swift */,
+				AD0D2F29205B32B900912130 /* CadastroViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,8 +256,10 @@
 		AD8847D920575389000DD6A1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D2F25205B2E2900912130 /* FotoHelper.swift */,
 				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
+				AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -405,10 +414,13 @@
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
 				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
+				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
+				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
+				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

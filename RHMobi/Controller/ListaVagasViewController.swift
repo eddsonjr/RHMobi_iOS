@@ -101,7 +101,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             //Acessando os atributos da celula
             cell?.vagaNomeLabel.text = self.dadosFiltradosBusca[indexPath.row].nome
             cell?.vagaDataSubmissao.text = self.dadosFiltradosBusca[indexPath.row].prazo
-            cell?.vagaAreaInteresseLabel.text = self.dadosFiltradosBusca[indexPath.row].cargo
+            cell?.vagaAreaInteresseLabel.text = self.dadosFiltradosBusca[indexPath.row].funcao
             
             //Fazendo download da imagem de forma assincrona
             cell?.vagaImageView.downloadedFrom(link: self.dadosFiltradosBusca[indexPath.row].imgUrl)
@@ -110,7 +110,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             //Acessando os atributos da celula
             cell?.vagaNomeLabel.text = self.listaVagas[indexPath.row].nome
             cell?.vagaDataSubmissao.text = self.listaVagas[indexPath.row].prazo
-            cell?.vagaAreaInteresseLabel.text = self.listaVagas[indexPath.row].cargo
+            cell?.vagaAreaInteresseLabel.text = self.listaVagas[indexPath.row].funcao
             
             
             //Fazendo download da imagem de forma assincrona

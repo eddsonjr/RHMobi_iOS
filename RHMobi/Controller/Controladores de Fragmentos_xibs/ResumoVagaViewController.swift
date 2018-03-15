@@ -13,7 +13,6 @@ class ResumoVagaViewController: UIViewController {
     //Mark: Variavel que ira receber o objeto vaga
     static var vaga: Vaga?
     
-
     
     //Mark: Variaveis que representam os elementos na tela
     @IBOutlet weak var tipoContratoLabel: UILabel!
@@ -28,9 +27,9 @@ class ResumoVagaViewController: UIViewController {
         
         print("Carregada a *fragment* de resumo")
         
-        self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.tipoContrato
-        self.enderecoLabel.text = "Local de testes"
-        self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.tipoContrato
+        self.tipoContratoLabel.text = ResumoVagaViewController.vaga?.tipoContrato
+        self.enderecoLabel.text = criarStringParaEndereco()
+        //self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.
         self.experienciaLabel.text = ResumoVagaViewController.vaga?.experiencia
         
     
@@ -39,6 +38,15 @@ class ResumoVagaViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func criarStringParaEndereco() -> String {
+        var end: String = (ResumoVagaViewController.vaga?.endereco.logradouro)! + "," + "\n" +
+            (ResumoVagaViewController.vaga?.endereco.bairro)! + "," + "\n" + 
+            (ResumoVagaViewController.vaga?.endereco.cep)!
+        
+        return end
     }
     
     

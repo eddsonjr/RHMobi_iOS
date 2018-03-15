@@ -191,7 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-zK-hQd">
-                                <rect key="frame" x="138" y="536" width="98" height="30"/>
+                                <rect key="frame" x="138" y="573" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Candidatar-se"/>
                                 <connections>
@@ -335,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="2040.8" y="277.9610194902549"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro View Controller-->
         <scene sceneID="gu8-SH-Qxr">
             <objects>
-                <viewController id="g2V-7W-Jyt" sceneMemberID="viewController">
+                <viewController id="g2V-7W-Jyt" customClass="CadastroViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XpC-Hc-aaO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,7 +349,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwC-fW-zcW">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-FU-SM6">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-FU-SM6">
                                                 <rect key="frame" x="123" y="8" width="128" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -437,21 +437,33 @@
                                                     <segment title="Masculino"/>
                                                     <segment title="Feminino"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="selecaoSexo:" destination="g2V-7W-Jyt" eventType="valueChanged" id="0Sv-TC-26r"/>
+                                                </connections>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGb-Ej-29H">
                                                 <rect key="frame" x="8" y="702" width="128" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Áreas de Interesse"/>
+                                                <connections>
+                                                    <action selector="areasDeInteresse:" destination="g2V-7W-Jyt" eventType="touchUpInside" id="dEf-vc-gsl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ7-dt-fGf">
                                                 <rect key="frame" x="130" y="746" width="115" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Anexar Currículo"/>
+                                                <connections>
+                                                    <action selector="anexarCurriculo:" destination="g2V-7W-Jyt" eventType="touchUpInside" id="7wx-f7-LBj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqB-ya-k0c">
                                                 <rect key="frame" x="153" y="885" width="68" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Cadastrar"/>
+                                                <connections>
+                                                    <action selector="cadastrar:" destination="g2V-7W-Jyt" eventType="touchUpInside" id="FwN-jD-tb4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,6 +491,14 @@
                         <viewLayoutGuide key="safeArea" id="mhj-VZ-9WD"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="0VU-p7-963" id="piE-oJ-jnL"/>
+                        <outlet property="imageView" destination="4xO-FU-SM6" id="MZk-7a-YBz"/>
+                        <outlet property="nomeTextField" destination="Zsn-FK-LBw" id="KFV-AX-VPX"/>
+                        <outlet property="rgTextField" destination="771-b9-mdH" id="bnY-We-EVU"/>
+                        <outlet property="sobreNomeTextField" destination="DQV-zw-6eW" id="t3o-Xz-Zjw"/>
+                        <outlet property="telefoneTextField" destination="q2q-qt-dmB" id="s4x-dy-PcA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
