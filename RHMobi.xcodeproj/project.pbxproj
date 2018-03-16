@@ -18,6 +18,10 @@
 		AD4C3C4B2058596C0047DFFE /* DescricaoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */; };
 		AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */; };
 		AD4C3C4F205859920047DFFE /* ResumoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */; };
+		AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EB205C54BB00A012D6 /* Candidato.swift */; };
+		AD7B19EE205C58A800A012D6 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19ED205C58A800A012D6 /* CV.swift */; };
+		AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EF205C5A0400A012D6 /* StatusCV.swift */; };
+		AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -67,6 +71,10 @@
 		AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescricaoVagaViewController.xib; sourceTree = "<group>"; };
 		AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosVagaViewController.swift; sourceTree = "<group>"; };
 		AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumoVagaViewController.xib; sourceTree = "<group>"; };
+		AD7B19EB205C54BB00A012D6 /* Candidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidato.swift; sourceTree = "<group>"; };
+		AD7B19ED205C58A800A012D6 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
+		AD7B19EF205C5A0400A012D6 /* StatusCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCV.swift; sourceTree = "<group>"; };
+		AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVaga.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +146,15 @@
 			path = "Controladores de Fragmentos_xibs";
 			sourceTree = "<group>";
 		};
+		AD7B19F1205C5A5E00A012D6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */,
+				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		AD88478820571EA8000DD6A1 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +178,7 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
+				AD7B19F1205C5A5E00A012D6 /* Enums */,
 				AD8847D920575389000DD6A1 /* Helpers */,
 				AD8847CB2057414A000DD6A1 /* Extensions */,
 				AD8847CA2057413E000DD6A1 /* Model */,
@@ -232,6 +250,10 @@
 				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
 				AD8847D02057427E000DD6A1 /* Vaga.swift */,
 				AD10199B205ABA9C00FDF2EC /* Endereco.swift */,
+				AD7B19EB205C54BB00A012D6 /* Candidato.swift */,
+				AD7B19ED205C58A800A012D6 /* CV.swift */,
+				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
+				AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,9 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0D2F25205B2E2900912130 /* FotoHelper.swift */,
-				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
-				AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -406,6 +426,7 @@
 				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
 				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
+				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
@@ -414,12 +435,15 @@
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
 				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
+				AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */,
+				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
+				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,
 				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */,
 			);

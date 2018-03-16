@@ -21,14 +21,13 @@ class Vaga: Decodable,Encodable {
     var descricao: String
     var requisitos: [Requisitos]
     var areasInteresse: [AreasInteresse]
-    var idUsuario: Int
     var imgUrl: String
+    var vagaStatus: StatusVaga
     
     
     
     init(id: Int, nome: String, tipoContrato: String,endereco: Endereco, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse],
-         idUsuario: Int, imgUrl: String) {
+         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga) {
         
         self.id = id
         self.nome = nome
@@ -40,8 +39,8 @@ class Vaga: Decodable,Encodable {
         self.descricao = descricao
         self.requisitos = requisitos
         self.areasInteresse = areasInteresse
-        self.idUsuario = idUsuario
         self.imgUrl = imgUrl
+        self.vagaStatus = vagaStatus
         
     }
     
