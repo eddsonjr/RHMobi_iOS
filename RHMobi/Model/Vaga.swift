@@ -14,7 +14,6 @@ class Vaga: Decodable,Encodable {
     var id: Int
     var nome: String
     var tipoContrato: String
-    var endereco: Endereco
     var funcao: String
     var experiencia: String
     var prazo: String //Mudar posteriormente para um tipo de dados de data
@@ -26,14 +25,13 @@ class Vaga: Decodable,Encodable {
     
     
     
-    init(id: Int, nome: String, tipoContrato: String,endereco: Endereco, funcao: String, experiencia: String,
+    init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
          prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga) {
         
         self.id = id
         self.nome = nome
         self.tipoContrato = tipoContrato
         self.funcao = funcao
-        self.endereco = endereco
         self.experiencia = experiencia
         self.prazo = prazo
         self.descricao = descricao

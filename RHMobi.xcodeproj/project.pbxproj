@@ -24,6 +24,7 @@
 		AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */; };
 		AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */; };
 		AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */; };
+		AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F8205C6BFE00A012D6 /* Cliente.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVaga.swift; sourceTree = "<group>"; };
 		AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVagaEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCVEnumHelper.swift; sourceTree = "<group>"; };
+		AD7B19F8205C6BFE00A012D6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				AD7B19ED205C58A800A012D6 /* CV.swift */,
 				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
 				AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */,
+				AD7B19F8205C6BFE00A012D6 /* Cliente.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
+				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */,

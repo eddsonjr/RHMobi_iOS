@@ -15,7 +15,7 @@ class Candidato: Decodable, Encodable {
     var sobrenome: String?
     var email: String?
     var senha: String?
-    var rg: String
+    var rg: String?
     var telefone1: String?
     var telefone2: String?
     var sexo: Character?
