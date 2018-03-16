@@ -11,12 +11,12 @@ import Foundation
 
 class CV: Decodable, Encodable {
     
-    var id: Int?
-    var dataCriacao: String?
-    var url: String? //verificar se é aplicavel
+    var id: Int
+    var dataCriacao: String
+    var url: String //verificar se é aplicavel
     var statusCV: StatusCV
     
-    init(id: Int?, dataCriacao: String, url: String?, statusCV: StatusCV) {
+    init(id: Int, dataCriacao: String, url: String, statusCV: StatusCV) {
         self.id = id
         self.dataCriacao = dataCriacao
         self.url = url

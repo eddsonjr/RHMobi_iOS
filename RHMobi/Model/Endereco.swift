@@ -10,15 +10,15 @@ import Foundation
 
 class Endereco: Decodable,Encodable {
     
-    var bairro: String?
-    var logradouro: String?
-    var cep: String?
-    var cidade: String?
-    var estado: String?
+    var bairro: String
+    var logradouro: String
+    var cep: String
+    var cidade: String
+    var estado: String
     
     
     //construtor
-    init(bairro: String?, logradouro: String?, cep: String?,cidade: String?, estado: String?) {
+    init(bairro: String, logradouro: String, cep: String,cidade: String, estado: String) {
         self.bairro = bairro
         self.logradouro = logradouro
         self.cep = cep

@@ -22,11 +22,12 @@ class Vaga: Decodable,Encodable {
     var areasInteresse: [AreasInteresse]
     var imgUrl: String
     var vagaStatus: StatusVaga
+    var cliente: Cliente
     
     
     
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga) {
+         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente) {
         
         self.id = id
         self.nome = nome
@@ -39,6 +40,7 @@ class Vaga: Decodable,Encodable {
         self.areasInteresse = areasInteresse
         self.imgUrl = imgUrl
         self.vagaStatus = vagaStatus
+        self.cliente = cliente
         
     }
     

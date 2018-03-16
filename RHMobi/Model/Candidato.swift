@@ -8,21 +8,22 @@
 
 import Foundation
 
-class Candidato: Decodable, Encodable {
+class Candidato {
     
-    var id: Int?
-    var nome: String?
-    var sobrenome: String?
-    var email: String?
-    var senha: String?
-    var rg: String?
-    var telefone1: String?
-    var telefone2: String?
-    var sexo: Character?
-    var vagasAssociadas: [Vaga]?
+    var id: Int
+    var nome: String
+    var sobrenome: String
+    var email: String
+    var senha: String
+    var rg: String
+    var telefone1: String
+    var telefone2: String
+    var sexo: Character
+    var vagasAssociadas: [Vaga]
+    var cv: CV
     
     
-    init(id: Int?, nome: String?, sobrenome: String?, email: String?, senha: String?, rg: String?, telefone1: String?, telefone2: String?, sexo: Character?) {
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: Character,vagasAssociadas: [Vaga], cv: CV) {
         
         self.id = id
         self.nome = nome
@@ -33,6 +34,10 @@ class Candidato: Decodable, Encodable {
         self.telefone1 = telefone1
         self.telefone2 = telefone2
         self.sexo = sexo
+        self.vagasAssociadas = vagasAssociadas
+        self.cv = cv
+        
+        
     }
     
     

@@ -42,9 +42,9 @@ class ResumoVagaViewController: UIViewController {
     
     
     func criarStringParaEndereco() -> String {
-        var end: String = (ResumoVagaViewController.vaga?.endereco.logradouro)! + "," + "\n" +
-            (ResumoVagaViewController.vaga?.endereco.bairro)! + "," + "\n" + 
-            (ResumoVagaViewController.vaga?.endereco.cep)!
+        var end: String = (ResumoVagaViewController.vaga?.cliente.endereco.logradouro)! + "," + "\n" +
+            (ResumoVagaViewController.vaga?.cliente.endereco.bairro)! + "," + "\n" +
+            (ResumoVagaViewController.vaga?.cliente.endereco.cep)!
         
         return end
     }
