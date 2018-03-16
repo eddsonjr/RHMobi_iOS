@@ -22,6 +22,8 @@
 		AD7B19EE205C58A800A012D6 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19ED205C58A800A012D6 /* CV.swift */; };
 		AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EF205C5A0400A012D6 /* StatusCV.swift */; };
 		AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */; };
+		AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */; };
+		AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -75,6 +77,8 @@
 		AD7B19ED205C58A800A012D6 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
 		AD7B19EF205C5A0400A012D6 /* StatusCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCV.swift; sourceTree = "<group>"; };
 		AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVaga.swift; sourceTree = "<group>"; };
+		AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVagaEnumHelper.swift; sourceTree = "<group>"; };
+		AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCVEnumHelper.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			children = (
 				AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */,
 				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
+				AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */,
+				AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
 				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
 				AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */,
+				AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */,
 				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
@@ -446,6 +453,7 @@
 				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,
 				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */,
+				AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
