@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1036" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Candidato" representedClassName="Candidato" syncable="YES" codeGenerationType="class">
+    <entity name="CANDIDATO" representedClassName="CANDIDATO" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,6 +12,6 @@
         <attribute name="telefone2" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Candidato" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="CANDIDATO" positionX="-63" positionY="-18" width="128" height="180"/>
     </elements>
 </model>

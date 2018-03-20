@@ -43,7 +43,7 @@
 		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
 		ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */; };
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
-		ADD04AF6206182B0004340A7 /* CandidatoDAODelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF5206182B0004340A7 /* CandidatoDAODelegate.swift */; };
+		ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF92061840C004340A7 /* CandidatoDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +106,7 @@
 		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
 		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		ADD04AF5206182B0004340A7 /* CandidatoDAODelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAODelegate.swift; sourceTree = "<group>"; };
+		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +238,6 @@
 			children = (
 				AD88479420571EA8000DD6A1 /* AppDelegate.swift */,
 				AD8847D420574A89000DD6A1 /* JsonDelegate.swift */,
-				ADD04AF5206182B0004340A7 /* CandidatoDAODelegate.swift */,
 			);
 			name = Delegates;
 			path = "New Group";
@@ -257,15 +256,8 @@
 		AD8847CA2057413E000DD6A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */,
-				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
-				AD8847D02057427E000DD6A1 /* Vaga.swift */,
-				AD10199B205ABA9C00FDF2EC /* Endereco.swift */,
-				AD7B19EB205C54BB00A012D6 /* Candidato.swift */,
-				AD7B19ED205C58A800A012D6 /* CV.swift */,
-				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
-				AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */,
-				AD7B19F8205C6BFE00A012D6 /* Cliente.swift */,
+				ADD04AF8206183FF004340A7 /* DAO */,
+				ADD04AF7206183ED004340A7 /* Models */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +286,30 @@
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ADD04AF7206183ED004340A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */,
+				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
+				AD8847D02057427E000DD6A1 /* Vaga.swift */,
+				AD10199B205ABA9C00FDF2EC /* Endereco.swift */,
+				AD7B19EB205C54BB00A012D6 /* Candidato.swift */,
+				AD7B19ED205C58A800A012D6 /* CV.swift */,
+				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
+				AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */,
+				AD7B19F8205C6BFE00A012D6 /* Cliente.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADD04AF8206183FF004340A7 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				ADD04AF92061840C004340A7 /* CandidatoDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,13 +457,13 @@
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
+				ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,
 				AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */,
 				AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */,
 				AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */,
-				ADD04AF6206182B0004340A7 /* CandidatoDAODelegate.swift in Sources */,
 				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
 				AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */,
 				AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */,

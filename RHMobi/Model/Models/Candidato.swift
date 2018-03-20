@@ -19,11 +19,12 @@ class Candidato: Encodable, Decodable {
     var telefone1: String
     var telefone2: String
     var sexo: String
-    var vagasAssociadas: [Vaga]
-    var cv: CV
+    var vagasAssociadas: [Vaga]?
+    var cv: CV?
     
     
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga], cv: CV) {
+    
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
         
         self.id = id
         self.nome = nome
