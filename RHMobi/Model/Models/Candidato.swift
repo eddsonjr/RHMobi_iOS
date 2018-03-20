@@ -23,7 +23,23 @@ class Candidato: Encodable, Decodable {
     var cv: CV?
     
     
+    //Construtor padrao
+    init() {
+        self.id = 0
+        self.nome = ""
+        self.sobrenome = ""
+        self.email = ""
+        self.sexo = ""
+        self.senha = ""
+        self.rg = ""
+        self.telefone1 = ""
+        self.telefone2 = ""
+        self.vagasAssociadas = nil
+        self.cv = nil
+    }
     
+    
+    //Construtor com itens
     init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
         
         self.id = id

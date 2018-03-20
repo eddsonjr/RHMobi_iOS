@@ -37,7 +37,7 @@ class CadastroViewController: UIViewController {
 
        
         //somente para testes
-        TestarDAO()
+        //TestarDAO()
         
         
     }
@@ -102,48 +102,59 @@ class CadastroViewController: UIViewController {
     
     
     //Somente para testes
-    func TestarDAO() {
+//    func TestarDAO() {
+//
+//        //Criando um objeto candidato para testes
+//        var candidato: Candidato = Candidato(id: 1, nome: "Raimundao", sobrenome: "de testes", email: "raimundao@burit.com", senha: "12345", rg: "25151777", telefone1: "994517805", telefone2: "996578901", sexo: "M", vagasAssociadas: nil, cv: nil)
+//
+//
+//        //Salvando
+//        if(CandidatoDAO.salvar(candidato: candidato)){
+//            print("Salvo com sucesso")
+//        }else {
+//            print("Deu ruim na hora de salvar")
+//        }
+//
+//        //Pegando os dados
+//        var candidatos: [CANDIDATO]? = nil
+//        candidatos = CandidatoDAO.listarTodos()
+//        print("Lista de candidatos salvos: \(candidatos?.count)")
+//
+//        for c in candidatos! {
+//            print(c)
+//        }
+//
+//
+//
+//        //Procurando por um candidato
+//        var candidatoP: CANDIDATO? = nil
+//        candidatoP = CandidatoDAO.procurarCandidato(id: 1)
+//        print("Candidato encontrado com id1: \(candidato.nome)")
+//
+//
+//
+//        //Apagando todos os dados do banco
+//        print("Apagando tudo")
+//        if(CandidatoDAO.removerTodos()){
+//            print("Todos os itens foram removidos")
+//        }else{
+//            print("Error ao remover")
+//        }
+//    }
+    
+    
+    
+    
+    //Mark: Funcao para pegar os dados dos campos
+    func adqurirDadosDosCampos() {
+        //Criando um candidato
+        var candidato: Candidato = Candidato()
         
-        //Criando um objeto candidato para testes
-        var candidato: Candidato = Candidato(id: 1, nome: "Raimundao", sobrenome: "de testes", email: "raimundao@burit.com", senha: "12345", rg: "25151777", telefone1: "994517805", telefone2: "996578901", sexo: "M", vagasAssociadas: nil, cv: nil)
-        
-        
-        //Salvando
-        if(CandidatoDAO.salvar(candidato: candidato)){
-            print("Salvo com sucesso")
-        }else {
-            print("Deu ruim na hora de salvar")
-        }
-        
-        //Pegando os dados
-        var candidatos: [CANDIDATO]? = nil
-        candidatos = CandidatoDAO.listarTodos()
-        print("Lista de candidatos salvos: \(candidatos?.count)")
-        
-        for c in candidatos! {
-            print(c)
-        }
-        
-        
-        
-        //Procurando por um candidato
-        var candidatoP: CANDIDATO? = nil
-        candidatoP = CandidatoDAO.procurarCandidato(id: 1)
-        print("Candidato encontrado com id1: \(candidato.nome)")
-        
-        
-        
-        //Apagando todos os dados do banco
-        print("Apagando tudo")
-        if(CandidatoDAO.removerTodos()){
-            print("Todos os itens foram removidos")
-        }else{
-            print("Error ao remover")
-        }
-        
-        
-        
-        
+        //Pegando os dados dos campos da tela
+        candidato.nome = self.nomeTextField.text!
+        candidato.sobrenome = self.sobreNomeTextField.text!
+        candidato.email = self.emailTextField.text!
+        candidato.rg = self.rgTextField.text!
         
         
         

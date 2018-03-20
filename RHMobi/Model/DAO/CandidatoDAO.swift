@@ -14,8 +14,7 @@ import UIKit
 class CandidatoDAO: NSObject {
     
    
-   
-    
+
     //Configurar o contexto para salvar os dados dentro do banco
     private class func getContext() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -62,7 +61,8 @@ class CandidatoDAO: NSObject {
         let dbgmsg: String = "[CandidatoDAO]: "
 
         let context = getContext()
-        var candidatos: [CANDIDATO]? = nil
+        var candidatos: [CANDIDATO]? = nil //variavel do tipo usado no banco de dados
+        var candidatosModel: [Candidato]? = nil //Variavel do tipo comum do modelo
         
         //Tentando pegar do banco
         do{
@@ -134,8 +134,5 @@ class CandidatoDAO: NSObject {
     }
     
     
-    
-    
-
     
 }
