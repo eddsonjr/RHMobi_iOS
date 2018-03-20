@@ -9,14 +9,14 @@
 import Foundation
 
 class Cliente: Decodable, Encodable {
-    var id: String
+    var id: Int
     var cnpj: String
     var razaoSocial: String
     var ramoAtuacao: String
     var endereco: Endereco
     
     
-    init(id: String, cnpj: String, razaoSocial: String, ramoAtuacao: String,
+    init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String,
          endereco: Endereco) {
         self.id = id
         self.cnpj = cnpj

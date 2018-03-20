@@ -10,6 +10,6 @@ import Foundation
 
 
 enum UrlEnumHelper: String {
-    case vagasDownlodUrl = "https://api.myjson.com/bins/1gcnaj"
+    case vagasDownlodUrl = "https://api.myjson.com/bins/r8da3"
     
 }

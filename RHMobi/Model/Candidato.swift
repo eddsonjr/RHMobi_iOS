@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Candidato {
+class Candidato: Encodable, Decodable {
     
     var id: Int
     var nome: String
@@ -18,12 +18,12 @@ class Candidato {
     var rg: String
     var telefone1: String
     var telefone2: String
-    var sexo: Character
+    var sexo: String
     var vagasAssociadas: [Vaga]
     var cv: CV
     
     
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: Character,vagasAssociadas: [Vaga], cv: CV) {
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga], cv: CV) {
         
         self.id = id
         self.nome = nome
@@ -36,7 +36,6 @@ class Candidato {
         self.sexo = sexo
         self.vagasAssociadas = vagasAssociadas
         self.cv = cv
-        
         
     }
     
