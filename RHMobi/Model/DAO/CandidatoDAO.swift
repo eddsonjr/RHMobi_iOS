@@ -107,9 +107,32 @@ class CandidatoDAO: NSObject {
             print(dbgmsg + "\(err)")
             return (candidato?.first)!
         }
+    }
+    
+    
+    
+    //Esta funcao serve para retornar se ja existe um candidato cadastrado com um determinado email
+    class func verificarCandidato(email: String) -> Bool {
+        let dbgmsg: String = "[CandidatoDAO]: "
+        let context = getContext()
+        let fetchRequest: NSFetchRequest<CANDIDATO> = CANDIDATO.fetchRequest()
         
+        var candidato: [CANDIDATO]? = nil
+        let predicate = NSPredicate(format: "email contains[c] %@", email)
+        fetchRequest.predicate = predicate
         
-
+        do{
+            candidato = try context.fetch(fetchRequest)
+            print(dbgmsg + "Encontrado esse candidato ja cadastrado")
+            return true
+        }catch let err {
+            print(dbgmsg + "ERRO: NAO FOI POSSIVEL REALIZAR BUSCA PELO ITEM SUPRACITADO")
+            print(dbgmsg + "\(err)")
+            return false
+        }
+        
+        return false
+        
     }
 
 

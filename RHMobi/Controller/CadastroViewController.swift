@@ -54,28 +54,17 @@ class CadastroViewController: UIViewController {
     }
     
     
-    
     //Mark: Actions dos botoes e da segmented
     
     @IBAction func cadastrar(_ sender: Any) {
         adqurirDadosDosCampos()
         print(dbgmsg + "Cadastrando: \(candidato)")
+        
         if(CandidatoDAO.salvar(candidato: self.candidato)){
             print(dbgmsg + "Candidato cadastrado com sucesso")
         }else{
             print(dbgmsg + "Falha ao cadastrar ou esta faltando itens")
         }
-        
-        
-            var candidatos: [CANDIDATO]? = nil
-            candidatos = CandidatoDAO.listarTodos()
-            print("Lista de candidatos salvos: \(candidatos?.count)")
-            for c in candidatos! {
-                print(c)
-            }
-        
-        
-        
     }
     
     
@@ -90,11 +79,7 @@ class CadastroViewController: UIViewController {
     }
     
     
-    //Segmented Controll
-    
-    @IBAction func selecaoSexo(_ sender: UISegmentedControl) {
-        
-    }
+
     
     
     
@@ -197,6 +182,8 @@ class CadastroViewController: UIViewController {
         candidato.telefone1 = self.telefoneTextField.text!
         candidato.telefone2 = self.telefone2TextField.text!
         candidato.senha = self.senhaTextField.text!
+        
+        
         
     }
     
