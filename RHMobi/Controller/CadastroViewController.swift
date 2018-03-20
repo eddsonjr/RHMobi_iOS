@@ -17,13 +17,19 @@ class CadastroViewController: UIViewController {
     @IBOutlet weak var rgTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    
-    
+    @IBOutlet weak var telefone2TextField: UITextField!
+    @IBOutlet weak var senhaTextField: UITextField!
+    @IBOutlet weak var confirmarSenhaTextField: UITextField!
     
     private let dbgmsg = "[CadastroViewController]: "
     
     //Helper da foto
     var fotoHelper: FotoHelper!
+    
+    
+    //Variavel do tipo Candidato, para sua prover seu cadastro
+    var candidato: Candidato = Candidato()
+    
     
     
     override func viewDidLoad() {
@@ -52,6 +58,23 @@ class CadastroViewController: UIViewController {
     //Mark: Actions dos botoes e da segmented
     
     @IBAction func cadastrar(_ sender: Any) {
+        adqurirDadosDosCampos()
+        print(dbgmsg + "Cadastrando: \(candidato)")
+        if(CandidatoDAO.salvar(candidato: self.candidato)){
+            print(dbgmsg + "Candidato cadastrado com sucesso")
+        }else{
+            print(dbgmsg + "Falha ao cadastrar ou esta faltando itens")
+        }
+        
+        
+            var candidatos: [CANDIDATO]? = nil
+            candidatos = CandidatoDAO.listarTodos()
+            print("Lista de candidatos salvos: \(candidatos?.count)")
+            for c in candidatos! {
+                print(c)
+            }
+        
+        
         
     }
     
@@ -70,6 +93,7 @@ class CadastroViewController: UIViewController {
     //Segmented Controll
     
     @IBAction func selecaoSexo(_ sender: UISegmentedControl) {
+        
     }
     
     
@@ -143,21 +167,36 @@ class CadastroViewController: UIViewController {
 //    }
     
     
+    //Action da segmented controll para selecao do sexo
+    @IBAction func selecaoSexoSegmented(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0: //masculino
+            self.candidato.sexo = "M"
+            break
+        case 1: //feminino
+            self.candidato.sexo = "F"
+            break
+        default:
+            self.candidato.sexo = "M"
+        }
+        
+    }
+    
+    
+    
     
     
     //Mark: Funcao para pegar os dados dos campos
     func adqurirDadosDosCampos() {
-        //Criando um candidato
-        var candidato: Candidato = Candidato()
         
         //Pegando os dados dos campos da tela
         candidato.nome = self.nomeTextField.text!
         candidato.sobrenome = self.sobreNomeTextField.text!
         candidato.email = self.emailTextField.text!
         candidato.rg = self.rgTextField.text!
-        
-        
-        
+        candidato.telefone1 = self.telefoneTextField.text!
+        candidato.telefone2 = self.telefone2TextField.text!
+        candidato.senha = self.senhaTextField.text!
         
     }
     
