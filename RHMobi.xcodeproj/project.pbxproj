@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074BC6B34A2A4FBEBD39AC45 /* Pods_RHMobiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AA7BEFDFA1C2B10BADE3BB /* Pods_RHMobiTests.framework */; };
+		2028D1FD04A90D709D29A6C2 /* Pods_RHMobi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832013FB383D66CDC755C5F1 /* Pods_RHMobi.framework */; };
+		29620EADCEC9D93B9993A5DD /* Pods_RHMobiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC5270027925376583D855F /* Pods_RHMobiUITests.framework */; };
 		AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F25205B2E2900912130 /* FotoHelper.swift */; };
 		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
 		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
@@ -64,6 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33AA7BEFDFA1C2B10BADE3BB /* Pods_RHMobiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHMobiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F3726B116050540BB0B686 /* Pods-RHMobiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50500284D671A76EF63E894A /* Pods-RHMobiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiTests/Pods-RHMobiTests.release.xcconfig"; sourceTree = "<group>"; };
+		832013FB383D66CDC755C5F1 /* Pods_RHMobi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHMobi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC5270027925376583D855F /* Pods_RHMobiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHMobiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0D2F25205B2E2900912130 /* FotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoHelper.swift; sourceTree = "<group>"; };
 		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
 		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
+		BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.debug.xcconfig"; sourceTree = "<group>"; };
+		D202F91CCF48FAA53F572420 /* Pods-RHMobi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.release.xcconfig"; sourceTree = "<group>"; };
+		E53F9BAF625202C43FD6BAA5 /* Pods-RHMobiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiTests/Pods-RHMobiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2028D1FD04A90D709D29A6C2 /* Pods_RHMobi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074BC6B34A2A4FBEBD39AC45 /* Pods_RHMobiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +142,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29620EADCEC9D93B9993A5DD /* Pods_RHMobiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95AF366B4B52B328A2367CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832013FB383D66CDC755C5F1 /* Pods_RHMobi.framework */,
+				33AA7BEFDFA1C2B10BADE3BB /* Pods_RHMobiTests.framework */,
+				9AC5270027925376583D855F /* Pods_RHMobiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD4C3C42205858DD0047DFFE /* FragmentosTela_xibs */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +197,8 @@
 				AD8847AB20571EA9000DD6A1 /* RHMobiTests */,
 				AD8847B620571EA9000DD6A1 /* RHMobiUITests */,
 				AD88479220571EA8000DD6A1 /* Products */,
+				CCFD67BE5CF70AB619361693 /* Pods */,
+				95AF366B4B52B328A2367CFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,6 +339,19 @@
 			path = DAO;
 			sourceTree = "<group>";
 		};
+		CCFD67BE5CF70AB619361693 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */,
+				D202F91CCF48FAA53F572420 /* Pods-RHMobi.release.xcconfig */,
+				E53F9BAF625202C43FD6BAA5 /* Pods-RHMobiTests.debug.xcconfig */,
+				50500284D671A76EF63E894A /* Pods-RHMobiTests.release.xcconfig */,
+				45F3726B116050540BB0B686 /* Pods-RHMobiUITests.debug.xcconfig */,
+				BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD8847BC20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobi" */;
 			buildPhases = (
+				E06B7D5ACA8EBB63130329D3 /* [CP] Check Pods Manifest.lock */,
 				AD88478D20571EA8000DD6A1 /* Sources */,
 				AD88478E20571EA8000DD6A1 /* Frameworks */,
 				AD88478F20571EA8000DD6A1 /* Resources */,
+				C5F0A361D7D012AE0E59E9C3 /* [CP] Embed Pods Frameworks */,
+				03251BB5E6C8721BF846677A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD8847BF20571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiTests" */;
 			buildPhases = (
+				87FA3473370B379D6087B890 /* [CP] Check Pods Manifest.lock */,
 				AD8847A420571EA9000DD6A1 /* Sources */,
 				AD8847A520571EA9000DD6A1 /* Frameworks */,
 				AD8847A620571EA9000DD6A1 /* Resources */,
+				821621AD5F446D5D906B4A6B /* [CP] Embed Pods Frameworks */,
+				8B059D17DB448E68CE1B84C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,9 +400,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD8847C220571EA9000DD6A1 /* Build configuration list for PBXNativeTarget "RHMobiUITests" */;
 			buildPhases = (
+				76C532080F3D3259AEF35E40 /* [CP] Check Pods Manifest.lock */,
 				AD8847AF20571EA9000DD6A1 /* Sources */,
 				AD8847B020571EA9000DD6A1 /* Frameworks */,
 				AD8847B120571EA9000DD6A1 /* Resources */,
+				FD41C2797DEAA1AF92979FE1 /* [CP] Embed Pods Frameworks */,
+				8EB6BCB742E24DA6C52BBC70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -443,6 +492,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03251BB5E6C8721BF846677A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C532080F3D3259AEF35E40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RHMobiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821621AD5F446D5D906B4A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobiTests/Pods-RHMobiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87FA3473370B379D6087B890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RHMobiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B059D17DB448E68CE1B84C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobiTests/Pods-RHMobiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EB6BCB742E24DA6C52BBC70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F0A361D7D012AE0E59E9C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06B7D5ACA8EBB63130329D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RHMobi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD41C2797DEAA1AF92979FE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD88478D20571EA8000DD6A1 /* Sources */ = {
@@ -641,6 +846,7 @@
 		};
 		AD8847BD20571EA9000DD6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -657,6 +863,7 @@
 		};
 		AD8847BE20571EA9000DD6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D202F91CCF48FAA53F572420 /* Pods-RHMobi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -673,6 +880,7 @@
 		};
 		AD8847C020571EA9000DD6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53F9BAF625202C43FD6BAA5 /* Pods-RHMobiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -690,6 +898,7 @@
 		};
 		AD8847C120571EA9000DD6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50500284D671A76EF63E894A /* Pods-RHMobiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,6 +916,7 @@
 		};
 		AD8847C320571EA9000DD6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F3726B116050540BB0B686 /* Pods-RHMobiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -723,6 +933,7 @@
 		};
 		AD8847C420571EA9000DD6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
