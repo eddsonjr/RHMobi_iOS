@@ -18,6 +18,9 @@ class VagasTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
+    //flakjsflja
        
     }
 
