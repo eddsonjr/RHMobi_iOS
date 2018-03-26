@@ -13,7 +13,6 @@ class VagasTableViewCell: UITableViewCell {
     
     @IBOutlet weak var vagaImageView: UIImageView!
     @IBOutlet weak var vagaNomeLabel: UILabel!
-    @IBOutlet weak var vagaAreaInteresseLabel: UILabel!
     @IBOutlet weak var vagaDataSubmissao: UILabel!
     @IBOutlet weak var vagaCellUIView: UIView!
     
