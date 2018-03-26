@@ -19,9 +19,7 @@ class DetalhesVagaViewController: UIViewController {
     var requisitosVagaView: UIView!
     
     
-    @IBOutlet weak var nomeVagaLabel: UILabel!
-    @IBOutlet weak var cargoLabel: UILabel!
-    @IBOutlet weak var dataLabel: UILabel!
+   
     
     
     
@@ -40,8 +38,8 @@ class DetalhesVagaViewController: UIViewController {
         
         configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         
-        popularCamposBasicosDetalheVaga() //Popula os campos basicos da vaga: nome, cargo e data de submissao
         
+        self.tabBarController?.tabBar.isHidden = false
        
     }
 
@@ -75,11 +73,7 @@ class DetalhesVagaViewController: UIViewController {
     }
 
     
-    //Mark: Botao da acao para favoritar
-    @IBAction func favoritar(_ sender: Any) {
-        
-    }
-    
+   
     
     
     
@@ -101,14 +95,7 @@ class DetalhesVagaViewController: UIViewController {
         self.viewContainer.addSubview(self.resumoVagaView)
         
     }
-    
-    //Mark: Funcao para popular os dados de nome da vaga, cargo e data de submissao
-    func popularCamposBasicosDetalheVaga(){
-        self.nomeVagaLabel.text = vaga?.nome
-        self.dataLabel.text = vaga?.prazo
-        self.cargoLabel.text = vaga?.funcao
-    }
-    
+
     
     
     
