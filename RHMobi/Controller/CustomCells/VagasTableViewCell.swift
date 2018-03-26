@@ -20,7 +20,7 @@ class VagasTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         
-    //flakjsflja
+
        
     }
 
