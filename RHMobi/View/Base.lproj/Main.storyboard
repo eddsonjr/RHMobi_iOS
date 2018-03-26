@@ -23,11 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="110" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="110"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="117" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="109.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="116.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hd-ERm" userLabel="VagaCellView">
@@ -48,7 +48,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dze-vB-osV">
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dze-vB-osV" userLabel="ViewAncoraImage">
                                                             <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
