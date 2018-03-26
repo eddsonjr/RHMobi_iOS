@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -181,13 +182,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
-                                <rect key="frame" x="16" y="135" width="343" height="170"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
+                                <rect key="frame" x="16" y="353.5" width="344" height="180.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VOv-PE-cXM" secondAttribute="height" multiplier="86:45" id="cKd-xf-bXu"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
+                                <rect key="frame" x="16" y="127" width="343" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-hL-jlK">
-                                <rect key="frame" x="16" y="75" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-hL-jlK">
+                                <rect key="frame" x="42" y="84" width="291" height="29"/>
                                 <segments>
                                     <segment title="Resumo"/>
                                     <segment title="Descrição"/>
@@ -197,21 +204,38 @@
                                     <action selector="switchInfosVagas:" destination="eSN-jX-dOO" eventType="valueChanged" id="DrM-DY-wDw"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-zK-hQd">
-                                <rect key="frame" x="138" y="573" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Candidatar-se"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-zK-hQd">
+                                <rect key="frame" x="115" y="549" width="145" height="49"/>
+                                <state key="normal" image="Botao candidatar"/>
                                 <connections>
                                     <action selector="candidatar_se_a_vaga:" destination="eSN-jX-dOO" eventType="touchUpInside" id="5nK-tB-1fY"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
-                                <rect key="frame" x="16" y="445" width="343" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-sT-I6U">
+                                <rect key="frame" x="16" y="312.5" width="32.5" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <state key="normal" image="Favorito"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favoritar Vaga de Emprego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCT-ov-RbO">
+                                <rect key="frame" x="51" y="316" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MUp-hL-jlK" firstAttribute="top" secondItem="hud-g0-CPt" secondAttribute="top" constant="20" id="0bY-UY-7hz"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="PDf-zK-hQd" secondAttribute="trailing" constant="115" id="52E-1B-xVd"/>
+                            <constraint firstItem="MUp-hL-jlK" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="42" id="CTQ-SX-Mhd"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="bottom" secondItem="PDf-zK-hQd" secondAttribute="bottom" constant="20" id="Fob-Lr-g8R"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="115" id="LBo-LN-SeJ"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="VOv-PE-cXM" secondAttribute="trailing" constant="15" id="Onc-Mo-pYM"/>
+                            <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="TKK-TJ-ysA"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="MUp-hL-jlK" secondAttribute="trailing" constant="42" id="Tgb-Jw-H8x"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="15" id="ima-Er-6Rh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hud-g0-CPt"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
@@ -572,6 +596,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Botao candidatar" width="145" height="49"/>
+        <image name="Favorito" width="23" height="22"/>
+        <image name="Foto" width="291" height="149"/>
         <image name="contacts" width="256" height="256"/>
         <image name="noImage" width="1872" height="1872"/>
     </resources>
