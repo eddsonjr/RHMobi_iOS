@@ -57,50 +57,73 @@
                                 <rect key="frame" x="16" y="120" width="288" height="399"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="97" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="97"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="91" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="96.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="90.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome da Vaga" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVV-ic-jvD">
-                                                    <rect key="frame" x="98" y="18" width="159" height="45"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submissão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf4-uz-lGL">
+                                                    <rect key="frame" x="103" y="63" width="75" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/05/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-6N-dwr">
+                                                    <rect key="frame" x="186" y="63" width="76" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-wT-Ps0" userLabel="ViewBarraVermelha">
+                                                    <rect key="frame" x="284" y="0.0" width="4" height="91"/>
+                                                    <color key="backgroundColor" red="0.70596712827682495" green="0.11017128080129623" blue="0.17228496074676514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.87767687179999998" green="0.43774211260000001" blue="0.4213044963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="91" id="FMl-sG-Bn9"/>
+                                                        <constraint firstAttribute="width" constant="4" id="wRo-ZE-NqL"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dze-vB-osV" userLabel="ViewAncoraImage">
+                                                    <rect key="frame" x="0.0" y="-0.5" width="95" height="91.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="91" id="DII-oN-Zqk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Wb2-Wv-Ns7" secondAttribute="trailing" id="Z75-GL-1v4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Wb2-Wv-Ns7" secondAttribute="bottom" id="eTq-lq-pjY"/>
+                                                        <constraint firstItem="Wb2-Wv-Ns7" firstAttribute="leading" secondItem="dze-vB-osV" secondAttribute="leading" id="elF-Qs-LZX"/>
+                                                        <constraint firstAttribute="width" constant="95" id="gGK-ru-0ne"/>
+                                                        <constraint firstItem="Wb2-Wv-Ns7" firstAttribute="top" secondItem="dze-vB-osV" secondAttribute="top" id="xG7-gn-Ni2"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Vaga" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVV-ic-jvD">
+                                                    <rect key="frame" x="103" y="11" width="173" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submissão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf4-uz-lGL">
-                                                    <rect key="frame" x="98" y="77" width="75" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="06/05/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-6N-dwr">
-                                                    <rect key="frame" x="181" y="77" width="76" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-wT-Ps0" userLabel="ViewBarraVermelha">
-                                                    <rect key="frame" x="279" y="11" width="4" height="91"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.70596712827682495" green="0.11017128080129623" blue="0.17228496074676514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="tintColor" red="0.87767687179999998" green="0.43774211260000001" blue="0.4213044963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
-                                                    <rect key="frame" x="130" y="11" width="95" height="91"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dze-vB-osV" userLabel="ViewAncoraImage">
-                                                    <rect key="frame" x="0.0" y="3" width="95" height="91"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GVV-ic-jvD" firstAttribute="top" secondItem="jwv-Oz-BbC" secondAttribute="top" constant="11" id="4tB-Mx-7M0"/>
+                                                <constraint firstItem="LAh-6N-dwr" firstAttribute="centerY" secondItem="Gf4-uz-lGL" secondAttribute="centerY" id="7Uf-J7-BUl"/>
+                                                <constraint firstItem="s2X-wT-Ps0" firstAttribute="centerY" secondItem="jwv-Oz-BbC" secondAttribute="centerY" id="85O-hD-4MG"/>
+                                                <constraint firstItem="dze-vB-osV" firstAttribute="leading" secondItem="jwv-Oz-BbC" secondAttribute="leading" id="IGC-CI-FlC"/>
+                                                <constraint firstAttribute="bottom" secondItem="GVV-ic-jvD" secondAttribute="bottom" constant="35.5" id="LbP-QK-TzZ"/>
+                                                <constraint firstItem="dze-vB-osV" firstAttribute="centerY" secondItem="jwv-Oz-BbC" secondAttribute="centerY" id="P8i-rY-uVx"/>
+                                                <constraint firstItem="Gf4-uz-lGL" firstAttribute="leading" secondItem="GVV-ic-jvD" secondAttribute="leading" id="VHe-Wz-TAN"/>
+                                                <constraint firstItem="s2X-wT-Ps0" firstAttribute="leading" secondItem="GVV-ic-jvD" secondAttribute="trailing" constant="8" id="Wp2-Zj-mdC"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gf4-uz-lGL" secondAttribute="bottom" constant="10.5" id="dJp-n2-RYb"/>
+                                                <constraint firstItem="LAh-6N-dwr" firstAttribute="leading" secondItem="Gf4-uz-lGL" secondAttribute="trailing" constant="8" id="fvZ-AB-JUI"/>
+                                                <constraint firstItem="GVV-ic-jvD" firstAttribute="leading" secondItem="dze-vB-osV" secondAttribute="trailing" constant="8" id="qF0-1H-saP"/>
+                                                <constraint firstAttribute="trailing" secondItem="s2X-wT-Ps0" secondAttribute="trailing" id="spE-c1-Rh4"/>
+                                                <constraint firstItem="Gf4-uz-lGL" firstAttribute="top" secondItem="jwv-Oz-BbC" secondAttribute="top" constant="63" id="yb5-aW-blO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="vagaDataSubmissao" destination="LAh-6N-dwr" id="FB4-7z-nYj"/>
