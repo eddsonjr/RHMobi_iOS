@@ -21,10 +21,6 @@ class DetalhesVagaViewController: UIViewController {
     //Variavel da segmented controll
     @IBOutlet weak var segmentedControll: UISegmentedControl!
     
-   
-    
-    
-    
     //mensagem de debug
     var dbgmsg = "[DetalhesVagaViewController]: "
     
@@ -40,6 +36,10 @@ class DetalhesVagaViewController: UIViewController {
         
         configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         self.segmentedControll.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: UIControlState.selected)
+        
+        
+        //Setando o titulo da navigation
+        self.navigationItem.title = "Resumo da Vaga"
        
     }
 
@@ -55,12 +55,15 @@ class DetalhesVagaViewController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             viewContainer.bringSubview(toFront: self.resumoVagaView)
+            self.navigationItem.title = "Resumo da Vaga"
             break
         case 1:
             viewContainer.bringSubview(toFront: self.descricaoVagaView)
+            self.navigationItem.title = "Descrição da Vaga"
             break
         case 2:
             viewContainer.bringSubview(toFront: self.requisitosVagaView)
+            self.navigationItem.title = "Requisitos da Vaga"
         default:
             break
         }
