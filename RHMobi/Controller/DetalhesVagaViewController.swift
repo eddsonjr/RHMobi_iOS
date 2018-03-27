@@ -89,11 +89,17 @@ class DetalhesVagaViewController: UIViewController {
         self.descricaoVagaView = DescricaoVagaViewController().view
         self.requisitosVagaView = RequisitosVagaViewController().view
         
+        
         //Adicionando as views de resumo, descricao e requisitos como subviews da ancora
         self.viewContainer.addSubview(self.requisitosVagaView)
         self.viewContainer.addSubview(self.descricaoVagaView)
         self.viewContainer.addSubview(self.resumoVagaView)
         
+        
+        
+        
+       
+       
     }
 
     
