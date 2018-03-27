@@ -152,14 +152,12 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
                 self.vagasTableView.reloadData()
         }else {
             procurando = true
-            for vaga in listaVagas{
-                if(vaga.nome == self.vagasSearchBar.text){
-                    print("Achado: \(vaga.nome)")
-                    self.dadosFiltradosBusca.append(vaga)
-                }
-              self.vagasTableView.reloadData()
-              
-            }
+            self.dadosFiltradosBusca = self.listaVagas.filter({ vaga -> Bool in
+                guard let texto = self.vagasSearchBar.text else {return false}
+                return vaga.nome.containsIgnoringCase(find: texto)
+            })
+            
+            self.vagasTableView.reloadData()
             
         }
     }
