@@ -216,7 +216,7 @@
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-hL-jlK">
-                                <rect key="frame" x="71" y="84" width="178" height="29"/>
+                                <rect key="frame" x="43.5" y="84" width="233" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Resumo"/>
@@ -257,19 +257,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="leading" secondItem="QLs-bb-xlX" secondAttribute="leading" id="1d4-0U-ZHa"/>
+                            <constraint firstItem="MUp-hL-jlK" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="43.5" id="555-Df-7tG"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="VOv-PE-cXM" secondAttribute="trailing" constant="14" id="CQn-Ku-g2W"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="top" secondItem="MUp-hL-jlK" secondAttribute="bottom" constant="15" id="Cc2-z9-6p8"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="bottom" secondItem="PDf-zK-hQd" secondAttribute="bottom" constant="20" id="ClU-L0-o47"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="LUZ-an-eac"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="MUp-hL-jlK" secondAttribute="trailing" constant="43.5" id="M3Y-dr-Ams"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="centerY" secondItem="CdC-sT-I6U" secondAttribute="centerY" id="Rbo-MQ-iKk"/>
-                            <constraint firstItem="MUp-hL-jlK" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="71" id="UM2-ed-cDl"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="top" secondItem="hud-g0-CPt" secondAttribute="top" constant="20" id="Wsm-AK-ybi"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="QLs-bb-xlX" secondAttribute="trailing" constant="16" id="XG0-hE-4vb"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="16" id="d3l-6j-DcM"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="fr2-zv-cyu"/>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="top" secondItem="QLs-bb-xlX" secondAttribute="bottom" constant="7" id="gtY-pK-LZu"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="18" id="i8X-7R-2XG"/>
-                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MUp-hL-jlK" secondAttribute="trailing" constant="71" id="k9H-a0-hDg"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="mIf-5g-aMi"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="vL6-61-Bxf"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="11" id="zwA-JI-63Z"/>
