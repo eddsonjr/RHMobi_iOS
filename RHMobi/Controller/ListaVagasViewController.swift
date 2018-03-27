@@ -14,6 +14,9 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     //Mark: Atributos visuais
     @IBOutlet weak var vagasTableView: UITableView!
     @IBOutlet weak var vagasSearchBar: UISearchBar!
+  
+    
+    
     
     //Mark: Lista de variaveis
     var listaVagas = [Vaga]()
@@ -22,11 +25,15 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIApplication.shared.statusBarStyle = .lightContent
+     
         
         
         
@@ -37,6 +44,8 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         //Configurando o delegate da search bar
         self.vagasSearchBar.delegate = self
         self.vagasSearchBar.returnKeyType = UIReturnKeyType.done
+        
+        
         
         //Fazendo download do json
         decode(jsonUrl: UrlEnumHelper.vagasDownlodUrl.rawValue) {
@@ -133,7 +142,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 91
     }
     
     
