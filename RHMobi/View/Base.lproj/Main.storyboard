@@ -654,4 +654,5 @@
         <image name="dicas inativo" width="11" height="17"/>
         <image name="vaga ativo" width="19" height="17"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
