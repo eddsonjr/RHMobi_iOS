@@ -32,11 +32,8 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     
-        
-        
-        
+    
+
         //Configurando o delegate e o datasource da tableView
         self.vagasTableView.delegate = self
         self.vagasTableView.dataSource = self
@@ -142,7 +139,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 91
+        return 150
     }
     
     
