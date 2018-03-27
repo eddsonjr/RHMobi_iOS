@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mZ7-vW-w8t">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <objects>
                 <viewController id="sAG-nH-OSv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="akJ-bD-IRi">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VU5-9H-neI"/>
@@ -50,25 +50,25 @@
             <objects>
                 <viewController id="jh3-jI-Oaj" customClass="ListaVagasViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pZJ-7K-K1h">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P6Y-DC-odb">
-                                <rect key="frame" x="16" y="120" width="736" height="855"/>
+                                <rect key="frame" x="16" y="120" width="343" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="117" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="736" height="117"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
-                                            <rect key="frame" x="0.0" y="0.0" width="736" height="116.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="116.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hd-ERm" userLabel="VagaCellView">
-                                                    <rect key="frame" x="5" y="5" width="726" height="91"/>
+                                                    <rect key="frame" x="5" y="5" width="333" height="91"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Vaga" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVV-ic-jvD">
-                                                            <rect key="frame" x="496" y="8" width="215" height="49"/>
+                                                            <rect key="frame" x="103" y="8" width="215" height="49"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="215" id="5t7-ka-pMW"/>
                                                                 <constraint firstAttribute="height" constant="49" id="D58-uy-ECU"/>
@@ -78,16 +78,16 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submissão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf4-uz-lGL">
-                                                            <rect key="frame" x="496" y="66" width="75" height="17"/>
+                                                            <rect key="frame" x="103" y="66" width="75" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dze-vB-osV" userLabel="ViewAncoraImage">
-                                                            <rect key="frame" x="0.0" y="0.0" width="488" height="91"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="Wb2-Wv-Ns7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="488" height="91"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,7 +104,7 @@
                                                             <color key="tintColor" red="0.87767687179999998" green="0.43774211260000001" blue="0.4213044963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/05/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-6N-dwr">
-                                                            <rect key="frame" x="579" y="66" width="76" height="17"/>
+                                                            <rect key="frame" x="186" y="66" width="76" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pds-1l-hPz">
-                                <rect key="frame" x="0.0" y="64" width="768" height="56"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -179,32 +179,34 @@
             <objects>
                 <viewController definesPresentationContext="YES" modalPresentationStyle="overCurrentContext" id="eSN-jX-dOO" customClass="DetalhesVagaViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJS-Mn-L7j">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
-                                <rect key="frame" x="16" y="556" width="738" height="332"/>
+                                <rect key="frame" x="16" y="351" width="345" height="180"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
-                                <rect key="frame" x="16" y="127" width="736" height="384"/>
+                                <rect key="frame" x="16" y="127" width="343" height="179"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QLs-bb-xlX" secondAttribute="height" multiplier="343:179" id="Zde-SR-xCx"/>
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-hL-jlK">
-                                <rect key="frame" x="267.5" y="84" width="233" height="29"/>
+                                <rect key="frame" x="71" y="84" width="233" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Resumo"/>
                                     <segment title="Descrição"/>
                                     <segment title="Requisitos"/>
                                 </segments>
+                                <color key="tintColor" red="0.70596712827682495" green="0.11017128080129623" blue="0.17228496074676514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="switchInfosVagas:" destination="eSN-jX-dOO" eventType="valueChanged" id="DrM-DY-wDw"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-zK-hQd">
-                                <rect key="frame" x="311.5" y="906" width="145" height="49"/>
+                                <rect key="frame" x="115" y="549" width="145" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PDf-zK-hQd" secondAttribute="height" multiplier="145:49" id="THq-G0-igJ"/>
                                 </constraints>
@@ -214,11 +216,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-sT-I6U">
-                                <rect key="frame" x="16" y="518" width="23" height="22"/>
+                                <rect key="frame" x="16" y="313" width="23" height="22"/>
                                 <state key="normal" image="Favorito"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritar Vaga de Emprego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCT-ov-RbO">
-                                <rect key="frame" x="50" y="519" width="206" height="21"/>
+                                <rect key="frame" x="50" y="314" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -246,6 +248,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
+                        <outlet property="segmentedControll" destination="MUp-hL-jlK" id="cch-TW-IeB"/>
                         <outlet property="viewContainer" destination="VOv-PE-cXM" id="bhT-KT-PKr"/>
                         <segue destination="WZ8-Nb-aSt" kind="show" identifier="segueDetalhesLogin" id="0ZZ-0R-vbx"/>
                     </connections>
@@ -588,7 +591,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="H7W-kJ-8zo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k87-jA-ge5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

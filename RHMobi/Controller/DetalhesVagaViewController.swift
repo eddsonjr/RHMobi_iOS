@@ -18,6 +18,8 @@ class DetalhesVagaViewController: UIViewController {
     var descricaoVagaView: UIView!
     var requisitosVagaView: UIView!
     
+    //Variavel da segmented controll
+    @IBOutlet weak var segmentedControll: UISegmentedControl!
     
    
     
@@ -37,9 +39,7 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
         
         configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
-        
-        
-        self.tabBarController?.tabBar.isHidden = false
+        self.segmentedControll.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: UIControlState.selected)
        
     }
 
