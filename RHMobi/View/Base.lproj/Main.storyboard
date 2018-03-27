@@ -57,7 +57,7 @@
                                 <rect key="frame" x="16" y="120" width="343" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="117" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VagasCell" rowHeight="117" id="Ni6-PL-nRD" customClass="VagasTableViewCell" customModule="RHMobi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni6-PL-nRD" id="jwv-Oz-BbC">
@@ -183,10 +183,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
-                                <rect key="frame" x="16" y="351" width="344" height="183"/>
+                                <rect key="frame" x="16" y="351" width="345" height="180"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="344" id="Zq2-qt-Kg7"/>
+                                    <constraint firstAttribute="width" constant="345" id="Zq2-qt-Kg7"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
@@ -230,7 +230,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="leading" secondItem="QLs-bb-xlX" secondAttribute="leading" id="1d4-0U-ZHa"/>
-                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="VOv-PE-cXM" secondAttribute="trailing" constant="15" id="CQn-Ku-g2W"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="VOv-PE-cXM" secondAttribute="trailing" constant="14" id="CQn-Ku-g2W"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="top" secondItem="MUp-hL-jlK" secondAttribute="bottom" constant="15" id="Cc2-z9-6p8"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="bottom" secondItem="PDf-zK-hQd" secondAttribute="bottom" constant="20" id="ClU-L0-o47"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="LUZ-an-eac"/>
@@ -240,7 +240,7 @@
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="16" id="d3l-6j-DcM"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="fr2-zv-cyu"/>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="top" secondItem="QLs-bb-xlX" secondAttribute="bottom" constant="7" id="gtY-pK-LZu"/>
-                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="15" id="i8X-7R-2XG"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="18" id="i8X-7R-2XG"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="mIf-5g-aMi"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="vL6-61-Bxf"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="11" id="zwA-JI-63Z"/>
@@ -582,7 +582,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367.1999999999998" y="345.42728635682164"/>
+            <point key="canvasLocation" x="3680" y="346"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="ohk-dJ-r6Y">
