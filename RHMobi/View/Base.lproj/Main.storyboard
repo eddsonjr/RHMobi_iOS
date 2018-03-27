@@ -182,7 +182,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
                                 <rect key="frame" x="16" y="351" width="344" height="183"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -237,8 +237,10 @@
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="centerY" secondItem="CdC-sT-I6U" secondAttribute="centerY" id="Rbo-MQ-iKk"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="top" secondItem="hud-g0-CPt" secondAttribute="top" constant="20" id="Wsm-AK-ybi"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="QLs-bb-xlX" secondAttribute="trailing" constant="16" id="XG0-hE-4vb"/>
+                            <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="16" id="d3l-6j-DcM"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="fr2-zv-cyu"/>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="top" secondItem="QLs-bb-xlX" secondAttribute="bottom" constant="7" id="gtY-pK-LZu"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="15" id="i8X-7R-2XG"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="mIf-5g-aMi"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="vL6-61-Bxf"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="11" id="zwA-JI-63Z"/>
