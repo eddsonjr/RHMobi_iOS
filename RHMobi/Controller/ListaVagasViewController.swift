@@ -20,9 +20,13 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     var procurando = false //Controla se a pessoa esta pesquisando
     var dadosFiltradosBusca = [Vaga]()
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
         
         
         
