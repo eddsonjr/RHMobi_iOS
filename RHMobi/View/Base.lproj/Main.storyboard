@@ -206,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
-                                <rect key="frame" x="16" y="315" width="290" height="137"/>
+                                <rect key="frame" x="16" y="315" width="290" height="140"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
@@ -269,7 +269,7 @@
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="8.5" id="d3l-6j-DcM"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="fr2-zv-cyu"/>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="top" secondItem="QLs-bb-xlX" secondAttribute="bottom" constant="7" id="gtY-pK-LZu"/>
-                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="8" id="i8X-7R-2XG"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="5" id="i8X-7R-2XG"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="mIf-5g-aMi"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="vL6-61-Bxf"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="12" id="zwA-JI-63Z"/>
