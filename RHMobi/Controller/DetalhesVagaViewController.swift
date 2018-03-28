@@ -11,7 +11,10 @@ import UIKit
 class DetalhesVagaViewController: UIViewController {
 
     //Mark: View de ancora para as xibs
-    @IBOutlet weak var viewContainer: UIView!
+    @IBOutlet weak var viewContainer: CardReqDescVaga!
+    
+    
+    
     
     //Mark: Variaveis para as xibs
     var resumoVagaView: UIView!
@@ -38,7 +41,7 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + " View controller carregada")
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
         
-        configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
+        //configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         
         //Setando a imagem da vaga
         self.imageView.downloadedFrom(link: (self.vaga?.imgUrl)!)
@@ -59,16 +62,16 @@ class DetalhesVagaViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-            viewContainer.bringSubview(toFront: self.resumoVagaView)
-            self.navigationItem.title = "Resumo da Vaga"
+//            viewContainer.bringSubview(toFront: self.resumoVagaView)
+//            self.navigationItem.title = "Resumo da Vaga"
             break
         case 1:
-            viewContainer.bringSubview(toFront: self.descricaoVagaView)
-            self.navigationItem.title = "Descrição da Vaga"
+//            viewContainer.bringSubview(toFront: self.descricaoVagaView)
+//            self.navigationItem.title = "Descrição da Vaga"
             break
-        case 2:
-            viewContainer.bringSubview(toFront: self.requisitosVagaView)
-            self.navigationItem.title = "Requisitos da Vaga"
+        case 2: break
+//            viewContainer.bringSubview(toFront: self.requisitosVagaView)
+//            self.navigationItem.title = "Requisitos da Vaga"
         default:
             break
         }

@@ -18,9 +18,9 @@
 		AD4C3C46205859340047DFFE /* ResumoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */; };
 		AD4C3C47205859340047DFFE /* RequisitosVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */; };
 		AD4C3C4A2058596C0047DFFE /* DescricaoVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */; };
-		AD4C3C4B2058596C0047DFFE /* DescricaoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */; };
+		AD4C3C4B2058596C0047DFFE /* CardReqDescVaga.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C492058596C0047DFFE /* CardReqDescVaga.xib */; };
 		AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */; };
-		AD4C3C4F205859920047DFFE /* ResumoVagaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */; };
+		AD4C3C4F205859920047DFFE /* CardResumoVaga.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4C3C4D205859920047DFFE /* CardResumoVaga.xib */; };
 		AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EB205C54BB00A012D6 /* Candidato.swift */; };
 		AD7B19EE205C58A800A012D6 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19ED205C58A800A012D6 /* CV.swift */; };
 		AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EF205C5A0400A012D6 /* StatusCV.swift */; };
@@ -46,6 +46,8 @@
 		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
 		ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */; };
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
+		ADAB3AEE206C14B2003F2048 /* CardResumoVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB3AED206C14B2003F2048 /* CardResumoVaga.swift */; };
+		ADAB3AF0206C2666003F2048 /* CardReqDescVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB3AEF206C2666003F2048 /* CardReqDescVaga.swift */; };
 		ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF92061840C004340A7 /* CandidatoDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +82,9 @@
 		AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaViewController.swift; sourceTree = "<group>"; };
 		AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequisitosVagaViewController.xib; sourceTree = "<group>"; };
 		AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoVagaViewController.swift; sourceTree = "<group>"; };
-		AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescricaoVagaViewController.xib; sourceTree = "<group>"; };
+		AD4C3C492058596C0047DFFE /* CardReqDescVaga.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardReqDescVaga.xib; sourceTree = "<group>"; };
 		AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosVagaViewController.swift; sourceTree = "<group>"; };
-		AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumoVagaViewController.xib; sourceTree = "<group>"; };
+		AD4C3C4D205859920047DFFE /* CardResumoVaga.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardResumoVaga.xib; sourceTree = "<group>"; };
 		AD7B19EB205C54BB00A012D6 /* Candidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidato.swift; sourceTree = "<group>"; };
 		AD7B19ED205C58A800A012D6 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
 		AD7B19EF205C5A0400A012D6 /* StatusCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCV.swift; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
 		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADAB3AED206C14B2003F2048 /* CardResumoVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardResumoVaga.swift; sourceTree = "<group>"; };
+		ADAB3AEF206C2666003F2048 /* CardReqDescVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReqDescVaga.swift; sourceTree = "<group>"; };
 		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
 		BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,8 +166,8 @@
 		AD4C3C42205858DD0047DFFE /* FragmentosTela_xibs */ = {
 			isa = PBXGroup;
 			children = (
-				AD4C3C4D205859920047DFFE /* ResumoVagaViewController.xib */,
-				AD4C3C492058596C0047DFFE /* DescricaoVagaViewController.xib */,
+				AD4C3C4D205859920047DFFE /* CardResumoVaga.xib */,
+				AD4C3C492058596C0047DFFE /* CardReqDescVaga.xib */,
 				AD4C3C45205859340047DFFE /* RequisitosVagaViewController.xib */,
 			);
 			path = FragmentosTela_xibs;
@@ -175,6 +179,8 @@
 				AD4C3C44205859340047DFFE /* ResumoVagaViewController.swift */,
 				AD4C3C482058596C0047DFFE /* DescricaoVagaViewController.swift */,
 				AD4C3C4C205859920047DFFE /* RequisitosVagaViewController.swift */,
+				ADAB3AED206C14B2003F2048 /* CardResumoVaga.swift */,
+				ADAB3AEF206C2666003F2048 /* CardReqDescVaga.swift */,
 			);
 			path = "Controladores de Fragmentos_xibs";
 			sourceTree = "<group>";
@@ -470,8 +476,8 @@
 			files = (
 				AD8847A220571EA8000DD6A1 /* LaunchScreen.storyboard in Resources */,
 				AD88479F20571EA8000DD6A1 /* Assets.xcassets in Resources */,
-				AD4C3C4F205859920047DFFE /* ResumoVagaViewController.xib in Resources */,
-				AD4C3C4B2058596C0047DFFE /* DescricaoVagaViewController.xib in Resources */,
+				AD4C3C4F205859920047DFFE /* CardResumoVaga.xib in Resources */,
+				AD4C3C4B2058596C0047DFFE /* CardReqDescVaga.xib in Resources */,
 				AD4C3C47205859340047DFFE /* RequisitosVagaViewController.xib in Resources */,
 				AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */,
 			);
@@ -661,6 +667,7 @@
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
+				ADAB3AF0206C2666003F2048 /* CardReqDescVaga.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
@@ -675,6 +682,7 @@
 				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
+				ADAB3AEE206C14B2003F2048 /* CardResumoVaga.swift in Sources */,
 				AD4C3C4E205859920047DFFE /* RequisitosVagaViewController.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,

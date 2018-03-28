@@ -32,6 +32,8 @@ class ResumoVagaViewController: UIViewController {
         //self.tipoEmpregoLabel.text = ResumoVagaViewController.vaga?.
         self.experienciaLabel.text = ResumoVagaViewController.vaga?.experiencia
         
+       
+        
     
     }
 
