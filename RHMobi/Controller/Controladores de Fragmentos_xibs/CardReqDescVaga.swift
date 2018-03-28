@@ -11,20 +11,20 @@ import UIKit
 class CardReqDescVaga: UIView {
 
     @IBOutlet weak var textArea: UITextView!
-    @IBOutlet var mainXibView: UIView!
+    @IBOutlet var mainView: UIView!
     
     override init(frame: CGRect){
         super.init(frame: frame)
         Bundle.main.loadNibNamed("CardReqDescVaga", owner: self, options: nil)
-        addSubview(mainXibView)
-        mainXibView.frame = self.bounds
-        mainXibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(mainView)
+        mainView.frame = self.bounds
+        mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        Bundle.main.loadNibNamed("CardResumoVaga", owner: self, options: nil)
+        Bundle.main.loadNibNamed("CardReqDescVaga", owner: self, options: nil)
         addSubview(mainXibView)
         mainXibView.frame = self.bounds
         mainXibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

@@ -11,7 +11,7 @@ import UIKit
 class DetalhesVagaViewController: UIViewController {
 
     //Mark: View de ancora para as xibs
-    @IBOutlet weak var viewContainer: CardReqDescVaga!
+    @IBOutlet weak var ResmoView: CardResumoVaga!
     
     
     //Mark: Variaveis para as xibs

@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardReqDescVaga" customModule="RHMobi" customModuleProvider="target">
             <connections>
-                <outlet property="mainXibView" destination="i5M-Pr-FkT" id="rU5-qL-urr"/>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="4TT-GK-OmW"/>
                 <outlet property="textArea" destination="Wzc-iA-JME" id="QdM-EQ-rpj"/>
             </connections>
         </placeholder>
