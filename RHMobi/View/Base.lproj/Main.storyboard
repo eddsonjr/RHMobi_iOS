@@ -278,6 +278,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
+                        <outlet property="imageView" destination="QLs-bb-xlX" id="Bh3-3Q-NAU"/>
                         <outlet property="segmentedControll" destination="MUp-hL-jlK" id="cch-TW-IeB"/>
                         <outlet property="viewContainer" destination="VOv-PE-cXM" id="bhT-KT-PKr"/>
                         <segue destination="WZ8-Nb-aSt" kind="show" identifier="segueDetalhesLogin" id="0ZZ-0R-vbx"/>

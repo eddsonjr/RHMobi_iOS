@@ -18,6 +18,10 @@ class DetalhesVagaViewController: UIViewController {
     var descricaoVagaView: UIView!
     var requisitosVagaView: UIView!
     
+    //ImageView da imagem da vaga
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
     //Variavel da segmented controll
     @IBOutlet weak var segmentedControll: UISegmentedControl!
     
@@ -35,8 +39,9 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
         
         configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
-        self.segmentedControll.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: UIControlState.selected)
         
+        //Setando a imagem da vaga
+        self.imageView.downloadedFrom(link: (self.vaga?.imgUrl)!)
         
         //Setando o titulo da navigation
         self.navigationItem.title = "Resumo da Vaga"
