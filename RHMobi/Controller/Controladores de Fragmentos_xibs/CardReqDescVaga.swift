@@ -25,9 +25,9 @@ class CardReqDescVaga: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         Bundle.main.loadNibNamed("CardReqDescVaga", owner: self, options: nil)
-        addSubview(mainXibView)
-        mainXibView.frame = self.bounds
-        mainXibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(mainView)
+        mainView.frame = self.bounds
+        mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
 
