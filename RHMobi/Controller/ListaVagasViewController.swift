@@ -124,7 +124,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
             
             
             //Fazendo download da imagem de forma assincrona
-            cell?.vagaImageView.downloadedFrom(link: self.listaVagas[indexPath.row].imgUrl)
+            //cell?.vagaImageView.downloadedFrom(link: self.listaVagas[indexPath.row].imgUrl)
             
         }
         
@@ -139,7 +139,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 131
     }
     
     
