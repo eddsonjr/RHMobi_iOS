@@ -14,8 +14,6 @@ class DetalhesVagaViewController: UIViewController {
     @IBOutlet weak var viewContainer: CardReqDescVaga!
     
     
-    
-    
     //Mark: Variaveis para as xibs
     var resumoVagaView: UIView!
     var descricaoVagaView: UIView!
@@ -40,8 +38,8 @@ class DetalhesVagaViewController: UIViewController {
         super.viewDidLoad()
         print(dbgmsg + " View controller carregada")
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
+     
         
-        //configurarXibs() //configura os xibs para exibir as informacoes detalhadas da vaga
         
         //Setando a imagem da vaga
         self.imageView.downloadedFrom(link: (self.vaga?.imgUrl)!)
@@ -82,37 +80,6 @@ class DetalhesVagaViewController: UIViewController {
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {
         performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
     }
-
-    
-   
-    
-    
-    
-    //Mark: Funcao para configurar os dados dos xibs
-    func configurarXibs() {
-        
-        ResumoVagaViewController.vaga = self.vaga
-        DescricaoVagaViewController.vaga = self.vaga
-        RequisitosVagaViewController.vaga = self.vaga
-        
-        //Inicializacao das views de resumo, descricao e requisitos da vaga
-        self.resumoVagaView = ResumoVagaViewController().view
-        self.descricaoVagaView = DescricaoVagaViewController().view
-        self.requisitosVagaView = RequisitosVagaViewController().view
-        
-        
-        //Adicionando as views de resumo, descricao e requisitos como subviews da ancora
-        self.viewContainer.addSubview(self.requisitosVagaView)
-        self.viewContainer.addSubview(self.descricaoVagaView)
-        self.viewContainer.addSubview(self.resumoVagaView)
-        
-        
-        
-        
-       
-       
-    }
-
     
     
     
