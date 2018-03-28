@@ -206,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
-                                <rect key="frame" x="16" y="322.5" width="290" height="109.5"/>
+                                <rect key="frame" x="16" y="315" width="290" height="137"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
@@ -234,7 +234,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-zK-hQd">
-                                <rect key="frame" x="87.5" y="450" width="145" height="49"/>
+                                <rect key="frame" x="87.5" y="460" width="145" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PDf-zK-hQd" secondAttribute="height" multiplier="145:49" id="THq-G0-igJ"/>
                                 </constraints>
@@ -244,11 +244,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-sT-I6U">
-                                <rect key="frame" x="16" y="284.5" width="23" height="22"/>
+                                <rect key="frame" x="20" y="284.5" width="23" height="22"/>
                                 <state key="normal" image="Favorito"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritar Vaga de Emprego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCT-ov-RbO">
-                                <rect key="frame" x="50" y="285.5" width="206" height="21"/>
+                                <rect key="frame" x="55" y="285.5" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -256,23 +256,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CdC-sT-I6U" firstAttribute="leading" secondItem="QLs-bb-xlX" secondAttribute="leading" id="1d4-0U-ZHa"/>
+                            <constraint firstItem="CdC-sT-I6U" firstAttribute="leading" secondItem="QLs-bb-xlX" secondAttribute="leading" constant="4" id="1d4-0U-ZHa"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="43.5" id="555-Df-7tG"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="VOv-PE-cXM" secondAttribute="trailing" constant="14" id="CQn-Ku-g2W"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="top" secondItem="MUp-hL-jlK" secondAttribute="bottom" constant="15" id="Cc2-z9-6p8"/>
-                            <constraint firstItem="hud-g0-CPt" firstAttribute="bottom" secondItem="PDf-zK-hQd" secondAttribute="bottom" constant="20" id="ClU-L0-o47"/>
+                            <constraint firstItem="hud-g0-CPt" firstAttribute="bottom" secondItem="PDf-zK-hQd" secondAttribute="bottom" constant="10" id="ClU-L0-o47"/>
                             <constraint firstItem="QLs-bb-xlX" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="LUZ-an-eac"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="MUp-hL-jlK" secondAttribute="trailing" constant="43.5" id="M3Y-dr-Ams"/>
                             <constraint firstItem="VCT-ov-RbO" firstAttribute="centerY" secondItem="CdC-sT-I6U" secondAttribute="centerY" id="Rbo-MQ-iKk"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="top" secondItem="hud-g0-CPt" secondAttribute="top" constant="20" id="Wsm-AK-ybi"/>
                             <constraint firstItem="hud-g0-CPt" firstAttribute="trailing" secondItem="QLs-bb-xlX" secondAttribute="trailing" constant="16" id="XG0-hE-4vb"/>
-                            <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="16" id="d3l-6j-DcM"/>
+                            <constraint firstItem="VOv-PE-cXM" firstAttribute="top" secondItem="VCT-ov-RbO" secondAttribute="bottom" constant="8.5" id="d3l-6j-DcM"/>
                             <constraint firstItem="PDf-zK-hQd" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="fr2-zv-cyu"/>
                             <constraint firstItem="CdC-sT-I6U" firstAttribute="top" secondItem="QLs-bb-xlX" secondAttribute="bottom" constant="7" id="gtY-pK-LZu"/>
-                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="18" id="i8X-7R-2XG"/>
+                            <constraint firstItem="PDf-zK-hQd" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="bottom" constant="8" id="i8X-7R-2XG"/>
                             <constraint firstItem="VOv-PE-cXM" firstAttribute="leading" secondItem="hud-g0-CPt" secondAttribute="leading" constant="16" id="mIf-5g-aMi"/>
                             <constraint firstItem="MUp-hL-jlK" firstAttribute="centerX" secondItem="gJS-Mn-L7j" secondAttribute="centerX" id="vL6-61-Bxf"/>
-                            <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="11" id="zwA-JI-63Z"/>
+                            <constraint firstItem="VCT-ov-RbO" firstAttribute="leading" secondItem="CdC-sT-I6U" secondAttribute="trailing" constant="12" id="zwA-JI-63Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hud-g0-CPt"/>
                     </view>
@@ -285,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dto-aY-kwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719.1999999999998" y="-659.82008995502258"/>
+            <point key="canvasLocation" x="2718.75" y="-660.21126760563379"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Ds4-jf-LUO">
