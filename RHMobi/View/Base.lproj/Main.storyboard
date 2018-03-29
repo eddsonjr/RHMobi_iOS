@@ -232,7 +232,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM" customClass="CardReqDescVaga" customModule="RHMobi" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
                                 <rect key="frame" x="16" y="315" width="290" height="140"/>
                                 <color key="backgroundColor" red="0.0" green="0.32850477430555558" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -305,9 +305,9 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
-                        <outlet property="ResmoView" destination="VOv-PE-cXM" id="ifT-Re-iBP"/>
                         <outlet property="imageView" destination="QLs-bb-xlX" id="Bh3-3Q-NAU"/>
                         <outlet property="segmentedControll" destination="MUp-hL-jlK" id="cch-TW-IeB"/>
+                        <outlet property="viewAncoraXibs" destination="VOv-PE-cXM" id="UhC-Gr-wFk"/>
                         <segue destination="WZ8-Nb-aSt" kind="show" identifier="segueDetalhesLogin" id="0ZZ-0R-vbx"/>
                     </connections>
                 </viewController>
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3680" y="346"/>
+            <point key="canvasLocation" x="4055" y="535"/>
         </scene>
         <!--Vagas-->
         <scene sceneID="ohk-dJ-r6Y">

@@ -11,13 +11,13 @@ import UIKit
 class DetalhesVagaViewController: UIViewController {
 
     //Mark: View de ancora para as xibs
-    @IBOutlet weak var ResmoView: CardResumoVaga!
+    @IBOutlet weak var viewAncoraXibs: UIView!
+    
+    
     
     
     //Mark: Variaveis para as xibs
-    var resumoVagaView: UIView!
-    var descricaoVagaView: UIView!
-    var requisitosVagaView: UIView!
+
     
     //ImageView da imagem da vaga
     @IBOutlet weak var imageView: UIImageView!
@@ -40,12 +40,15 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
      
         
-        
         //Setando a imagem da vaga
         self.imageView.downloadedFrom(link: (self.vaga?.imgUrl)!)
         
         //Setando o titulo da navigation
         self.navigationItem.title = "Resumo da Vaga"
+        
+    
+        
+        
        
     }
 
