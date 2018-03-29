@@ -13,10 +13,11 @@ class DetalhesVagaViewController: UIViewController {
     //Mark: View de ancora para as xibs
     @IBOutlet weak var viewAncoraXibs: UIView!
     
+    //Mark: Variaveis de acesso das containers
+    @IBOutlet weak var container1: UIView!
+    @IBOutlet weak var container2: UIView!
     
-    
-    
-    //Mark: Variaveis para as xibs
+   
 
     
     //ImageView da imagem da vaga

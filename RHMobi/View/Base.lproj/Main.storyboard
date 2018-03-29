@@ -330,6 +330,8 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
+                        <outlet property="container1" destination="DOt-Cu-Kz7" id="hHW-16-Ue1"/>
+                        <outlet property="container2" destination="YaV-8B-j1y" id="rfC-aH-2iU"/>
                         <outlet property="imageView" destination="QLs-bb-xlX" id="Bh3-3Q-NAU"/>
                         <outlet property="segmentedControll" destination="MUp-hL-jlK" id="cch-TW-IeB"/>
                         <outlet property="viewAncoraXibs" destination="VOv-PE-cXM" id="UhC-Gr-wFk"/>
