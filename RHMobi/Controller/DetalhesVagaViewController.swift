@@ -29,19 +29,18 @@ class DetalhesVagaViewController: UIViewController {
     //mensagem de debug
     var dbgmsg = "[DetalhesVagaViewController]: "
     
-    //Mark: Variavel que contera a vaga selecionada na tableview na tela anterior
-    var vaga: Vaga?
+    
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(dbgmsg + " View controller carregada")
-        print(dbgmsg + "Vaga selecionada: \(vaga?.nome)")
+        print(dbgmsg + "Vaga selecionada: \(VagaHelper.vaga?.nome)")
      
         
         //Setando a imagem da vaga
-        self.imageView.downloadedFrom(link: (self.vaga?.imgUrl)!)
+        self.imageView.downloadedFrom(link: (VagaHelper.vaga?.imgUrl)!)
         
         //Setando o titulo da navigation
         self.navigationItem.title = "Resumo da Vaga"

@@ -12,6 +12,7 @@ import Foundation
 //Esta classe tem por objetivo ser um helper para o acesso a uma determinada vaga
 class VagaHelper {
     
+    static var vaga: Vaga?
     
     
 }

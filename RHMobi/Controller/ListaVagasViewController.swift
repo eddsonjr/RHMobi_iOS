@@ -167,7 +167,7 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     //Mark: Funcao de enviar dados para a proxima tela
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if let destination = segue.destination as? DetalhesVagaViewController {
-            destination.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
+            VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
         }
     }
     
