@@ -236,22 +236,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-PE-cXM">
                                 <rect key="frame" x="16" y="315" width="290" height="140"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOt-Cu-Kz7">
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOt-Cu-Kz7">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="llU-Pn-YAm" kind="embed" id="wFE-gn-s22"/>
                                         </connections>
                                     </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YaV-8B-j1y">
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaV-8B-j1y">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="Jbs-PR-VhA" kind="embed" id="vI5-Dz-4hR"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.32850477430555558" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YaV-8B-j1y" secondAttribute="bottom" id="7Lm-ud-fi1"/>
+                                    <constraint firstItem="DOt-Cu-Kz7" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="top" id="7OP-0t-F5X"/>
+                                    <constraint firstItem="YaV-8B-j1y" firstAttribute="leading" secondItem="VOv-PE-cXM" secondAttribute="leading" id="MSY-SY-dXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOt-Cu-Kz7" secondAttribute="trailing" id="ZBn-vp-zbb"/>
+                                    <constraint firstAttribute="trailing" secondItem="YaV-8B-j1y" secondAttribute="trailing" id="a4X-PY-jpV"/>
+                                    <constraint firstAttribute="bottom" secondItem="DOt-Cu-Kz7" secondAttribute="bottom" id="an8-gz-myP"/>
+                                    <constraint firstItem="YaV-8B-j1y" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="top" id="wHk-7l-yhG"/>
+                                    <constraint firstItem="DOt-Cu-Kz7" firstAttribute="leading" secondItem="VOv-PE-cXM" secondAttribute="leading" id="zJF-OO-dKo"/>
+                                </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-bb-xlX">
                                 <rect key="frame" x="16" y="127" width="288" height="150.5"/>
@@ -451,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqt-vt-TDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2667" y="585"/>
+            <point key="canvasLocation" x="2720" y="360"/>
         </scene>
         <!--Cadastro View Controller-->
         <scene sceneID="gu8-SH-Qxr">
