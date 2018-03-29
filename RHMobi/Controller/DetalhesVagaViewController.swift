@@ -17,8 +17,7 @@ class DetalhesVagaViewController: UIViewController {
     @IBOutlet weak var container1: UIView!
     @IBOutlet weak var container2: UIView!
     
-   
-
+    
     
     //ImageView da imagem da vaga
     @IBOutlet weak var imageView: UIImageView!
@@ -47,12 +46,14 @@ class DetalhesVagaViewController: UIViewController {
         //Setando o titulo da navigation
         self.navigationItem.title = "Resumo da Vaga"
         
-    
         
+        //Configurando a aparicao dos containers
+        self.container1.isHidden = false
         
        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -64,16 +65,15 @@ class DetalhesVagaViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-//            viewContainer.bringSubview(toFront: self.resumoVagaView)
-//            self.navigationItem.title = "Resumo da Vaga"
+
+            
             break
         case 1:
-//            viewContainer.bringSubview(toFront: self.descricaoVagaView)
-//            self.navigationItem.title = "Descrição da Vaga"
+
             break
         case 2: break
-//            viewContainer.bringSubview(toFront: self.requisitosVagaView)
-//            self.navigationItem.title = "Requisitos da Vaga"
+
+            
         default:
             break
         }

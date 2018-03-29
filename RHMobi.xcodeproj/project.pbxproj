@@ -42,6 +42,7 @@
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
 		ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */; };
 		ADC47274206C7DBC008F8242 /* DescReqVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */; };
+		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
 		ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF92061840C004340A7 /* CandidatoDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescReqVagaContainerViewController.swift; sourceTree = "<group>"; };
+		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
 		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
 		BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			children = (
 				AD0D2F25205B2E2900912130 /* FotoHelper.swift */,
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
+				ADC47275206C89FF008F8242 /* VagaHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
+				ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
