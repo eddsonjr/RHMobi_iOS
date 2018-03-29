@@ -48,7 +48,8 @@ class DetalhesVagaViewController: UIViewController {
         
         
         //Configurando a aparicao dos containers
-        self.container1.isHidden = false
+        self.container1.isHidden = true
+        self.container2.isHidden = false
         
        
     }
