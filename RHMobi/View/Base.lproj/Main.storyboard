@@ -236,7 +236,7 @@
                                 <rect key="frame" x="16" y="315" width="290" height="140"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOt-Cu-Kz7">
-                                        <rect key="frame" x="71" y="28" width="240" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="llU-Pn-YAm" kind="embed" id="wFE-gn-s22"/>
@@ -689,26 +689,44 @@
                     <view key="view" contentMode="scaleToFill" id="AJv-E8-w4y">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-l1-V3w">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XeG-B0-wCh">
+                                        <rect key="frame" x="50" y="12" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pKo-l1-V3w" firstAttribute="top" secondItem="AJv-E8-w4y" secondAttribute="top" id="Bhh-yh-5az"/>
+                            <constraint firstItem="pKo-l1-V3w" firstAttribute="leading" secondItem="AJv-E8-w4y" secondAttribute="leading" id="F0q-dX-Rni"/>
+                            <constraint firstAttribute="trailing" secondItem="pKo-l1-V3w" secondAttribute="trailing" id="OM7-YQ-yVl"/>
+                            <constraint firstAttribute="bottom" secondItem="pKo-l1-V3w" secondAttribute="bottom" id="h5G-qG-2xy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJ1-ed-QV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3909" y="-908"/>
+            <point key="canvasLocation" x="3907.5" y="-908.45070422535207"/>
         </scene>
         <!--Desc Req Vaga Container View Controller-->
         <scene sceneID="EFk-G8-FdL">
             <objects>
                 <viewController id="llU-Pn-YAm" customClass="DescReqVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Oi-pf-PZR">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoM-J7-rKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="-649"/>
+            <point key="canvasLocation" x="3908" y="-630"/>
         </scene>
     </scenes>
     <resources>
