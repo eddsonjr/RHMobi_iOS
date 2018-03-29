@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVV-kE-yOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="69"/>
+            <point key="canvasLocation" x="1069" y="586"/>
         </scene>
         <!--Cursos-->
         <scene sceneID="Vtl-by-Ulp">
@@ -850,12 +850,37 @@
                     <view key="view" contentMode="scaleToFill" id="5Oi-pf-PZR">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KX-nZ-Jmd">
+                                <rect key="frame" x="284" y="0.0" width="6" height="140"/>
+                                <color key="backgroundColor" red="0.70596712829999997" green="0.11017128079999999" blue="0.17228496069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="R8O-bo-tTF"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="w20-Vu-5zf">
+                                <rect key="frame" x="25" y="17" width="240" height="107"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w20-Vu-5zf" firstAttribute="centerY" secondItem="5Oi-pf-PZR" secondAttribute="centerY" id="0bv-hj-fh9"/>
+                            <constraint firstItem="w20-Vu-5zf" firstAttribute="top" secondItem="5Oi-pf-PZR" secondAttribute="top" constant="17" id="H5t-cI-VWT"/>
+                            <constraint firstItem="w20-Vu-5zf" firstAttribute="centerX" secondItem="5Oi-pf-PZR" secondAttribute="centerX" id="UHQ-2y-cRB"/>
+                            <constraint firstAttribute="trailing" secondItem="w20-Vu-5zf" secondAttribute="trailing" constant="25" id="VaP-mt-IL1"/>
+                            <constraint firstAttribute="trailing" secondItem="1KX-nZ-Jmd" secondAttribute="trailing" id="m65-bw-87V"/>
+                            <constraint firstAttribute="bottom" secondItem="1KX-nZ-Jmd" secondAttribute="bottom" id="sFt-b5-mhY"/>
+                            <constraint firstItem="1KX-nZ-Jmd" firstAttribute="top" secondItem="5Oi-pf-PZR" secondAttribute="top" id="zpf-7D-XIV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoM-J7-rKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="-630"/>
+            <point key="canvasLocation" x="3907.5" y="-630.63380281690138"/>
         </scene>
     </scenes>
     <resources>
