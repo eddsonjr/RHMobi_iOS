@@ -10,6 +10,10 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaga" inverseName="requisitos" inverseEntity="Vaga" syncable="YES"/>
     </entity>
+    <entity name="StatusVaga" representedClassName=".StatusVaga" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Vaga" representedClassName=".Vaga" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="experiencia" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,5 +30,6 @@
         <element name="Vaga" positionX="-272" positionY="-70" width="128" height="193"/>
         <element name="Requisitos" positionX="-54" positionY="54" width="128" height="90"/>
         <element name="AreasInteresse" positionX="-270" positionY="207" width="128" height="88"/>
+        <element name="StatusVaga" positionX="-135" positionY="108" width="128" height="75"/>
     </elements>
 </model>
