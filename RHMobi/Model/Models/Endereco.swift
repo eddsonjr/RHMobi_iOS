@@ -7,23 +7,35 @@
 //
 
 import Foundation
+import CoreData
 
-class Endereco: Decodable,Encodable {
+class Endereco: NSManagedObject {
     
-    var bairro: String
-    var logradouro: String
-    var cep: String
-    var cidade: String
-    var estado: String
+    @NSManaged var bairro: String
+    @NSManaged var logradouro: String
+    @NSManaged var cep: String
+    @NSManaged var cidade: String
+    @NSManaged var estado: String
     
     
-    //construtor
+    //Construtores
+    
+    //Construtor completo
     init(bairro: String, logradouro: String, cep: String,cidade: String, estado: String) {
+        let entity = NSEntityDescription.entity(forEntityName: "Endereco", in: CoreDataHelper.getContext())!
+        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
+        
         self.bairro = bairro
         self.logradouro = logradouro
         self.cep = cep
         self.cidade = cidade
         self.estado = estado
+    }
+    
+    
+    @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
+    private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
     }
     
 }
