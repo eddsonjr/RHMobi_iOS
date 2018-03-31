@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import SwiftyJSON
 
 class Requisitos: NSManagedObject {
     
@@ -32,5 +33,14 @@ class Requisitos: NSManagedObject {
     private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
         super.init(entity: entity, insertInto: context)
     }
+    
+    
+    //Mark: Metodo de decode from json
+    static func decode(fromJson: JSON?) -> Any? {
+        return Requisitos(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!)
+        
+    }
+    
+    
     
 }
