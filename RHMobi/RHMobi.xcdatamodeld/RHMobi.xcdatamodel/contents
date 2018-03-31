@@ -15,17 +15,22 @@
         <attribute name="sobrenome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefone1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefone2" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CV" inverseName="candidato" inverseEntity="CV" syncable="YES"/>
     </entity>
     <entity name="Cliente" representedClassName=".Cliente" syncable="YES">
         <attribute name="cnpj" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="endereco" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Endereco" inverseName="cliente" inverseEntity="Endereco" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaga" inverseName="cliente" inverseEntity="Vaga" syncable="YES"/>
     </entity>
     <entity name="CV" representedClassName=".CV" syncable="YES">
         <attribute name="dataCriacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="candidato" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Candidato" inverseName="cv" inverseEntity="Candidato" syncable="YES"/>
+        <relationship name="statusCV" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatusCV" inverseName="cv" inverseEntity="StatusCV" syncable="YES"/>
     </entity>
     <entity name="Endereco" representedClassName=".Endereco" syncable="YES">
         <attribute name="bairro" optional="YES" attributeType="String" syncable="YES"/>
@@ -33,15 +38,22 @@
         <attribute name="cidade" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="logradouro" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="endereco" inverseEntity="Cliente" syncable="YES"/>
     </entity>
     <entity name="Requisitos" representedClassName=".Requisitos" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaga" inverseName="requisitos" inverseEntity="Vaga" syncable="YES"/>
     </entity>
+    <entity name="StatusCV" representedClassName=".StatusCV" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CV" inverseName="statusCV" inverseEntity="CV" syncable="YES"/>
+    </entity>
     <entity name="StatusVaga" representedClassName=".StatusVaga" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaga" inverseName="vagaStatus" inverseEntity="Vaga" syncable="YES"/>
     </entity>
     <entity name="Vaga" representedClassName=".Vaga" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
@@ -53,16 +65,19 @@
         <attribute name="prazo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresse" inverseName="vaga" inverseEntity="AreasInteresse" syncable="YES"/>
+        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="vaga" inverseEntity="Cliente" syncable="YES"/>
         <relationship name="requisitos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Requisitos" inverseName="vaga" inverseEntity="Requisitos" syncable="YES"/>
+        <relationship name="vagaStatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatusVaga" inverseName="vaga" inverseEntity="StatusVaga" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AreasInteresse" positionX="-270" positionY="207" width="128" height="88"/>
-        <element name="Cliente" positionX="-117" positionY="126" width="128" height="105"/>
-        <element name="CV" positionX="-126" positionY="117" width="128" height="90"/>
-        <element name="Endereco" positionX="-108" positionY="135" width="128" height="120"/>
-        <element name="Requisitos" positionX="-54" positionY="54" width="128" height="90"/>
-        <element name="StatusVaga" positionX="-135" positionY="108" width="128" height="75"/>
-        <element name="Vaga" positionX="-272" positionY="-70" width="128" height="193"/>
-        <element name="Candidato" positionX="-162" positionY="81" width="128" height="180"/>
+        <element name="AreasInteresse" positionX="-254" positionY="243" width="128" height="88"/>
+        <element name="Cliente" positionX="7" positionY="92" width="128" height="133"/>
+        <element name="CV" positionX="-720" positionY="234" width="128" height="118"/>
+        <element name="Endereco" positionX="-2" positionY="299" width="128" height="133"/>
+        <element name="Requisitos" positionX="-11" positionY="-63" width="128" height="90"/>
+        <element name="StatusVaga" positionX="-495" positionY="-63" width="128" height="88"/>
+        <element name="Vaga" positionX="-272" positionY="-70" width="128" height="223"/>
+        <element name="Candidato" positionX="-459" positionY="189" width="128" height="193"/>
+        <element name="StatusCV" positionX="-693" positionY="54" width="128" height="90"/>
     </elements>
 </model>

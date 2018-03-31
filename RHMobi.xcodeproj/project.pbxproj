@@ -165,6 +165,13 @@
 			path = CodigosAntigos;
 			sourceTree = "<group>";
 		};
+		AD3AFA09207044AE00FE6FE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AD7B19F1205C5A5E00A012D6 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +208,7 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
+				AD3AFA09207044AE00FE6FE8 /* ViewModel */,
 				AD3AF9D720702E2000FE6FE8 /* CodigosAntigos */,
 				AD7B19F1205C5A5E00A012D6 /* Enums */,
 				AD8847D920575389000DD6A1 /* Helpers */,
