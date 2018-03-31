@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import UIKit
 
-
+/*
 class CandidatoDAO: NSObject {
     
    
@@ -159,3 +159,6 @@ class CandidatoDAO: NSObject {
     
     
 }
+ 
+ 
+ */

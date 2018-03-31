@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import SwiftyJSON
 
 
 
@@ -32,7 +32,7 @@ class Vaga: NSManagedObject {
     
     //Construtor completo
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente) {
+         prazo: String, descricao: String, requisitos: Set<Requisitos>, areasInteresse: Set<AreasInteresse>, imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente) {
         
         let entity = NSEntityDescription.entity(forEntityName: "Vaga", in: CoreDataHelper.getContext())!
         super.init(entity: entity, insertInto: CoreDataHelper.getContext())

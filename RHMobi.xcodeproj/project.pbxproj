@@ -157,6 +157,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD3AF9D720702E2000FE6FE8 /* CodigosAntigos */ = {
+			isa = PBXGroup;
+			children = (
+				ADD04AF92061840C004340A7 /* CandidatoDAO.swift */,
+			);
+			path = CodigosAntigos;
+			sourceTree = "<group>";
+		};
 		AD7B19F1205C5A5E00A012D6 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +201,7 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
+				AD3AF9D720702E2000FE6FE8 /* CodigosAntigos */,
 				AD7B19F1205C5A5E00A012D6 /* Enums */,
 				AD8847D920575389000DD6A1 /* Helpers */,
 				AD8847CB2057414A000DD6A1 /* Extensions */,
@@ -323,7 +332,6 @@
 		ADD04AF8206183FF004340A7 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				ADD04AF92061840C004340A7 /* CandidatoDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -584,15 +592,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
