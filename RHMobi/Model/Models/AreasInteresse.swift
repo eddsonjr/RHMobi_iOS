@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 
-
 class AreasInteresse: NSManagedObject {
     
     @NSManaged var id: Int

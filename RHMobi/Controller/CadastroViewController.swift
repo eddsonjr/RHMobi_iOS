@@ -60,11 +60,11 @@ class CadastroViewController: UIViewController {
         adqurirDadosDosCampos()
         print(dbgmsg + "Cadastrando: \(candidato)")
         
-        if(CandidatoDAO.salvar(candidato: self.candidato)){
-            print(dbgmsg + "Candidato cadastrado com sucesso")
-        }else{
-            print(dbgmsg + "Falha ao cadastrar ou esta faltando itens")
-        }
+//        if(CandidatoDAO.salvar(candidato: self.candidato)){
+//            print(dbgmsg + "Candidato cadastrado com sucesso")
+//        }else{
+//            print(dbgmsg + "Falha ao cadastrar ou esta faltando itens")
+//        }
     }
     
     

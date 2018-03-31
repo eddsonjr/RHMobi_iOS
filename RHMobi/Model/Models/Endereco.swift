@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import SwiftyJSON
 
 class Endereco: NSManagedObject {
     
@@ -17,6 +18,7 @@ class Endereco: NSManagedObject {
     @NSManaged var cidade: String
     @NSManaged var estado: String
     
+
     
     //Construtores
     
@@ -36,6 +38,13 @@ class Endereco: NSManagedObject {
     @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
     private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
         super.init(entity: entity, insertInto: context)
+    }
+    
+    
+    
+    //Mark: Metodo de codificacao via json: Recebe um json e retonra
+    static func decode(fromJson: JSON?) -> Any? {
+        return Endereco(bairro: fromJson!["bairro"].string!, logradouro: fromJson!["logradouro"].string!, cep: fromJson!["cep"].string!, cidade: fromJson!["cidade"].string!, estado: fromJson!["estado"].string!)
     }
     
 }
