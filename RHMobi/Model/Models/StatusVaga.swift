@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import SwiftyJSON
 
 
 class StatusVaga: NSManagedObject  {
@@ -34,4 +35,12 @@ class StatusVaga: NSManagedObject  {
     private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
         super.init(entity: entity, insertInto: context)
     }
+    
+    //Mark: Metodo de decode from json
+    static func decode(fromJson: JSON?) -> Any? {
+        return StatusVaga(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!)
+        
+    }
+    
+    
 }
