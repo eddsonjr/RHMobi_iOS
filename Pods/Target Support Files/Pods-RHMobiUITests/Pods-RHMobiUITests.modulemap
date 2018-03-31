@@ -1,6 +1,0 @@
-framework module Pods_RHMobiUITests {
-  umbrella header "Pods-RHMobiUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

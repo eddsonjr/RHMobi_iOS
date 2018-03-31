@@ -7,7 +7,6 @@ target 'RHMobi' do
 
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.7'
-  pod 'RealmSwift'
 
   # Pods for RHMobi
 
