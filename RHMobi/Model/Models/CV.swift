@@ -7,21 +7,42 @@
 //
 
 import Foundation
+import CoreData
 
 
-class CV: Decodable, Encodable {
+class CV: NSManagedObject {
     
-    var id: Int
-    var dataCriacao: String
-    var url: String //verificar se é aplicavel
-    var statusCV: StatusCV
+    @NSManaged var id: Int
+    @NSManaged var dataCriacao: String
+    @NSManaged var url: String //verificar se é aplicavel
+    @NSManaged var statusCV: StatusCV
     
+    
+    //Construtores
+    
+    //Construto completo
     init(id: Int, dataCriacao: String, url: String, statusCV: StatusCV) {
+        
+        let entity = NSEntityDescription.entity(forEntityName: "CV", in: CoreDataHelper.getContext())!
+        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
+        
+        
+        
         self.id = id
         self.dataCriacao = dataCriacao
         self.url = url
         self.statusCV = statusCV
     }
+    
+    
+    
+    @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
+    private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
+    }
+    
+    
+    
     
     
 }
