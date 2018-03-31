@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Requisitos: NSManagedObjectContext {
+class Requisitos: NSManagedObject {
     
     @NSManaged var id: Int
     @NSManaged var nome: String

@@ -11,7 +11,7 @@ import CoreData
 
 
 
-class AreasInteresse: NSManagedObjectContext {
+class AreasInteresse: NSManagedObject {
     
     @NSManaged var id: Int
     @NSManaged var nome: String
