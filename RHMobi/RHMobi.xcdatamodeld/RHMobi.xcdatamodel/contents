@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1036" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AreasInteresse" representedClassName=".AreasInteresse" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Requisitos" representedClassName=".Requisitos" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,5 +23,6 @@
     <elements>
         <element name="Vaga" positionX="-272" positionY="-70" width="128" height="178"/>
         <element name="Requisitos" positionX="-54" positionY="54" width="128" height="90"/>
+        <element name="AreasInteresse" positionX="-144" positionY="36" width="128" height="75"/>
     </elements>
 </model>
