@@ -5,6 +5,12 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vaga" inverseName="areasInteresse" inverseEntity="Vaga" syncable="YES"/>
     </entity>
+    <entity name="Cliente" representedClassName=".Cliente" syncable="YES">
+        <attribute name="cnpj" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="CV" representedClassName=".CV" syncable="YES">
         <attribute name="dataCriacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -37,5 +43,6 @@
         <element name="AreasInteresse" positionX="-270" positionY="207" width="128" height="88"/>
         <element name="StatusVaga" positionX="-135" positionY="108" width="128" height="75"/>
         <element name="CV" positionX="-126" positionY="117" width="128" height="90"/>
+        <element name="Cliente" positionX="-117" positionY="126" width="128" height="105"/>
     </elements>
 </model>
