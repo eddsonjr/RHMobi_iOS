@@ -40,6 +40,8 @@
 		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
 		ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */; };
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
+		ADBEDBDF2070120300DB53CA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */; };
+		ADBEDBE02070120300DB53CA /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDE2070120300DB53CA /* JsonHelper.swift */; };
 		ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */; };
 		ADC47274206C7DBC008F8242 /* DescReqVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */; };
 		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
@@ -105,6 +107,8 @@
 		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
 		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		ADBEDBDE2070120300DB53CA /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescReqVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 			children = (
 				AD0D2F25205B2E2900912130 /* FotoHelper.swift */,
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
+				ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */,
+				ADBEDBDE2070120300DB53CA /* JsonHelper.swift */,
 				ADC47275206C89FF008F8242 /* VagaHelper.swift */,
 			);
 			path = Helpers;
@@ -634,6 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBEDBDF2070120300DB53CA /* CoreDataHelper.swift in Sources */,
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
 				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
@@ -663,6 +670,7 @@
 				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,
 				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */,
+				ADBEDBE02070120300DB53CA /* JsonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
