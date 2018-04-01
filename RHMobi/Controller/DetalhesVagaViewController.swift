@@ -38,17 +38,15 @@ class DetalhesVagaViewController: UIViewController {
         print(dbgmsg + " View controller carregada")
         print(dbgmsg + "Vaga selecionada: \(VagaHelper.vaga?.nome)")
      
-        
         //Setando a imagem da vaga
         self.imageView.downloadedFrom(link: (VagaHelper.vaga?.imgUrl)!)
         
         //Setando o titulo da navigation
         self.navigationItem.title = "Resumo da Vaga"
         
-        
         //Configurando a aparicao dos containers
         self.container1.isHidden = true
-        self.container2.isHidden = false
+        self.container2.isHidden = false //Container 2 equivale ao resumo da vaga
         
        
     }
@@ -65,13 +63,17 @@ class DetalhesVagaViewController: UIViewController {
         
         switch sender.selectedSegmentIndex {
         case 0:
-
-            
+            self.container1.isHidden = true
+            self.container2.isHidden = false //Container 2 equivale ao resumo da vaga
             break
         case 1:
-
+            self.container1.isHidden = false
+            self.container2.isHidden = true //Container 2 equivale ao resumo da vaga
             break
-        case 2: break
+        case 2:
+            self.container1.isHidden = false
+            self.container2.isHidden = true //Container 2 equivale ao resumo da vaga
+            break
 
             
         default:
