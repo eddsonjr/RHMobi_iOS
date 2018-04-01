@@ -38,11 +38,15 @@ class ListaEDetalheVagaViewModel {
                 let vaga = Vaga.decode(fromJson: j)
                 vagas.append(vaga as! Vaga)
                 
-                
             }
-            
             print(self.dbgmsg + "Decodificada \(vagas.count) vagas!")
+            
+            DispatchQueue.main.async {
+                completihonHandler(vagas)
+            }
         }
+        
+        
     }
     
     

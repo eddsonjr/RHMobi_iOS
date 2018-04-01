@@ -16,7 +16,7 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     @IBOutlet weak var vagasSearchBar: UISearchBar!
   
     
-    
+    private final let dbgmsg = "[ListaVagasViewController]: "
     
     //Mark: Lista de variaveis
     var listaVagas = [Vaga]()
@@ -24,6 +24,7 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     var dadosFiltradosBusca = [Vaga]()
     
     
+    //Mark: variavel do viewmodel da lista de vagas e dos detalhes da vaga
     var viewModel = ListaEDetalheVagaViewModel()
     
     
@@ -44,9 +45,12 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         //Configurando o delegate da search bar
         self.vagasSearchBar.delegate = self
         self.vagasSearchBar.returnKeyType = UIReturnKeyType.done
+    
         
         viewModel.baixarListaVagaJson { vaga in
-            print("Vagas capacidade: \(vaga.count)")
+            print(self.dbgmsg + "Tableview tera \(vaga.count) celulas que vieram do json...")
+            self.listaVagas = vaga
+            self.vagasTableView.reloadData()
         }
         
       

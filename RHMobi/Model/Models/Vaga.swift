@@ -84,28 +84,32 @@ class Vaga: NSManagedObject {
     
     
     //Mark: Metodo para decodificar objeto atraves de json
-    static func decode(fromJson json: JSON?) -> Any? {
+    static func decode(fromJson: JSON?) -> Any? {
         
         let requisitosSet = Set<Requisitos>()
         let areasInteresseSet = Set<AreasInteresse>()
         
         //Decodifica o set de requisitos
-        for (_, subJson):(String, JSON) in JSON(json!["requisitos"]) {
+        for (_, subJson):(String, JSON) in JSON(fromJson!["requisitos"]) {
             //requisitosSet.insert(Requisitos.decode(fromJson: subjson) as! Requisitos)
         }
         
         //Decodifica o set de areas de interesse
-        for (_, subJson):(String, JSON) in JSON(json!["areasInteresse"]) {
+        for (_, subJson):(String, JSON) in JSON(fromJson!["areasInteresse"]) {
             //areasInteresseSet.insert(AreasInteresse.decode(fromJson: subjson) as! AreasInteresse)
         }
+
+        let statusVagaSubjson = fromJson!["vagaStatus"] as JSON
+        let clienteSubjson = fromJson!["cliente"]  as JSON
         
-        let statusVaga = StatusVaga.decode(fromJson: json) as! StatusVaga
-        let cliente = Cliente.decode(fromJson: json) as! Cliente
+        let statusVaga = StatusVaga.decode(fromJson: statusVagaSubjson) as! StatusVaga
+        let cliente = Cliente.decode(fromJson: clienteSubjson) as! Cliente
         
-        let vaga = Vaga(id: json!["id"].int!, nome: json!["nome"].string!, tipoContrato: json!["tipoContrato"].string!,
-                        funcao: json!["funcao"].string!, experiencia: json!["experiencia"].string!,
-                        prazo: json!["prazo"].string!, descricao:  json!["descricao"].string!, requisitos: requisitosSet,
-                        areasInteresse: areasInteresseSet, imgUrl: json!["imgUrl"].string!, vagaStatus: statusVaga,
+        
+        let vaga = Vaga(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!, tipoContrato: fromJson!["tipoContrato"].string!,
+                        funcao: fromJson!["funcao"].string!, experiencia: fromJson!["experiencia"].string!,
+                        prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: requisitosSet,
+                        areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!, vagaStatus: statusVaga,
                         cliente: cliente)
 
         

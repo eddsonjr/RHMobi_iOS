@@ -57,15 +57,15 @@ class Cliente: NSManagedObject {
     
     
     //Mark: Metodo de decodificacao via json
-    static func decode(fromJson json: JSON?) -> Any? {
-     
-        let endereco = Endereco.decode(fromJson: json) as? Endereco
-        
-        let cliente = Cliente.init(id: json!["id"].int!, cnpj: json!["cnpj"].string!,
-                                   razaoSocial: json!["razaoSocial"].string!, ramoAtuacao: json!["ramoAtuacao"].string!,
+    static func decode(fromJson: JSON?) -> Any? {
+    
+        let subjsonEndereco = fromJson!["endereco"] as JSON
+        let endereco = Endereco.decode(fromJson: subjsonEndereco) as? Endereco
+        let cliente = Cliente.init(id: fromJson!["id"].int!, cnpj: fromJson!["cnpj"].string!,
+                                   razaoSocial: fromJson!["razaoSocial"].string!,
+                                   ramoAtuacao: fromJson!["ramoAtuacao"].string!,
                                    endereco: endereco!)
-        
-        
+
         return cliente
         
     }
