@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
+class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
     
     //Mark: Atributos visuais
     @IBOutlet weak var vagasTableView: UITableView!
@@ -45,15 +45,6 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         self.vagasSearchBar.delegate = self
         self.vagasSearchBar.returnKeyType = UIReturnKeyType.done
         
-        
-        
-//        //Fazendo download do json
-//        decode(jsonUrl: UrlEnumHelper.vagasDownlodUrl.rawValue) {
-//            print("Download sucessfull....")
-//            self.vagasTableView.reloadData()
-//        }
-        
-        
         viewModel.baixarListaVagaJson { vaga in
             print("Vagas capacidade: \(vaga.count)")
         }
@@ -69,38 +60,8 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         
     }
     
-    
-    //Mark: Funcoes do delegate JsonDelegate
-    func decode(jsonUrl: String, completionHandler: @escaping () -> ()) {
-        let url = URL(string: jsonUrl)
-        
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error == nil {
-                do{
-                    self.listaVagas = try JSONDecoder().decode([Vaga].self, from: data!)
-                    
-                    //Somente para impressao
-                    print("Json downloaded: ")
-                    print(String(data: data!, encoding: .utf8))
-                    
-                    DispatchQueue.main.async {
-                        completionHandler()
-                    }
-                }catch let err {
-                    print("Json error")
-                    print(err)
-                }
-            }
-            
-            }.resume()
-    }
-    
-    
-    func encode(jsonUrl: String) {
-        //Nothing todo here!
-    }
 
-    
+    //#### FUNCOES DA TABLE VIEW ######
     
     //Mark: Funcoes para conformar com os protocolos da tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -152,6 +113,11 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     }
     
     
+    
+    
+    //####### FUNCOES PARA SEARCH BAR #########
+    
+    
     //Funcao para realizar busca
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("Procurando...")
@@ -171,6 +137,9 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         }
     }
     
+    
+    
+    //########### FUNCOES DE SEGUE E TROCA DE TELA ################
     
     
     //Mark: Funcao de enviar dados para a proxima tela

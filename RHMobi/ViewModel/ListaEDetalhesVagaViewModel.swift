@@ -19,58 +19,31 @@ class ListaEDetalheVagaViewModel {
     private final let dbgmsg = "[ListaEDetalhesVagaViewModel]: "
     
     
-    //Mark: Esta funcao serve para baixar os dados via json e posteriormente
-    //popular a tableview
+    //Mark: Esta funcao serve para baixar os dados via json e codifica - los em um array de vagas
     
     func baixarListaVagaJson(completihonHandler: @escaping ([Vaga])->()){
-        var jsonHelper: JsonHelper = JsonHelper(url: UrlEnumHelper.vagasDownlodUrl.rawValue)
+        let jsonHelper: JsonHelper = JsonHelper(url: UrlEnumHelper.vagasDownlodUrl.rawValue)
         jsonHelper.getDataFromJson { json in
             guard let json = json else {return}
             print(self.dbgmsg + "Json recebido: \n")
             print(json)
             
+            print(self.dbgmsg + "Decodificando o json em vagas vagas!")
+            let jsonArray = json.array
+            print(self.dbgmsg + "Baixado \(jsonArray?.count) vagas via json!")
             
+            var vagas = [Vaga]()
+            for j in jsonArray! {
+                print(self.dbgmsg + "subjson: \(j)")
+                let vaga = Vaga.decode(fromJson: j)
+                vagas.append(vaga as! Vaga)
+                
+                
+            }
             
-            
-            
-            
+            print(self.dbgmsg + "Decodificada \(vagas.count) vagas!")
         }
     }
-    
-    
-    /*
- 
-     
-     
-     let jsonArray = json.array
-     print("Tamanho do json array: \(jsonArray?.count)")
-     
-     for j in jsonArray! {
-     print("subjson: \(j)")
-     let dono = Dono.fromJSON(json: j)
-     self.donos.append(dono)
-     print("Tamanho dono: \(self.donos.count)")
-     
-     
- 
- 
- var jsonHelper: JsonHelper = JsonHelper(url: "https://api.myjson.com/bins/1fsupr")
- 
- jsonHelper.getDataFromJson { json in
- guard let json = json else { return }
- print(json)
- 
- print("DECODIFICANDO UM DONO USANDO O JSON RECEBIDO")
- let dono = Dono.decode(fromJson: json)
- 
- DispatchQueue.main.async {
- completihonHandler(dono as! Dono)
- }
- 
- 
- }
- 
- */
     
     
 }
