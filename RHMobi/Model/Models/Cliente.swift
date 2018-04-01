@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import SwiftyJSON
 
 class Cliente: NSManagedObject {
     
@@ -52,6 +53,21 @@ class Cliente: NSManagedObject {
     @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
     private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
         super.init(entity: entity, insertInto: context)
+    }
+    
+    
+    //Mark: Metodo de decodificacao via json
+    static func decode(fromJson json: JSON?) -> Any? {
+     
+        var endereco = Endereco.decode(fromJson: json) as? Endereco
+        
+        let cliente = Cliente.init(id: json!["id"].int!, cnpj: json!["cnpj"].string!,
+                                   razaoSocial: json!["razaoSocial"].string!, ramoAtuacao: json!["ramoAtuacao"].string!,
+                                   endereco: endereco!)
+        
+        
+        return cliente
+        
     }
     
     
