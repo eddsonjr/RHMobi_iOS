@@ -98,7 +98,7 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             
             
             //Fazendo download da imagem de forma assincrona
-            //cell?.vagaImageView.downloadedFrom(link: self.listaVagas[indexPath.row].imgUrl)
+            cell?.vagaImageView.downloadedFrom(link: self.listaVagas[indexPath.row].imgUrl)
             
         }
         
@@ -144,7 +144,6 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     
     
     //########### FUNCOES DE SEGUE E TROCA DE TELA ################
-    
     
     //Mark: Funcao de enviar dados para a proxima tela
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
