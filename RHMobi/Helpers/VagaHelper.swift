@@ -14,5 +14,4 @@ class VagaHelper {
     
     static var vaga: Vaga?
     
-    
 }

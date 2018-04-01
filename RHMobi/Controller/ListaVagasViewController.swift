@@ -78,6 +78,8 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     }
 
 
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VagasCell") as? VagasTableViewCell
         
@@ -106,11 +108,19 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     }
 
 
+    
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Disparar acao ao selecionar uma celula
+        // Disparar acao ao selecionar uma celula e tambem armazenando a celula no helper
+        VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
         performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
 
     }
+    
+    
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 131
@@ -140,18 +150,5 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             
         }
     }
-    
-    
-    
-    //########### FUNCOES DE SEGUE E TROCA DE TELA ################
-    
-    //Mark: Funcao de enviar dados para a proxima tela
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if let destination = segue.destination as? DetalhesVagaViewController {
-            VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
-        }
-    }
-    
-
 }
 

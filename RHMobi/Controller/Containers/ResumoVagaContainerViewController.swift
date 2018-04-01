@@ -9,9 +9,19 @@
 import UIKit
 
 class ResumoVagaContainerViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var tipoContratoLabel: UILabel!
+    @IBOutlet weak var localVagaLabel: UILabel!
+    @IBOutlet weak var cargoVagaLabel: UILabel!
+    @IBOutlet weak var experienciaVagaLabel: UILabel!
+    @IBOutlet weak var submissaoVagaLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Configurando os campos para carregar os dados da vaga
+        popularLabels()
 
        
     }
@@ -21,6 +31,19 @@ class ResumoVagaContainerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    private func popularLabels(){
+        self.tipoContratoLabel.text = VagaHelper.vaga?.tipoContrato
+        self.cargoVagaLabel.text = VagaHelper.vaga?.funcao
+        self.experienciaVagaLabel.text = VagaHelper.vaga?.experiencia
+        self.submissaoVagaLabel.text = VagaHelper.vaga?.prazo
+       
+        
+        let localVaga = (VagaHelper.vaga?.cliente.endereco.cidade)! + "," +  (VagaHelper.vaga?.cliente.endereco.estado)!
+        
+         self.localVagaLabel.text = localVaga
+        
+    }
 
 
 

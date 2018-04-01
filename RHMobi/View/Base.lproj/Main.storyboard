@@ -845,9 +845,17 @@
                             <constraint firstItem="eXG-G8-7Qo" firstAttribute="centerY" secondItem="AJv-E8-w4y" secondAttribute="centerY" id="phD-zX-PHX"/>
                             <constraint firstAttribute="trailing" secondItem="eXG-G8-7Qo" secondAttribute="trailing" id="zOU-eS-OBv"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="W0E-uT-Ix7"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="290" height="200"/>
+                    <connections>
+                        <outlet property="cargoVagaLabel" destination="oNB-Ng-FvY" id="Gec-Uf-f9H"/>
+                        <outlet property="experienciaVagaLabel" destination="PtM-TL-mUa" id="pve-hk-idQ"/>
+                        <outlet property="localVagaLabel" destination="zjg-WA-zOL" id="2FP-ds-ZVK"/>
+                        <outlet property="submissaoVagaLabel" destination="L7L-aR-zux" id="FW0-SC-msl"/>
+                        <outlet property="tipoContratoLabel" destination="4IE-RB-ekx" id="HPi-fn-6CW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJ1-ed-QV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -886,6 +894,7 @@
                             <constraint firstAttribute="bottom" secondItem="1KX-nZ-Jmd" secondAttribute="bottom" id="sFt-b5-mhY"/>
                             <constraint firstItem="1KX-nZ-Jmd" firstAttribute="top" secondItem="5Oi-pf-PZR" secondAttribute="top" id="zpf-7D-XIV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="sVl-AX-7Aq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoM-J7-rKC" userLabel="First Responder" sceneMemberID="firstResponder"/>

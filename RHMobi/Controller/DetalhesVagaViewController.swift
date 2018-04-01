@@ -31,7 +31,6 @@ class DetalhesVagaViewController: UIViewController {
     
     
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +57,9 @@ class DetalhesVagaViewController: UIViewController {
     }
 
     
+    
+    //### FUNCAO DO SEGMENTED CONTROLLER #######
+    
     //Mark: Funcao para selecionar o tipo de informacao do detalhe da vaga
     @IBAction func switchInfosVagas(_ sender: UISegmentedControl) {
         
@@ -82,10 +84,19 @@ class DetalhesVagaViewController: UIViewController {
         
     }
     
+    
+    
+    
+    
+    //####### FUNCOES DAS ACTIONS DOS BOTOES ##########
+    
     //Mark: Acao do botao de cadindatar - se
     @IBAction func candidatar_se_a_vaga(_ sender: Any) {
         performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
     }
+    
+    
+    
     
     
     
