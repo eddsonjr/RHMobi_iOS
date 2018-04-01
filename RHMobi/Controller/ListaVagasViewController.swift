@@ -24,6 +24,9 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
     var dadosFiltradosBusca = [Vaga]()
     
     
+    var viewModel = ListaEDetalheVagaViewModel()
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .lightContent
@@ -44,12 +47,18 @@ class ListaVagasViewController: UIViewController,JsonDelegate,UITableViewDelegat
         
         
         
-        //Fazendo download do json
-        decode(jsonUrl: UrlEnumHelper.vagasDownlodUrl.rawValue) {
-            print("Download sucessfull....")
-            self.vagasTableView.reloadData()
+//        //Fazendo download do json
+//        decode(jsonUrl: UrlEnumHelper.vagasDownlodUrl.rawValue) {
+//            print("Download sucessfull....")
+//            self.vagasTableView.reloadData()
+//        }
+        
+        
+        viewModel.baixarListaVagaJson { vaga in
+            print("Vagas capacidade: \(vaga.count)")
         }
         
+      
        
     }
 

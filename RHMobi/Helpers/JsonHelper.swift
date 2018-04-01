@@ -11,8 +11,6 @@ import SwiftyJSON
 import Alamofire
 
 
-//teste: https://api.myjson.com/bins/vx47b
-
 class JsonHelper {
     
     var url: String?
