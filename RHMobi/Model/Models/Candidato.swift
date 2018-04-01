@@ -73,4 +73,7 @@ class Candidato: NSManagedObject {
     }
     
     
+    
+    //TODO - FALTA IMPLEMENTAR O DECODE DO CANDIDATO
+    
 }

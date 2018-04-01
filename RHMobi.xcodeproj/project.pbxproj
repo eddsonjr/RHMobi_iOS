@@ -46,6 +46,7 @@
 		ADC47274206C7DBC008F8242 /* DescReqVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */; };
 		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
 		ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF92061840C004340A7 /* CandidatoDAO.swift */; };
+		ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescReqVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
 		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
+		ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEDetalhesVagaViewModel.swift; sourceTree = "<group>"; };
 		BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D014E1A1EBD0A1CEDFCEAC4F /* Pods-RHMobi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.debug.xcconfig"; sourceTree = "<group>"; };
 		D202F91CCF48FAA53F572420 /* Pods-RHMobi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobi/Pods-RHMobi.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		AD3AFA09207044AE00FE6FE8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
+				ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */,
 				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
 				ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */,
 				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,

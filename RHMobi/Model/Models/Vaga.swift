@@ -81,6 +81,8 @@ class Vaga: NSManagedObject {
     }
     
     
+    
+    
     //Mark: Metodo para decodificar objeto atraves de json
     static func decode(fromJson json: JSON?) -> Any? {
         
@@ -107,7 +109,7 @@ class Vaga: NSManagedObject {
                         cliente: cliente)
 
         
-        return vaga        
+        return vaga
     }
     
     
