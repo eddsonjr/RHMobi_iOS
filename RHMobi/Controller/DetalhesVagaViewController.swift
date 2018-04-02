@@ -46,7 +46,7 @@ class DetalhesVagaViewController: UIViewController {
         //Configurando a aparicao dos containers
         self.container1.isHidden = true  //Container 1 equivale a descricao da vaga
         self.container2.isHidden = false //Container 2 equivale ao resumo da vaga
-        self.container3.isHidden = false //Container 3 equivale ao requisitos da vaga
+        self.container3.isHidden = true //Container 3 equivale ao requisitos da vaga
         
        
     }

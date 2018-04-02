@@ -14,8 +14,9 @@ class RequisitosVagaContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("AQUI CARALHO.. PORRA... FILHO DA PUTA")
         self.reqTextArea.text = crirarListaRequisitos()
+        print("Lista: \(crirarListaRequisitos())")
 
     }
 
@@ -28,6 +29,7 @@ class RequisitosVagaContainerViewController: UIViewController {
     private func crirarListaRequisitos() -> String {
         
         let setRequisitosVaga = VagaHelper.vaga?.requisitos
+       
         var reqString = ""
         for req in setRequisitosVaga! {
             reqString = reqString + req.nome + "\n"

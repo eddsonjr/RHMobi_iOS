@@ -86,17 +86,17 @@ class Vaga: NSManagedObject {
     //Mark: Metodo para decodificar objeto atraves de json
     static func decode(fromJson: JSON?) -> Any? {
         
-        let requisitosSet = Set<Requisitos>()
-        let areasInteresseSet = Set<AreasInteresse>()
+        var requisitosSet = Set<Requisitos>()
+        var areasInteresseSet = Set<AreasInteresse>()
         
         //Decodifica o set de requisitos
         for (_, subJson):(String, JSON) in JSON(fromJson!["requisitos"]) {
-            //requisitosSet.insert(Requisitos.decode(fromJson: subjson) as! Requisitos)
+            requisitosSet.insert(Requisitos.decode(fromJson: subJson) as! Requisitos)
         }
         
         //Decodifica o set de areas de interesse
         for (_, subJson):(String, JSON) in JSON(fromJson!["areasInteresse"]) {
-            //areasInteresseSet.insert(AreasInteresse.decode(fromJson: subjson) as! AreasInteresse)
+            areasInteresseSet.insert(AreasInteresse.decode(fromJson: subJson) as! AreasInteresse)
         }
 
         let statusVagaSubjson = fromJson!["vagaStatus"] as JSON
