@@ -54,21 +54,31 @@ class ListaEDetalheVagaViewModel {
     
     //Somente para teste
     func salvarVagaTeste() {
-        do{
+
+        
+        do {
             try CoreDataHelper.getContext().save()
             print("Vaga salva!")
-        }catch let err {
-            print(err)
+            getAllVagasTeste()
+        }catch {
+           print("Erro ao salvar a vaga")
         }
+        
+        
+        
     }
     
     
+    
+    
+    
+    
+    
     func getAllVagasTeste()  {
-       var vagas: [Vaga]? = nil
+        var vagas: [Vaga]? = nil
         do {
             vagas = try CoreDataHelper.getContext().fetch(Vaga.fetchRequest()) as? [Vaga]
             print("Retornado do banco: \(String(describing: vagas?.count))")
-            print("Nome da ultima vaga : \(String(describing: vagas?.last?.nome))")
         }catch let err {
             print(err)
         }
