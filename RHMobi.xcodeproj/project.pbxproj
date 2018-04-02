@@ -10,6 +10,7 @@
 		074BC6B34A2A4FBEBD39AC45 /* Pods_RHMobiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AA7BEFDFA1C2B10BADE3BB /* Pods_RHMobiTests.framework */; };
 		2028D1FD04A90D709D29A6C2 /* Pods_RHMobi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832013FB383D66CDC755C5F1 /* Pods_RHMobi.framework */; };
 		29620EADCEC9D93B9993A5DD /* Pods_RHMobiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC5270027925376583D855F /* Pods_RHMobiUITests.framework */; };
+		AD091C522072866E00F45376 /* RequisitosVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD091C512072866E00F45376 /* RequisitosVagaContainerViewController.swift */; };
 		AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F25205B2E2900912130 /* FotoHelper.swift */; };
 		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
 		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
@@ -73,6 +74,7 @@
 		50500284D671A76EF63E894A /* Pods-RHMobiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiTests/Pods-RHMobiTests.release.xcconfig"; sourceTree = "<group>"; };
 		832013FB383D66CDC755C5F1 /* Pods_RHMobi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHMobi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC5270027925376583D855F /* Pods_RHMobiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHMobiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD091C512072866E00F45376 /* RequisitosVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosVagaContainerViewController.swift; sourceTree = "<group>"; };
 		AD0D2F25205B2E2900912130 /* FotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoHelper.swift; sourceTree = "<group>"; };
 		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
 		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 			children = (
 				ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */,
 				ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */,
+				AD091C512072866E00F45376 /* RequisitosVagaContainerViewController.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -681,6 +684,7 @@
 				AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */,
 				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
+				AD091C522072866E00F45376 /* RequisitosVagaContainerViewController.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,

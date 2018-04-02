@@ -15,11 +15,7 @@ class DescricaoVagaContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-    
-    
-        
+        self.textArea.text = VagaHelper.vaga?.descricao
        
     }
 
