@@ -9,10 +9,16 @@
 import UIKit
 
 class DescReqVagaContainerViewController: UIViewController {
+    
 
+    @IBOutlet weak var textArea: UITextView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
+    
+        
        
     }
 
@@ -20,6 +26,9 @@ class DescReqVagaContainerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   
     
 
   
