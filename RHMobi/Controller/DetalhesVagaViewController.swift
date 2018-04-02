@@ -16,7 +16,7 @@ class DetalhesVagaViewController: UIViewController {
     //Mark: Variaveis de acesso das containers
     @IBOutlet weak var container1: UIView!
     @IBOutlet weak var container2: UIView!
-    
+    @IBOutlet weak var container3: UIView!
     
     
     //ImageView da imagem da vaga
@@ -44,8 +44,9 @@ class DetalhesVagaViewController: UIViewController {
         self.navigationItem.title = "Resumo da Vaga"
         
         //Configurando a aparicao dos containers
-        self.container1.isHidden = true
+        self.container1.isHidden = true  //Container 1 equivale a descricao da vaga
         self.container2.isHidden = false //Container 2 equivale ao resumo da vaga
+        self.container3.isHidden = false //Container 3 equivale ao requisitos da vaga
         
        
     }
@@ -67,17 +68,18 @@ class DetalhesVagaViewController: UIViewController {
         case 0:
             self.container1.isHidden = true
             self.container2.isHidden = false //Container 2 equivale ao resumo da vaga
+            self.container3.isHidden = true
             break
         case 1:
             self.container1.isHidden = false
             self.container2.isHidden = true //Container 2 equivale ao resumo da vaga
+            self.container3.isHidden = true
             break
         case 2:
-            self.container1.isHidden = false
+            self.container1.isHidden = true
             self.container2.isHidden = true //Container 2 equivale ao resumo da vaga
+            self.container3.isHidden = false
             break
-
-            
         default:
             break
         }

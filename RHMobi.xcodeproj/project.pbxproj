@@ -14,6 +14,7 @@
 		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
 		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
 		AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10199B205ABA9C00FDF2EC /* Endereco.swift */; };
+		AD44EC7520727EE10071C931 /* RequisitosVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44EC7420727EE10071C931 /* RequisitosVagaContainerViewController.swift */; };
 		AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD461E7D20716A6500AD3902 /* VagaDAO.swift */; };
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
 		AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EB205C54BB00A012D6 /* Candidato.swift */; };
@@ -44,7 +45,7 @@
 		ADBEDBDF2070120300DB53CA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */; };
 		ADBEDBE02070120300DB53CA /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDE2070120300DB53CA /* JsonHelper.swift */; };
 		ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */; };
-		ADC47274206C7DBC008F8242 /* DescReqVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */; };
+		ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */; };
 		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
 		ADD04AFA2061840C004340A7 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD04AF92061840C004340A7 /* CandidatoDAO.swift */; };
 		ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */; };
@@ -77,6 +78,7 @@
 		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
 		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		AD10199B205ABA9C00FDF2EC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		AD44EC7420727EE10071C931 /* RequisitosVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosVagaContainerViewController.swift; sourceTree = "<group>"; };
 		AD461E7D20716A6500AD3902 /* VagaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaDAO.swift; sourceTree = "<group>"; };
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
 		AD7B19EB205C54BB00A012D6 /* Candidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidato.swift; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 		ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		ADBEDBDE2070120300DB53CA /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaContainerViewController.swift; sourceTree = "<group>"; };
-		ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescReqVagaContainerViewController.swift; sourceTree = "<group>"; };
+		ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
 		ADD04AF92061840C004340A7 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
 		ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEDetalhesVagaViewModel.swift; sourceTree = "<group>"; };
@@ -321,7 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */,
-				ADC47273206C7DBC008F8242 /* DescReqVagaContainerViewController.swift */,
+				ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */,
+				AD44EC7420727EE10071C931 /* RequisitosVagaContainerViewController.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -662,7 +665,7 @@
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
 				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
-				ADC47274206C7DBC008F8242 /* DescReqVagaContainerViewController.swift in Sources */,
+				ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */,
 				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
@@ -681,6 +684,7 @@
 				AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */,
 				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
+				AD44EC7520727EE10071C931 /* RequisitosVagaContainerViewController.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,

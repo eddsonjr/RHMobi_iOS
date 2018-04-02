@@ -248,15 +248,25 @@
                                             <segue destination="Jbs-PR-VhA" kind="embed" id="vI5-Dz-4hR"/>
                                         </connections>
                                     </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-Yw-oxg" userLabel="Container3">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
+                                        <connections>
+                                            <segue destination="DOS-j2-0VC" kind="embed" id="6gl-IR-JVV"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.32850477430555558" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="YaV-8B-j1y" secondAttribute="bottom" id="7Lm-ud-fi1"/>
                                     <constraint firstItem="DOt-Cu-Kz7" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="top" id="7OP-0t-F5X"/>
                                     <constraint firstItem="YaV-8B-j1y" firstAttribute="leading" secondItem="VOv-PE-cXM" secondAttribute="leading" id="MSY-SY-dXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="aVV-Yw-oxg" secondAttribute="trailing" id="QMX-km-sE5"/>
                                     <constraint firstAttribute="trailing" secondItem="DOt-Cu-Kz7" secondAttribute="trailing" id="ZBn-vp-zbb"/>
                                     <constraint firstAttribute="trailing" secondItem="YaV-8B-j1y" secondAttribute="trailing" id="a4X-PY-jpV"/>
                                     <constraint firstAttribute="bottom" secondItem="DOt-Cu-Kz7" secondAttribute="bottom" id="an8-gz-myP"/>
+                                    <constraint firstItem="aVV-Yw-oxg" firstAttribute="leading" secondItem="VOv-PE-cXM" secondAttribute="leading" id="f3s-dr-pGT"/>
+                                    <constraint firstItem="aVV-Yw-oxg" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="top" id="rX9-dW-dMu"/>
+                                    <constraint firstAttribute="bottom" secondItem="aVV-Yw-oxg" secondAttribute="bottom" id="wFK-Qz-cor"/>
                                     <constraint firstItem="YaV-8B-j1y" firstAttribute="top" secondItem="VOv-PE-cXM" secondAttribute="top" id="wHk-7l-yhG"/>
                                     <constraint firstItem="DOt-Cu-Kz7" firstAttribute="leading" secondItem="VOv-PE-cXM" secondAttribute="leading" id="zJF-OO-dKo"/>
                                 </constraints>
@@ -332,6 +342,7 @@
                     <connections>
                         <outlet property="container1" destination="DOt-Cu-Kz7" id="hHW-16-Ue1"/>
                         <outlet property="container2" destination="YaV-8B-j1y" id="rfC-aH-2iU"/>
+                        <outlet property="container3" destination="aVV-Yw-oxg" id="9Oo-hi-8vu"/>
                         <outlet property="imageView" destination="QLs-bb-xlX" id="Bh3-3Q-NAU"/>
                         <outlet property="segmentedControll" destination="MUp-hL-jlK" id="cch-TW-IeB"/>
                         <outlet property="viewAncoraXibs" destination="VOv-PE-cXM" id="UhC-Gr-wFk"/>
@@ -861,10 +872,10 @@
             </objects>
             <point key="canvasLocation" x="3907.5" y="-908.45070422535207"/>
         </scene>
-        <!--Desc Req Vaga Container View Controller-->
+        <!--Descricao Vaga Container View Controller-->
         <scene sceneID="EFk-G8-FdL">
             <objects>
-                <viewController id="llU-Pn-YAm" customClass="DescReqVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="llU-Pn-YAm" customClass="DescricaoVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Oi-pf-PZR">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -897,12 +908,51 @@
                         <viewLayoutGuide key="safeArea" id="sVl-AX-7Aq"/>
                     </view>
                     <connections>
-                        <outlet property="textArea" destination="w20-Vu-5zf" id="bSK-gT-eeW"/>
+                        <outlet property="textArea" destination="w20-Vu-5zf" id="HFg-a8-9cY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WoM-J7-rKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3907.5" y="-630.63380281690138"/>
+        </scene>
+        <!--Resumo Vaga Container View Controller-->
+        <scene sceneID="tCL-88-CNa">
+            <objects>
+                <viewController id="DOS-j2-0VC" customClass="ResumoVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgh-lC-qcy">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXj-2C-UuK">
+                                <rect key="frame" x="284" y="0.0" width="6" height="140"/>
+                                <color key="backgroundColor" red="0.70596712829999997" green="0.11017128079999999" blue="0.17228496069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="6Xd-4y-bTs"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-7T-NE5">
+                                <rect key="frame" x="25" y="17" width="240" height="107"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cXj-2C-UuK" secondAttribute="trailing" id="773-g2-ACx"/>
+                            <constraint firstItem="gHK-7T-NE5" firstAttribute="centerX" secondItem="fgh-lC-qcy" secondAttribute="centerX" id="AOb-Sz-BMA"/>
+                            <constraint firstItem="gHK-7T-NE5" firstAttribute="leading" secondItem="fgh-lC-qcy" secondAttribute="leading" constant="25" id="UBA-sM-8AU"/>
+                            <constraint firstItem="cXj-2C-UuK" firstAttribute="top" secondItem="fgh-lC-qcy" secondAttribute="top" id="Zsb-eX-7Pj"/>
+                            <constraint firstItem="gHK-7T-NE5" firstAttribute="centerY" secondItem="fgh-lC-qcy" secondAttribute="centerY" id="nV4-XW-xZH"/>
+                            <constraint firstItem="gHK-7T-NE5" firstAttribute="top" secondItem="fgh-lC-qcy" secondAttribute="top" constant="17" id="nq5-3d-nAg"/>
+                            <constraint firstAttribute="bottom" secondItem="cXj-2C-UuK" secondAttribute="bottom" id="wee-Mm-Iec"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4a6-u4-9Fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908" y="-359"/>
         </scene>
     </scenes>
     <resources>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DescReqVagaContainerViewController: UIViewController {
+class DescricaoVagaContainerViewController: UIViewController {
     
 
     @IBOutlet weak var textArea: UITextView!
