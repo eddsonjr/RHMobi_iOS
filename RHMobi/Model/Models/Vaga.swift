@@ -111,10 +111,18 @@ class Vaga: NSManagedObject {
                         prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: requisitosSet,
                         areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!, vagaStatus: statusVaga,
                         cliente: cliente)
+        
+        
 
         
         return vaga
     }
     
+    
+}
+
+
+
+extension Vaga {
     
 }
