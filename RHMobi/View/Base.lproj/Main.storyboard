@@ -915,10 +915,10 @@
             </objects>
             <point key="canvasLocation" x="3907.5" y="-630.63380281690138"/>
         </scene>
-        <!--Resumo Vaga Container View Controller-->
+        <!--Requisitos Vaga Container View Controller-->
         <scene sceneID="tCL-88-CNa">
             <objects>
-                <viewController id="DOS-j2-0VC" customClass="ResumoVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DOS-j2-0VC" customClass="RequisitosVagaContainerViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgh-lC-qcy">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

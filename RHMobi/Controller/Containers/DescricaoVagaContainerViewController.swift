@@ -13,9 +13,10 @@ class DescricaoVagaContainerViewController: UIViewController {
 
     @IBOutlet weak var textArea: UITextView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     
     
         
