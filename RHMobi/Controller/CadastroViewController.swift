@@ -44,7 +44,11 @@ class CadastroViewController: UIViewController {
         addTapGestureImageView()
         
         
-        viewModel.listarTodosOsCandidatos()
+        let l = viewModel.listarTodosOsCandidatos()
+        for a in l {
+            print("Dados do candidato: \(a.nome) -- \(a.sobrenome) -- \(a.email) -- \(a.id)")
+        }
+        
 
        
 

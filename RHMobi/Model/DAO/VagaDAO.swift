@@ -82,25 +82,4 @@ class VagaDAO: NSObject {
     }
     
     
-    
-    
-    
-    //Converte do tipo NSManagedObject para Object
-    class func converterNSManagedParaObject(vagaEntidade: VagaEntidade) -> Vaga {
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
