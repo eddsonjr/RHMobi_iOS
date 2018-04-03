@@ -23,10 +23,29 @@ class CadastroViewController: UIViewController {
     
     private let dbgmsg = "[CadastroViewController]: "
     
+    //Mark: Labels e images de confirmacao dos dados
+    @IBOutlet weak var nomeLabelConfirmacao: UILabel!
+    @IBOutlet weak var nomeImageConfirmacao: UIImageView!
+    @IBOutlet weak var sobrenomeLabelConfirmacao: UILabel!
+    @IBOutlet weak var sobrenomeImageConfirmacao: UIImageView!
+    @IBOutlet weak var emailLabelConfirmacao: UILabel!
+    @IBOutlet weak var emailImageConfirmacao: UIImageView!
+    @IBOutlet weak var rgLabelConfirmacao: UILabel!
+    @IBOutlet weak var rgImageConfirmacao: UIImageView!
+    @IBOutlet weak var telefone1LabelConfirmacao: UILabel!
+    @IBOutlet weak var telefone1ImageConfirmacao: UIImageView!
+    @IBOutlet weak var telefone2LabelConfirmacao: UILabel!
+    @IBOutlet weak var telefone2ImageConfirmacao: UIImageView!
+    @IBOutlet weak var confirmarSenhaLabelConfirmacao: UILabel!
+    @IBOutlet weak var confirmarSesnhaImageConfirmacao: UIImageView!
+    
+    
+    
+    
     //Helper da foto
     var fotoHelper: FotoHelper!
     
-
+    
     //View model
     let viewModel: CadastroViewModel = CadastroViewModel()
     
