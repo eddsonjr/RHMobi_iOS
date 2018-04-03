@@ -56,4 +56,12 @@ class ListaEDetalheVagaViewModel {
     
     
     
+    func listarTodasVagasSalvas() -> [VagaEntidade]{
+        return VagaDAO.fecthObjec()!
+    }
+    
+    
+    
+    
+    
 }

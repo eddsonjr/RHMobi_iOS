@@ -30,6 +30,7 @@ class Vaga: NSObject {
     
     //Construtores
     
+    
     //Construtor completo
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
          prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente?) {

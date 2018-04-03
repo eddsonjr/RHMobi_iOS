@@ -26,9 +26,11 @@ class CadastroViewController: UIViewController {
     //Helper da foto
     var fotoHelper: FotoHelper!
     
+
+    //View model
+    let viewModel: CadastroViewModel = CadastroViewModel()
     
-    //Variavel do tipo Candidato, para sua prover seu cadastro
-    var candidato: Candidato = Candidato()
+    var sexo: String = "M"
     
     
     
@@ -40,12 +42,12 @@ class CadastroViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.trocarImagemCadastro), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.fotoPronta.rawValue), object: nil)
         
         addTapGestureImageView()
+        
+        
+        viewModel.listarTodosOsCandidatos()
 
        
-        //somente para testes
-        //TestarDAO()
-        
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,13 +60,7 @@ class CadastroViewController: UIViewController {
     
     @IBAction func cadastrar(_ sender: Any) {
         adqurirDadosDosCampos()
-        print(dbgmsg + "Cadastrando: \(candidato)")
-        
-//        if(CandidatoDAO.salvar(candidato: self.candidato)){
-//            print(dbgmsg + "Candidato cadastrado com sucesso")
-//        }else{
-//            print(dbgmsg + "Falha ao cadastrar ou esta faltando itens")
-//        }
+
     }
     
     
@@ -109,60 +105,18 @@ class CadastroViewController: UIViewController {
 
     
     
-    
-    //Somente para testes
-//    func TestarDAO() {
-//
-//        //Criando um objeto candidato para testes
-//        var candidato: Candidato = Candidato(id: 1, nome: "Raimundao", sobrenome: "de testes", email: "raimundao@burit.com", senha: "12345", rg: "25151777", telefone1: "994517805", telefone2: "996578901", sexo: "M", vagasAssociadas: nil, cv: nil)
-//
-//
-//        //Salvando
-//        if(CandidatoDAO.salvar(candidato: candidato)){
-//            print("Salvo com sucesso")
-//        }else {
-//            print("Deu ruim na hora de salvar")
-//        }
-//
-//        //Pegando os dados
-//        var candidatos: [CANDIDATO]? = nil
-//        candidatos = CandidatoDAO.listarTodos()
-//        print("Lista de candidatos salvos: \(candidatos?.count)")
-//
-//        for c in candidatos! {
-//            print(c)
-//        }
-//
-//
-//
-//        //Procurando por um candidato
-//        var candidatoP: CANDIDATO? = nil
-//        candidatoP = CandidatoDAO.procurarCandidato(id: 1)
-//        print("Candidato encontrado com id1: \(candidato.nome)")
-//
-//
-//
-//        //Apagando todos os dados do banco
-//        print("Apagando tudo")
-//        if(CandidatoDAO.removerTodos()){
-//            print("Todos os itens foram removidos")
-//        }else{
-//            print("Error ao remover")
-//        }
-//    }
-    
-    
+  
     //Action da segmented controll para selecao do sexo
     @IBAction func selecaoSexoSegmented(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0: //masculino
-            self.candidato.sexo = "M"
+            self.sexo = "M"
             break
         case 1: //feminino
-            self.candidato.sexo = "F"
+            self.sexo = "F"
             break
         default:
-            self.candidato.sexo = "M"
+           self.sexo = "M"
         }
         
     }
@@ -174,15 +128,7 @@ class CadastroViewController: UIViewController {
     //Mark: Funcao para pegar os dados dos campos
     func adqurirDadosDosCampos() {
         
-        //Pegando os dados dos campos da tela
-        candidato.nome = self.nomeTextField.text!
-        candidato.sobrenome = self.sobreNomeTextField.text!
-        candidato.email = self.emailTextField.text!
-        candidato.rg = self.rgTextField.text!
-        candidato.telefone1 = self.telefoneTextField.text!
-        candidato.telefone2 = self.telefone2TextField.text!
-        candidato.senha = self.senhaTextField.text!
-        
+        viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, rg: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
         
         
     }

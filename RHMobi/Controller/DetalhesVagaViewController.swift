@@ -55,8 +55,9 @@ class DetalhesVagaViewController: UIViewController {
         
      
         
-        viewModel.salvarVaga(vaga: VagaHelper.vaga!)
+        //viewModel.salvarVaga(vaga: VagaHelper.vaga!)
         
+        print("Quantidade de dados no banco: \(viewModel.listarTodasVagasSalvas().count)")
         
         
        

@@ -14,6 +14,8 @@ import UIKit
 class VagaDAO: NSObject {
     
     
+    
+    
     //Configurar o contexto para salvar os dados dentro do banco
     private class func getContext() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -23,6 +25,7 @@ class VagaDAO: NSObject {
     
     //Salvar os dados
     class func saveObject(vaga: Vaga){
+        let dbgmsg = "[VagaDAO]: "
         let context = getContext()
         let entity = NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)
         let manageObject = NSManagedObject(entity: entity!, insertInto: context)
@@ -40,18 +43,18 @@ class VagaDAO: NSObject {
         
         
         //Criando nsset com os dados da vaga
-        let areasInteresseSet: NSSet = NSSet(array: vaga.areasInteresse!)
-        let requisitosSet: NSSet = NSSet(array: vaga.requisitos!)
-        
-        manageObject.setValue(vaga.cliente, forKey: "cliente")
-        manageObject.setValue(areasInteresseSet, forKey: "areasInteresse")
-        manageObject.setValue(requisitosSet, forKey: "requisitos")
+//        let areasInteresseSet: NSSet = NSSet(array: vaga.areasInteresse!)
+//        let requisitosSet: NSSet = NSSet(array: vaga.requisitos!)
+//
+//        manageObject.setValue(vaga.cliente, forKey: "cliente")
+//        manageObject.setValue(areasInteresseSet, forKey: "areasInteresse")
+//        manageObject.setValue(requisitosSet, forKey: "requisitos")
 
         
         
         do {
             try context.save()
-            print("Dados salvos com sucesso!")
+            print( dbgmsg + "Dados salvos com sucesso!")
            
         }catch let err{
             print(err)
@@ -59,6 +62,45 @@ class VagaDAO: NSObject {
         }
         
     }
+    
+    
+    
+    //Retorna uma lista de objetos vindos do banco
+    class func fecthObjec() -> [VagaEntidade]? {
+        let dbgmsg = "[VagaDAO]: "
+        let context = getContext()
+        var vagas:  [VagaEntidade]? = nil
+        
+        do {
+            vagas = try context.fetch(VagaEntidade.fetchRequest())
+            print(dbgmsg + "Quantidade de vagas encontradas no banco: \(vagas?.count)")
+            return vagas
+        }catch let err{
+            print(dbgmsg + "erro: \(err)")
+            return vagas
+        }
+    }
+    
+    
+    
+    
+    
+    //Converte do tipo NSManagedObject para Object
+    class func converterNSManagedParaObject(vagaEntidade: VagaEntidade) -> Vaga {
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
