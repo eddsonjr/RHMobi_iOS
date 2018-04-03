@@ -696,101 +696,117 @@
                                             <constraint firstItem="NAv-qx-sH8" firstAttribute="top" secondItem="8NA-pz-mye" secondAttribute="bottom" constant="70" id="zvc-LW-U0z"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
-                                        <rect key="frame" x="245" y="263" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
+                                        <rect key="frame" x="240" y="260" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
-                                        <rect key="frame" x="347" y="266" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
+                                        <rect key="frame" x="347" y="263" width="20" height="14"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
-                                        <rect key="frame" x="245" y="337" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
+                                        <rect key="frame" x="240" y="337" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
                                         <rect key="frame" x="347" y="340" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
-                                        <rect key="frame" x="245" y="425" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
+                                        <rect key="frame" x="240" y="425" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
                                         <rect key="frame" x="347" y="428" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
-                                        <rect key="frame" x="245" y="503" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
+                                        <rect key="frame" x="240" y="503" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
                                         <rect key="frame" x="347" y="506" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
-                                        <rect key="frame" x="245" y="582" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
+                                        <rect key="frame" x="240" y="582" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
                                         <rect key="frame" x="347" y="585" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0W-wN-aPK">
-                                        <rect key="frame" x="245" y="786" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0W-wN-aPK">
+                                        <rect key="frame" x="240" y="786" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="zQJ-6D-bX1">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="zQJ-6D-bX1">
                                         <rect key="frame" x="347" y="789" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
-                                        <rect key="frame" x="245" y="872" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
+                                        <rect key="frame" x="240" y="872" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
                                         <rect key="frame" x="347" y="875" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
-                                        <rect key="frame" x="245" y="179" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
+                                        <rect key="frame" x="240" y="180" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
-                                        <rect key="frame" x="347" y="182" width="20" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
+                                        <rect key="frame" x="347" y="183" width="20" height="14"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="cLS-0R-5AF" firstAttribute="centerY" secondItem="Ne7-kj-TRV" secondAttribute="centerY" id="095-1u-zy2"/>
+                                    <constraint firstItem="mos-ZQ-y0l" firstAttribute="leading" secondItem="W0W-wN-aPK" secondAttribute="leading" id="1O0-4G-pCV"/>
+                                    <constraint firstItem="iP2-gP-B8D" firstAttribute="leading" secondItem="LDh-Fy-aW0" secondAttribute="trailing" constant="17" id="4z0-KG-en5"/>
                                     <constraint firstAttribute="trailing" secondItem="EwC-fW-zcW" secondAttribute="trailing" id="5lD-6G-FJJ"/>
+                                    <constraint firstItem="PtR-Pz-AD0" firstAttribute="centerY" secondItem="d8R-0r-8ed" secondAttribute="centerY" id="67b-r3-p9Q"/>
                                     <constraint firstItem="EwC-fW-zcW" firstAttribute="leading" secondItem="ZPe-gN-77X" secondAttribute="leading" id="6A4-mg-fyX"/>
+                                    <constraint firstItem="6h8-wT-yOs" firstAttribute="trailing" secondItem="6ks-Sr-NtO" secondAttribute="trailing" id="7wF-QN-aAT"/>
+                                    <constraint firstItem="tqA-q6-GW9" firstAttribute="top" secondItem="W0W-wN-aPK" secondAttribute="bottom" constant="13" id="9ZV-hV-6ud"/>
                                     <constraint firstItem="EwC-fW-zcW" firstAttribute="top" secondItem="ZPe-gN-77X" secondAttribute="top" id="AlD-r4-MdF"/>
+                                    <constraint firstItem="0VU-p7-963" firstAttribute="top" secondItem="Luk-cr-VBm" secondAttribute="bottom" constant="12" id="E41-wI-wp0"/>
+                                    <constraint firstItem="Ne7-kj-TRV" firstAttribute="leading" secondItem="d8R-0r-8ed" secondAttribute="leading" id="EMe-xd-v7Y"/>
+                                    <constraint firstItem="iP2-gP-B8D" firstAttribute="centerY" secondItem="LDh-Fy-aW0" secondAttribute="centerY" id="Hjf-2w-0WQ"/>
+                                    <constraint firstItem="Zsn-FK-LBw" firstAttribute="top" secondItem="LDh-Fy-aW0" secondAttribute="bottom" constant="9" id="Jcg-dS-Jtr"/>
+                                    <constraint firstItem="771-b9-mdH" firstAttribute="top" secondItem="qr1-VC-pVE" secondAttribute="bottom" constant="4" id="MQE-LV-bv1"/>
+                                    <constraint firstItem="6h8-wT-yOs" firstAttribute="centerY" secondItem="Luk-cr-VBm" secondAttribute="centerY" id="W5L-AP-kjz"/>
+                                    <constraint firstItem="hbu-Hk-NRb" firstAttribute="centerY" secondItem="qr1-VC-pVE" secondAttribute="centerY" id="WU7-Fc-W7w"/>
                                     <constraint firstItem="EwC-fW-zcW" firstAttribute="width" secondItem="ZPe-gN-77X" secondAttribute="width" id="X1b-a0-RwT"/>
+                                    <constraint firstAttribute="trailing" secondItem="iP2-gP-B8D" secondAttribute="trailing" constant="8" id="Yhe-Bh-Mbe"/>
+                                    <constraint firstItem="d8R-0r-8ed" firstAttribute="leading" secondItem="qr1-VC-pVE" secondAttribute="leading" id="aHu-ZB-sAw"/>
+                                    <constraint firstItem="zQJ-6D-bX1" firstAttribute="centerY" secondItem="W0W-wN-aPK" secondAttribute="centerY" id="aaJ-a0-Dw5"/>
+                                    <constraint firstItem="zQJ-6D-bX1" firstAttribute="trailing" secondItem="cLS-0R-5AF" secondAttribute="trailing" id="aaV-5C-nl9"/>
+                                    <constraint firstItem="hbu-Hk-NRb" firstAttribute="trailing" secondItem="6h8-wT-yOs" secondAttribute="trailing" id="bO3-hK-W1f"/>
+                                    <constraint firstItem="qr1-VC-pVE" firstAttribute="leading" secondItem="Luk-cr-VBm" secondAttribute="leading" id="drc-Ny-P3v"/>
+                                    <constraint firstItem="DQV-zw-6eW" firstAttribute="top" secondItem="3VB-zF-wHh" secondAttribute="bottom" constant="9" id="g6Y-gL-G4Y"/>
+                                    <constraint firstItem="cLS-0R-5AF" firstAttribute="trailing" secondItem="PtR-Pz-AD0" secondAttribute="trailing" id="ghM-vS-KtZ"/>
+                                    <constraint firstItem="W0W-wN-aPK" firstAttribute="leading" secondItem="Ne7-kj-TRV" secondAttribute="leading" id="h23-TM-zWN"/>
+                                    <constraint firstItem="Luk-cr-VBm" firstAttribute="leading" secondItem="3VB-zF-wHh" secondAttribute="leading" id="jUi-zw-qhE"/>
+                                    <constraint firstItem="PtR-Pz-AD0" firstAttribute="trailing" secondItem="hbu-Hk-NRb" secondAttribute="trailing" id="jzs-XV-1OU"/>
+                                    <constraint firstItem="q2q-qt-dmB" firstAttribute="top" secondItem="d8R-0r-8ed" secondAttribute="bottom" constant="6" id="kPU-af-743"/>
+                                    <constraint firstItem="6nU-lF-Thf" firstAttribute="trailing" secondItem="zQJ-6D-bX1" secondAttribute="trailing" id="kSW-0t-cYy"/>
+                                    <constraint firstItem="j0I-ce-fZ1" firstAttribute="top" secondItem="Ne7-kj-TRV" secondAttribute="bottom" constant="7" id="oxF-GJ-bkE"/>
+                                    <constraint firstItem="8NA-pz-mye" firstAttribute="top" secondItem="mos-ZQ-y0l" secondAttribute="bottom" constant="7" id="p9k-ce-hvW"/>
                                     <constraint firstAttribute="bottom" secondItem="EwC-fW-zcW" secondAttribute="bottom" constant="1086" id="saw-kk-7P1"/>
+                                    <constraint firstItem="6nU-lF-Thf" firstAttribute="centerY" secondItem="mos-ZQ-y0l" secondAttribute="centerY" id="w5v-fy-98i"/>
+                                    <constraint firstItem="6ks-Sr-NtO" firstAttribute="trailing" secondItem="iP2-gP-B8D" secondAttribute="trailing" id="wtX-gI-rjw"/>
+                                    <constraint firstItem="6ks-Sr-NtO" firstAttribute="centerY" secondItem="3VB-zF-wHh" secondAttribute="centerY" id="xrW-Sh-ZmY"/>
+                                    <constraint firstItem="3VB-zF-wHh" firstAttribute="leading" secondItem="LDh-Fy-aW0" secondAttribute="leading" id="yiJ-kA-JoA"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
