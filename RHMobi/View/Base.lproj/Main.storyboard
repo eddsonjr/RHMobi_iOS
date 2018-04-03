@@ -302,7 +302,7 @@
                                 </constraints>
                                 <state key="normal" image="Botao candidatar"/>
                                 <connections>
-                                    <action selector="candidatar_se_a_vaga:" destination="eSN-jX-dOO" eventType="touchUpInside" id="5nK-tB-1fY"/>
+                                    <segue destination="8GR-jW-9Sf" kind="show" id="cCQ-uE-x6t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-sT-I6U">
@@ -352,7 +352,7 @@
             </objects>
             <point key="canvasLocation" x="2718.75" y="-660.21126760563379"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="Ds4-jf-LUO">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="WZ8-Nb-aSt" customClass="LoginViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
@@ -361,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-Qo-WgS">
-                                <rect key="frame" x="0.0" y="20" width="375" height="830"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="737"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-ue-qqo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="786"/>
@@ -416,7 +416,7 @@
                                                 </state>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo RH Mobi" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Mf-q2h">
-                                                <rect key="frame" x="126.5" y="8" width="122" height="144"/>
+                                                <rect key="frame" x="126.5" y="21" width="122" height="144"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-kA-45s">
                                                 <rect key="frame" x="115" y="434" width="145" height="49"/>
@@ -448,14 +448,14 @@
                                             <constraint firstItem="inF-Mz-exq" firstAttribute="centerX" secondItem="2Xd-ue-qqo" secondAttribute="centerX" id="AUM-eN-ZnM"/>
                                             <constraint firstItem="gEY-TA-5nj" firstAttribute="centerX" secondItem="2Xd-ue-qqo" secondAttribute="centerX" id="BI2-dL-fDy"/>
                                             <constraint firstItem="9Ow-1V-yWQ" firstAttribute="leading" secondItem="2Xd-ue-qqo" secondAttribute="leading" constant="8" id="Bma-eb-qu3"/>
-                                            <constraint firstItem="9Ow-1V-yWQ" firstAttribute="top" secondItem="fUc-Mf-q2h" secondAttribute="bottom" constant="86" id="DWy-IK-WXX"/>
+                                            <constraint firstItem="9Ow-1V-yWQ" firstAttribute="top" secondItem="fUc-Mf-q2h" secondAttribute="bottom" constant="73" id="DWy-IK-WXX"/>
                                             <constraint firstItem="E5a-PG-nSq" firstAttribute="leading" secondItem="2Xd-ue-qqo" secondAttribute="leading" constant="8" id="EA2-Cw-a1X"/>
                                             <constraint firstItem="dNu-uV-UDO" firstAttribute="centerX" secondItem="2Xd-ue-qqo" secondAttribute="centerX" id="Edu-Gx-Qh8"/>
                                             <constraint firstItem="fUc-Mf-q2h" firstAttribute="centerX" secondItem="2Xd-ue-qqo" secondAttribute="centerX" id="GeC-Px-2gg"/>
                                             <constraint firstItem="IyY-0u-uay" firstAttribute="centerX" secondItem="2Xd-ue-qqo" secondAttribute="centerX" id="KSv-8f-Qs2"/>
                                             <constraint firstAttribute="bottom" secondItem="pHx-eF-yto" secondAttribute="bottom" constant="60" id="Wn6-n7-jE0"/>
                                             <constraint firstItem="9Ow-1V-yWQ" firstAttribute="top" secondItem="9o0-Dc-kkJ" secondAttribute="bottom" constant="8" id="Y0a-zy-7J6"/>
-                                            <constraint firstItem="fUc-Mf-q2h" firstAttribute="top" secondItem="2Xd-ue-qqo" secondAttribute="top" constant="8" id="ZAx-l5-Bok"/>
+                                            <constraint firstItem="fUc-Mf-q2h" firstAttribute="top" secondItem="2Xd-ue-qqo" secondAttribute="top" constant="21" id="ZAx-l5-Bok"/>
                                             <constraint firstItem="eYj-kA-45s" firstAttribute="top" secondItem="dNu-uV-UDO" secondAttribute="bottom" constant="37" id="cck-EQ-UfF"/>
                                             <constraint firstAttribute="trailing" secondItem="E5a-PG-nSq" secondAttribute="trailing" constant="8" id="dAf-7G-fOy"/>
                                             <constraint firstItem="gEY-TA-5nj" firstAttribute="top" secondItem="IyY-0u-uay" secondAttribute="bottom" constant="35" id="dzI-Kg-pBl"/>
@@ -489,11 +489,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rLN-Lh-gVY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="i6I-eZ-WQc">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="8Ib-Sp-og5"/>
+                        <barButtonItem key="leftBarButtonItem" image="Voltar" style="plain" id="LGe-ym-zh1">
+                            <connections>
+                                <action selector="VoltarNavigationBar:" destination="WZ8-Nb-aSt" id="XGv-Mo-cdU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="850"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqt-vt-TDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2720" y="734"/>
+            <point key="canvasLocation" x="2558" y="1245"/>
         </scene>
         <!--Cadastro View Controller-->
         <scene sceneID="gu8-SH-Qxr">
@@ -504,7 +512,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-gN-77X">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1430"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1337"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwC-fW-zcW">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1386"/>
@@ -702,7 +710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4302" y="1052"/>
+            <point key="canvasLocation" x="3908" y="1561"/>
         </scene>
         <!--Vagas-->
         <scene sceneID="ohk-dJ-r6Y">
@@ -982,6 +990,28 @@
             </objects>
             <point key="canvasLocation" x="3907.5" y="-327.46478873239437"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PJ5-8Z-IEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8GR-jW-9Sf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6j3-N7-Flm">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29280638694763184" green="0.3281712532043457" blue="0.39879393577575684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WZ8-Nb-aSt" kind="relationship" relationship="rootViewController" id="sx5-5S-fUd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFt-St-kgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="249"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Botao candidatar" width="145" height="49"/>
@@ -1001,6 +1031,7 @@
         <image name="Perfil ativo" width="12" height="17"/>
         <image name="Perfil inativo" width="13" height="17"/>
         <image name="Vagas inativo" width="19" height="17"/>
+        <image name="Voltar" width="13" height="21"/>
         <image name="contacts" width="256" height="256"/>
         <image name="dicas ativo" width="11" height="17"/>
         <image name="dicas inativo" width="11" height="17"/>

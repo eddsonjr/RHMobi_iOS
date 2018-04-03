@@ -25,5 +25,8 @@ class LoginViewController: UIViewController {
     }
     
 
-
+    @IBAction func VoltarNavigationBar(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

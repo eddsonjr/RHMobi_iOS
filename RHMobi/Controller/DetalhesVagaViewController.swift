@@ -104,14 +104,6 @@ class DetalhesVagaViewController: UIViewController {
     
     //####### FUNCOES DAS ACTIONS DOS BOTOES ##########
     
-    //Mark: Acao do botao de cadindatar - se
-    @IBAction func candidatar_se_a_vaga(_ sender: Any) {
-        performSegue(withIdentifier: "segueDetalhesLogin", sender: self)
-    }
-    
-    
-    
-    
     
     
 }
