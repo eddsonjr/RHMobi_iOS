@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import SwiftyJSON
 
-class Requisitos {
+class Requisitos:  {
     
    var id: Int
    var nome: String

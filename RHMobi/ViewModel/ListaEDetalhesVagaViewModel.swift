@@ -45,11 +45,14 @@ class ListaEDetalheVagaViewModel {
                 completihonHandler(vagas)
             }
         }
-        
-        
     }
     
     
+    
+    
+    func salvarVaga(vaga: Vaga){
+        VagaDAO.saveObject(vaga: vaga)
+    }
     
     
     

@@ -21,18 +21,18 @@ class Vaga {
    var experiencia: String
    var prazo: String //Mudar posteriormente para um tipo de dados de data
    var descricao: String
-   var requisitos: [Requisitos]
-   var areasInteresse: [AreasInteresse]
+   var requisitos: [Requisitos]?
+   var areasInteresse: [AreasInteresse]?
    var imgUrl: String
-   var vagaStatus: StatusVaga
-   var cliente: Cliente
+   var vagaStatus: StatusVaga?
+   var cliente: Cliente?
     
     
     //Construtores
     
     //Construtor completo
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente) {
+         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente?) {
         
         
         self.id = id
@@ -50,8 +50,7 @@ class Vaga {
         
     }
     
-    
-  
+
     
     
     //Mark: Metodo para decodificar objeto atraves de json

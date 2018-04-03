@@ -35,6 +35,7 @@ class DetalhesVagaViewController: UIViewController {
     
     
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,8 @@ class DetalhesVagaViewController: UIViewController {
         self.container3.isHidden = true //Container 3 equivale ao requisitos da vaga
         
      
+        
+        viewModel.salvarVaga(vaga: VagaHelper.vaga!)
         
         
         
