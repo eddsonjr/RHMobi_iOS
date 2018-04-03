@@ -10,22 +10,20 @@ import Foundation
 import CoreData
 import SwiftyJSON
 
-class Cliente: NSManagedObject {
+class Cliente {
     
-    @NSManaged var id: Int
-    @NSManaged var cnpj: String
-    @NSManaged var razaoSocial: String
-    @NSManaged var ramoAtuacao: String
-    @NSManaged var endereco: Endereco
+    var id: Int
+    var cnpj: String
+    var razaoSocial: String
+    var ramoAtuacao: String
+    var endereco: Endereco
     
     
     //Construtores
     //Construtor completo
     init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String,
          endereco: Endereco) {
-        
-        let entity = NSEntityDescription.entity(forEntityName: "Cliente", in: CoreDataHelper.getContext())!
-        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
+      
         
         self.id = id
         self.cnpj = cnpj
@@ -35,27 +33,8 @@ class Cliente: NSManagedObject {
     }
     
     
-    //Construtor sem relacao com a entidade Endereco
     
-    init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String) {
-        
-        let entity = NSEntityDescription.entity(forEntityName: "Cliente", in: CoreDataHelper.getContext())!
-        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
-        
-        self.id = id
-        self.cnpj = cnpj
-        self.razaoSocial = razaoSocial
-        self.ramoAtuacao = ramoAtuacao
-        
-    }
-    
-    
-    @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
-    private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertInto: context)
-    }
-    
-    
+  
     //Mark: Metodo de decodificacao via json
     static func decode(fromJson: JSON?) -> Any? {
     

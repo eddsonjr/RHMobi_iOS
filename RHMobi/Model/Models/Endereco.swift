@@ -10,13 +10,13 @@ import Foundation
 import CoreData
 import SwiftyJSON
 
-class Endereco: NSManagedObject {
+class Endereco {
     
-    @NSManaged var bairro: String
-    @NSManaged var logradouro: String
-    @NSManaged var cep: String
-    @NSManaged var cidade: String
-    @NSManaged var estado: String
+    var bairro: String
+    var logradouro: String
+    var cep: String
+    var cidade: String
+    var estado: String
     
 
     
@@ -24,8 +24,7 @@ class Endereco: NSManagedObject {
     
     //Construtor completo
     init(bairro: String, logradouro: String, cep: String,cidade: String, estado: String) {
-        let entity = NSEntityDescription.entity(forEntityName: "Endereco", in: CoreDataHelper.getContext())!
-        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
+       
         
         self.bairro = bairro
         self.logradouro = logradouro
@@ -35,12 +34,7 @@ class Endereco: NSManagedObject {
     }
     
     
-    @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
-    private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertInto: context)
-    }
-    
-    
+   
     
     //Mark: Metodo de codificacao via json: Recebe um json e retonra
     static func decode(fromJson: JSON?) -> Any? {

@@ -9,28 +9,26 @@
 import Foundation
 import CoreData
 
-class Candidato: NSManagedObject {
+class Candidato {
     
-    @NSManaged var id: Int
-    @NSManaged var nome: String
-    @NSManaged var sobrenome: String
-    @NSManaged var email: String
-    @NSManaged var senha: String
-    @NSManaged var rg: String
-    @NSManaged var telefone1: String
-    @NSManaged var telefone2: String
-    @NSManaged var sexo: String
-    @NSManaged var vagasAssociadas: Set<Vaga>?
-    @NSManaged var cv: CV?
+    var id: Int
+    var nome: String
+    var sobrenome: String
+    var email: String
+    var senha: String
+    var rg: String
+    var telefone1: String
+    var telefone2: String
+    var sexo: String
+    var vagasAssociadas: [Vaga]?
+    var cv: CV?
     
     //Construtores
     //Construtor padrao
     init() {
         
         
-        let entity = NSEntityDescription.entity(forEntityName: "Candidato", in: CoreDataHelper.getContext())!
-        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
-        
+       
         self.id = 0
         self.nome = ""
         self.sobrenome = ""
@@ -46,11 +44,9 @@ class Candidato: NSManagedObject {
     
     
     //Construtor com itens
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: Set<Vaga>?, cv: CV?) {
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
         
-        
-        let entity = NSEntityDescription.entity(forEntityName: "Candidato", in: CoreDataHelper.getContext())!
-        super.init(entity: entity, insertInto: CoreDataHelper.getContext())
+      
         
         self.id = id
         self.nome = nome
@@ -65,13 +61,6 @@ class Candidato: NSManagedObject {
         self.cv = cv
         
     }
-    
-    
-    @objc //Obrigado a colocar esse init para nao dar erro com o protocolo de NSObjectmanaged
-    private override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertInto: context)
-    }
-    
     
     
     //TODO - FALTA IMPLEMENTAR O DECODE DO CANDIDATO
