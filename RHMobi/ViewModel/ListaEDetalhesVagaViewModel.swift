@@ -54,16 +54,26 @@ class ListaEDetalheVagaViewModel {
     
     //Somente para teste
     func salvarVagaTeste() {
-
+        let managedContext: NSManagedObjectContext?
+        managedContext = CoreDataHelper.getContext()
         
-        do {
-            try CoreDataHelper.getContext().save()
-            print("Vaga salva!")
-            getAllVagasTeste()
-        }catch {
-           print("Erro ao salvar a vaga")
+        if managedContext != nil {
+            print("ManagedContex nao esta nulo")
+            if (managedContext?.hasChanges)! {
+                print("Ha mudancas no contexto. Salvando")
+                
+                do{
+                    try managedContext?.save()
+                    print("Salvando registro...")
+                }catch let err {
+                    print(err)
+                }
+            }else{
+                print("Sem mudancas no contexot")
+            }
+        }else{
+            print("Managed context esta nulo!")
         }
-        
         
         
     }
@@ -79,6 +89,11 @@ class ListaEDetalheVagaViewModel {
         do {
             vagas = try CoreDataHelper.getContext().fetch(Vaga.fetchRequest()) as? [Vaga]
             print("Retornado do banco: \(String(describing: vagas?.count))")
+            
+            for f in vagas! {
+                print("Imprimindo dados: \(f.nome)")
+            }
+            
         }catch let err {
             print(err)
         }

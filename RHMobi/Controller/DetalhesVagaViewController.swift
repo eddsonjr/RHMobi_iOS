@@ -53,9 +53,9 @@ class DetalhesVagaViewController: UIViewController {
         self.container3.isHidden = true //Container 3 equivale ao requisitos da vaga
         
         
-        viewModel.salvarVagaTeste()
+        //viewModel.salvarVagaTeste()
         
-        //viewModel.getAllVagasTeste()
+        viewModel.getAllVagasTeste()
         
        
     }
