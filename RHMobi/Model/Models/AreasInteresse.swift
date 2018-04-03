@@ -11,7 +11,7 @@ import CoreData
 import SwiftyJSON
 
 
-class AreasInteresse{
+class AreasInteresse: NSObject{
     
    var id: Int
    var nome: String

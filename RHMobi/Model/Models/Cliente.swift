@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import SwiftyJSON
 
-class Cliente {
+class Cliente: NSObject {
     
     var id: Int
     var cnpj: String

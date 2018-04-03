@@ -11,7 +11,7 @@ import CoreData
 import SwiftyJSON
 
 
-class StatusVaga  {
+class StatusVaga: NSObject {
     
     var id: Int
     var nome: String

@@ -12,7 +12,7 @@ import SwiftyJSON
 
 
 
-class Vaga {
+class Vaga: NSObject {
     
    var id: Int
    var nome: String

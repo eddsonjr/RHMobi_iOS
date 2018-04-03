@@ -37,14 +37,16 @@ class VagaDAO: NSObject {
         manageObject.setValue(vaga.experiencia, forKey: "experiencia")
         
         
+        
+        
         //Criando nsset com os dados da vaga
         let areasInteresseSet: NSSet = NSSet(array: vaga.areasInteresse!)
         let requisitosSet: NSSet = NSSet(array: vaga.requisitos!)
         
-        //manageObject.setValue(vaga.cliente, forKey: "cliente")
+        manageObject.setValue(vaga.cliente, forKey: "cliente")
         manageObject.setValue(areasInteresseSet, forKey: "areasInteresse")
         manageObject.setValue(requisitosSet, forKey: "requisitos")
-        
+
         
         
         do {

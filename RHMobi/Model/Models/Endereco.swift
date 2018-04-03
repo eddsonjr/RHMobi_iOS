@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import SwiftyJSON
 
-class Endereco {
+class Endereco: NSObject {
     
     var bairro: String
     var logradouro: String
