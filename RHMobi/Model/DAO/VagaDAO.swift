@@ -27,28 +27,41 @@ class VagaDAO: NSObject {
     class func saveObject(vaga: Vaga){
         let dbgmsg = "[VagaDAO]: "
         let context = getContext()
-        let entity = NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)
-        let manageObject = NSManagedObject(entity: entity!, insertInto: context)
+        let vagaEntity = NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)
+        let vagaManageObject = NSManagedObject(entity: vagaEntity!, insertInto: context)
+        
+        
         
         //Setando os valores para serem salvos
-        manageObject.setValue(vaga.id, forKey: "id")
-        manageObject.setValue(vaga.nome, forKey: "nome")
-        manageObject.setValue(vaga.descricao, forKey: "descricao")
-        manageObject.setValue(vaga.funcao, forKey: "funcao")
-        manageObject.setValue(vaga.imgUrl, forKey: "imgUrl")
-        manageObject.setValue(vaga.prazo, forKey: "prazo")
-        manageObject.setValue(vaga.experiencia, forKey: "experiencia")
+        vagaManageObject.setValue(vaga.id, forKey: "id")
+        vagaManageObject.setValue(vaga.nome, forKey: "nome")
+        vagaManageObject.setValue(vaga.descricao, forKey: "descricao")
+        vagaManageObject.setValue(vaga.funcao, forKey: "funcao")
+        vagaManageObject.setValue(vaga.imgUrl, forKey: "imgUrl")
+        vagaManageObject.setValue(vaga.prazo, forKey: "prazo")
+        vagaManageObject.setValue(vaga.experiencia, forKey: "experiencia")
         
         
         
+        if(vaga.areasInteresse != nil || vaga.areasInteresse?.count != 0){
+            print(dbgmsg + "Ha areas de interesse nesta vaga")
+            
+            
+        }
         
-        //Criando nsset com os dados da vaga
+        
+        
+//
+//        //Criando nsset com os dados da vaga
 //        let areasInteresseSet: NSSet = NSSet(array: vaga.areasInteresse!)
 //        let requisitosSet: NSSet = NSSet(array: vaga.requisitos!)
 //
-//        manageObject.setValue(vaga.cliente, forKey: "cliente")
-//        manageObject.setValue(areasInteresseSet, forKey: "areasInteresse")
-//        manageObject.setValue(requisitosSet, forKey: "requisitos")
+////        vagaManageObject .setValue(vaga.cliente, forKey: "cliente")
+////        vagaManageObject .setValue(areasInteresseSet, forKey: "areasInteresse")
+////        vagaManageObject .setValue(requisitosSet, forKey: "requisitos")
+        
+        
+        
 
         
         
