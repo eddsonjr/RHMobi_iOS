@@ -367,40 +367,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-ue-qqo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="786"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="xCH-I6-3Jb">
-                                                <rect key="frame" x="137" y="8" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyY-0u-uay">
-                                                <rect key="frame" x="172" y="414" width="30" height="21"/>
+                                                <rect key="frame" x="170" y="499" width="30" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-TA-5nj">
-                                                <rect key="frame" x="99" y="443" width="176" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-TA-5nj">
+                                                <rect key="frame" x="54" y="549" width="266" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Entrar com Facebook">
-                                                    <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inF-Mz-exq">
-                                                <rect key="frame" x="98" y="481" width="177" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Entrar com Linkedln">
+                                                <state key="normal" image="Entrar facebook">
                                                     <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Não possui conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHx-eF-yto">
-                                                <rect key="frame" x="31" y="709" width="114" height="21"/>
+                                                <rect key="frame" x="81" y="705" width="114" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwD-BZ-ScH">
-                                                <rect key="frame" x="238" y="700" width="129" height="30"/>
+                                                <rect key="frame" x="195" y="698" width="108" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Cadastrar - se">
@@ -411,52 +400,63 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o0-Dc-kkJ">
-                                                <rect key="frame" x="8" y="223" width="42" height="21"/>
+                                                <rect key="frame" x="8" y="209" width="42" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ow-1V-yWQ">
-                                                <rect key="frame" x="8" y="252" width="359" height="30"/>
+                                                <rect key="frame" x="8" y="238" width="359" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.70596712829999997" green="0.11017128079999999" blue="0.17228496069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-0m-Suw">
-                                                <rect key="frame" x="8" y="290" width="62" height="21"/>
+                                                <rect key="frame" x="8" y="276" width="62" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5a-PG-nSq">
-                                                <rect key="frame" x="8" y="319" width="359" height="30"/>
+                                                <rect key="frame" x="9" y="322" width="359" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.70596712829999997" green="0.11017128079999999" blue="0.17228496069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-uV-UDO">
-                                                <rect key="frame" x="109" y="357" width="154" height="30"/>
+                                                <rect key="frame" x="109" y="360" width="154" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Esqueci minha senha">
                                                     <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo RH Mobi" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Mf-q2h">
+                                                <rect key="frame" x="125" y="8" width="122" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-kA-45s">
+                                                <rect key="frame" x="109" y="419" width="153" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Botao entrar"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inF-Mz-exq">
+                                                <rect key="frame" x="54" y="614" width="275" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Entrar linkedin">
+                                                    <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.96460121870000004" green="0.96476620440000005" blue="0.96459084750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="786" id="7sK-Jy-ISw"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-kA-45s">
-                                        <rect key="frame" x="166" y="378" width="42" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Entrar"/>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2Xd-ue-qqo" firstAttribute="leading" secondItem="Hso-Qo-WgS" secondAttribute="leading" id="01Y-v7-tIv"/>
@@ -480,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqt-vt-TDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2720" y="360"/>
+            <point key="canvasLocation" x="2719.6875" y="359.15492957746477"/>
         </scene>
         <!--Cadastro View Controller-->
         <scene sceneID="gu8-SH-Qxr">
@@ -972,15 +972,19 @@
     </scenes>
     <resources>
         <image name="Botao candidatar" width="145" height="49"/>
+        <image name="Botao entrar" width="145" height="49"/>
         <image name="Cargo" width="21" height="17"/>
         <image name="Contrato" width="15" height="18"/>
         <image name="Cursos ativo" width="19" height="17"/>
         <image name="Cursos inativo" width="19" height="17"/>
+        <image name="Entrar facebook" width="238" height="34"/>
+        <image name="Entrar linkedin" width="238" height="34"/>
         <image name="Experiencia" width="19" height="18"/>
         <image name="Favorito" width="23" height="22"/>
         <image name="Foto" width="291" height="149"/>
         <image name="Group" width="95" height="91"/>
         <image name="Local" width="13" height="18"/>
+        <image name="Logo RH Mobi" width="122" height="144"/>
         <image name="Perfil ativo" width="12" height="17"/>
         <image name="Perfil inativo" width="13" height="17"/>
         <image name="Vagas inativo" width="19" height="17"/>
