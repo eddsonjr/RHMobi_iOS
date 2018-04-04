@@ -17,6 +17,8 @@
 		AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10199B205ABA9C00FDF2EC /* Endereco.swift */; };
 		AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD461E7D20716A6500AD3902 /* VagaDAO.swift */; };
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
+		AD5BE77F20755D1000104D41 /* UserDefaultsEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */; };
+		AD5BE78120755DFA00104D41 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE78020755DFA00104D41 /* UserDefaults+Extension.swift */; };
 		AD65B90E2073B4590013E083 /* CandidatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B90D2073B4590013E083 /* CandidatoDAO.swift */; };
 		AD65B9102073B7160013E083 /* CadastroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65B90F2073B7160013E083 /* CadastroViewModel.swift */; };
 		AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EB205C54BB00A012D6 /* Candidato.swift */; };
@@ -84,6 +86,8 @@
 		AD10199B205ABA9C00FDF2EC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
 		AD461E7D20716A6500AD3902 /* VagaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaDAO.swift; sourceTree = "<group>"; };
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
+		AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEnumHelper.swift; sourceTree = "<group>"; };
+		AD5BE78020755DFA00104D41 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		AD65B90D2073B4590013E083 /* CandidatoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatoDAO.swift; sourceTree = "<group>"; };
 		AD65B90F2073B7160013E083 /* CadastroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewModel.swift; sourceTree = "<group>"; };
 		AD7B19EB205C54BB00A012D6 /* Candidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidato.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */,
 				AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */,
 				AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */,
+				AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				AD8847D220574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift */,
 				AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */,
 				ADF7F04A2074514800CFD6D6 /* String+extension+regexValidador.swift */,
+				AD5BE78020755DFA00104D41 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -701,7 +707,9 @@
 				ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */,
 				AD65B90E2073B4590013E083 /* CandidatoDAO.swift in Sources */,
 				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
+				AD5BE78120755DFA00104D41 /* UserDefaults+Extension.swift in Sources */,
 				ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */,
+				AD5BE77F20755D1000104D41 /* UserDefaultsEnumHelper.swift in Sources */,
 				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,
 				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */,

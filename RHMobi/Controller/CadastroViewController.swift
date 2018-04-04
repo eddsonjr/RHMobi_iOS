@@ -105,6 +105,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         print(dbgmsg + "Pressionado o botao de cadastrar")
         if(adqurirDadosDosCamposEValidando()){
             cadastrarCandidato()
+           
         }else{
             print(dbgmsg + "Erros encontrados durante o cadastro.")
         }
@@ -286,6 +287,11 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     func cadastrarCandidato(){
         
         print(dbgmsg + "Chamando a funcao para cadastrar")
+        
+        //Salvando o email no UserDefaults
+        UserDefaults.standard.setUserEmail(value: self.emailTextField.text!)
+        
+        //Cadastrando...
         viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, rg: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
     }
     
