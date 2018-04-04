@@ -151,6 +151,15 @@ class CadastroViewController: UIViewController {
     //Mark: Funcao para pegar os dados dos campos
     func adqurirDadosDosCampos() {
         
+        let nome = nomeTextField.text // Adiquirindo o nome
+        
+        
+        
+        
+        
+        
+        
+        
         viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, rg: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
         
         
