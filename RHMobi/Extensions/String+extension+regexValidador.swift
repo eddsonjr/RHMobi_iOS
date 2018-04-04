@@ -12,17 +12,18 @@ import UIKit
 extension String {
     
     
-    public func isPhone()->Bool {
-        if self.isAllDigits() == true {
-            let phoneRegex = "[235689][0-9]{6}([0-9]{3})?"
-            let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
-            return  predicate.evaluate(with: self)
-        }else {
-            return false
-        }
-    }
+//    public func isPhone()->Bool {
+//        if self.isAllDigits() == true {
+//            //let phoneRegex = "/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/"
+//            //let phoneRegex = "[235689][0-9]{6}([0-9]{3})?"
+//            let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
+//            return  predicate.evaluate(with: self)
+//        }else {
+//            return false
+//        }
+//    }
     
-    private func isAllDigits()->Bool {
+    public  func isAllDigits()->Bool {
         let charcterSet  = NSCharacterSet(charactersIn: "+0123456789").inverted
         let inputString = self.components(separatedBy: charcterSet)
         let filtered = inputString.joined(separator: "")
