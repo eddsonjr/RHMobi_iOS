@@ -631,6 +631,9 @@
                                                 <state key="normal" image="Botao cadastrar">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cadastrar:" destination="g2V-7W-Jyt" eventType="touchUpInside" id="hZr-v5-8mu"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
                                                 <rect key="frame" x="225" y="266" width="95" height="21"/>
@@ -641,8 +644,8 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
-                                                <rect key="frame" x="355" y="262" width="5" height="29"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
+                                                <rect key="frame" x="340" y="269.5" width="20" height="14"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
                                                 <rect key="frame" x="225" y="341" width="90" height="21"/>
@@ -653,8 +656,8 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
-                                                <rect key="frame" x="355" y="337" width="5" height="29"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao errado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
+                                                <rect key="frame" x="346" y="344.5" width="14" height="14"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
                                                 <rect key="frame" x="225" y="408" width="90" height="21"/>
@@ -674,9 +677,8 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
-                                                <rect key="frame" x="355" y="490" width="5" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
+                                                <rect key="frame" x="355" y="483" width="5" height="29"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
                                                 <rect key="frame" x="225" y="570" width="90" height="21"/>
@@ -687,10 +689,6 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
-                                                <rect key="frame" x="355" y="560" width="5" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
                                                 <rect key="frame" x="225" y="880" width="90" height="21"/>
                                                 <constraints>
@@ -712,9 +710,11 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
                                                 <rect key="frame" x="355" y="185" width="5" height="31"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
-                                                <rect key="frame" x="355" y="880" width="5" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
+                                                <rect key="frame" x="355" y="404" width="5" height="29"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
+                                                <rect key="frame" x="355" y="876" width="5" height="29"/>
                                             </imageView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-Bu-efF">
                                                 <rect key="frame" x="111" y="720" width="153" height="29"/>
@@ -723,9 +723,12 @@
                                                     <segment title="Feminino"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.70596712829999997" green="0.11017128079999999" blue="0.17228496069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="selecaoSexoSegmented:" destination="g2V-7W-Jyt" eventType="valueChanged" id="L3P-A4-jy8"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
-                                                <rect key="frame" x="355" y="406" width="5" height="29"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
+                                                <rect key="frame" x="355" y="566" width="5" height="29"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96460121870040894" green="0.96476620435714722" blue="0.96459084749221802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -734,7 +737,9 @@
                                             <constraint firstAttribute="trailing" secondItem="6h8-wT-yOs" secondAttribute="trailing" constant="15" id="35Z-tt-StK"/>
                                             <constraint firstItem="8f6-Gb-Eib" firstAttribute="leading" secondItem="j0I-ce-fZ1" secondAttribute="leading" id="38T-Ze-w2F"/>
                                             <constraint firstItem="4xO-FU-SM6" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="26" id="5aO-Iy-aoT"/>
+                                            <constraint firstItem="cLS-0R-5AF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ne7-kj-TRV" secondAttribute="trailing" constant="40" id="7r3-mz-m76"/>
                                             <constraint firstItem="Zsn-FK-LBw" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="8Lz-r3-ofV"/>
+                                            <constraint firstItem="PtR-Pz-AD0" firstAttribute="centerY" secondItem="d8R-0r-8ed" secondAttribute="centerY" id="8bD-1A-6l2"/>
                                             <constraint firstItem="tqA-q6-GW9" firstAttribute="top" secondItem="8f6-Gb-Eib" secondAttribute="bottom" constant="19" id="8jK-EY-vQp"/>
                                             <constraint firstItem="8NA-pz-mye" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="9q4-Ad-bVi"/>
                                             <constraint firstItem="NAv-qx-sH8" firstAttribute="top" secondItem="8NA-pz-mye" secondAttribute="bottom" constant="41" id="AMh-30-JlX"/>
@@ -743,6 +748,7 @@
                                             <constraint firstItem="nni-5C-JE6" firstAttribute="top" secondItem="DQV-zw-6eW" secondAttribute="bottom" constant="16" id="EVG-3N-zm2"/>
                                             <constraint firstAttribute="trailing" secondItem="771-b9-mdH" secondAttribute="trailing" constant="8" id="EtP-Uv-swy"/>
                                             <constraint firstItem="Luk-cr-VBm" firstAttribute="centerY" secondItem="nni-5C-JE6" secondAttribute="centerY" id="Ewz-Db-v8Y"/>
+                                            <constraint firstItem="cLS-0R-5AF" firstAttribute="centerY" secondItem="Ne7-kj-TRV" secondAttribute="centerY" id="F52-4X-sl1"/>
                                             <constraint firstItem="rOG-Bu-efF" firstAttribute="centerX" secondItem="idj-bA-eF9" secondAttribute="centerX" id="FZR-Sm-frr"/>
                                             <constraint firstItem="iP2-gP-B8D" firstAttribute="leading" relation="lessThanOrEqual" secondItem="LDh-Fy-aW0" secondAttribute="trailing" constant="35" id="GPz-4S-2eO"/>
                                             <constraint firstItem="G6a-BI-CE8" firstAttribute="top" secondItem="0VU-p7-963" secondAttribute="bottom" constant="8" id="Gnr-MI-nx0"/>
@@ -767,6 +773,7 @@
                                             <constraint firstItem="92e-AK-X7N" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="PiK-2v-4Yr"/>
                                             <constraint firstItem="3VB-zF-wHh" firstAttribute="leading" secondItem="LDh-Fy-aW0" secondAttribute="leading" id="Q7x-jR-Nnt"/>
                                             <constraint firstItem="eWt-pp-YZy" firstAttribute="leading" secondItem="q2q-qt-dmB" secondAttribute="leading" id="Qk2-gy-EdL"/>
+                                            <constraint firstItem="PtR-Pz-AD0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="d8R-0r-8ed" secondAttribute="trailing" constant="40" id="QvQ-gR-VQj"/>
                                             <constraint firstItem="Zsn-FK-LBw" firstAttribute="top" secondItem="92e-AK-X7N" secondAttribute="bottom" constant="8" id="ScS-lS-o1s"/>
                                             <constraint firstItem="q2q-qt-dmB" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="VHe-Ht-eIx"/>
                                             <constraint firstItem="nni-5C-JE6" firstAttribute="leading" secondItem="DQV-zw-6eW" secondAttribute="leading" id="Vrd-dD-AFN"/>
@@ -775,6 +782,7 @@
                                             <constraint firstItem="6ks-Sr-NtO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3VB-zF-wHh" secondAttribute="trailing" constant="35" id="Yav-DY-lco"/>
                                             <constraint firstItem="eWt-pp-YZy" firstAttribute="top" secondItem="q2q-qt-dmB" secondAttribute="bottom" constant="24" id="Yua-ka-Weh"/>
                                             <constraint firstAttribute="trailing" secondItem="8NA-pz-mye" secondAttribute="trailing" constant="8" id="Yyv-fR-TnR"/>
+                                            <constraint firstAttribute="trailing" secondItem="cLS-0R-5AF" secondAttribute="trailing" constant="15" id="ZUP-su-0jE"/>
                                             <constraint firstItem="LDh-Fy-aW0" firstAttribute="centerY" secondItem="92e-AK-X7N" secondAttribute="centerY" id="ZrF-f8-8Ld"/>
                                             <constraint firstItem="Ysx-6j-Pfg" firstAttribute="leading" secondItem="tqA-q6-GW9" secondAttribute="leading" id="aG8-Ar-7pj"/>
                                             <constraint firstItem="d8R-0r-8ed" firstAttribute="centerY" secondItem="QcI-93-W5x" secondAttribute="centerY" id="c1s-0e-bcs"/>
@@ -794,6 +802,10 @@
                                             <constraint firstItem="771-b9-mdH" firstAttribute="top" secondItem="G6a-BI-CE8" secondAttribute="bottom" constant="8" id="odV-MG-Nth"/>
                                             <constraint firstItem="Lh9-Uc-bsG" firstAttribute="leading" secondItem="Zsn-FK-LBw" secondAttribute="leading" id="ozh-WE-Or3"/>
                                             <constraint firstItem="mos-ZQ-y0l" firstAttribute="centerY" secondItem="Ysx-6j-Pfg" secondAttribute="centerY" id="pGE-J5-vRb"/>
+                                            <constraint firstItem="6nU-lF-Thf" firstAttribute="centerY" secondItem="mos-ZQ-y0l" secondAttribute="centerY" id="pHB-lh-J94"/>
+                                            <constraint firstItem="hbu-Hk-NRb" firstAttribute="centerY" secondItem="qr1-VC-pVE" secondAttribute="centerY" id="pHO-W6-Uxb"/>
+                                            <constraint firstAttribute="trailing" secondItem="6nU-lF-Thf" secondAttribute="trailing" constant="15" id="pvG-Bv-PSX"/>
+                                            <constraint firstAttribute="trailing" secondItem="PtR-Pz-AD0" secondAttribute="trailing" constant="15" id="rJh-z1-fc3"/>
                                             <constraint firstItem="hbu-Hk-NRb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="qr1-VC-pVE" secondAttribute="trailing" constant="40" id="rk6-RZ-Zuq"/>
                                             <constraint firstItem="qr1-VC-pVE" firstAttribute="leading" secondItem="Luk-cr-VBm" secondAttribute="leading" id="sIb-RN-0eB"/>
                                             <constraint firstItem="Ne7-kj-TRV" firstAttribute="centerY" secondItem="eWt-pp-YZy" secondAttribute="centerY" id="sd5-Fu-P1P"/>
@@ -803,6 +815,7 @@
                                             <constraint firstItem="mos-ZQ-y0l" firstAttribute="leading" secondItem="Ne7-kj-TRV" secondAttribute="leading" id="vFl-iR-f7f"/>
                                             <constraint firstItem="DQV-zw-6eW" firstAttribute="top" secondItem="Lh9-Uc-bsG" secondAttribute="bottom" constant="8" id="vfS-AM-t5y"/>
                                             <constraint firstAttribute="trailing" secondItem="tqA-q6-GW9" secondAttribute="trailing" constant="8" id="wN6-Io-y8i"/>
+                                            <constraint firstItem="6nU-lF-Thf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mos-ZQ-y0l" secondAttribute="trailing" constant="40" id="wUi-69-xG4"/>
                                             <constraint firstItem="3VB-zF-wHh" firstAttribute="centerY" secondItem="Lh9-Uc-bsG" secondAttribute="centerY" id="zb3-BC-P6w"/>
                                             <constraint firstItem="QcI-93-W5x" firstAttribute="top" secondItem="771-b9-mdH" secondAttribute="bottom" constant="20" id="zjX-WC-Ke4"/>
                                         </constraints>
@@ -828,20 +841,28 @@
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
                         <outlet property="confirmarSenhaLabelConfirmacao" destination="mos-ZQ-y0l" id="5fC-ku-pHl"/>
+                        <outlet property="confirmarSenhaTextField" destination="8NA-pz-mye" id="sBI-p7-t6l"/>
                         <outlet property="confirmarSesnhaImageConfirmacao" destination="6nU-lF-Thf" id="OUZ-xM-Jra"/>
                         <outlet property="emailImageConfirmacao" destination="6h8-wT-yOs" id="n2B-SC-JJ0"/>
                         <outlet property="emailLabelConfirmacao" destination="Luk-cr-VBm" id="rlm-a1-2OX"/>
+                        <outlet property="emailTextField" destination="0VU-p7-963" id="4QY-F6-Ia1"/>
                         <outlet property="imageView" destination="4xO-FU-SM6" id="MZk-7a-YBz"/>
                         <outlet property="nomeImageConfirmacao" destination="iP2-gP-B8D" id="Usb-If-tpl"/>
                         <outlet property="nomeLabelConfirmacao" destination="LDh-Fy-aW0" id="QoK-In-bqk"/>
+                        <outlet property="nomeTextField" destination="Zsn-FK-LBw" id="T9r-DK-WsP"/>
                         <outlet property="rgImageConfirmacao" destination="hbu-Hk-NRb" id="tTe-ow-QW6"/>
                         <outlet property="rgLabelConfirmacao" destination="qr1-VC-pVE" id="iUo-3j-Kbn"/>
+                        <outlet property="rgTextField" destination="771-b9-mdH" id="7QY-eJ-GYF"/>
+                        <outlet property="senhaTextField" destination="tqA-q6-GW9" id="Afw-O3-trK"/>
+                        <outlet property="sobreNomeTextField" destination="DQV-zw-6eW" id="Y30-mh-TAX"/>
                         <outlet property="sobrenomeImageConfirmacao" destination="6ks-Sr-NtO" id="i2i-LB-EwR"/>
                         <outlet property="sobrenomeLabelConfirmacao" destination="3VB-zF-wHh" id="knB-qP-EOw"/>
                         <outlet property="telefone1ImageConfirmacao" destination="PtR-Pz-AD0" id="rbe-Cq-2hd"/>
                         <outlet property="telefone1LabelConfirmacao" destination="d8R-0r-8ed" id="xFY-yc-Oxb"/>
                         <outlet property="telefone2ImageConfirmacao" destination="cLS-0R-5AF" id="bY6-Rd-ipS"/>
                         <outlet property="telefone2LabelConfirmacao" destination="Ne7-kj-TRV" id="3XZ-Y4-D8g"/>
+                        <outlet property="telefone2TextField" destination="j0I-ce-fZ1" id="7yX-R0-eGm"/>
+                        <outlet property="telefoneTextField" destination="q2q-qt-dmB" id="vz3-iG-TNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1153,7 +1174,9 @@
         <image name="Botao atenção" width="5" height="29"/>
         <image name="Botao cadastrar" width="145" height="49"/>
         <image name="Botao candidatar" width="145" height="49"/>
+        <image name="Botao confirmado" width="20" height="14"/>
         <image name="Botao entrar" width="145" height="49"/>
+        <image name="Botao errado" width="14" height="14"/>
         <image name="Cargo" width="21" height="17"/>
         <image name="Contrato" width="15" height="18"/>
         <image name="Cursos ativo" width="19" height="17"/>

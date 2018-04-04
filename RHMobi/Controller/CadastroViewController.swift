@@ -89,17 +89,6 @@ class CadastroViewController: UIViewController {
     }
     
     
-    @IBAction func anexarCurriculo(_ sender: Any) {
-        
-    }
-    
-    
-  
-    @IBAction func areasDeInteresse(_ sender: Any) {
-        
-    }
-    
-    
 
     
     
