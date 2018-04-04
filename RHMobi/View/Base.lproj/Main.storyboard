@@ -644,8 +644,8 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
-                                                <rect key="frame" x="340" y="269.5" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
+                                                <rect key="frame" x="355" y="262" width="5" height="29"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
                                                 <rect key="frame" x="225" y="341" width="90" height="21"/>
@@ -656,8 +656,8 @@
                                                 <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao errado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
-                                                <rect key="frame" x="346" y="344.5" width="14" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
+                                                <rect key="frame" x="355" y="337" width="5" height="29"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
                                                 <rect key="frame" x="225" y="408" width="90" height="21"/>
@@ -736,6 +736,7 @@
                                             <constraint firstItem="QcI-93-W5x" firstAttribute="leading" secondItem="771-b9-mdH" secondAttribute="leading" id="0bb-cE-rSx"/>
                                             <constraint firstAttribute="trailing" secondItem="6h8-wT-yOs" secondAttribute="trailing" constant="15" id="35Z-tt-StK"/>
                                             <constraint firstItem="8f6-Gb-Eib" firstAttribute="leading" secondItem="j0I-ce-fZ1" secondAttribute="leading" id="38T-Ze-w2F"/>
+                                            <constraint firstItem="iP2-gP-B8D" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="185" id="4Hv-rD-QRE"/>
                                             <constraint firstItem="4xO-FU-SM6" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="26" id="5aO-Iy-aoT"/>
                                             <constraint firstItem="cLS-0R-5AF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ne7-kj-TRV" secondAttribute="trailing" constant="40" id="7r3-mz-m76"/>
                                             <constraint firstItem="Zsn-FK-LBw" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="8Lz-r3-ofV"/>
@@ -1174,9 +1175,7 @@
         <image name="Botao atenção" width="5" height="29"/>
         <image name="Botao cadastrar" width="145" height="49"/>
         <image name="Botao candidatar" width="145" height="49"/>
-        <image name="Botao confirmado" width="20" height="14"/>
         <image name="Botao entrar" width="145" height="49"/>
-        <image name="Botao errado" width="14" height="14"/>
         <image name="Cargo" width="21" height="17"/>
         <image name="Contrato" width="15" height="18"/>
         <image name="Cursos ativo" width="19" height="17"/>
