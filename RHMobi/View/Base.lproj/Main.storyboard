@@ -632,68 +632,82 @@
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
-                                                <rect key="frame" x="231" y="271" width="90" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
+                                                <rect key="frame" x="257" y="278" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
-                                                <rect key="frame" x="340" y="274" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
+                                                <rect key="frame" x="355" y="274" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
                                                 <rect key="frame" x="224" y="341" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
-                                                <rect key="frame" x="340" y="344" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
+                                                <rect key="frame" x="355" y="344" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
-                                                <rect key="frame" x="231" y="411.5" width="90" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
+                                                <rect key="frame" x="257" y="419" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
                                                 <rect key="frame" x="224" y="483" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
-                                                <rect key="frame" x="340" y="490" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
+                                                <rect key="frame" x="355" y="490" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
-                                                <rect key="frame" x="231" y="556.5" width="90" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
+                                                <rect key="frame" x="257" y="564" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
-                                                <rect key="frame" x="340" y="560" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
+                                                <rect key="frame" x="355" y="560" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
                                                 <rect key="frame" x="240" y="872" width="90" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
-                                                <rect key="frame" x="231" y="194" width="90" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preencher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
+                                                <rect key="frame" x="257" y="201" width="79" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.20563828945159912" green="0.61435216665267944" blue="0.51678681373596191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88816380500000003" green="0.63436353209999996" blue="0.26216173170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
-                                                <rect key="frame" x="340" y="197" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
+                                                <rect key="frame" x="355" y="197" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
-                                                <rect key="frame" x="340" y="415" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
+                                                <rect key="frame" x="355" y="415" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
-                                                <rect key="frame" x="340" y="875" width="20" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
+                                                <rect key="frame" x="355" y="875" width="5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-Bu-efF">
                                                 <rect key="frame" x="111" y="697" width="153" height="29"/>
@@ -707,81 +721,53 @@
                                         <color key="backgroundColor" red="0.96460121870040894" green="0.96476620435714722" blue="0.96459084749221802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="QcI-93-W5x" firstAttribute="leading" secondItem="771-b9-mdH" secondAttribute="leading" id="0bb-cE-rSx"/>
-                                            <constraint firstItem="Ne7-kj-TRV" firstAttribute="centerY" secondItem="cLS-0R-5AF" secondAttribute="centerY" id="1YJ-0o-5Fv"/>
-                                            <constraint firstItem="Ne7-kj-TRV" firstAttribute="leading" secondItem="d8R-0r-8ed" secondAttribute="leading" id="1rp-Kh-4jr"/>
                                             <constraint firstItem="8f6-Gb-Eib" firstAttribute="leading" secondItem="j0I-ce-fZ1" secondAttribute="leading" id="38T-Ze-w2F"/>
-                                            <constraint firstItem="3VB-zF-wHh" firstAttribute="leading" secondItem="LDh-Fy-aW0" secondAttribute="leading" id="3c5-Gr-jUA"/>
                                             <constraint firstItem="4xO-FU-SM6" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="26" id="5aO-Iy-aoT"/>
                                             <constraint firstItem="Zsn-FK-LBw" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="8Lz-r3-ofV"/>
                                             <constraint firstItem="tqA-q6-GW9" firstAttribute="top" secondItem="8f6-Gb-Eib" secondAttribute="bottom" constant="8" id="8jK-EY-vQp"/>
                                             <constraint firstItem="8NA-pz-mye" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="9q4-Ad-bVi"/>
-                                            <constraint firstItem="PtR-Pz-AD0" firstAttribute="trailing" secondItem="hbu-Hk-NRb" secondAttribute="trailing" id="9qK-PQ-29f"/>
-                                            <constraint firstItem="iP2-gP-B8D" firstAttribute="leading" secondItem="LDh-Fy-aW0" secondAttribute="trailing" constant="19" id="ADV-O3-Glh"/>
                                             <constraint firstItem="NAv-qx-sH8" firstAttribute="top" secondItem="8NA-pz-mye" secondAttribute="bottom" constant="31" id="AMh-30-JlX"/>
                                             <constraint firstItem="DQV-zw-6eW" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="CVy-Cr-1TI"/>
-                                            <constraint firstItem="hbu-Hk-NRb" firstAttribute="top" secondItem="0VU-p7-963" secondAttribute="bottom" constant="15" id="CqI-wK-M0j"/>
-                                            <constraint firstItem="6h8-wT-yOs" firstAttribute="trailing" secondItem="6ks-Sr-NtO" secondAttribute="trailing" id="CuH-gb-fJU"/>
-                                            <constraint firstItem="mos-ZQ-y0l" firstAttribute="leading" secondItem="Ne7-kj-TRV" secondAttribute="leading" id="DKQ-jf-ct3"/>
                                             <constraint firstItem="nni-5C-JE6" firstAttribute="top" secondItem="DQV-zw-6eW" secondAttribute="bottom" constant="16" id="EVG-3N-zm2"/>
                                             <constraint firstAttribute="trailing" secondItem="771-b9-mdH" secondAttribute="trailing" constant="8" id="EtP-Uv-swy"/>
                                             <constraint firstItem="rOG-Bu-efF" firstAttribute="centerX" secondItem="idj-bA-eF9" secondAttribute="centerX" id="FZR-Sm-frr"/>
-                                            <constraint firstItem="PtR-Pz-AD0" firstAttribute="top" secondItem="771-b9-mdH" secondAttribute="bottom" constant="23" id="GNd-KN-OWi"/>
                                             <constraint firstItem="G6a-BI-CE8" firstAttribute="top" secondItem="0VU-p7-963" secondAttribute="bottom" constant="8" id="Gnr-MI-nx0"/>
                                             <constraint firstItem="Lh9-Uc-bsG" firstAttribute="top" secondItem="Zsn-FK-LBw" secondAttribute="bottom" constant="17" id="GpP-hk-mGT"/>
                                             <constraint firstItem="4xO-FU-SM6" firstAttribute="centerX" secondItem="idj-bA-eF9" secondAttribute="centerX" id="GvF-69-s3U"/>
                                             <constraint firstItem="j0I-ce-fZ1" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="H24-Me-tUT"/>
                                             <constraint firstAttribute="trailing" secondItem="q2q-qt-dmB" secondAttribute="trailing" constant="8" id="HQ3-du-N3B"/>
-                                            <constraint firstItem="LDh-Fy-aW0" firstAttribute="centerY" secondItem="iP2-gP-B8D" secondAttribute="centerY" id="Haf-iJ-7bf"/>
-                                            <constraint firstItem="iP2-gP-B8D" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="197" id="I6N-pA-Qgk"/>
                                             <constraint firstItem="8NA-pz-mye" firstAttribute="top" secondItem="Ysx-6j-Pfg" secondAttribute="bottom" constant="18" id="Ig1-5T-SrM"/>
                                             <constraint firstItem="8f6-Gb-Eib" firstAttribute="top" secondItem="rOG-Bu-efF" secondAttribute="bottom" constant="65" id="J7c-RT-6Vg"/>
                                             <constraint firstAttribute="trailing" secondItem="j0I-ce-fZ1" secondAttribute="trailing" constant="8" id="JN1-94-S7d"/>
-                                            <constraint firstItem="qr1-VC-pVE" firstAttribute="centerY" secondItem="hbu-Hk-NRb" secondAttribute="centerY" id="KWb-Ll-SXX"/>
                                             <constraint firstItem="G6a-BI-CE8" firstAttribute="leading" secondItem="0VU-p7-963" secondAttribute="leading" id="LNC-vS-mi6"/>
                                             <constraint firstItem="tqA-q6-GW9" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="Lkm-aC-ruM"/>
                                             <constraint firstItem="j0I-ce-fZ1" firstAttribute="top" secondItem="eWt-pp-YZy" secondAttribute="bottom" constant="8" id="MVP-FB-6sY"/>
                                             <constraint firstAttribute="trailing" secondItem="Zsn-FK-LBw" secondAttribute="trailing" constant="8" id="Mpz-uV-Ooc"/>
-                                            <constraint firstItem="hbu-Hk-NRb" firstAttribute="trailing" secondItem="6h8-wT-yOs" secondAttribute="trailing" id="N8W-Df-EpY"/>
                                             <constraint firstItem="q2q-qt-dmB" firstAttribute="top" secondItem="QcI-93-W5x" secondAttribute="bottom" constant="8" id="Neg-Da-SYt"/>
                                             <constraint firstItem="LFN-xE-824" firstAttribute="top" secondItem="j0I-ce-fZ1" secondAttribute="bottom" constant="8" id="OWv-GL-9jg"/>
-                                            <constraint firstItem="6ks-Sr-NtO" firstAttribute="trailing" secondItem="iP2-gP-B8D" secondAttribute="trailing" id="P4J-nF-PrM"/>
                                             <constraint firstItem="92e-AK-X7N" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="PiK-2v-4Yr"/>
-                                            <constraint firstItem="d8R-0r-8ed" firstAttribute="leading" secondItem="qr1-VC-pVE" secondAttribute="leading" id="QNp-3T-B2S"/>
-                                            <constraint firstItem="mos-ZQ-y0l" firstAttribute="centerY" secondItem="6nU-lF-Thf" secondAttribute="centerY" id="QV9-Az-rON"/>
                                             <constraint firstItem="eWt-pp-YZy" firstAttribute="leading" secondItem="q2q-qt-dmB" secondAttribute="leading" id="Qk2-gy-EdL"/>
                                             <constraint firstItem="Zsn-FK-LBw" firstAttribute="top" secondItem="92e-AK-X7N" secondAttribute="bottom" constant="8" id="ScS-lS-o1s"/>
                                             <constraint firstItem="q2q-qt-dmB" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="VHe-Ht-eIx"/>
                                             <constraint firstItem="nni-5C-JE6" firstAttribute="leading" secondItem="DQV-zw-6eW" secondAttribute="leading" id="Vrd-dD-AFN"/>
-                                            <constraint firstItem="Luk-cr-VBm" firstAttribute="leading" secondItem="3VB-zF-wHh" secondAttribute="leading" id="W8B-Ld-8DG"/>
-                                            <constraint firstItem="6nU-lF-Thf" firstAttribute="top" secondItem="tqA-q6-GW9" secondAttribute="bottom" constant="26" id="WmF-tw-Uit"/>
                                             <constraint firstAttribute="trailing" secondItem="0VU-p7-963" secondAttribute="trailing" constant="8" id="XuZ-nQ-XCm"/>
-                                            <constraint firstItem="cLS-0R-5AF" firstAttribute="top" secondItem="q2q-qt-dmB" secondAttribute="bottom" constant="14" id="YGb-20-vFA"/>
-                                            <constraint firstItem="6ks-Sr-NtO" firstAttribute="top" secondItem="Zsn-FK-LBw" secondAttribute="bottom" constant="25" id="Yn1-OT-3OI"/>
                                             <constraint firstItem="eWt-pp-YZy" firstAttribute="top" secondItem="q2q-qt-dmB" secondAttribute="bottom" constant="8" id="Yua-ka-Weh"/>
                                             <constraint firstAttribute="trailing" secondItem="8NA-pz-mye" secondAttribute="trailing" constant="8" id="Yyv-fR-TnR"/>
                                             <constraint firstItem="Ysx-6j-Pfg" firstAttribute="leading" secondItem="tqA-q6-GW9" secondAttribute="leading" id="aG8-Ar-7pj"/>
                                             <constraint firstItem="0VU-p7-963" firstAttribute="top" secondItem="nni-5C-JE6" secondAttribute="bottom" constant="8" id="ccT-WV-1uL"/>
-                                            <constraint firstAttribute="trailing" secondItem="iP2-gP-B8D" secondAttribute="trailing" constant="15" id="e1s-jt-NUM"/>
                                             <constraint firstAttribute="trailing" secondItem="DQV-zw-6eW" secondAttribute="trailing" constant="8" id="eR8-Y6-Ktf"/>
                                             <constraint firstItem="92e-AK-X7N" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="190" id="eSM-BP-fke"/>
                                             <constraint firstAttribute="height" constant="1087" id="ewG-UY-fm3"/>
-                                            <constraint firstItem="6nU-lF-Thf" firstAttribute="trailing" secondItem="cLS-0R-5AF" secondAttribute="trailing" id="eyZ-nR-Qpt"/>
                                             <constraint firstItem="Ysx-6j-Pfg" firstAttribute="top" secondItem="tqA-q6-GW9" secondAttribute="bottom" constant="23" id="fUT-rJ-gEh"/>
-                                            <constraint firstItem="3VB-zF-wHh" firstAttribute="centerY" secondItem="6ks-Sr-NtO" secondAttribute="centerY" id="fpn-7d-VTU"/>
                                             <constraint firstItem="rOG-Bu-efF" firstAttribute="top" secondItem="LFN-xE-824" secondAttribute="bottom" constant="55" id="gxV-jG-4pu"/>
                                             <constraint firstItem="LFN-xE-824" firstAttribute="leading" secondItem="j0I-ce-fZ1" secondAttribute="leading" id="jKN-9I-b5N"/>
-                                            <constraint firstItem="Luk-cr-VBm" firstAttribute="centerY" secondItem="6h8-wT-yOs" secondAttribute="centerY" id="nTv-I4-3Y0"/>
                                             <constraint firstItem="NAv-qx-sH8" firstAttribute="centerX" secondItem="idj-bA-eF9" secondAttribute="centerX" id="o21-VP-KmV"/>
                                             <constraint firstItem="771-b9-mdH" firstAttribute="top" secondItem="G6a-BI-CE8" secondAttribute="bottom" constant="8" id="odV-MG-Nth"/>
-                                            <constraint firstItem="qr1-VC-pVE" firstAttribute="leading" secondItem="Luk-cr-VBm" secondAttribute="leading" id="olj-wh-drn"/>
                                             <constraint firstItem="Lh9-Uc-bsG" firstAttribute="leading" secondItem="Zsn-FK-LBw" secondAttribute="leading" id="ozh-WE-Or3"/>
-                                            <constraint firstItem="cLS-0R-5AF" firstAttribute="trailing" secondItem="PtR-Pz-AD0" secondAttribute="trailing" id="q3Q-Z8-HbE"/>
                                             <constraint firstItem="771-b9-mdH" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="see-iX-tFy"/>
                                             <constraint firstItem="0VU-p7-963" firstAttribute="leading" secondItem="idj-bA-eF9" secondAttribute="leading" constant="8" id="tG7-zj-ReS"/>
-                                            <constraint firstItem="6h8-wT-yOs" firstAttribute="top" secondItem="DQV-zw-6eW" secondAttribute="bottom" constant="19" id="ub5-RE-9t3"/>
                                             <constraint firstItem="DQV-zw-6eW" firstAttribute="top" secondItem="Lh9-Uc-bsG" secondAttribute="bottom" constant="8" id="vfS-AM-t5y"/>
                                             <constraint firstAttribute="trailing" secondItem="tqA-q6-GW9" secondAttribute="trailing" constant="8" id="wN6-Io-y8i"/>
-                                            <constraint firstItem="d8R-0r-8ed" firstAttribute="centerY" secondItem="PtR-Pz-AD0" secondAttribute="centerY" id="z2l-b3-9Zz"/>
                                             <constraint firstItem="QcI-93-W5x" firstAttribute="top" secondItem="771-b9-mdH" secondAttribute="bottom" constant="20" id="zjX-WC-Ke4"/>
                                         </constraints>
                                     </view>
@@ -1128,9 +1114,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Botao atenção" width="5" height="29"/>
         <image name="Botao cadastrar" width="145" height="49"/>
         <image name="Botao candidatar" width="145" height="49"/>
-        <image name="Botao confirmado" width="20" height="14"/>
         <image name="Botao entrar" width="145" height="49"/>
         <image name="Cargo" width="21" height="17"/>
         <image name="Contrato" width="15" height="18"/>
