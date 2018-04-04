@@ -371,12 +371,18 @@
                                                 <state key="normal" image="Entrar facebook">
                                                     <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="entrarComFacebook:" destination="WZ8-Nb-aSt" eventType="touchUpInside" id="1bx-AK-NO5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inF-Mz-exq">
                                                 <rect key="frame" x="68.5" y="614" width="238" height="34"/>
                                                 <state key="normal" image="Entrar linkedin">
                                                     <color key="titleColor" red="0.0" green="0.32850477430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="entrarComLinekdln:" destination="WZ8-Nb-aSt" eventType="touchUpInside" id="igF-gn-CNq"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Não possui conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHx-eF-yto">
                                                 <rect key="frame" x="81" y="705" width="114" height="21"/>
@@ -414,6 +420,9 @@
                                                 <state key="normal" title="Esqueci minha senha">
                                                     <color key="titleColor" red="0.29280638689999999" green="0.32817125320000001" blue="0.3987939358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="esqueciMinhaSenha:" destination="WZ8-Nb-aSt" eventType="touchUpInside" id="FaB-oH-Gq3"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo RH Mobi" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Mf-q2h">
                                                 <rect key="frame" x="126.5" y="21" width="122" height="144"/>
@@ -421,6 +430,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-kA-45s">
                                                 <rect key="frame" x="115" y="434" width="145" height="49"/>
                                                 <state key="normal" image="Botao entrar"/>
+                                                <connections>
+                                                    <action selector="entrar:" destination="WZ8-Nb-aSt" eventType="touchUpInside" id="TJG-oX-GRK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwD-BZ-ScH">
                                                 <rect key="frame" x="203" y="705" width="88" height="24"/>
@@ -498,6 +510,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="850"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="9Ow-1V-yWQ" id="JLs-q0-kxc"/>
+                        <outlet property="senhaTextField" destination="E5a-PG-nSq" id="FHz-QG-8Gq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqt-vt-TDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -868,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-pA-mhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3563.4375" y="1480.9859154929577"/>
+            <point key="canvasLocation" x="4252" y="1396"/>
         </scene>
         <!--Vagas-->
         <scene sceneID="ohk-dJ-r6Y">

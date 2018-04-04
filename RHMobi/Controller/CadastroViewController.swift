@@ -293,6 +293,10 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         //Cadastrando...
         viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, rg: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
+        
+        
+        //Voltando para a tela anterior
+       self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     

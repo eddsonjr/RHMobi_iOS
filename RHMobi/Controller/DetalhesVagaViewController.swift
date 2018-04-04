@@ -102,7 +102,6 @@ class DetalhesVagaViewController: UIViewController {
     
     
     
-    //####### FUNCOES DAS ACTIONS DOS BOTOES ##########
     
     
     
