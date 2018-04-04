@@ -511,17 +511,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-gN-77X">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-gN-77X">
                                 <rect key="frame" x="0.0" y="64" width="375" height="1087"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idj-bA-eF9">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idj-bA-eF9">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1087"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-FU-SM6">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-FU-SM6">
                                                 <rect key="frame" x="137" y="26" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="39D-gN-Fui"/>
+                                                    <constraint firstAttribute="height" constant="100" id="6g6-qa-VVC"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92e-AK-X7N">
                                                 <rect key="frame" x="8" y="190" width="51" height="21"/>
@@ -737,11 +738,29 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="4xO-FU-SM6" firstAttribute="top" secondItem="idj-bA-eF9" secondAttribute="top" constant="26" id="0GO-gI-cJI"/>
+                                            <constraint firstAttribute="trailing" secondItem="4xO-FU-SM6" secondAttribute="trailing" constant="138" id="byE-uv-eyb"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="idj-bA-eF9" firstAttribute="height" secondItem="ZPe-gN-77X" secondAttribute="height" priority="250" id="00o-Xh-FbQ"/>
+                                    <constraint firstItem="idj-bA-eF9" firstAttribute="top" secondItem="ZPe-gN-77X" secondAttribute="top" id="JXG-7N-r1v"/>
+                                    <constraint firstAttribute="bottom" secondItem="idj-bA-eF9" secondAttribute="bottom" id="LkI-dD-3nM"/>
+                                    <constraint firstItem="idj-bA-eF9" firstAttribute="leading" secondItem="ZPe-gN-77X" secondAttribute="leading" id="RKx-th-aDY"/>
+                                    <constraint firstItem="idj-bA-eF9" firstAttribute="width" secondItem="ZPe-gN-77X" secondAttribute="width" id="Uaa-sn-cZj"/>
+                                    <constraint firstAttribute="trailing" secondItem="idj-bA-eF9" secondAttribute="trailing" id="VEj-1n-xNx"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.96460121870000004" green="0.96476620440000005" blue="0.96459084750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZPe-gN-77X" firstAttribute="trailing" secondItem="mhj-VZ-9WD" secondAttribute="trailing" id="4iv-tl-LFB"/>
+                            <constraint firstItem="ZPe-gN-77X" firstAttribute="leading" secondItem="mhj-VZ-9WD" secondAttribute="leading" id="JK5-Rm-KAL"/>
+                            <constraint firstItem="ZPe-gN-77X" firstAttribute="bottom" secondItem="mhj-VZ-9WD" secondAttribute="bottom" id="reb-p5-z4D"/>
+                            <constraint firstItem="ZPe-gN-77X" firstAttribute="top" secondItem="mhj-VZ-9WD" secondAttribute="top" id="tKR-xt-Hps"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mhj-VZ-9WD"/>
                     </view>
                     <size key="freeformSize" width="375" height="1200"/>
