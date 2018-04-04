@@ -296,7 +296,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         
         //Voltando para a tela anterior
-       self.presentingViewController?.dismiss(animated: true, completion: nil)
+       self.navigationController?.popViewController(animated: true)
     }
     
     
