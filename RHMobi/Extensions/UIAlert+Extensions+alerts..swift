@@ -13,7 +13,7 @@ extension UIAlertController{
     
     static var alertaProximasVersoes: UIAlertController {
         get{
-             let alerta: UIAlertController = UIAlertController(title: "Funcionalidade Indisponível", message: "Essa funcionalidade estará disponível em breve nas próximas versões", preferredStyle: UIAlertControllerStyle.alert)
+             let alerta: UIAlertController = UIAlertController(title: "Ooops!", message: "Essa funcionalidade estará disponível em breve nas próximas versões", preferredStyle: UIAlertControllerStyle.alert)
             
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
             alerta.addAction(okAction)
@@ -48,10 +48,17 @@ extension UIAlertController{
         alerta.addAction(okAction)
         return alerta
         
-        
     }
     
     
+    static var alertaUsuarioJaCadastrado: UIAlertController {
+        let alerta: UIAlertController = UIAlertController(title: "Usuário já cadastrado!", message: "Já existe um usuário cadastrado neste disposivito. Tente fazer login!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        alerta.addAction(okAction)
+        return alerta
+        
+    }
     
     
     

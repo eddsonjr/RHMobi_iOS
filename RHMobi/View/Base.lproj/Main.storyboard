@@ -308,6 +308,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-sT-I6U">
                                 <rect key="frame" x="20" y="284.5" width="23" height="22"/>
                                 <state key="normal" image="Favorito"/>
+                                <connections>
+                                    <action selector="favoritarButton:" destination="eSN-jX-dOO" eventType="touchUpInside" id="UoI-sy-Ye1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritar Vaga de Emprego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCT-ov-RbO">
                                 <rect key="frame" x="55" y="285.5" width="206" height="21"/>

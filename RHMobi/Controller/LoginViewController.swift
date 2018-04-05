@@ -68,16 +68,21 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func entrarComFacebook(_ sender: Any) {
+        print(dbgmsg + "Proximas versoes....")
+        self.present(UIAlertController.alertaProximasVersoes, animated: true, completion: nil)
         
     }
     
     @IBAction func entrarComLinekdln(_ sender: Any) {
-        
+         print(dbgmsg + "Proximas versoes....")
+         self.present(UIAlertController.alertaProximasVersoes, animated: true, completion: nil)
         
     }
     
     
     @IBAction func esqueciMinhaSenha(_ sender: Any) {
+        print(dbgmsg + "Proximas versoes....")
+        self.present(UIAlertController.alertaProximasVersoes, animated: true, completion: nil)
         
         
     }
