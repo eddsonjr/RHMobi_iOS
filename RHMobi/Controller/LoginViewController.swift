@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
 
     private let dbgmsg = "[LoginViewController]: "
     
@@ -27,7 +27,24 @@ class LoginViewController: UIViewController {
         print(dbgmsg + "Usuarios na base de dados: ")
         loginViewModel.getAllCandidatos()
     
+        
+        //Configurando o delegate dos uitextview para que as funcoes do teclado
+        //sejam executadas
+        self.emailTextField.delegate = self
+        self.senhaTextField.delegate = self
+        
+        
+        
+        
+        //Configuracao do teclado para recolher e expandir no caso de edicao
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+
     
+        
+        
         
        
     }
@@ -87,6 +104,26 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    
+    
+    
+    //Mark: Funcoes para  fazer o teclado ficar sempre abaixo dos textView e recolher ao clicar em done
+    
+    @objc func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -150 // Move view 150 points upward
+    }
+    
+    @objc func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y = 0 // Move view to original position
+    }
+    
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     
 
