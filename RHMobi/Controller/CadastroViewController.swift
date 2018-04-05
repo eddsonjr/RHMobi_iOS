@@ -239,10 +239,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
             trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 0)
              print(dbgmsg + "telefone errado!")
             podeCadastrar = false
-        }else if (!(telefone1?.isAllDigits())!) { //verificar se o campo foi preenchido de forma incorreta
-            trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 1)
-             print(dbgmsg + "telefone errado!")
-            podeCadastrar = false
         }else {
             trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 2)
         }
@@ -251,13 +247,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         //Verificando o telefone2
         let telefone2 = telefone2TextField.text
-        if (!(telefone2?.isAllDigits())!) { //verificar se o campo foi preenchido de forma incorreta
-            trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 1)
-            print(dbgmsg + "telefone errado!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 2)
-        }
+        trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 2)
         
         
         
