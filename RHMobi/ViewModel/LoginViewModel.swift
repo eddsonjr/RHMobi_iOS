@@ -13,11 +13,20 @@ import UIKit
 
 class LoginViewModel{
     
+    private final let  dbgmsg = "[LoginViewModel]: "
+    
     
     //TODO - TROCAR ESSE METODO PARA PEGAR VIA BANCO AO INVES DE VIA USER DEFAULTS
     func getEmailUsuarioLogin() -> String{
         let emailUsuarioDoUserDefaults = UserDefaults.standard.getUserEmail
         return emailUsuarioDoUserDefaults()
+    }
+    
+    
+    func logar(email: String, senha: String){
+        if CandidatoDAO.fectchCandidato(email: email, senha: senha) {
+            print(dbgmsg + "Usuario encontrado!")
+        }
     }
 
     

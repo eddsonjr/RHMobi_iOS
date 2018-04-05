@@ -91,6 +91,7 @@ class CandidatoDAO: NSObject {
         do{
             candidatosEntidade = try context.fetch(fetchRequest)
             if (candidatosEntidade?.count != 0 || candidatosEntidade != nil) {
+                print(dbgmsg +  "Encontrado o candidato: \(candidatosEntidade?.first?.nome)")
                 return true
             }else{
                 return false
