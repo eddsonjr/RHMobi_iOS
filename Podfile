@@ -7,6 +7,9 @@ target 'RHMobi' do
 
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.7'
+  pod ‘SwiftMaskText’
+
+
 
   # Pods for RHMobi
 

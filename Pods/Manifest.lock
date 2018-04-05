@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.7.0)
+  - SwiftMaskText (1.0.5)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - SwiftMaskText
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  SwiftMaskText: d73c3a3a9f8b719f28b5c4f3ceef35fe5da5fd0f
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 6749757a7c043745d1951828d3acc9a4d42ba7be
+PODFILE CHECKSUM: 08f34b350a28f6468eb0626bad9802a1f59c5e93
 
 COCOAPODS: 1.4.0
