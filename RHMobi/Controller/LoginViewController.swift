@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(dbgmsg + "View de login carregada!")
+        
+        
+        print(dbgmsg + "Usuarios na base de dados: ")
+        loginViewModel.getAllCandidatos()
+    
     
         
        
@@ -52,6 +57,12 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func entrar(_ sender: Any) {
+        if loginViewModel.logar(email: emailTextField.text!, senha: senhaTextField.text!){
+            self.present(UIAlertController.alertaLoginCorreto, animated: true, completion: nil)
+        }else {
+            self.present(UIAlertController.alertaLoginErrado, animated: true, completion: nil)
+        }
+        
         
     }
     
@@ -70,6 +81,10 @@ class LoginViewController: UIViewController {
         
         
     }
+    
+    
+    
+
     
     
     

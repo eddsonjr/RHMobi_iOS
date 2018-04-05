@@ -60,7 +60,7 @@ class CandidatoDAO: NSObject {
     
     
     class func fecthObjec() -> [CandidatoEntidade]? {
-        let dbgmsg = "[Candidato]: "
+        let dbgmsg = "[CandidatoDAO]: "
         let context = getContext()
         var candidatos:  [CandidatoEntidade]? = nil
         
@@ -78,7 +78,7 @@ class CandidatoDAO: NSObject {
     
     
     class func fectchCandidato(email: String, senha: String) -> Bool {
-        let dbgmsg = "[Candidato]: "
+        let dbgmsg = "[CandidatoDAO]: "
         let context = getContext()
         let fetchRequest: NSFetchRequest<CandidatoEntidade> = CandidatoEntidade.fetchRequest()
         
@@ -90,10 +90,11 @@ class CandidatoDAO: NSObject {
         
         do{
             candidatosEntidade = try context.fetch(fetchRequest)
-            if (candidatosEntidade?.count != 0 || candidatosEntidade != nil) {
+            if (candidatosEntidade?.first != nil){
                 print(dbgmsg +  "Encontrado o candidato: \(candidatosEntidade?.first?.nome)")
                 return true
             }else{
+                print(dbgmsg + "Usuario nao encontrado!")
                 return false
             }
             

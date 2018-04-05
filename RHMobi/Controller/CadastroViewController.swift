@@ -303,12 +303,12 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         switch status {
         case 0:
                 label.text = "Preencha"
-                label.textColor = UIColor(red: 227/256, green: 82/256, blue: 101/256, alpha: 1.0)
+                label.textColor = UIColor(red: 233/256, green: 162/256, blue: 67/256, alpha: 1.0)
                 image.image = #imageLiteral(resourceName: "Botao atenção")
                 break
         case 1:
                 label.text = "Verifique"
-                label.textColor = UIColor(red: 233/256, green: 162/256, blue: 67/256, alpha: 1.0)
+                label.textColor = UIColor(red: 227/256, green: 82/256, blue: 101/256, alpha: 1.0)
                 image.image = #imageLiteral(resourceName: "Botao errado")
                 break
             
