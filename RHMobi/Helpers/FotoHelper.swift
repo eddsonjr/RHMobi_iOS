@@ -59,6 +59,7 @@ class FotoHelper: NSObject, UIImagePickerControllerDelegate, UINavigationControl
         print(dbgmsg + "Imagem selecionada. Verificando se ela esta no formato correto e dando dismiss...")
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.image = image
+            print(dbgmsg + "Tamanho da imagem: \(image.size)")
         }
         
         self.viewController.dismiss(animated: true, completion: {

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 
+
 //usage : imageView.downloadedFrom(link: "http://www.apple.com/euro/ios/ios8/a/generic/images/og.png")
 
 //Esta extensao e resposnavel por realizar o download de imagens da internet de forma assincrona
@@ -34,4 +35,20 @@ extension UIImageView {
         guard let url = URL(string: link) else { return }
         downloadedFrom(url: url, contentMode: mode)
     }
+    
+    
+    
+    
+    //UIImageView arredondada
+    func makeRounded() {
+        let radius = self.frame.size.width/2
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = true
+        
+        //self.layer.masksToBounds = true
+    }
+    
+    
+    
+    
 }

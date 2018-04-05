@@ -138,6 +138,8 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     //Mark: Funcao que sera disparada pela notification para trocar imagem
     @objc func trocarImagemCadastro() {
         print(dbgmsg + "Trocando imagem...")
+//        self.imageView.makeRounded()
+//        let roundedImage = self.fotoHelper.getImage()
         self.imageView.image = self.fotoHelper.getImage()
     }
 
