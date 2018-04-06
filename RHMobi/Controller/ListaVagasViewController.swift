@@ -113,8 +113,17 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Disparar acao ao selecionar uma celula e tambem armazenando a celula no helper
-        VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
-        performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
+        
+        if self.procurando {
+            VagaHelper.vaga = self.dadosFiltradosBusca[(self.vagasTableView.indexPathForSelectedRow?.row)!]
+                performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
+        }else{
+            VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
+            performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
+        }
+        
+        
+        
 
     }
     
