@@ -150,5 +150,24 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             
         }
     }
+    
+    
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.vagasSearchBar.endEditing(true)
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+         self.vagasSearchBar.endEditing(true)
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print(dbgmsg + "Busca cancelada....")
+        self.vagasSearchBar.endEditing(true)
+    }
+    
+    
 }
 
