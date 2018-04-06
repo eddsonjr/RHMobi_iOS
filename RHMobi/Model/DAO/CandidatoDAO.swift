@@ -38,7 +38,7 @@ class CandidatoDAO: NSObject {
         manageObject.setValue(candidato.nome, forKey: "nome")
         manageObject.setValue(candidato.sobrenome, forKey: "sobrenome")
         manageObject.setValue(candidato.email, forKey: "email")
-        manageObject.setValue(candidato.rg, forKey: "rg")
+        manageObject.setValue(candidato.cpf, forKey: "cpf")
         manageObject.setValue(candidato.sexo, forKey: "sexo")
         manageObject.setValue(candidato.senha, forKey: "senha")
         manageObject.setValue(candidato.telefone1, forKey: "telefone1")

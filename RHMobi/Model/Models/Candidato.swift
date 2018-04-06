@@ -16,7 +16,7 @@ class Candidato {
     var sobrenome: String
     var email: String
     var senha: String
-    var rg: String
+    var cpf: String
     var telefone1: String
     var telefone2: String
     var sexo: String
@@ -35,7 +35,7 @@ class Candidato {
         self.email = ""
         self.sexo = ""
         self.senha = ""
-        self.rg = ""
+        self.cpf = ""
         self.telefone1 = ""
         self.telefone2 = ""
         self.vagasAssociadas = nil
@@ -44,7 +44,7 @@ class Candidato {
     
     
     //Construtor com itens
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, rg: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, cpf: String, telefone1: String, telefone2: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
         
       
         
@@ -53,7 +53,7 @@ class Candidato {
         self.sobrenome = sobrenome
         self.email = email
         self.senha = senha
-        self.rg = rg
+        self.cpf = cpf
         self.telefone1 = telefone1
         self.telefone2 = telefone2
         self.sexo = sexo

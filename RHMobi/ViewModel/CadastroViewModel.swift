@@ -15,11 +15,11 @@ import UIKit
 class CadastroViewModel {
     
     
-    func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, rg: String,
+    func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, cpf: String,
                    email:String, senha:String,telefone1: String, telefone2: String){
 
         
-        let candidato = Candidato(id: id, nome: nome, sobrenome: sobrenome, email: email, senha: senha, rg: rg, telefone1: telefone1, telefone2: telefone2, sexo: sexo, vagasAssociadas: nil, cv: nil)
+        let candidato = Candidato(id: id, nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, telefone1: telefone1, telefone2: telefone2, sexo: sexo, vagasAssociadas: nil, cv: nil)
         
         CandidatoDAO.saveObject(candidato: candidato)
         
