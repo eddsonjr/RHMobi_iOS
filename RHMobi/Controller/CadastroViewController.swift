@@ -308,17 +308,23 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
                 label.text = "Preencha"
                 label.textColor = UIColor(red: 233/256, green: 162/256, blue: 67/256, alpha: 1.0)
                 image.image = #imageLiteral(resourceName: "Botao atenção")
+                image.isHidden = false
+                label.isHidden = false
                 break
         case 1:
                 label.text = "Verifique"
                 label.textColor = UIColor(red: 227/256, green: 82/256, blue: 101/256, alpha: 1.0)
                 image.image = #imageLiteral(resourceName: "Botao errado")
+                image.isHidden = false
+                label.isHidden = false
                 break
             
         default:
                 label.text = "Confirmado"
                 label.textColor = UIColor(red: 53/256, green: 157/256, blue: 132/256, alpha: 1.0)
                 image.image = #imageLiteral(resourceName: "Botao confirmado")
+                image.isHidden = false
+                label.isHidden = false
         }
         
     }
