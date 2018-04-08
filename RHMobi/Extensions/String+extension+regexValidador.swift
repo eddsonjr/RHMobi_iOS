@@ -23,6 +23,7 @@ extension String {
 //        }
 //    }
     
+   
     public  func isAllDigits()->Bool {
         let charcterSet  = NSCharacterSet(charactersIn: "+0123456789").inverted
         let inputString = self.components(separatedBy: charcterSet)
@@ -32,11 +33,11 @@ extension String {
     
 
     public func isEmailValid()->Bool {
-        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailFormat = "^[a-z0-9._]+@[a-z0-9]+\\.[a-z]+(\\.[a-z]+)?$"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
         return emailPredicate.evaluate(with:self)
     }
-    
+
     
     
     

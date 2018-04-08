@@ -206,12 +206,12 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         let email = emailTextField.text
         if ((email == "" || email == nil)){ //Verifica se o campo nao foi preenchido
             trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 0)
-              print(dbgmsg + "email errado!")
+              print(dbgmsg + "email errado - Em branco!")
             podeCadastrar = false
         }
 //        else if (email?.isEmailValid())! { //verificar se o campo foi preenchido de forma incorreta
 //            trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 1)
-//             print(dbgmsg + "email errado!")
+//             print(dbgmsg + "email errado - Formato errado!")
 //            podeCadastrar = false
 //        }
         else {
