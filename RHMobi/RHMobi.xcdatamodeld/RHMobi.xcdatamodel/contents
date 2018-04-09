@@ -6,6 +6,8 @@
         <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="CandidatoEntidade" representedClassName="CandidatoEntidade" syncable="YES" codeGenerationType="class">
+        <attribute name="celular" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="convencional" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cpf" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -13,8 +15,6 @@
         <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sexo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sobrenome" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="telefone1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="telefone2" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="cv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CVEntidade" inverseName="candidato" inverseEntity="CVEntidade" syncable="YES"/>
     </entity>
     <entity name="ClienteEntidade" representedClassName="ClienteEntidade" syncable="YES" codeGenerationType="class">
@@ -67,7 +67,7 @@
     </entity>
     <elements>
         <element name="AreasInteresseEntidade" positionX="-254" positionY="243" width="128" height="90"/>
-        <element name="CandidatoEntidade" positionX="-459" positionY="189" width="128" height="193"/>
+        <element name="CandidatoEntidade" positionX="-459" positionY="189" width="128" height="195"/>
         <element name="ClienteEntidade" positionX="7" positionY="92" width="128" height="135"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="120"/>
         <element name="EnderecoEntidade" positionX="-2" positionY="299" width="128" height="135"/>
