@@ -50,27 +50,6 @@ class GenericViewModel: NSObject {
     
     
     
-    
-    
-    
-   
-
-    
-    
-    
-    
-    func validarSenhas(senha: String, confirmarSenha: String) -> Bool { //valida as senhas
-        if(senha == confirmarSenha){
-            return true
-        }else{
-            return false
-        }
-    }
-    
-    
-    
-    
-    
 
     
   
