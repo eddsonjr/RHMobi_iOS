@@ -59,7 +59,7 @@ class CandidatoDAO: NSObject {
     
     
     
-    class func fecthObjec() -> [CandidatoEntidade]? {
+    class func fecthAllObjec() -> [CandidatoEntidade]? {
         let dbgmsg = "[CandidatoDAO]: "
         let context = getContext()
         var candidatos:  [CandidatoEntidade]? = nil
@@ -103,6 +103,27 @@ class CandidatoDAO: NSObject {
             return false
         }
     }
+    
+    
+    
+    
+    
+    //Apaga todos os Candidatos da base de dados
+    class func cleanDelete() -> Bool {
+        let dbgmsg = "[CandidatoDAO]: "
+        let context = getContext()
+        let delete = NSBatchDeleteRequest(fetchRequest: CandidatoEntidade.fetchRequest())
+        do {
+            try context.execute(delete)
+            print(dbgmsg + "Apagado todos os dados de candidato do banco de dados")
+            return true
+        }catch {
+            return false
+        }
+    }
+    
+    
+    
     
     
     

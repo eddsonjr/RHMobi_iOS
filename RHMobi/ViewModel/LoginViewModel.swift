@@ -34,8 +34,22 @@ class LoginViewModel{
     }
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Para debug
     func getAllCandidatos() {
-        let candidatos = CandidatoDAO.fecthObjec()
+        let candidatos = CandidatoDAO.fecthAllObjec()
         
         for c in candidatos! {
             print(dbgmsg + "Candidato nome: \(c.nome)")

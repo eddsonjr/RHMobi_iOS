@@ -25,7 +25,7 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
     
     
     //Mark: variavel do viewmodel da lista de vagas e dos detalhes da vaga
-    var viewModel = ListaEDetalheVagaViewModel()
+    var viewModel = ListaEDetalheVagaViewModel(url: UrlEnumHelper.vagasDownlodUrl.rawValue)
     
     
     
@@ -52,7 +52,6 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             self.listaVagas = vaga
             self.vagasTableView.reloadData()
         }
-        
       
        
     }

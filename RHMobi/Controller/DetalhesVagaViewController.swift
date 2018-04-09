@@ -31,9 +31,6 @@ class DetalhesVagaViewController: UIViewController {
     
     
     
-    var viewModel = ListaEDetalheVagaViewModel()
-    
-    
     
     
 

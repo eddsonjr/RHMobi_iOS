@@ -14,16 +14,21 @@ import UIKit
 import SwiftyJSON
 
 
-class ListaEDetalheVagaViewModel {
+class ListaEDetalheVagaViewModel: GenericViewModel {
     
     private final let dbgmsg = "[ListaEDetalhesVagaViewModel]: "
     
     
+    //Mark: Construtores
+    override init(url: String) {
+        super.init(url: url)
+    }
+
+
     //Mark: Esta funcao serve para baixar os dados via json e codifica - los em um array de vagas
     
     func baixarListaVagaJson(completihonHandler: @escaping ([Vaga])->()){
-        let jsonHelper: JsonHelper = JsonHelper(url: UrlEnumHelper.vagasDownlodUrl.rawValue)
-        jsonHelper.getDataFromJson { json in
+       super.getDataFromJson { json in
             guard let json = json else {return}
             print(self.dbgmsg + "Json recebido: \n")
             print(json)
@@ -48,8 +53,6 @@ class ListaEDetalheVagaViewModel {
     }
     
     
-    
-    
     func salvarVaga(vaga: Vaga){
         VagaDAO.saveObject(vaga: vaga)
     }
@@ -57,7 +60,7 @@ class ListaEDetalheVagaViewModel {
     
     
     func listarTodasVagasSalvas() -> [VagaEntidade]{
-        return VagaDAO.fecthObjec()!
+        return VagaDAO.fecthAllObjec()!
     }
     
     

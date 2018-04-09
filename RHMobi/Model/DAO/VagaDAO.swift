@@ -79,7 +79,7 @@ class VagaDAO: NSObject {
     
     
     //Retorna uma lista de objetos vindos do banco
-    class func fecthObjec() -> [VagaEntidade]? {
+    class func fecthAllObjec() -> [VagaEntidade]? {
         let dbgmsg = "[VagaDAO]: "
         let context = getContext()
         var vagas:  [VagaEntidade]? = nil
@@ -95,4 +95,44 @@ class VagaDAO: NSObject {
     }
     
     
+    
+    
+    //Apaga todas as vagas da base de dados
+    class func cleanDelete() -> Bool {
+        let dbgmsg = "[VagaDAO]: "
+        let context = getContext()
+        let delete = NSBatchDeleteRequest(fetchRequest: VagaEntidade.fetchRequest())
+        do {
+            try context.execute(delete)
+            print(dbgmsg + "Apagado todos os dados de vaga do banco de dados")
+            return true
+        }catch {
+            return false
+        }
+    }
+    
+    
+    
+    
+    //Filtrar Dados
+    class func filterData(stringToNSPredicate: String, atributoForWhere: String) ->[VagaEntidade]? {
+        let dbgmsg = "[VagaDAO]: "
+        let context = getContext()
+        let fetchRequest: NSFetchRequest<VagaEntidade> = VagaEntidade.fetchRequest()
+        var vagas:[VagaEntidade]?  = nil
+        
+        
+        var predicate = NSPredicate(format: "password contains[c] %@", "2")
+        fetchRequest.predicate = predicate
+        do{
+            vagas = try context.fetch(fetchRequest)
+            print(dbgmsg + "Encontrados \(vagas?.count) com essa busca especifica")
+            
+            return vagas
+            
+        }catch let err{
+            print()
+            return vagas
+        }
+    }
 }

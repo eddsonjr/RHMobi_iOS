@@ -27,11 +27,21 @@ class CadastroViewModel {
     
     
     
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     func listarTodosOsCandidatos() -> [CandidatoEntidade]{
-        return CandidatoDAO.fecthObjec()!
+        return CandidatoDAO.fecthAllObjec()!
     }
     
     

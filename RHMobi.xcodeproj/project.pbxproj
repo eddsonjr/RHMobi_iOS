@@ -31,6 +31,7 @@
 		AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */; };
 		AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */; };
 		AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F8205C6BFE00A012D6 /* Cliente.swift */; };
+		AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA10207BA78200101E42 /* GenericViewModel.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -51,7 +52,6 @@
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
 		ADB27EB32073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO in Resources */ = {isa = PBXBuildFile; fileRef = ADB27EB22073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO */; };
 		ADBEDBDF2070120300DB53CA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */; };
-		ADBEDBE02070120300DB53CA /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEDBDE2070120300DB53CA /* JsonHelper.swift */; };
 		ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */; };
 		ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */; };
 		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
@@ -103,6 +103,7 @@
 		AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVagaEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCVEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F8205C6BFE00A012D6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		AD82DA10207BA78200101E42 /* GenericViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModel.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADB27EB22073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO */ = {isa = PBXFileReference; lastKnownFileType = text; path = codigos_antigos_CandidatoDAO; sourceTree = "<group>"; };
 		ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		ADBEDBDE2070120300DB53CA /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
@@ -193,6 +193,7 @@
 				ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */,
 				AD65B90F2073B7160013E083 /* CadastroViewModel.swift */,
 				AD5BE7822075622900104D41 /* LoginViewModel.swift */,
+				AD82DA10207BA78200101E42 /* GenericViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -336,7 +337,6 @@
 				AD0D2F25205B2E2900912130 /* FotoHelper.swift */,
 				ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */,
 				ADBEDBDD2070120300DB53CA /* CoreDataHelper.swift */,
-				ADBEDBDE2070120300DB53CA /* JsonHelper.swift */,
 				ADC47275206C89FF008F8242 /* VagaHelper.swift */,
 			);
 			path = Helpers;
@@ -700,6 +700,7 @@
 				AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */,
+				AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
@@ -727,7 +728,6 @@
 				AD7B19EE205C58A800A012D6 /* CV.swift in Sources */,
 				AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */,
 				AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */,
-				ADBEDBE02070120300DB53CA /* JsonHelper.swift in Sources */,
 				ADF7F04B2074514800CFD6D6 /* String+extension+regexValidador.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
