@@ -53,31 +53,8 @@ class GenericViewModel: NSObject {
     
     
     
-    
-    //Mark: Funcoes de validacao de campos que servirao para cadastro do usuario
-    func validarNome(nome: String?) -> Bool { //valida o nome
-        if(nome == "" || nome == nil){
-            return false
-        }else if (nome?.isAllDigits())! {
-            return false
-        }else{
-            return true
-        }
-    }
-    
-    
-    
-    
-    func validarSobreNome(sobrenome: String?) -> Bool { //valida o sobrenome
-        if(sobrenome == "" || sobrenome == nil){
-            return false
-        }else if (sobrenome?.isAllDigits())! {
-            return false
-        }else{
-            return true
-        }
-    }
-    
+   
+
     
     
     
@@ -94,35 +71,7 @@ class GenericViewModel: NSObject {
     
     
     
-    func validarTelefoneCelular(celular: String?) -> Bool { //valida o numero de celular
-        if(celular == "" || celular == nil){
-            return false
-        }else if(!(celular?.isAllDigits())!){
-            return false
-        }else{
-            return true
-        }
-    }
+
     
-    
-    
-    func validarTelefoneConvencional(convencional: String?) -> Bool { //valida o telefone convencional
-        if(convencional == "" || convencional == nil || (convencional?.isAllDigits())!){
-            return true
-        }else{
-            return false
-        }
-    }
-    
-    
-    
-    func validarEmail(email: String?) -> Bool { //valida o email
-        if(email == "" || email == nil) {
-            return false
-        }else{
-            return true
-        }
-        
-        //TODO - VALIDAR O EMAIL USANDO REGEX
-    }
+  
 }

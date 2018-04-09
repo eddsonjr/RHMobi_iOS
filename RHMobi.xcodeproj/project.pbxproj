@@ -32,6 +32,7 @@
 		AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */; };
 		AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F8205C6BFE00A012D6 /* Cliente.swift */; };
 		AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA10207BA78200101E42 /* GenericViewModel.swift */; };
+		AD82DA13207BD1FB00101E42 /* CadastroEnumValidacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -104,6 +105,7 @@
 		AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCVEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F8205C6BFE00A012D6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		AD82DA10207BA78200101E42 /* GenericViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModel.swift; sourceTree = "<group>"; };
+		AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEnumValidacao.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */,
 				AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */,
 				AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */,
+				AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 				AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */,
 				ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */,
+				AD82DA13207BD1FB00101E42 /* CadastroEnumValidacao.swift in Sources */,
 				AD65B90E2073B4590013E083 /* CandidatoDAO.swift in Sources */,
 				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
 				AD5BE78120755DFA00104D41 /* UserDefaults+Extension.swift in Sources */,
