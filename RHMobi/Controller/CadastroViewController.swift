@@ -56,7 +56,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Configurando
+        //Configurando o delegate de cada TextField
         self.nomeTextField.delegate = self
         self.sobreNomeTextField.delegate = self
         self.rgTextField.delegate = self
@@ -67,22 +67,19 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         self.confirmarSenhaTextField.delegate = self
         
         
-        
-        
+        //Configurando o fotohelper para tirar foto
         self.fotoHelper = FotoHelper(viewController: self)
         
+        
+        //Configurando notificacao carregar imagem assim que o usuario tira - la
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.trocarImagemCadastro), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.fotoPronta.rawValue), object: nil)
         
+        
+        //Adicionando tap gesture na imageview para que o usuario possa tirar/carregar fotos
         addTapGestureImageView()
         
         
-        let l = viewModel.listarTodosOsCandidatos()
-        for a in l {
-            print("Dados do candidato: \(a.nome) -- \(a.sobrenome) -- \(a.email) -- \(a.id)")
-        }
-        
-        
-        //Teclado
+        //Teclado - Configurando acoes e comportamentos do teclado do iphone
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -103,11 +100,11 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func cadastrar(_ sender: Any) {
         print(dbgmsg + "Pressionado o botao de cadastrar")
-        if(adqurirDadosDosCamposEValidando()){
+        
+        let podeCadastrar = adqurirDadosDosCamposEValidar(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, email: self.emailTextField.text, cpf: self.rgTextField.text, celular: self.telefoneTextField.text, fixo: self.telefone2TextField.text, senha: self.senhaTextField.text!, confirmarSenha: self.confirmarSenhaTextField.text)
+        
+        if podeCadastrar {
             cadastrarCandidato()
-           
-        }else{
-            print(dbgmsg + "Erros encontrados durante o cadastro.")
         }
 
     }
@@ -164,18 +161,124 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     
     //Mark: Funcao para pegar os dados dos campos
-    func adqurirDadosDosCamposEValidando() -> Bool {
+    func adqurirDadosDosCamposEValidar(nome: String?, sobrenome:String?, email: String?, cpf: String?,
+                                         celular: String?, fixo: String?,senha: String,
+                                         confirmarSenha: String?) -> Bool {
+
         
-        //Adquirindo dados dos campos de texto da tela e validando
-        let retornoVerificar = self.viewModel.validarDadosUsuario(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, sexo: self.sexo, cpf: self.rgTextField.text, email: self.emailTextField.text, senha: self.senhaTextField.text, confirmarSenha: self.confirmarSenhaTextField.text, celular: self.telefoneTextField.text, convencional: self.telefone2TextField.text)
+        var podeCadastrar = true
+        
+        //Realizando a validacao dos campos
         
         
-        return retornoVerificar.0
+        do{ //validando o nome
+            try self.viewModel.validarNome(nome: nome)
+             trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 2)
+        }catch  ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "nome nao preenchido!")
+            trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch ErrosValidacaoCadastro.dadoErrado {
+            print(dbgmsg + "nome informado esta errado!")
+              trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 1)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+        
+        
+        do{ //Validando o sobrenome
+            try self.viewModel.validarSobrenome(sobrenome: sobrenome)
+            trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 2)
+            
+        }catch ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "sobrenome nao preenchido!")
+            trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch ErrosValidacaoCadastro.dadoErrado {
+            print(dbgmsg + "sobrenome informado esta errado!")
+           trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 1)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+        
+        do{
+            try self.viewModel.validarEmail(email: email)
+             trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 2)
+        }catch ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "Email vazio")
+            trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch{
+            
+        }
+        
+        
+        
+        
+        do{ //validando o cpf
+            try self.viewModel.validarCPF(cpf: cpf)
+            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 2)
+            
+        }catch ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "cpf nao preenchido!")
+            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch ErrosValidacaoCadastro.dadoErrado {
+            print(dbgmsg + "cpf informado esta errado!")
+            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 1)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+        do { //validando o telefone celular
+            try self.viewModel.validarCelular(celular: celular!)
+            trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 2)
+            
+        }catch ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "celular nao preenchido!")
+            trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+    
+        do{ //validando o telefone fixo
+            try self.viewModel.validarTelefoneFixo(convencional: fixo!)
+            trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 2)
+            
+        }catch ErrosValidacaoCadastro.dadoErrado {
+            print(dbgmsg + "telefone errado")
+            trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 1)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+        do { //validando as senhas
+            try self.viewModel.validarSenhas(senha: senha, confirmacaoSenha: confirmarSenha!)
+             trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 2)
+        }catch ErrosValidacaoCadastro.campoNaoPreenchido {
+            print(dbgmsg + "celular nao preenchido!")
+            trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 0)
+            podeCadastrar = false
+        }catch ErrosValidacaoCadastro.dadoErrado {
+            print(dbgmsg + "celular informado esta errado!")
+           trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 1)
+            podeCadastrar = false
+        }catch {
+            
+        }
+        
+        return podeCadastrar
     }
     
-    
-    
-    
+
     
     
     
@@ -184,12 +287,8 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     func cadastrarCandidato(){
         
         print(dbgmsg + "Chamando a funcao para cadastrar")
-    
-        
-        //Cadastrando...
-        viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, cpf: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
-        
         self.navigationController?.popViewController(animated: true)
+        viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, cpf: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, celular: self.telefoneTextField.text!, convencional: self.telefone2TextField.text!)
         
         
         
@@ -204,7 +303,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         //0: Incorreto
         //1: Incompleto
         //Default: Confirmado
-        
         
         switch status {
         case 0:
@@ -240,7 +338,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     
     //Mark: Metodos de teclado e interacao via teclado
-    
     @objc func keyboardWillShow(sender: NSNotification) {
         self.view.frame.origin.y = -150 // Move view 150 points upward
     }

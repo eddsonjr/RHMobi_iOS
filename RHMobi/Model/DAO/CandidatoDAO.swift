@@ -41,8 +41,8 @@ class CandidatoDAO: NSObject {
         manageObject.setValue(candidato.cpf, forKey: "cpf")
         manageObject.setValue(candidato.sexo, forKey: "sexo")
         manageObject.setValue(candidato.senha, forKey: "senha")
-        manageObject.setValue(candidato.telefone1, forKey: "telefone1")
-        manageObject.setValue(candidato.telefone2, forKey: "telefone2")
+        manageObject.setValue(candidato.celular, forKey: "celular")
+        manageObject.setValue(candidato.convencional, forKey: "convencional")
         
         //Falta ainda criar o relacionamento com o cv
         

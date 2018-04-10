@@ -661,86 +661,86 @@
                                                     <action selector="cadastrar:" destination="g2V-7W-Jyt" eventType="touchUpInside" id="hZr-v5-8mu"/>
                                                 </connections>
                                             </button>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
-                                                <rect key="frame" x="240" y="265" width="95" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VB-zF-wHh">
+                                                <rect key="frame" x="225" y="265" width="95" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="zLH-co-tJW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
-                                                <rect key="frame" x="355" y="261" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-Sr-NtO">
+                                                <rect key="frame" x="340" y="268.5" width="20" height="14"/>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
-                                                <rect key="frame" x="240" y="340" width="90" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luk-cr-VBm">
+                                                <rect key="frame" x="225" y="340" width="90" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="IVD-9F-idv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
-                                                <rect key="frame" x="355" y="336" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-wT-yOs">
+                                                <rect key="frame" x="340" y="343.5" width="20" height="14"/>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
-                                                <rect key="frame" x="240" y="407" width="90" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-VC-pVE">
+                                                <rect key="frame" x="225" y="407" width="90" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="Vjm-Vu-shH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
-                                                <rect key="frame" x="240" y="486" width="90" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-0r-8ed">
+                                                <rect key="frame" x="225" y="486" width="90" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="dlK-CC-0JQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
-                                                <rect key="frame" x="355" y="482" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-Pz-AD0">
+                                                <rect key="frame" x="340" y="489.5" width="20" height="14"/>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
-                                                <rect key="frame" x="240" y="569" width="90" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-kj-TRV">
+                                                <rect key="frame" x="225" y="569" width="90" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="RFu-HM-lpv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
-                                                <rect key="frame" x="240" y="879" width="90" height="21"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-ZQ-y0l">
+                                                <rect key="frame" x="225" y="879" width="90" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="ZTe-UV-Ode"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500793457" green="0.63436353206634521" blue="0.2621617317199707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Preencher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-Fy-aW0">
                                                 <rect key="frame" x="240" y="191" width="95" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="uRR-9A-f8e"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.88816380500000003" green="0.63436353209999996" blue="0.26216173170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.20563828949999999" green="0.61435216670000004" blue="0.51678681370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
-                                                <rect key="frame" x="355" y="185.5" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-gP-B8D">
+                                                <rect key="frame" x="340" y="193" width="20" height="14"/>
                                             </imageView>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
-                                                <rect key="frame" x="355" y="403" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-Hk-NRb">
+                                                <rect key="frame" x="340" y="410.5" width="20" height="14"/>
                                             </imageView>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
-                                                <rect key="frame" x="355" y="875" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-lF-Thf">
+                                                <rect key="frame" x="340" y="882.5" width="20" height="14"/>
                                             </imageView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-Bu-efF">
                                                 <rect key="frame" x="111" y="719" width="153" height="29"/>
@@ -753,8 +753,8 @@
                                                     <action selector="selecaoSexoSegmented:" destination="g2V-7W-Jyt" eventType="valueChanged" id="L3P-A4-jy8"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao atenção" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
-                                                <rect key="frame" x="355" y="565" width="5" height="29"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Botao confirmado" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-0R-5AF">
+                                                <rect key="frame" x="340" y="572.5" width="20" height="14"/>
                                             </imageView>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contacts" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-FU-SM6">
                                                 <rect key="frame" x="104" y="8" width="160" height="160"/>
@@ -1210,9 +1210,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Botao atenção" width="5" height="29"/>
         <image name="Botao cadastrar" width="145" height="49"/>
         <image name="Botao candidatar" width="145" height="49"/>
+        <image name="Botao confirmado" width="20" height="14"/>
         <image name="Botao entrar" width="145" height="49"/>
         <image name="Cargo" width="21" height="17"/>
         <image name="Contrato" width="15" height="18"/>

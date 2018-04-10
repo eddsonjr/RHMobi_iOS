@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-enum ErrosValidacaoCadastro: ErrorType  {
+enum ErrosValidacaoCadastro: Error  {
     case campoNaoPreenchido
     case dadoErrado
 }
