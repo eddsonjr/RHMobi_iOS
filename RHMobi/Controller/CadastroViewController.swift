@@ -138,8 +138,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     //Mark: Funcao que sera disparada pela notification para trocar imagem
     @objc func trocarImagemCadastro() {
         print(dbgmsg + "Trocando imagem...")
-//        self.imageView.makeRounded()
-//        let roundedImage = self.fotoHelper.getImage()
         self.imageView.image = self.fotoHelper.getImage()
     }
 
@@ -168,108 +166,15 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     //Mark: Funcao para pegar os dados dos campos
     func adqurirDadosDosCamposEValidando() -> Bool {
         
-        var podeCadastrar: Bool = true
-        
-        
-        //Verificando o nome
-        let nome = nomeTextField.text // Adiquirindo o nome
-        if ((nome == "" || nome == nil)){ //Verifica se o campo nao foi preenchido
-            trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 0)
-            print(dbgmsg + "nome errado!")
-            podeCadastrar = false
-        }else if (nome?.isAllDigits())! { //verificar se o campo foi preenchido de forma incorreta
-            trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 1)
-             print(dbgmsg + "nome errado!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.nomeLabelConfirmacao, image: nomeImageConfirmacao, status: 2)
-        }
+        //Adquirindo dados dos campos de texto da tela e validando
+        let retornoVerificar = self.viewModel.validarDadosUsuario(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, sexo: self.sexo, cpf: self.rgTextField.text, email: self.emailTextField.text, senha: self.senhaTextField.text, confirmarSenha: self.confirmarSenhaTextField.text, celular: self.telefoneTextField.text, convencional: self.telefone2TextField.text)
+
         
         
         
-        //Verificando o sobrenome
-        let sobrenome = sobreNomeTextField.text //Adquirindo o sobrenome
-        if ((sobrenome == "" || sobrenome == nil)){ //Verifica se o campo nao foi preenchido
-            trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 0)
-             print(dbgmsg + "sobrenome errado!")
-            podeCadastrar = false
-        }else if (sobrenome?.isAllDigits())! { //verificar se o campo foi preenchido de forma incorreta
-            trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 1)
-              print(dbgmsg + "sobrenome errado!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.sobrenomeLabelConfirmacao, image: sobrenomeImageConfirmacao, status: 2)
-        }
         
         
-        //verificando o email
-        let email = emailTextField.text
-        if ((email == "" || email == nil)){ //Verifica se o campo nao foi preenchido
-            trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 0)
-              print(dbgmsg + "email errado - Em branco!")
-            podeCadastrar = false
-        }
-//        else if (email?.isEmailValid())! { //verificar se o campo foi preenchido de forma incorreta
-//            trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 1)
-//             print(dbgmsg + "email errado - Formato errado!")
-//            podeCadastrar = false
-//        }
-        else {
-            trocarLabelEImagemDeValidacao(label: self.emailLabelConfirmacao, image: emailImageConfirmacao, status: 2)
-        }
-        
-        
-        //Verificando o rg
-        let rg = rgTextField.text
-        if ((rg == "" || rg == nil)){ //Verifica se o campo nao foi preenchido
-            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 0)
-             print(dbgmsg + "rg errado!")
-            podeCadastrar = false
-        }else if (!(rg?.isAllDigits())!) { //verificar se o campo foi preenchido de forma incorreta
-            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 1)
-             print(dbgmsg + "rg errado!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.rgLabelConfirmacao, image: rgImageConfirmacao, status: 2)
-        }
-        
-        
-        
-        //Verificando o telefone
-        let telefone1 = telefoneTextField.text
-        if ((telefone1 == "" || telefone1 == nil)){ //Verifica se o campo nao foi preenchido
-            trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 0)
-             print(dbgmsg + "telefone errado!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.telefone1LabelConfirmacao, image: telefone1ImageConfirmacao, status: 2)
-        }
-        
-        
-        
-        //Verificando o telefone2
-        let telefone2 = telefone2TextField.text
-        trocarLabelEImagemDeValidacao(label: self.telefone2LabelConfirmacao, image: telefone2ImageConfirmacao, status: 2)
-        
-        
-        
-        //Verificando as senhas
-        let senha1Campo = senhaTextField.text
-        let senha2Campo = confirmarSenhaTextField.text
-        
-        if((senha1Campo == "" || senha1Campo == nil) || (senha2Campo == "" || senha2Campo == nil)){
-            trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 0)
-            print(dbgmsg + "senha errada!")
-            podeCadastrar = false
-        }else if (senha1Campo != senha2Campo){
-            trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 1)
-            print(dbgmsg + "senhas nao conferem!")
-            podeCadastrar = false
-        }else {
-            trocarLabelEImagemDeValidacao(label: self.confirmarSenhaLabelConfirmacao, image: confirmarSesnhaImageConfirmacao, status: 2)
-        }
-        
-        return podeCadastrar
+        return retornoVerificar.0
     }
     
     
@@ -328,6 +233,11 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         }
         
     }
+    
+    
+    
+    
+    
     
     
     
