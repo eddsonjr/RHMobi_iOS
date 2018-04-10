@@ -14,7 +14,6 @@
 		AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F25205B2E2900912130 /* FotoHelper.swift */; };
 		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
 		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
-		AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10199B205ABA9C00FDF2EC /* Endereco.swift */; };
 		AD4322002076A0A500499394 /* UIAlert+Extensions+alerts..swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4321FF2076A0A500499394 /* UIAlert+Extensions+alerts..swift */; };
 		AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4322012076C67800499394 /* UIImage+Extension.swift */; };
 		AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD461E7D20716A6500AD3902 /* VagaDAO.swift */; };
@@ -88,7 +87,6 @@
 		AD0D2F25205B2E2900912130 /* FotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoHelper.swift; sourceTree = "<group>"; };
 		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
 		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
-		AD10199B205ABA9C00FDF2EC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
 		AD4321FF2076A0A500499394 /* UIAlert+Extensions+alerts..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions+alerts..swift"; sourceTree = "<group>"; };
 		AD4322012076C67800499394 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AD461E7D20716A6500AD3902 /* VagaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaDAO.swift; sourceTree = "<group>"; };
@@ -364,7 +362,6 @@
 				AD8847CC205741BE000DD6A1 /* AreasInteresse.swift */,
 				AD8847CE2057421E000DD6A1 /* Requisitos.swift */,
 				AD8847D02057427E000DD6A1 /* Vaga.swift */,
-				AD10199B205ABA9C00FDF2EC /* Endereco.swift */,
 				AD7B19EB205C54BB00A012D6 /* Candidato.swift */,
 				AD7B19ED205C58A800A012D6 /* CV.swift */,
 				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
@@ -708,7 +705,6 @@
 				ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */,
 				AD82DA15207C3EF100101E42 /* ErrorsEnum.swift in Sources */,
 				AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */,
-				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,
 				AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */,
 				AD8847CD205741BE000DD6A1 /* AreasInteresse.swift in Sources */,

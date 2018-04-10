@@ -48,7 +48,6 @@ class Cliente: NSObject {
     static func decode(fromJson: JSON?) -> Any? {
     
         let subjsonEndereco = fromJson!["endereco"] as JSON
-        let endereco = Endereco.decode(fromJson: subjsonEndereco) as? Endereco
         let cliente = Cliente.init(id: fromJson!["id"].int!, cnpj: fromJson!["cnpj"].string!,
                                    razaoSocial: fromJson!["razaoSocial"].string!,
                                    ramoAtuacao: fromJson!["ramoAtuacao"].string!,
