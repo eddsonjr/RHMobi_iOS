@@ -33,6 +33,7 @@
 		AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F8205C6BFE00A012D6 /* Cliente.swift */; };
 		AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA10207BA78200101E42 /* GenericViewModel.swift */; };
 		AD82DA13207BD1FB00101E42 /* CadastroEnumValidacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */; };
+		AD82DA15207C3EF100101E42 /* ErrorsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82DA14207C3EF100101E42 /* ErrorsEnum.swift */; };
 		AD88479520571EA8000DD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479420571EA8000DD6A1 /* AppDelegate.swift */; };
 		AD88479720571EA8000DD6A1 /* ListaVagasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */; };
 		AD88479A20571EA8000DD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88479820571EA8000DD6A1 /* Main.storyboard */; };
@@ -106,6 +107,7 @@
 		AD7B19F8205C6BFE00A012D6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		AD82DA10207BA78200101E42 /* GenericViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewModel.swift; sourceTree = "<group>"; };
 		AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEnumValidacao.swift; sourceTree = "<group>"; };
+		AD82DA14207C3EF100101E42 /* ErrorsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsEnum.swift; sourceTree = "<group>"; };
 		AD88479120571EA8000DD6A1 /* RHMobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHMobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88479420571EA8000DD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD88479620571EA8000DD6A1 /* ListaVagasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVagasViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */,
 				AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */,
 				AD82DA12207BD1FB00101E42 /* CadastroEnumValidacao.swift */,
+				AD82DA14207C3EF100101E42 /* ErrorsEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -703,6 +706,7 @@
 				AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */,
 				AD8847D520574A89000DD6A1 /* JsonDelegate.swift in Sources */,
 				ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */,
+				AD82DA15207C3EF100101E42 /* ErrorsEnum.swift in Sources */,
 				AD82DA11207BA78200101E42 /* GenericViewModel.swift in Sources */,
 				AD10199C205ABA9C00FDF2EC /* Endereco.swift in Sources */,
 				AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */,

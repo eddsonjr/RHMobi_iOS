@@ -15,186 +15,70 @@ import UIKit
 class CadastroViewModel {
     
     
-    
-    //Esta funcao serve para validar os campos do usuario de acordo com o cadastro - com senha
-    func validarDadosUsuario(nome: String?, sobrenome: String?, sexo: String?, cpf: String?,
-                             email:String?, senha:String?, confirmarSenha: String?,celular: String?, convencional: String?) -> (Bool, [Int]){
-        
-        var podeCadastrar = true
-        var codigoValidacao = [Int]()
-        
-        
-        
-        //Validando o nome
+    //Mark: Metodos de validacao de informacoes de cadastro
+    func validarNome(nome: String?) throws -> String { //valida o nome
         if(nome == "" || nome == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (nome?.isAllDigits())! {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-           codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-            
+            throw ErrosValidacaoCadastro.campoNaoPreenchido.rawValue
+        }else if (nome?.isAllDigits()){
+            throw ErrosValidacaoCadastro.dadoErrado.rawValue
         }
-        
-        
-        //Validando o sobrenome
-        if(sobrenome == "" || sobrenome == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (sobrenome?.isAllDigits())! {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        
-        //Validando o email
-        if(email == "" || email == nil) {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else{ //TODO - VERIFICAR USANDO REGEX
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //Validando o CPF
-        if(cpf == "" || cpf == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (cpf?.isAllDigits())!{
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else {
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //Validando o telefone celular (telefone 1)
-        if(celular == "" || celular == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if(!(celular?.isAllDigits())!){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //validando o telefone convencional  (telefone 2)
-        if(convencional == "" || convencional == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }else if(!(convencional?.isAllDigits())!){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        
-        //validando as senhas
-        if((senha == "" || senha == nil) || (confirmarSenha == "" || confirmarSenha == nil)){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (senha != confirmarSenha) {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else {
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        return (podeCadastrar,codigoValidacao)
-        
-        
     }
     
     
     
-    
-    //Esta funcao serve para validar os campos do usuario de acordo com o cadastro - com senha
-    func validarDadosUsuario(nome: String?, sobrenome: String?, sexo: String?, cpf: String?,
-                             email:String?,celular: String?, convencional: String?) -> (Bool, [Int]){
-        
-        var podeCadastrar = true
-        var codigoValidacao = [Int]()
-        
-        //Validando o nome
-        if(nome == "" || nome == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (nome?.isAllDigits())! {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-            
-        }
-        
-        
-        //Validando o sobrenome
+    func validarSobrenome(sobrenome: String?) throws -> String { //valida o sobre nome
         if(sobrenome == "" || sobrenome == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (sobrenome?.isAllDigits())! {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
+            throw ErrosValidacaoCadastro.campoNaoPreenchido.rawValue
+        }else if (sobrenome?.isAllDigits()){
+            throw ErrosValidacaoCadastro.dadoErrado.rawValue
         }
-        
-        
-        
-        //Validando o email
-        if(email == "" || email == nil) {
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else{ //TODO - VERIFICAR USANDO REGEX
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //Validando o CPF
-        if(cpf == "" || cpf == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if (cpf?.isAllDigits())!{
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else {
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //Validando o telefone celular (telefone 1)
-        if(celular == "" || celular == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.preencher.rawValue)
-        }else if(!(celular?.isAllDigits())!){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        
-        //validando o telefone convencional  (telefone 2)
-        if(convencional == "" || convencional == nil){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }else if(!(convencional?.isAllDigits())!){
-            podeCadastrar = false
-            codigoValidacao.append(CadastroEnumValidacao.verificar.rawValue)
-        }else{
-            codigoValidacao.append(CadastroEnumValidacao.completo.rawValue)
-        }
-        
-        return (podeCadastrar,codigoValidacao)
     }
+    
+    
+    
+    func validarEmail(email: String?) throws -> String {//valida o email
+        if(email == "" || email == nil){
+            throw ErrosValidacaoCadastro.campoNaoPreenchido.rawValue
+        }//TODO - COLOCAR A VALIDACAO VIA REGEX FUNCIONANDO
+    }
+    
+    
+    func validarCPF(cpf: String?) throws -> String { //valida o cpf
+        if(cpf == "" || cpf == nil){
+            throw ErrosValidacaoCadastro.campoNaoPreenchido
+        }//TODO - FAZER VALIDACAO VIA REGEX
+    }
+    
+    
+    func validarCelular(celular: String) throws -> String { //valida o numero de celular
+        if(celular == "" || celular == nil){
+            throw ErrosValidacaoCadastro.campoNaoPreenchido
+        }else if (!celular.isAllDigits()) {
+            throw ErrosValidacaoCadastro.dadoErrado
+        }
+    }
+    
+    
+    func validarTelefoneFixo(convencional: String) throws -> String{ //valida o numero do telefone fixo
+        if(convencional == "" || convencional == nil){
+            throw ErrosValidacaoCadastro.campoNaoPreenchido
+        }else if(!convencional.isAllDigits()){
+            throw ErrosValidacaoCadastro.dadoErrado
+        }
+    }
+    
+    
+    
+    func validarSenhas(senha: String, confirmacaoSenha: String) throws -> String {//valida as senhas
+        if((senha == "" || senha == nil) || (confirmacaoSenha == "" || confirmacaoSenha == nil)){
+            throw ErrosValidacaoCadastro.campoNaoPreenchido
+        }else if(senha != confirmacaoSenha){
+            throw ErrosValidacaoCadastro.dadoErrado
+        }
+    }
+    
+    
+    
     
     
     

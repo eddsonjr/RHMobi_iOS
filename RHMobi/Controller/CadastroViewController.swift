@@ -82,7 +82,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         }
         
         
-        
         //Teclado
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
@@ -91,8 +90,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         addDoneButtonOnKeyboard() //Adicionando um done nos teclados numericos
         
-
-       
 
     }
 
@@ -171,10 +168,6 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         //Adquirindo dados dos campos de texto da tela e validando
         let retornoVerificar = self.viewModel.validarDadosUsuario(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, sexo: self.sexo, cpf: self.rgTextField.text, email: self.emailTextField.text, senha: self.senhaTextField.text, confirmarSenha: self.confirmarSenhaTextField.text, celular: self.telefoneTextField.text, convencional: self.telefone2TextField.text)
-
-        
-        
-        
         
         
         return retornoVerificar.0
@@ -184,12 +177,14 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     
     
+    
+    
+    
+    
     func cadastrarCandidato(){
         
         print(dbgmsg + "Chamando a funcao para cadastrar")
-        
-        //Salvando o email no UserDefaults
-        UserDefaults.standard.setUserEmail(value: self.emailTextField.text!)
+    
         
         //Cadastrando...
         viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, cpf: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, telefone1: self.telefoneTextField.text!, telefone2: self.telefone2TextField.text!)
@@ -264,7 +259,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    
+    //Adiciona uma barra com o botao done nos teclados do tipo numerico
     func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
         doneToolbar.barStyle       = UIBarStyle.default
