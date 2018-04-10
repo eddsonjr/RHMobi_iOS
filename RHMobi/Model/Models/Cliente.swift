@@ -16,20 +16,29 @@ class Cliente: NSObject {
     var cnpj: String
     var razaoSocial: String
     var ramoAtuacao: String
-    var endereco: Endereco
+    var bairro: String
+    var logradouro: String
+    var cep: String
+    var cidade: String
+    var estado: String
     
     
     //Construtores
     //Construtor completo
-    init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String,
-         endereco: Endereco) {
+    init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String, logradouro: String, bairro: String,
+         cep: String, cidade: String, estado: String) {
       
         
         self.id = id
         self.cnpj = cnpj
         self.razaoSocial = razaoSocial
         self.ramoAtuacao = ramoAtuacao
-        self.endereco = endereco
+        self.logradouro = logradouro
+        self.bairro = bairro
+        self.cep = cep
+        self.cidade = cidade
+        self.estado = estado
+       
     }
     
     
@@ -43,7 +52,11 @@ class Cliente: NSObject {
         let cliente = Cliente.init(id: fromJson!["id"].int!, cnpj: fromJson!["cnpj"].string!,
                                    razaoSocial: fromJson!["razaoSocial"].string!,
                                    ramoAtuacao: fromJson!["ramoAtuacao"].string!,
-                                   endereco: endereco!)
+                                   logradouro: fromJson!["logradouro"].string!,
+                                   bairro: fromJson!["bairro"].string!,
+                                   cep: fromJson!["cep"].string!,
+                                   cidade: fromJson!["cidade"].string!,
+                                   estado: fromJson!["estado"].string!)
 
         return cliente
         
