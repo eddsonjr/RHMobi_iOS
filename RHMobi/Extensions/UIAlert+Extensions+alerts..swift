@@ -34,7 +34,10 @@ extension UIAlertController{
     static var alertaLoginCorreto: UIAlertController {
         let alerta: UIAlertController = UIAlertController(title: "Bem vindo", message: "Seja bem vindo ao RHMobi", preferredStyle: UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default){ action in
+            print("Pressionado o Ok do login realizad. Voltando...")
+            NotificationCenter.default.post(name: Notification.Name(NotificationKeysEnumHelper.loginRealizado.rawValue), object: self)
+        }
         alerta.addAction(okAction)
         return alerta
     }

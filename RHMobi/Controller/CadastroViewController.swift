@@ -88,6 +88,9 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
 
+        
+        addDoneButtonOnKeyboard() //Adicionando um done nos teclados numericos
+        
 
        
 
@@ -241,7 +244,7 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    
+    //Mark: Metodos de teclado e interacao via teclado
     
     @objc func keyboardWillShow(sender: NSNotification) {
         self.view.frame.origin.y = -150 // Move view 150 points upward
@@ -257,6 +260,34 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
         return false
     }
  
+    
+    
+    
+    
+    
+    func addDoneButtonOnKeyboard() {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        doneToolbar.barStyle       = UIBarStyle.default
+        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(CadastroViewController.doneButtonAction))
+        
+        var items = [UIBarButtonItem]()
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        self.telefoneTextField.inputAccessoryView = doneToolbar
+        self.telefone2TextField.inputAccessoryView = doneToolbar
+        self.rgTextField.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction() {
+        self.rgTextField.resignFirstResponder()
+        self.telefoneTextField.resignFirstResponder()
+        self.telefone2TextField.resignFirstResponder()
+    }
     
     
 

@@ -11,4 +11,5 @@ import Foundation
 
 enum NotificationKeysEnumHelper: String {
     case fotoPronta = "fotoPronta"
+    case loginRealizado = "loginRealizado"
 }

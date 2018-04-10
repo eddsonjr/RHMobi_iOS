@@ -34,6 +34,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.senhaTextField.delegate = self
         
         
+        //Notificacao para troca de tela
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.voltarParaTeladeListagem), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.loginRealizado.rawValue), object: nil)
+        
+        
         
         
         //Configuracao do teclado para recolher e expandir no caso de edicao
@@ -109,7 +113,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     
     //Mark: Funcoes para  fazer o teclado ficar sempre abaixo dos textView e recolher ao clicar em done
-    
     @objc func keyboardWillShow(sender: NSNotification) {
         self.view.frame.origin.y = -150 // Move view 150 points upward
     }
@@ -126,6 +129,14 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     
+    
+    
+    
+    //Mark: Funcao para carregar o teclado
+    @objc func voltarParaTeladeListagem() {
+        print(dbgmsg + "Chamando a tela de listagem de vaga.")
+        
+    }
 
     
     
