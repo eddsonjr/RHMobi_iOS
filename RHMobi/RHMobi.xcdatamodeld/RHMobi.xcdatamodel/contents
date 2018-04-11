@@ -53,11 +53,6 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vaga" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="requisitoVaga" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
-    <entity name="StatusVagaEntidade" representedClassName="StatusVagaEntidade" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" syncable="YES"/>
-    </entity>
     <entity name="VagaEntidade" representedClassName="VagaEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="experiencia" optional="YES" attributeType="String" syncable="YES"/>
@@ -67,6 +62,7 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="prazo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vagaStatus" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vaga" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
         <relationship name="candidatura" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CanditaturaEntidade" syncable="YES"/>
         <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" syncable="YES"/>
@@ -74,13 +70,12 @@
     </entity>
     <elements>
         <element name="AreasInteresseEntidade" positionX="-198" positionY="369" width="128" height="103"/>
-        <element name="CandidatoEntidade" positionX="-461" positionY="293" width="128" height="238"/>
-        <element name="CanditaturaEntidade" positionX="-513" positionY="99" width="128" height="88"/>
+        <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="238"/>
+        <element name="CanditaturaEntidade" positionX="-567" positionY="65" width="128" height="88"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="103"/>
         <element name="RequisitosEntidade" positionX="-11" positionY="-63" width="128" height="88"/>
-        <element name="StatusVagaEntidade" positionX="-495" positionY="-63" width="128" height="90"/>
-        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="223"/>
-        <element name="FavoritoEntidade" positionX="-351" positionY="180" width="128" height="75"/>
+        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="238"/>
+        <element name="FavoritoEntidade" positionX="-405" positionY="285" width="128" height="75"/>
     </elements>
 </model>

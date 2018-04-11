@@ -24,7 +24,7 @@ class Vaga: NSObject {
    var requisitos: [Requisitos]?
    var areasInteresse: [AreasInteresse]?
    var imgUrl: String
-   var vagaStatus: StatusVaga?
+   var vagaStatus: String
    var cliente: Cliente?
     
     
@@ -33,7 +33,7 @@ class Vaga: NSObject {
     
     //Construtor completo
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: StatusVaga, cliente: Cliente?) {
+         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: String, cliente: Cliente?) {
         
         
         self.id = id
@@ -70,17 +70,16 @@ class Vaga: NSObject {
             areasInteresseSet.append(AreasInteresse.decode(fromJson: subJson) as! AreasInteresse)
         }
 
-        let statusVagaSubjson = fromJson!["vagaStatus"] as JSON
         let clienteSubjson = fromJson!["cliente"]  as JSON
         
-        let statusVaga = StatusVaga.decode(fromJson: statusVagaSubjson) as! StatusVaga
         let cliente = Cliente.decode(fromJson: clienteSubjson) as! Cliente
         
         
         let vaga = Vaga(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!, tipoContrato: fromJson!["tipoContrato"].string!,
                         funcao: fromJson!["funcao"].string!, experiencia: fromJson!["experiencia"].string!,
                         prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: requisitosSet,
-                        areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!, vagaStatus: statusVaga,
+                        areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!,
+                        vagaStatus: fromJson!["vagaStatus"].string!,
                         cliente: cliente)
         return vaga
     }

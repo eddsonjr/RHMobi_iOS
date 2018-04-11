@@ -26,7 +26,6 @@
 		AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EB205C54BB00A012D6 /* Candidato.swift */; };
 		AD7B19EE205C58A800A012D6 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19ED205C58A800A012D6 /* CV.swift */; };
 		AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19EF205C5A0400A012D6 /* StatusCV.swift */; };
-		AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */; };
 		AD7B19F5205C684A00A012D6 /* StatusVagaEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */; };
 		AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */; };
 		AD7B19F9205C6BFE00A012D6 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B19F8205C6BFE00A012D6 /* Cliente.swift */; };
@@ -99,7 +98,6 @@
 		AD7B19EB205C54BB00A012D6 /* Candidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidato.swift; sourceTree = "<group>"; };
 		AD7B19ED205C58A800A012D6 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
 		AD7B19EF205C5A0400A012D6 /* StatusCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCV.swift; sourceTree = "<group>"; };
-		AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVaga.swift; sourceTree = "<group>"; };
 		AD7B19F4205C684A00A012D6 /* StatusVagaEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVagaEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F6205C692400A012D6 /* StatusCVEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCVEnumHelper.swift; sourceTree = "<group>"; };
 		AD7B19F8205C6BFE00A012D6 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
@@ -365,7 +363,6 @@
 				AD7B19EB205C54BB00A012D6 /* Candidato.swift */,
 				AD7B19ED205C58A800A012D6 /* CV.swift */,
 				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
-				AD7B19F2205C5B7200A012D6 /* StatusVaga.swift */,
 				AD7B19F8205C6BFE00A012D6 /* Cliente.swift */,
 			);
 			path = Models;
@@ -714,7 +711,6 @@
 				ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */,
 				AD7B19F0205C5A0400A012D6 /* StatusCV.swift in Sources */,
 				AD7B19F7205C692400A012D6 /* StatusCVEnumHelper.swift in Sources */,
-				AD7B19F3205C5B7200A012D6 /* StatusVaga.swift in Sources */,
 				AD65B9102073B7160013E083 /* CadastroViewModel.swift in Sources */,
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD091C522072866E00F45376 /* RequisitosVagaContainerViewController.swift in Sources */,
