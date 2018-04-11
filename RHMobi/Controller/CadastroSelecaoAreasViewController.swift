@@ -68,6 +68,10 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     //##################### FUNCOES DA TABLEVIEW ########################
     //Mark: funcoes da table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        if self.procurando {
+            return self.dadosFiltrados.count
+        }
         
         return self.listaAreasInteresse.count
     }
@@ -76,10 +80,19 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "areaInteresse", for: indexPath)
-        cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
-        return cell
         
+        
+        if procurando {
+            cell.textLabel?.text = self.dadosFiltrados[indexPath.row].nome
+        }else {
+            cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
+        }
+        
+        //cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
+        return cell
     }
+    
+    
     
     
     
@@ -114,23 +127,25 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Procurando...")
+        if(searchBar.text == nil || searchBar.text == "") {
+            self.procurando = false
+            view.endEditing(true)
+            self.tableView.reloadData()
+        }else {
+            procurando = true
+            self.dadosFiltrados = self.listaAreasInteresse.filter({ area -> Bool in
+                guard let texto = self.searchBar.text else {return false}
+                return area.nome.containsIgnoringCase(find: texto)
+            })
+            
+            self.tableView.reloadData()
+            
+        }
+    }
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
 }
