@@ -17,6 +17,9 @@ class CadastroViewModel: GenericViewModel {
     private final let dbgmsg = "[CadastroViewModel]: "
     
     
+    override init() {
+        super.init()
+    }
     
     //Mark: Construtores
     override init(url: String) {

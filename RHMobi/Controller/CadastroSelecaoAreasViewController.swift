@@ -28,7 +28,7 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     //Mark: variavel do viewModel
-    var viewModel = CadastroViewModel(url: "") //TODO - IMPLEMENTAR A URL PARA BAIXAR A LISTA DE INTERESSES
+    var viewModel = CadastroViewModel(url: UrlEnumHelper.areasInteresseDownloadUrl.rawValue) //TODO - IMPLEMENTAR A URL PARA BAIXAR A LISTA DE INTERESSES
     
     
     override func viewDidLoad() {
@@ -59,7 +59,7 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     
@@ -89,6 +89,27 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     
+    
+    
+    
+    
+    
+    //################# METODOS DA SEARCH BAR ######################
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.searchBar.endEditing(true)
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.endEditing(true)
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print(dbgmsg + "Busca cancelada....")
+        self.searchBar.endEditing(true)
+    }
     
     
     
