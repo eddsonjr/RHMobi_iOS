@@ -12,7 +12,12 @@ import UIKit
 
 
 
-class CadastroViewModel {
+class CadastroViewModel: GenericViewModel {
+    
+    
+    
+    private final let dbgmsg = "[CadastroViewModel]: "
+    
     
     //################## METODOS DE VALIDACAO DADOS CADASTRO #######################
     //Mark: Metodos de validacao de informacoes de cadastro
@@ -115,6 +120,45 @@ class CadastroViewModel {
     func listarTodosOsCandidatos() -> [CandidatoEntidade]{
         return CandidatoDAO.fecthAllObjec()!
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //####################### DOWNLOAD/ENVIO DE DADOS VIA JSON ##########################
+    //Mark: Baixando  a lista de areas de interesse
+    func baixarListaAreasInteresse(completihonHandler: @escaping ([AreasInteresse])->()){
+        super.getDataFromJson { json in
+            guard let json = json else {return}
+            print(self.dbgmsg + "Json recebido: \n")
+            print(json)
+            
+            print(self.dbgmsg + "Decodificando o json em areas de interesse!")
+            let jsonArray = json.array
+            print(self.dbgmsg + "Baixado \(jsonArray?.count) areas de interesse via json!")
+            
+            var areasInteresse = [AreasInteresse]()
+            for j in jsonArray! {
+                print(self.dbgmsg + "subjson: \(j)")
+                let area = AreasInteresse.decode(fromJson: j)
+                areasInteresse.append(area as! AreasInteresse)
+                
+                //Salvando uma determinada vaga
+                //self.salvarVaga(vaga: vaga as! Vaga)
+                
+            }
+            print(self.dbgmsg + "Decodificada \(areasInteresse.count) vagas!")
+            
+            DispatchQueue.main.async {
+                completihonHandler(areasInteresse)
+            }
+        }
+    }
+    
     
     
     
