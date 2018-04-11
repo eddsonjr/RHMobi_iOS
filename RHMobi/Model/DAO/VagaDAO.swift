@@ -47,6 +47,7 @@ class VagaDAO: NSObject {
             print(dbgmsg + "Ha areas de interesse nesta vaga")
             
             
+            // let carEntity = NSEntityDescription.entity(forEntityName: "CarEntity", in: managedContext)!
             
         }
         
