@@ -18,6 +18,9 @@
 		AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4322012076C67800499394 /* UIImage+Extension.swift */; };
 		AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD461E7D20716A6500AD3902 /* VagaDAO.swift */; };
 		AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */; };
+		AD54CDE3207E876800F2EF46 /* CadastroAreasInteresseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54CDE2207E876800F2EF46 /* CadastroAreasInteresseViewController.swift */; };
+		AD54CDE5207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54CDE4207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift */; };
+		AD54CDE7207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54CDE6207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift */; };
 		AD5BE77F20755D1000104D41 /* UserDefaultsEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */; };
 		AD5BE78120755DFA00104D41 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE78020755DFA00104D41 /* UserDefaults+Extension.swift */; };
 		AD5BE7832075622900104D41 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE7822075622900104D41 /* LoginViewModel.swift */; };
@@ -90,6 +93,9 @@
 		AD4322012076C67800499394 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AD461E7D20716A6500AD3902 /* VagaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaDAO.swift; sourceTree = "<group>"; };
 		AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVagaViewController.swift; sourceTree = "<group>"; };
+		AD54CDE2207E876800F2EF46 /* CadastroAreasInteresseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroAreasInteresseViewController.swift; sourceTree = "<group>"; };
+		AD54CDE4207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroSelecaoAreasViewController.swift; sourceTree = "<group>"; };
+		AD54CDE6207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecaoAreasInteresseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD5BE77E20755D1000104D41 /* UserDefaultsEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEnumHelper.swift; sourceTree = "<group>"; };
 		AD5BE78020755DFA00104D41 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		AD5BE7822075622900104D41 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -280,6 +286,8 @@
 				AD4C3C4020584A0E0047DFFE /* DetalhesVagaViewController.swift */,
 				ADA3BE98205964F40012E03B /* LoginViewController.swift */,
 				AD0D2F29205B32B900912130 /* CadastroViewController.swift */,
+				AD54CDE2207E876800F2EF46 /* CadastroAreasInteresseViewController.swift */,
+				AD54CDE4207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */,
+				AD54CDE6207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -691,9 +700,11 @@
 				ADBEDBDF2070120300DB53CA /* CoreDataHelper.swift in Sources */,
 				AD8847D12057427E000DD6A1 /* Vaga.swift in Sources */,
 				AD88479D20571EA8000DD6A1 /* RHMobi.xcdatamodeld in Sources */,
+				AD54CDE3207E876800F2EF46 /* CadastroAreasInteresseViewController.swift in Sources */,
 				AD4C3C4120584A0E0047DFFE /* DetalhesVagaViewController.swift in Sources */,
 				ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */,
 				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
+				AD54CDE5207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD5BE7832075622900104D41 /* LoginViewModel.swift in Sources */,
@@ -715,6 +726,7 @@
 				AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */,
 				AD091C522072866E00F45376 /* RequisitosVagaContainerViewController.swift in Sources */,
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
+				AD54CDE7207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
 				AD8847CF2057421E000DD6A1 /* Requisitos.swift in Sources */,
 				AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */,

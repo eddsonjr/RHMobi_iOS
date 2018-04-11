@@ -74,8 +74,8 @@
         <element name="CanditaturaEntidade" positionX="-567" positionY="65" width="128" height="88"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="103"/>
+        <element name="FavoritoEntidade" positionX="-405" positionY="285" width="128" height="75"/>
         <element name="RequisitosEntidade" positionX="-11" positionY="-63" width="128" height="88"/>
         <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="238"/>
-        <element name="FavoritoEntidade" positionX="-405" positionY="285" width="128" height="75"/>
     </elements>
 </model>

@@ -895,10 +895,10 @@
             </objects>
             <point key="canvasLocation" x="4252" y="1396"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro Areas Interesse View Controller-->
         <scene sceneID="UAs-92-8Iq">
             <objects>
-                <viewController id="egK-Nl-bvu" sceneMemberID="viewController">
+                <viewController id="egK-Nl-bvu" customClass="CadastroAreasInteresseViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R3H-sy-aCW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -922,17 +922,17 @@
                                 <rect key="frame" x="16" y="144" width="288" height="270"/>
                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x28-1L-GjK">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="125" height="58"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KzZ-p3-lse">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
@@ -972,10 +972,10 @@
             </objects>
             <point key="canvasLocation" x="5381.25" y="1094.3661971830986"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro Selecao Areas View Controller-->
         <scene sceneID="DkR-Nm-i6V">
             <objects>
-                <viewController id="a91-dp-jH8" sceneMemberID="viewController">
+                <viewController id="a91-dp-jH8" customClass="CadastroSelecaoAreasViewController" customModule="RHMobi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UQB-ad-9xd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

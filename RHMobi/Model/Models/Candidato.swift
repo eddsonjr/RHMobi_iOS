@@ -21,6 +21,7 @@ class Candidato {
     var convencional: String
     var sexo: String
     var vagasAssociadas: [Vaga]?
+    var areasInteresse: [AreasInteresse]?
     var cv: CV?
     
     //Construtores
@@ -40,11 +41,12 @@ class Candidato {
         self.convencional = ""
         self.vagasAssociadas = nil
         self.cv = nil
+        self.areasInteresse = nil
     }
     
     
     //Construtor com itens
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, cpf: String, celular: String, convencional: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?) {
+    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, cpf: String, celular: String, convencional: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?, areasInteresse: [AreasInteresse]?) {
         
       
         
@@ -59,6 +61,7 @@ class Candidato {
         self.sexo = sexo
         self.vagasAssociadas = vagasAssociadas
         self.cv = cv
+        self.areasInteresse = areasInteresse
         
     }
     
