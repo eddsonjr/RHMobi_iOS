@@ -51,8 +51,7 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
         }
         
         
-        //Configurando um observador para indicar que uma determinada area de interesse foi cadastrada pelo usuario
-        NotificationCenter.default.addObserver(self, selector: #selector(CadastroSelecaoAreasViewController.notificarAreaInteresseAdicionada), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: nil)
+       
         
         
         
@@ -101,6 +100,20 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        if self.procurando {
+            VagaHelper.areaInteresseTroca = self.dadosFiltrados[(self.tableView.indexPathForSelectedRow?.row)!]
+        
+        carregarAreaSelecionadaENotificar()
+            
+            
+        }else {
+            VagaHelper.areaInteresseTroca = self.listaAreasInteresse[(self.tableView.indexPathForSelectedRow?.row)!]
+            
+        carregarAreaSelecionadaENotificar()
+            
+        }
         
         
     }
@@ -152,11 +165,19 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     
-    //############ FUNCAO DE NOTIFICACAO ########################
-    //Mark: funcao para notificacao
-    @objc func notificarAreaInteresseAdicionada() {
-        print(dbgmsg + "Notificando a adesao de uma area de interesse.")
+    
+    //############ FUNCAO PARA CAPTURAR A AREA DE INTERESSE E AVISAR ###########
+    
+    func carregarAreaSelecionadaENotificar(){
+        
+        
+        NotificationCenter.default.post(name: Notification.Name(NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: self)
+        self.navigationController?.popViewController(animated: true)
+        
+        
     }
+    
+    
     
     
     

@@ -31,4 +31,6 @@ extension UserDefaults {
         return String(describing: string(forKey: UserDefaultsEnumHelper.somenteEmailUsuarioLogin.rawValue))
     }
     
+    
+    
 }

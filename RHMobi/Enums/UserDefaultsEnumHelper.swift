@@ -14,4 +14,5 @@ import UIKit
 enum UserDefaultsEnumHelper: String {
     case somenteEmailUsuarioLogin
     case usuarioJaLogado
+    case areaInteresseSelecionada
 }

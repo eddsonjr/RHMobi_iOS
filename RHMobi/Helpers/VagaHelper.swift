@@ -13,5 +13,6 @@ import Foundation
 class VagaHelper {
     
     static var vaga: Vaga?
+    static var areaInteresseTroca: AreasInteresse? = nil
     
 }

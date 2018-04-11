@@ -17,7 +17,11 @@ class CadastroAreasInteresseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(dbgmsg + "EM VIEW DIDLOAD!")
+       
+        
+        
+        //Configurando um observador para indicar que uma determinada area de interesse foi cadastrada pelo usuario
+        NotificationCenter.default.addObserver(self, selector: #selector(CadastroAreasInteresseViewController.notificarAreaInteresseAdicionada), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: nil)
 
        
     }
@@ -25,6 +29,26 @@ class CadastroAreasInteresseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //############ FUNCAO DE NOTIFICACAO ########################
+    //Mark: funcao para notificacao
+    @objc func notificarAreaInteresseAdicionada() {
+        print(dbgmsg + "Notificando a adesao de uma area de interesse.")
+        
+        print(dbgmsg + "Vaga adqurida: \(VagaHelper.areaInteresseTroca?.nome)")
+        
     }
     
 
