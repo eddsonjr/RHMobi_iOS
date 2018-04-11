@@ -46,7 +46,6 @@ class VagaDAO: NSObject {
         if(vaga.areasInteresse != nil || vaga.areasInteresse?.count != 0){
             print(dbgmsg + "Ha areas de interesse nesta vaga")
             
-            
         }
         
         

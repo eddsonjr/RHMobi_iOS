@@ -43,6 +43,9 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
                 let vaga = Vaga.decode(fromJson: j)
                 vagas.append(vaga as! Vaga)
                 
+                //Salvando uma determinada vaga
+                self.salvarVaga(vaga: vaga as! Vaga)
+                
             }
             print(self.dbgmsg + "Decodificada \(vagas.count) vagas!")
             
@@ -51,6 +54,9 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
             }
         }
     }
+    
+    
+    
     
     
     func salvarVaga(vaga: Vaga){
