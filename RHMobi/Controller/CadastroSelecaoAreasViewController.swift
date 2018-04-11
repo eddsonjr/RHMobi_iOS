@@ -75,7 +75,9 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "areaInteresse", for: indexPath)
+        cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
+        return cell
         
     }
     
