@@ -43,13 +43,17 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
         self.searchBar.returnKeyType = UIReturnKeyType.done
         
         
-        
         //Baixando a lista de interesses
         self.viewModel.baixarListaAreasInteresse { areas in
             print(self.dbgmsg + "Tableview com \(areas.count) celulas que vieram do json...")
             self.listaAreasInteresse = areas
             self.tableView.reloadData()
         }
+        
+        
+        //Configurando um observador para indicar que uma determinada area de interesse foi cadastrada pelo usuario
+        NotificationCenter.default.addObserver(self, selector: #selector(CadastroSelecaoAreasViewController.notificarAreaInteresseAdicionada), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: nil)
+        
         
         
         
@@ -98,6 +102,7 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
     }
     
     
@@ -143,6 +148,14 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
             self.tableView.reloadData()
             
         }
+    }
+    
+    
+    
+    //############ FUNCAO DE NOTIFICACAO ########################
+    //Mark: funcao para notificacao
+    @objc func notificarAreaInteresseAdicionada() {
+        print(dbgmsg + "Notificando a adesao de uma area de interesse.")
     }
     
     
