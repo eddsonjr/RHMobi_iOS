@@ -14,9 +14,14 @@ import UIKit
 
 class CadastroViewModel: GenericViewModel {
     
-    
-    
     private final let dbgmsg = "[CadastroViewModel]: "
+    
+    
+    
+    //Mark: Construtores
+    override init(url: String) {
+        super.init(url: url)
+    }
     
     
     //################## METODOS DE VALIDACAO DADOS CADASTRO #######################

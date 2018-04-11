@@ -1011,6 +1011,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1yE-hG-HTK"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="PAk-jr-NnR" id="FQX-0S-udc"/>
+                        <outlet property="tableView" destination="vx4-Lu-TCf" id="64x-tX-c0x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76A-aV-GaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
