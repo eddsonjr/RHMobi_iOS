@@ -40,13 +40,19 @@ class VagaDAO: NSObject {
         vagaManageObject.setValue(vaga.imgUrl, forKey: "imgUrl")
         vagaManageObject.setValue(vaga.prazo, forKey: "prazo")
         vagaManageObject.setValue(vaga.experiencia, forKey: "experiencia")
-        
+        vagaManageObject.setValue(vaga.vagaStatus, forKey: "vagaStatus")
         
         
         if(vaga.areasInteresse != nil || vaga.areasInteresse?.count != 0){
             print(dbgmsg + "Ha areas de interesse nesta vaga")
             
+            
+            
         }
+        
+        
+        
+        
         
         
         
@@ -66,7 +72,7 @@ class VagaDAO: NSObject {
         
         do {
             try context.save()
-            print( dbgmsg + "Dados salvos com sucesso!")
+            print( dbgmsg + "Salvando a vaga \(vaga.nome) com sucesso!")
            
         }catch let err{
             print(err)
