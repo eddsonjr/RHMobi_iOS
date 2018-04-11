@@ -99,13 +99,13 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     //Mark: Actions dos botoes e da segmented
     
     @IBAction func cadastrar(_ sender: Any) {
-        print(dbgmsg + "Pressionado o botao de cadastrar")
-        
-        let podeCadastrar = adqurirDadosDosCamposEValidar(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, email: self.emailTextField.text, cpf: self.rgTextField.text, celular: self.telefoneTextField.text, fixo: self.telefone2TextField.text, senha: self.senhaTextField.text!, confirmarSenha: self.confirmarSenhaTextField.text)
-        
-        if podeCadastrar {
-            cadastrarCandidato()
-        }
+//        print(dbgmsg + "Pressionado o botao de cadastrar")
+//
+//        let podeCadastrar = adqurirDadosDosCamposEValidar(nome: self.nomeTextField.text, sobrenome: self.sobreNomeTextField.text, email: self.emailTextField.text, cpf: self.rgTextField.text, celular: self.telefoneTextField.text, fixo: self.telefone2TextField.text, senha: self.senhaTextField.text!, confirmarSenha: self.confirmarSenhaTextField.text)
+//
+//        if podeCadastrar {
+//            cadastrarCandidato()
+//        }
 
     }
     
