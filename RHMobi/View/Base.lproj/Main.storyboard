@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -918,7 +919,7 @@
                                     <segue destination="a91-dp-jH8" kind="show" id="gEw-ok-vy5"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-cu-HLC">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-cu-HLC">
                                 <rect key="frame" x="16" y="144" width="288" height="270"/>
                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x28-1L-GjK">
@@ -935,15 +936,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="190" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Otorrinolaringologista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74O-0a-ELx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Otorrinolaringologista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74O-0a-ELx">
                                                     <rect key="frame" x="10" y="22" width="170" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="74O-0a-ELx" firstAttribute="leading" secondItem="KzZ-p3-lse" secondAttribute="leadingMargin" constant="-6" id="0zZ-2w-F4h"/>
+                                            <constraint firstItem="74O-0a-ELx" firstAttribute="centerY" secondItem="KzZ-p3-lse" secondAttribute="centerY" id="KhB-oJ-uLE"/>
+                                            <constraint firstItem="74O-0a-ELx" firstAttribute="centerX" secondItem="KzZ-p3-lse" secondAttribute="centerX" id="rJc-dS-kuA"/>
+                                        </constraints>
                                         <size key="customSize" width="190" height="64"/>
                                         <connections>
                                             <outlet property="nomeLabelAreaInteresse" destination="74O-0a-ELx" id="lZt-Eu-dVI"/>
@@ -967,12 +972,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9xG-ce-ptW" firstAttribute="centerX" secondItem="R3H-sy-aCW" secondAttribute="centerX" id="4NS-Lu-daG"/>
+                            <constraint firstItem="6rS-cu-HLC" firstAttribute="top" secondItem="vqf-wT-ufm" secondAttribute="bottom" constant="8" symbolic="YES" id="H5K-9Z-fgq"/>
                             <constraint firstItem="rpg-7q-ngd" firstAttribute="top" secondItem="9xG-ce-ptW" secondAttribute="bottom" constant="8" id="PyG-Ic-jqx"/>
                             <constraint firstItem="geA-pA-H9q" firstAttribute="trailing" secondItem="S6i-Zs-HYk" secondAttribute="trailing" constant="75" id="SJM-B6-PCJ"/>
                             <constraint firstItem="geA-pA-H9q" firstAttribute="trailing" secondItem="6rS-cu-HLC" secondAttribute="trailing" constant="16" id="eRQ-7I-IVc"/>
                             <constraint firstItem="S6i-Zs-HYk" firstAttribute="leading" secondItem="geA-pA-H9q" secondAttribute="leading" constant="16" id="fZj-jC-w1z"/>
                             <constraint firstItem="S6i-Zs-HYk" firstAttribute="top" secondItem="geA-pA-H9q" secondAttribute="top" constant="13" id="fq7-2a-gBD"/>
                             <constraint firstItem="vqf-wT-ufm" firstAttribute="leading" secondItem="geA-pA-H9q" secondAttribute="leading" constant="16" id="ijM-a3-xEW"/>
+                            <constraint firstItem="9xG-ce-ptW" firstAttribute="top" secondItem="6rS-cu-HLC" secondAttribute="bottom" constant="50" id="lxP-Eb-0Jv"/>
                             <constraint firstItem="rpg-7q-ngd" firstAttribute="centerX" secondItem="R3H-sy-aCW" secondAttribute="centerX" id="mVd-hG-96o"/>
                             <constraint firstItem="6rS-cu-HLC" firstAttribute="centerX" secondItem="R3H-sy-aCW" secondAttribute="centerX" id="oiD-n9-5ZM"/>
                             <constraint firstItem="vqf-wT-ufm" firstAttribute="top" secondItem="S6i-Zs-HYk" secondAttribute="bottom" constant="8" id="xpq-dk-ozG"/>

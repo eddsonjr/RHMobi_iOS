@@ -31,6 +31,14 @@ class CadastroAreasInteresseViewController: UIViewController, UICollectionViewDa
        
         
         
+        //Teste
+        let areaInteresse = AreasInteresse(id: 1, nome: "Area de testes")
+        self.areasInteresseDataSource.append(areaInteresse)
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        
+        
         //Configurando um observador para indicar que uma determinada area de interesse foi cadastrada pelo usuario
         NotificationCenter.default.addObserver(self, selector: #selector(CadastroAreasInteresseViewController.notificarAreaInteresseAdicionada), name: NSNotification.Name(rawValue: NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: nil)
 
@@ -57,8 +65,14 @@ class CadastroAreasInteresseViewController: UIViewController, UICollectionViewDa
     //Mark: funcao para notificacao
     @objc func notificarAreaInteresseAdicionada() {
         print(dbgmsg + "Notificando a adesao de uma area de interesse.")
-        
         print(dbgmsg + "Vaga adqurida: \(VagaHelper.areaInteresseTroca?.nome)")
+        
+        self.areasInteresseDataSource.append(VagaHelper.areaInteresseTroca!)
+        print("Areas de interesse qt.: \(self.areasInteresseDataSource.count)")
+       
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
         
     }
     
@@ -78,7 +92,7 @@ class CadastroAreasInteresseViewController: UIViewController, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellReuse, for: indexPath as IndexPath) as! AreasInteresseCollectionViewCell
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.nomeLabelAreaInteresse.text = self.areasInteresseDataSource[indexPath.item].nome
+        cell.nomeLabelAreaInteresse.text = self.areasInteresseDataSource[indexPath.row].nome
         
         return cell
     }

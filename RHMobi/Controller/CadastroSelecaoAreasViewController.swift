@@ -49,14 +49,6 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
             self.listaAreasInteresse = areas
             self.tableView.reloadData()
         }
-        
-        
-       
-        
-        
-        
-        
-        
        
     }
 
@@ -83,15 +75,11 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "areaInteresse", for: indexPath)
-        
-        
         if procurando {
             cell.textLabel?.text = self.dadosFiltrados[indexPath.row].nome
         }else {
             cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
         }
-        
-        //cell.textLabel?.text = self.listaAreasInteresse[indexPath.row].nome
         return cell
     }
     
@@ -100,14 +88,10 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
         if self.procurando {
             VagaHelper.areaInteresseTroca = self.dadosFiltrados[(self.tableView.indexPathForSelectedRow?.row)!]
         
         carregarAreaSelecionadaENotificar()
-            
-            
         }else {
             VagaHelper.areaInteresseTroca = self.listaAreasInteresse[(self.tableView.indexPathForSelectedRow?.row)!]
             
@@ -167,14 +151,9 @@ class CadastroSelecaoAreasViewController: UIViewController,UITableViewDelegate,U
     
     
     //############ FUNCAO PARA CAPTURAR A AREA DE INTERESSE E AVISAR ###########
-    
     func carregarAreaSelecionadaENotificar(){
-        
-        
         NotificationCenter.default.post(name: Notification.Name(NotificationKeysEnumHelper.areaInteresseAdicionada.rawValue), object: self)
         self.navigationController?.popViewController(animated: true)
-        
-        
     }
     
     
