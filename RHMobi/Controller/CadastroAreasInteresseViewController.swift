@@ -13,6 +13,8 @@ import UIKit
 class CadastroAreasInteresseViewController: UIViewController {
     
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     private final let dbgmsg = "[CadastroAreasInteresseVC]: "
 
     override func viewDidLoad() {

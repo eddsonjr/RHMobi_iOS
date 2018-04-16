@@ -922,19 +922,32 @@
                                 <rect key="frame" x="16" y="144" width="288" height="270"/>
                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x28-1L-GjK">
-                                    <size key="itemSize" width="125" height="58"/>
+                                    <size key="itemSize" width="120" height="84"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KzZ-p3-lse">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="58"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="KzZ-p3-lse" customClass="AreasInteresseCollectionViewCell" customModule="RHMobi" customModuleProvider="target">
+                                        <rect key="frame" x="49" y="0.0" width="190" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="58"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Otorrinolaringologista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74O-0a-ELx">
+                                                    <rect key="frame" x="10" y="22" width="170" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <size key="customSize" width="190" height="64"/>
+                                        <connections>
+                                            <outlet property="nomeLabelAreaInteresse" destination="74O-0a-ELx" id="lZt-Eu-dVI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -967,6 +980,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="geA-pA-H9q"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="6rS-cu-HLC" id="ldj-kJ-Cag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pcy-IQ-NMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

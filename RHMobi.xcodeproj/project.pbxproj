@@ -14,6 +14,7 @@
 		AD0D2F26205B2E2900912130 /* FotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F25205B2E2900912130 /* FotoHelper.swift */; };
 		AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */; };
 		AD0D2F2A205B32B900912130 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2F29205B32B900912130 /* CadastroViewController.swift */; };
+		AD4092CE208544A8004C591B /* AreasInteresseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4092CD208544A8004C591B /* AreasInteresseCollectionViewCell.swift */; };
 		AD4322002076A0A500499394 /* UIAlert+Extensions+alerts..swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4321FF2076A0A500499394 /* UIAlert+Extensions+alerts..swift */; };
 		AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4322012076C67800499394 /* UIImage+Extension.swift */; };
 		AD461E7E20716A6500AD3902 /* VagaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD461E7D20716A6500AD3902 /* VagaDAO.swift */; };
@@ -89,6 +90,7 @@
 		AD0D2F25205B2E2900912130 /* FotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoHelper.swift; sourceTree = "<group>"; };
 		AD0D2F27205B2E6C00912130 /* NotificationKeysEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeysEnumHelper.swift; sourceTree = "<group>"; };
 		AD0D2F29205B32B900912130 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		AD4092CD208544A8004C591B /* AreasInteresseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasInteresseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD4321FF2076A0A500499394 /* UIAlert+Extensions+alerts..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions+alerts..swift"; sourceTree = "<group>"; };
 		AD4322012076C67800499394 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AD461E7D20716A6500AD3902 /* VagaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaDAO.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			children = (
 				AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */,
 				AD54CDE6207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift */,
+				AD4092CD208544A8004C591B /* AreasInteresseCollectionViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -705,6 +708,7 @@
 				ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */,
 				ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */,
 				AD54CDE5207E879E00F2EF46 /* CadastroSelecaoAreasViewController.swift in Sources */,
+				AD4092CE208544A8004C591B /* AreasInteresseCollectionViewCell.swift in Sources */,
 				AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */,
 				AD7B19EC205C54BB00A012D6 /* Candidato.swift in Sources */,
 				AD5BE7832075622900104D41 /* LoginViewModel.swift in Sources */,
