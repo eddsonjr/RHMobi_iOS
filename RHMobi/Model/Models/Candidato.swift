@@ -50,7 +50,7 @@ class Candidato {
         
       
         
-        self.id = String
+        self.id = id
         self.nome = nome
         self.sobrenome = sobrenome
         self.email = email

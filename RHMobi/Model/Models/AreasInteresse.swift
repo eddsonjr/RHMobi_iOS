@@ -18,7 +18,7 @@ class AreasInteresse: NSObject{
     
     
     //Construtores
-    init(id: Int, nome: String) {
+    init(id: String, nome: String) {
        
         self.id = id
         self.nome = nome

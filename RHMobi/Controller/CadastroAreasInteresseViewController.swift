@@ -32,7 +32,7 @@ class CadastroAreasInteresseViewController: UIViewController, UICollectionViewDa
         
         
         //Teste
-        let areaInteresse = AreasInteresse(id: 1, nome: "Area de testes")
+        let areaInteresse = AreasInteresse(id: "1", nome: "Area de testes")
         self.areasInteresseDataSource.append(areaInteresse)
         
         self.collectionView.dataSource = self

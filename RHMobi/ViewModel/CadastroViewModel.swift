@@ -100,7 +100,7 @@ class CadastroViewModel: GenericViewModel {
     func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, cpf: String,
                    email:String, senha:String, celular: String, convencional: String){
         
-        let candidato = Candidato(id: 1, nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: nil, cv: nil, areasInteresse: nil)
+        let candidato = Candidato(id: "1", nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: nil, cv: nil, areasInteresse: nil)
 
         
         CandidatoDAO.saveObject(candidato: candidato)
@@ -113,7 +113,7 @@ class CadastroViewModel: GenericViewModel {
     func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, cpf: String,
                    email:String, senha:String, celular: String, convencional: String, vagasAssociadas: [Vaga], cv: CV, areasInteresse: [AreasInteresse] ){
         
-        let candidato = Candidato(id: 1, nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: vagasAssociadas, cv: cv, areasInteresse: areasInteresse)
+        let candidato = Candidato(id: "1", nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: vagasAssociadas, cv: cv, areasInteresse: areasInteresse)
         
         CandidatoDAO.saveObject(candidato: candidato)
         
