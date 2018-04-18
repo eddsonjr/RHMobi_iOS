@@ -19,13 +19,14 @@ class Vaga: NSObject {
    var tipoContrato: String
    var funcao: String
    var experiencia: String
-   var prazo: String //Mudar posteriormente para um tipo de dados de data
+   var prazo: String
    var descricao: String
-   var requisitos: [Requisitos]?
-   var areasInteresse: [AreasInteresse]?
+   var requisitos: String
+   var areasInteresse: [AreasInteresse]
    var imgUrl: String
    var vagaStatus: String
-   var cliente: Cliente?
+   var cliente: Cliente
+   
     
     
     //Construtores
@@ -33,7 +34,7 @@ class Vaga: NSObject {
     
     //Construtor completo
     init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
-         prazo: String, descricao: String, requisitos: [Requisitos], areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: String, cliente: Cliente?) {
+         prazo: String, descricao: String, requisitos: String, areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: String, cliente: Cliente) {
         
         
         self.id = id
@@ -57,13 +58,9 @@ class Vaga: NSObject {
     //Mark: Metodo para decodificar objeto atraves de json
     static func decode(fromJson: JSON?) -> Any? {
         
-        var requisitosSet = [Requisitos]()
+       
         var areasInteresseSet = [AreasInteresse]()
-        
-        //Decodifica o set de requisitos
-        for (_, subJson):(String, JSON) in JSON(fromJson!["requisitos"]) {
-            requisitosSet.append(Requisitos.decode(fromJson: subJson) as! Requisitos)
-        }
+
         
         //Decodifica o set de areas de interesse
         for (_, subJson):(String, JSON) in JSON(fromJson!["areasInteresse"]) {
@@ -77,7 +74,7 @@ class Vaga: NSObject {
         
         let vaga = Vaga(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!, tipoContrato: fromJson!["tipoContrato"].string!,
                         funcao: fromJson!["funcao"].string!, experiencia: fromJson!["experiencia"].string!,
-                        prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: requisitosSet,
+                        prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: fromJson!["requisitos"].string!,
                         areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!,
                         vagaStatus: fromJson!["vagaStatus"].string!,
                         cliente: cliente)

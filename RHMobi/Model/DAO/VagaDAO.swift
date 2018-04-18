@@ -43,7 +43,7 @@ class VagaDAO: NSObject {
         vagaManageObject.setValue(vaga.vagaStatus, forKey: "vagaStatus")
         
         
-        if(vaga.areasInteresse != nil || vaga.areasInteresse?.count != 0){
+        if(vaga.areasInteresse != nil || vaga.areasInteresse.count != 0){
             print(dbgmsg + "Ha areas de interesse nesta vaga")
             
             

@@ -39,7 +39,7 @@ class ResumoVagaContainerViewController: UIViewController {
         self.submissaoVagaLabel.text = VagaHelper.vaga?.prazo
        
         
-        let localVaga = (VagaHelper.vaga?.cliente?.cidade)! + "," +  (VagaHelper.vaga?.cliente?.estado)!
+        let localVaga = (VagaHelper.vaga?.cliente.cidade)! + "," +  (VagaHelper.vaga?.cliente.estado)!
         
          self.localVagaLabel.text = localVaga
         
