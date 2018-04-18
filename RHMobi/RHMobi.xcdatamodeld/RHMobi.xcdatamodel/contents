@@ -25,6 +25,7 @@
         <attribute name="idCandidato" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="idVaga" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="statusCV" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="candidatura" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="ClienteEntidade" representedClassName="ClienteEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="bairro" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,7 +37,7 @@
         <attribute name="logradouro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="cliente" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="CVEntidade" representedClassName="CVEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="dataCriacao" optional="YES" attributeType="String" syncable="YES"/>
@@ -64,18 +65,19 @@
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vagaStatus" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vaga" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
-        <relationship name="candidatura" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CanditaturaEntidade" syncable="YES"/>
+        <relationship name="candidatura" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CanditaturaEntidade" inverseName="vaga" inverseEntity="CanditaturaEntidade" syncable="YES"/>
+        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
         <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" syncable="YES"/>
         <relationship name="requisitoVaga" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RequisitosEntidade" inverseName="vaga" inverseEntity="RequisitosEntidade" syncable="YES"/>
     </entity>
     <elements>
         <element name="AreasInteresseEntidade" positionX="-198" positionY="369" width="128" height="103"/>
         <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="238"/>
-        <element name="CanditaturaEntidade" positionX="-567" positionY="65" width="128" height="88"/>
+        <element name="CanditaturaEntidade" positionX="-567" positionY="65" width="128" height="103"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="103"/>
         <element name="FavoritoEntidade" positionX="-405" positionY="285" width="128" height="75"/>
         <element name="RequisitosEntidade" positionX="-11" positionY="-63" width="128" height="88"/>
-        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="238"/>
+        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="253"/>
     </elements>
 </model>
