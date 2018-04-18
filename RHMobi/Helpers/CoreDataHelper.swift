@@ -19,4 +19,7 @@ class CoreDataHelper: NSObject {
         let context = appDelegate.persistentContainer.viewContext
         return context
     }
+    
+    
+    //MEXENDO...
 }
