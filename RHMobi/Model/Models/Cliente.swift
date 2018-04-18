@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class Cliente: NSObject {
     
-    var id: Int
+    var id: String
     var cnpj: String
     var razaoSocial: String
     var ramoAtuacao: String
@@ -25,7 +25,7 @@ class Cliente: NSObject {
     
     //Construtores
     //Construtor completo
-    init(id: Int, cnpj: String, razaoSocial: String, ramoAtuacao: String, logradouro: String, bairro: String,
+    init(id: String, cnpj: String, razaoSocial: String, ramoAtuacao: String, logradouro: String, bairro: String,
          cep: String, cidade: String, estado: String) {
       
         
@@ -48,7 +48,7 @@ class Cliente: NSObject {
     static func decode(fromJson: JSON?) -> Any? {
     
         let subjsonEndereco = fromJson!["endereco"] as JSON
-        let cliente = Cliente.init(id: fromJson!["id"].int!, cnpj: fromJson!["cnpj"].string!,
+        let cliente = Cliente.init(id: fromJson!["id"].string!, cnpj: fromJson!["cnpj"].string!,
                                    razaoSocial: fromJson!["razaoSocial"].string!,
                                    ramoAtuacao: fromJson!["ramoAtuacao"].string!,
                                    logradouro: fromJson!["logradouro"].string!,

@@ -13,7 +13,7 @@ import SwiftyJSON
 
 class AreasInteresse: NSObject{
     
-   var id: Int
+   var id: String
    var nome: String
     
     
@@ -29,7 +29,7 @@ class AreasInteresse: NSObject{
     
     //Mark: Metodo de decode from json
     static func decode(fromJson: JSON?) -> Any? {
-        return AreasInteresse(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!)
+        return AreasInteresse(id: fromJson!["id"].string!, nome: fromJson!["nome"].string!)
         
     }
     

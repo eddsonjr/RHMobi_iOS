@@ -11,7 +11,7 @@ import CoreData
 
 class Candidato {
     
-    var id: Int
+    var id: String
     var nome: String
     var sobrenome: String
     var email: String
@@ -30,7 +30,7 @@ class Candidato {
         
         
        
-        self.id = 0
+        self.id = "0"
         self.nome = ""
         self.sobrenome = ""
         self.email = ""
@@ -46,11 +46,11 @@ class Candidato {
     
     
     //Construtor com itens
-    init(id: Int, nome: String, sobrenome: String, email: String, senha: String, cpf: String, celular: String, convencional: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?, areasInteresse: [AreasInteresse]?) {
+    init(id: String, nome: String, sobrenome: String, email: String, senha: String, cpf: String, celular: String, convencional: String, sexo: String,vagasAssociadas: [Vaga]?, cv: CV?, areasInteresse: [AreasInteresse]?) {
         
       
         
-        self.id = id
+        self.id = String
         self.nome = nome
         self.sobrenome = sobrenome
         self.email = email

@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class Vaga: NSObject {
     
-   var id: Int
+   var id: String
    var nome: String
    var tipoContrato: String
    var funcao: String
@@ -33,7 +33,7 @@ class Vaga: NSObject {
     
     
     //Construtor completo
-    init(id: Int, nome: String, tipoContrato: String, funcao: String, experiencia: String,
+    init(id: String, nome: String, tipoContrato: String, funcao: String, experiencia: String,
          prazo: String, descricao: String, requisitos: String, areasInteresse: [AreasInteresse], imgUrl: String, vagaStatus: String, cliente: Cliente) {
         
         
@@ -67,12 +67,12 @@ class Vaga: NSObject {
             areasInteresseSet.append(AreasInteresse.decode(fromJson: subJson) as! AreasInteresse)
         }
 
-        let clienteSubjson = fromJson!["cliente"]  as JSON
+        let clienteSubjson = fromJson!["cliente"] as JSON
         
         let cliente = Cliente.decode(fromJson: clienteSubjson) as! Cliente
         
         
-        let vaga = Vaga(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!, tipoContrato: fromJson!["tipoContrato"].string!,
+        let vaga = Vaga(id: fromJson!["id"].string!, nome: fromJson!["nome"].string!, tipoContrato: fromJson!["tipoContrato"].string!,
                         funcao: fromJson!["funcao"].string!, experiencia: fromJson!["experiencia"].string!,
                         prazo: fromJson!["prazo"].string!, descricao:  fromJson!["descricao"].string!, requisitos: fromJson!["requisitos"].string!,
                         areasInteresse: areasInteresseSet, imgUrl: fromJson!["imgUrl"].string!,

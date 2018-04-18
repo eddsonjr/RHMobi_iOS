@@ -12,7 +12,7 @@ import CoreData
 
 class CV {
     
-    var id: Int
+    var id: String
     var dataCriacao: String
     var url: String //verificar se é aplicavel
     var statusCV: StatusCV
@@ -21,7 +21,7 @@ class CV {
     //Construtores
     
     //Construto completo
-    init(id: Int, dataCriacao: String, url: String, statusCV: StatusCV) {
+    init(id: String, dataCriacao: String, url: String, statusCV: StatusCV) {
     
         
         self.id = id
