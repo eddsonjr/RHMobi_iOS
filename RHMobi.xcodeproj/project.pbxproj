@@ -58,6 +58,7 @@
 		ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */; };
 		ADC47274206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */; };
 		ADC47276206C89FF008F8242 /* VagaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC47275206C89FF008F8242 /* VagaHelper.swift */; };
+		ADDFAC2A2087D9ED00AB9165 /* Candidatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDFAC292087D9ED00AB9165 /* Candidatura.swift */; };
 		ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */; };
 		ADF7F04B2074514800CFD6D6 /* String+extension+regexValidador.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7F04A2074514800CFD6D6 /* String+extension+regexValidador.swift */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,7 @@
 		ADC47271206C7D81008F8242 /* ResumoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47273206C7DBC008F8242 /* DescricaoVagaContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoVagaContainerViewController.swift; sourceTree = "<group>"; };
 		ADC47275206C89FF008F8242 /* VagaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagaHelper.swift; sourceTree = "<group>"; };
+		ADDFAC292087D9ED00AB9165 /* Candidatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidatura.swift; sourceTree = "<group>"; };
 		ADEE379520711C44006A4DED /* ListaEDetalhesVagaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEDetalhesVagaViewModel.swift; sourceTree = "<group>"; };
 		ADF7F04A2074514800CFD6D6 /* String+extension+regexValidador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+regexValidador.swift"; sourceTree = "<group>"; };
 		BFB591D32B661BA63C1FB577 /* Pods-RHMobiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHMobiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHMobiUITests/Pods-RHMobiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				AD7B19ED205C58A800A012D6 /* CV.swift */,
 				AD7B19EF205C5A0400A012D6 /* StatusCV.swift */,
 				AD7B19F8205C6BFE00A012D6 /* Cliente.swift */,
+				ADDFAC292087D9ED00AB9165 /* Candidatura.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -729,6 +732,7 @@
 				AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */,
 				AD54CDE7207E886700F2EF46 /* SelecaoAreasInteresseCollectionViewCell.swift in Sources */,
 				AD8847D320574596000DD6A1 /* UIImageView+extension+DownloadImgFromWeb.swift in Sources */,
+				ADDFAC2A2087D9ED00AB9165 /* Candidatura.swift in Sources */,
 				AD4322022076C67800499394 /* UIImage+Extension.swift in Sources */,
 				ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */,
 				AD82DA13207BD1FB00101E42 /* CadastroEnumValidacao.swift in Sources */,
