@@ -19,7 +19,7 @@
         <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="candidato" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
         <relationship name="candidatura" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CanditaturaEntidade" inverseName="candidato" inverseEntity="CanditaturaEntidade" syncable="YES"/>
         <relationship name="cv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CVEntidade" inverseName="candidato" inverseEntity="CVEntidade" syncable="YES"/>
-        <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" syncable="YES"/>
+        <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" inverseName="candidato" inverseEntity="FavoritoEntidade" syncable="YES"/>
     </entity>
     <entity name="CanditaturaEntidade" representedClassName="CanditaturaEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="idCandidato" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -49,6 +49,8 @@
     <entity name="FavoritoEntidade" representedClassName="FavoritoEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="idUsuario" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="idVaga" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="candidato" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CandidatoEntidade" inverseName="favorito" inverseEntity="CandidatoEntidade" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="favorito" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="VagaEntidade" representedClassName="VagaEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
@@ -63,15 +65,15 @@
         <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vaga" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
         <relationship name="candidatura" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CanditaturaEntidade" inverseName="vaga" inverseEntity="CanditaturaEntidade" syncable="YES"/>
         <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
-        <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" syncable="YES"/>
+        <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" inverseName="vaga" inverseEntity="FavoritoEntidade" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AreasInteresseEntidade" positionX="-198" positionY="369" width="128" height="103"/>
+        <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="103"/>
         <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="238"/>
-        <element name="CanditaturaEntidade" positionX="-567" positionY="65" width="128" height="118"/>
+        <element name="CanditaturaEntidade" positionX="-558" positionY="89" width="128" height="118"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="103"/>
-        <element name="FavoritoEntidade" positionX="-405" positionY="285" width="128" height="75"/>
+        <element name="FavoritoEntidade" positionX="-270" positionY="338" width="128" height="103"/>
         <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="238"/>
     </elements>
 </model>
