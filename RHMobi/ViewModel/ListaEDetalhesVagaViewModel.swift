@@ -44,7 +44,7 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
                 vagas.append(vaga as! Vaga)
                 
                 //Salvando uma determinada vaga
-                self.salvarVaga(vaga: vaga as! Vaga)
+                //self.salvarVaga(vaga: vaga as! Vaga)
                 
             }
             print(self.dbgmsg + "Decodificada \(vagas.count) vagas!")

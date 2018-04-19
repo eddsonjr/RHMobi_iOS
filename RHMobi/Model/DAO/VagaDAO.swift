@@ -29,35 +29,58 @@ class VagaDAO: NSObject {
         let context = getContext()
         
         let vagaEntityNome: String = "VagaEntidade"
+        let clienteEntidadeNome: String = "ClienteEntidade"
+        let areaInteresseEntidadeNome: String = "AreasInteresseEntidade"
         
         
         let vagaEntidade: VagaEntidade = NSEntityDescription.insertNewObject(forEntityName: vagaEntityNome, into: context) as! VagaEntidade
         
-        //vagaEntidade.addToCandidatura(<#T##value: CanditaturaEntidade##CanditaturaEntidade#>)
-//
-//        let vagaEntity = NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)
-//        let vagaManageObject = NSManagedObject(entity: vagaEntity!, insertInto: context)
-//
-//
-//
-//        //Setando os valores para serem salvos
-//        vagaManageObject.setValue(vaga.id, forKey: "id")
-//        vagaManageObject.setValue(vaga.nome, forKey: "nome")
-//        vagaManageObject.setValue(vaga.descricao, forKey: "descricao")
-//        vagaManageObject.setValue(vaga.funcao, forKey: "funcao")
-//        vagaManageObject.setValue(vaga.imgUrl, forKey: "imgUrl")
-//        vagaManageObject.setValue(vaga.prazo, forKey: "prazo")
-//        vagaManageObject.setValue(vaga.experiencia, forKey: "experiencia")
-//        vagaManageObject.setValue(vaga.vagaStatus, forKey: "vagaStatus")
-//
-//
-//        //Criando relacionamento com areas de Interesse
-//
-//
+        //Setando os valores da vaga na entidade da vaga para salvar os dados no banco
+        vagaEntidade.setValue(vaga.id, forKey: "id")
+        vagaEntidade.setValue(vaga.nome, forKey: "nome")
+        vagaEntidade.setValue(vaga.descricao, forKey: "descricao")
+        vagaEntidade.setValue(vaga.funcao, forKey: "funcao")
+        vagaEntidade.setValue(vaga.imgUrl, forKey: "imgUrl")
+        vagaEntidade.setValue(vaga.prazo, forKey: "prazo")
+        vagaEntidade.setValue(vaga.experiencia, forKey: "experiencia")
+        vagaEntidade.setValue(vaga.vagaStatus, forKey: "vagaStatus")
+        
+        
+        //Setando o cliente
+        let clienteEntidade: ClienteEntidade = NSEntityDescription.insertNewObject(forEntityName: clienteEntidadeNome, into: context) as! ClienteEntidade
+        
+        clienteEntidade.setValue(vaga.cliente.id, forKey: "id")
+        clienteEntidade.setValue(vaga.cliente.cnpj, forKey: "cnpj")
+        clienteEntidade.setValue(vaga.cliente.razaoSocial, forKey: "razaoSocial")
+        clienteEntidade.setValue(vaga.cliente.ramoAtuacao, forKey: "ramoAtuacao")
+        clienteEntidade.setValue(vaga.cliente.logradouro, forKey: "logradouro")
+        clienteEntidade.setValue(vaga.cliente.bairro, forKey: "bairro")
+        clienteEntidade.setValue(vaga.cliente.cep, forKey: "cep")
+        clienteEntidade.setValue(vaga.cliente.cidade, forKey: "cidade")
+        clienteEntidade.setValue(vaga.cliente.estado, forKey: "estado")
+        
+        vagaEntidade.setValue(clienteEntidade, forKey: "cliente") //Criando um relacionamento com ClienteEntidade
         
         
         
-
+        //Setando os valores das areas de interese
+        let areasInteresseNSSetRelacao: NSSet?
+        var areaInteresseArray = [AreasInteresseEntidade]()
+        
+        
+        for area in vaga.areasInteresse {
+            let areaEntidade: AreasInteresseEntidade =  NSEntityDescription.insertNewObject(forEntityName: areaInteresseEntidadeNome, into: context) as! AreasInteresseEntidade
+            areaEntidade.setValue(area.id, forKey: "id")
+            areaEntidade.setValue(area.nome, forKey: "nome")
+            areaInteresseArray.append(areaEntidade)
+        }
+        
+        
+        
+        areasInteresseNSSetRelacao = NSSet(array: areaInteresseArray)
+        vagaEntidade.addToAreasInteresseRelacao(areasInteresseNSSetRelacao!)
+        
+        
         
         
         do {
@@ -66,10 +89,12 @@ class VagaDAO: NSObject {
            
         }catch let err{
             print(err)
-            
         }
         
     }
+    
+    
+    
     
     
     
