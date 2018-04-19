@@ -8,6 +8,8 @@ target 'RHMobi' do
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.7'
   pod ‘SwiftMaskText’
+  pod 'FBSDKLoginKit'
+  pod ‘FBSDKCoreKit’
 
 
 

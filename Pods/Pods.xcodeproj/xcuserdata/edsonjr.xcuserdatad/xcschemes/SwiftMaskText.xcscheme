@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E1F61F863E4CBCFF4CEBC5630033E7A3"
+               BlueprintIdentifier = "A061FB4893110128A9AC4B850C821FF2"
                BlueprintName = "SwiftMaskText"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SwiftMaskText.framework">
