@@ -56,7 +56,12 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         
         
         
-        //TESTE PARA SALVAR VAGA
+        //PARA TESTES DO DAO DE VAGA
+        
+        //listarVagas()
+        //apagarTodasVagas()
+        listarVagas()
+        
         salvarVagaTESTE()
       
        
@@ -210,6 +215,36 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         //Salvando
         self.viewModel.salvarVaga(vaga: vaga)
         
+    }
+    
+    
+    func listarVagas() {
+        
+        let vagasDoBanco = self.viewModel.listarTodasVagasSalvas()
+        
+        if vagasDoBanco == nil || vagasDoBanco.count <= 0 {
+            print(dbgmsg + "Retornando...")
+            return
+        }
+        
+        
+        print(dbgmsg + "Retornando do banco: \(vagasDoBanco.count) vagas.")
+        print(dbgmsg + "Dados da vaga: ")
+        print(dbgmsg + "id: \(vagasDoBanco[0].id) | nome: \(vagasDoBanco[0].nome) | tipoContrato: \(vagasDoBanco[0].tipoContrato)")
+        print(dbgmsg + "cliente cnpj: \(vagasDoBanco[0].cliente?.cnpj)")
+        print(dbgmsg + "areas de interesse:")
+        
+        
+        for area in vagasDoBanco[0].areasInteresseRelacao! {
+            let a = area as? AreasInteresseEntidade
+            print(">> Area id: \(a?.id) | nome: \(a?.nome)")
+        }
+    }
+    
+    
+    func apagarTodasVagas(){
+        print(dbgmsg + "Apagando todas as vagas do banco")
+        self.viewModel.apagarTodasAsVagas()
     }
     
     

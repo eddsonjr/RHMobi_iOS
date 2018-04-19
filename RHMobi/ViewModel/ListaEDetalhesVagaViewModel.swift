@@ -70,6 +70,11 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
     }
     
     
+    func apagarTodasAsVagas() {
+        VagaDAO.cleanDelete()
+    }
+    
+    
     
     
     
