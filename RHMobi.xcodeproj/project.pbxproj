@@ -51,6 +51,7 @@
 		AD8847D820574F81000DD6A1 /* VagasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */; };
 		AD8847DB205753A6000DD6A1 /* UrlEnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */; };
 		AD8847DD2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */; };
+		AD90614420892A0400C026E3 /* DAOTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90614320892A0400C026E3 /* DAOTeste.swift */; };
 		ADA3BE9320595DB00012E03B /* UsuariorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */; };
 		ADA3BE99205964F40012E03B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3BE98205964F40012E03B /* LoginViewController.swift */; };
 		ADB27EB32073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO in Resources */ = {isa = PBXBuildFile; fileRef = ADB27EB22073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO */; };
@@ -133,6 +134,7 @@
 		AD8847D720574F81000DD6A1 /* VagasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VagasTableViewCell.swift; sourceTree = "<group>"; };
 		AD8847DA205753A6000DD6A1 /* UrlEnumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEnumHelper.swift; sourceTree = "<group>"; };
 		AD8847DC2057667A000DD6A1 /* String+extension+IdentifySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension+IdentifySubstrings.swift"; sourceTree = "<group>"; };
+		AD90614320892A0400C026E3 /* DAOTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOTeste.swift; sourceTree = "<group>"; };
 		ADA3BE9220595DB00012E03B /* UsuariorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariorHelper.swift; sourceTree = "<group>"; };
 		ADA3BE98205964F40012E03B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADB27EB22073BCCC00DE98D9 /* codigos_antigos_CandidatoDAO */ = {isa = PBXFileReference; lastKnownFileType = text; path = codigos_antigos_CandidatoDAO; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 		AD88479320571EA8000DD6A1 /* RHMobi */ = {
 			isa = PBXGroup;
 			children = (
+				AD906142208929E800C026E3 /* Testes */,
 				AD3AFA09207044AE00FE6FE8 /* ViewModel */,
 				AD3AF9D720702E2000FE6FE8 /* CodigosAntigos */,
 				AD7B19F1205C5A5E00A012D6 /* Enums */,
@@ -354,6 +357,14 @@
 				ADC47275206C89FF008F8242 /* VagaHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AD906142208929E800C026E3 /* Testes */ = {
+			isa = PBXGroup;
+			children = (
+				AD90614320892A0400C026E3 /* DAOTeste.swift */,
+			);
+			path = Testes;
 			sourceTree = "<group>";
 		};
 		ADC47270206C7D5F008F8242 /* Containers */ = {
@@ -743,6 +754,7 @@
 				ADEE379620711C44006A4DED /* ListaEDetalhesVagaViewModel.swift in Sources */,
 				AD82DA13207BD1FB00101E42 /* CadastroEnumValidacao.swift in Sources */,
 				AD65B90E2073B4590013E083 /* CandidatoDAO.swift in Sources */,
+				AD90614420892A0400C026E3 /* DAOTeste.swift in Sources */,
 				AD0D2F28205B2E6C00912130 /* NotificationKeysEnumHelper.swift in Sources */,
 				AD5BE78120755DFA00104D41 /* UserDefaults+Extension.swift in Sources */,
 				ADC47272206C7D81008F8242 /* ResumoVagaContainerViewController.swift in Sources */,
