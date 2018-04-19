@@ -44,6 +44,7 @@ class VagaDAO: NSObject {
         vagaEntidade.setValue(vaga.prazo, forKey: "prazo")
         vagaEntidade.setValue(vaga.experiencia, forKey: "experiencia")
         vagaEntidade.setValue(vaga.vagaStatus, forKey: "vagaStatus")
+        vagaEntidade.setValue(vaga.tipoContrato, forKey: "tipoContrato")
         
         
         //Setando o cliente
@@ -79,14 +80,11 @@ class VagaDAO: NSObject {
         
         areasInteresseNSSetRelacao = NSSet(array: areaInteresseArray)
         vagaEntidade.addToAreasInteresseRelacao(areasInteresseNSSetRelacao!)
-        
-        
-        
+    
         
         do {
             try context.save()
             print( dbgmsg + "Salvando a vaga \(vaga.nome) com sucesso!")
-           
         }catch let err{
             print(err)
         }
