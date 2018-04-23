@@ -13,7 +13,7 @@ import SwiftyJSON
 
 class StatusCV  {
     
-    var id: Int
+    var id: String
     var nome: String
     
     
@@ -21,7 +21,7 @@ class StatusCV  {
     //Construtores
     
     //construtor completo
-    init(id: Int, nome: String) {
+    init(id: String, nome: String) {
         
         self.id = id
         self.nome = nome
@@ -32,7 +32,7 @@ class StatusCV  {
     
     //Mark: Metodo de decode from json
     static func decode(fromJson: JSON?) -> Any? {
-        return StatusCV(id: fromJson!["id"].int!, nome: fromJson!["nome"].string!)
+        return StatusCV(id: fromJson!["id"].string!, nome: fromJson!["nome"].string!)
     
     }
     

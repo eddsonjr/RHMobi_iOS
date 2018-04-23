@@ -22,29 +22,73 @@ class CandidatoDAO: NSObject {
         return appDelegate.persistentContainer.viewContext
     }
     
-    
-    
-    
-    
     //Salvar os dados
     class func saveObject(candidato: Candidato){
         let dbgmsg = "[CandidatoDAO]: "
         let context = getContext()
-        let entity = NSEntityDescription.entity(forEntityName: "CandidatoEntidade", in: context)
-        let manageObject = NSManagedObject(entity: entity!, insertInto: context)
+        
+        let candidatoEntidadeNome = "CandidatoEntidade"
+        let areasInteresseEntidadeNome = "AreasInteresseEntidade"
+        let cvEntidadeNome = "CVEntidade"
+    
+        let candidatoEntidade: CandidatoEntidade  = NSEntityDescription.insertNewObject(forEntityName: candidatoEntidadeNome, into: context) as! CandidatoEntidade
+        
         
         //Setando os valores para serem salvos
-        manageObject.setValue(candidato.id, forKey: "id")
-        manageObject.setValue(candidato.nome, forKey: "nome")
-        manageObject.setValue(candidato.sobrenome, forKey: "sobrenome")
-        manageObject.setValue(candidato.email, forKey: "email")
-        manageObject.setValue(candidato.cpf, forKey: "cpf")
-        manageObject.setValue(candidato.sexo, forKey: "sexo")
-        manageObject.setValue(candidato.senha, forKey: "senha")
-        manageObject.setValue(candidato.celular, forKey: "celular")
-        manageObject.setValue(candidato.convencional, forKey: "convencional")
+        candidatoEntidade.setValue(candidato.id, forKey: "id")
+        candidatoEntidade.setValue(candidato.nome, forKey: "nome")
+        candidatoEntidade.setValue(candidato.sobrenome, forKey: "sobrenome")
+        candidatoEntidade.setValue(candidato.email, forKey: "email")
+        candidatoEntidade.setValue(candidato.cpf, forKey: "cpf")
+        candidatoEntidade.setValue(candidato.sexo, forKey: "sexo")
+        candidatoEntidade.setValue(candidato.senha, forKey: "senha")
+        candidatoEntidade.setValue(candidato.celular, forKey: "celular")
+        candidatoEntidade.setValue(candidato.convencional, forKey: "convencional")
         
-        //Falta ainda criar o relacionamento com o cv
+        let cvEntidade: CVEntidade = NSEntityDescription.insertNewObject(forEntityName: cvEntidadeNome, into: context) as! CVEntidade
+        
+        cvEntidade.setValue(candidato.cv?.id, forKey: "id")
+        cvEntidade.setValue(candidato.cv?.url, forKey: "url")
+        cvEntidade.setValue(candidato.cv?.dataCriacao, forKey: "dataCriacao")
+        
+        
+        //Setando o relacionamento com CV
+        candidatoEntidade.setValue(cvEntidade, forKey: "cvRelacao")
+        
+        
+        
+        //Verificando se ha areas de interesse relacioandas com esse candidato
+        if(candidato.areasInteresse != nil){
+            print(dbgmsg + "Salvando as \(candidato.areasInteresse?.count) areas de interesse dele....")
+            let areasInteresseEntidadeNome = "AreasInteresseEntidade"
+            
+            //Setando os valores das areas de interese
+            let areasInteresseNSSetRelacao: NSSet?
+            var areaInteresseArray = [AreasInteresseEntidade]()
+            
+            for area in candidato.areasInteresse! {
+                let areaEntidade: AreasInteresseEntidade =  NSEntityDescription.insertNewObject(forEntityName: areasInteresseEntidadeNome, into: context) as! AreasInteresseEntidade
+                areaEntidade.setValue(area.id, forKey: "id")
+                areaEntidade.setValue(area.nome, forKey: "nome")
+                areaInteresseArray.append(areaEntidade)
+            }
+            //Salvando a relacao de candidato com as areas e interesse
+            areasInteresseNSSetRelacao = NSSet(array: areaInteresseArray)
+            candidatoEntidade.addToAreasInteresse(areasInteresseNSSetRelacao!)
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         do {
             try context.save()

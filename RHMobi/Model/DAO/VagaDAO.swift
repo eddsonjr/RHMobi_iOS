@@ -140,14 +140,12 @@ class VagaDAO: NSObject {
         var vagas:[VagaEntidade]?  = nil
         
         
-        var predicate = NSPredicate(format: "password contains[c] %@", "2")
+        var predicate = NSPredicate(format: stringToNSPredicate,atributoForWhere)
         fetchRequest.predicate = predicate
         do{
             vagas = try context.fetch(fetchRequest)
             print(dbgmsg + "Encontrados \(vagas?.count) com essa busca especifica")
-            
             return vagas
-            
         }catch let err{
             print()
             return vagas

@@ -17,10 +17,11 @@ class DAOTeste {
     
     //Mark: variavel do viewmodel da lista de vagas e dos detalhes da vaga
     var viewModel = ListaEDetalheVagaViewModel(url: UrlEnumHelper.vagasDownlodUrl.rawValue)
+    var viewModelCadastrar = CadastroViewModel()
     
     
     
-    //############# FUNCAO DE TESTES DO BANCO DE DADOS #################
+    //############# FUNCAO DE TESTES DO BANCO DE DADOS - VAGA #################
     //Mark: Funcao de testes para salvar uma vaga no banco de dados
     func salvarVagaTESTE(){
         
@@ -74,6 +75,83 @@ class DAOTeste {
         print(dbgmsg + "Apagando todas as vagas do banco")
         self.viewModel.apagarTodasAsVagas()
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //############# FUNCAO DE TESTES DO BANCO DE DADOS - CANDIDATO #################
+    //Mark: Salva um candidato de testes
+    func salvarCandidatoTESTE() {
+        
+        
+        let areaDeInteresses: [AreasInteresse]?  =
+            [AreasInteresse.init(id: "B0", nome:  "AREA DE INTERESSE 1"),
+                                AreasInteresse.init(id: "B1", nome: "AREA DE INTERESSE 2"),
+                                AreasInteresse.init(id: "B2", nome: "AREA DE INTERESSE 3")]
+        
+        
+       let cv = CV(id: "0001A", dataCriacao: "00/00/0000", url: "url")
+        
+        
+       
+        let candidatoTeste = Candidato(id: "01", nome: "CANDIDATO", sobrenome: " TESTE", email: "email@teste.com", senha: "123",
+                                       cpf: "00000000-00", celular: "000000000",
+                                       convencional: "", sexo: "M",
+                                       vagasAssociadas: nil, cv: cv,
+                                       areasInteresse: areaDeInteresses)
+        
+        
+        //salvando
+        self.viewModelCadastrar.cadastrar(candidato: candidatoTeste)
+    }
+    
+    
+    
+    
+    func listarCandidato() {
+        
+        let candidatos = self.viewModelCadastrar.listarTodosOsCandidatos()
+        
+        if candidatos == nil || candidatos.count <= 0 {
+            print(dbgmsg + "Retornando...")
+            return
+        }
+        
+        
+        print(dbgmsg + "Retornando do banco: \(candidatos.count) candidato.")
+        print(dbgmsg + "Dados do candidato: ")
+        print(dbgmsg + "id: \(candidatos[0].id) | nome: \(candidatos[0].nome) | cpf: \(candidatos[0].cpf)")
+        print(dbgmsg + "areas de interesse:")
+        
+        
+        for area in candidatos[0].areasInteresse! {
+            let a = area as? AreasInteresseEntidade
+            print(">> Area id: \(a?.id) | nome: \(a?.nome)")
+        }
+        
+        
+        print(dbgmsg + "CV: \(candidatos[0].cvRelacao?.id) | dataCriacao: \(candidatos[0].cvRelacao?.dataCriacao)")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

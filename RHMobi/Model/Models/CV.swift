@@ -15,20 +15,16 @@ class CV {
     var id: String
     var dataCriacao: String
     var url: String //verificar se é aplicavel
-    var statusCV: StatusCV
     
     
     //Construtores
-    
-    //Construto completo
-    init(id: String, dataCriacao: String, url: String, statusCV: StatusCV) {
-    
-        
+    init(id: String, dataCriacao: String, url: String) {
         self.id = id
         self.dataCriacao = dataCriacao
         self.url = url
-        self.statusCV = statusCV
     }
+    
+    //TODO - FAZER FUNCOES DE ENCODE E DECODE
     
     
     

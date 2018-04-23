@@ -120,13 +120,15 @@ class CadastroViewModel: GenericViewModel {
     }
     
     
-    
-    
-    
-    
     //Listagem de todos os candidatos
     func listarTodosOsCandidatos() -> [CandidatoEntidade]{
         return CandidatoDAO.fecthAllObjec()!
+    }
+    
+    
+    
+    func cadastrar(candidato: Candidato){
+        CandidatoDAO.saveObject(candidato: candidato)
     }
     
     
