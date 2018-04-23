@@ -23,11 +23,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         print(dbgmsg + "View de login carregada!")
         
-        
-        print(dbgmsg + "Usuarios na base de dados: ")
-        loginViewModel.getAllCandidatos()
-    
-        
+       
         //Configurando o delegate dos uitextview para que as funcoes do teclado
         //sejam executadas
         self.emailTextField.delegate = self
@@ -78,11 +74,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBAction func entrar(_ sender: Any) {
-        if loginViewModel.logar(email: emailTextField.text!, senha: senhaTextField.text!){
-            self.present(UIAlertController.alertaLoginCorreto, animated: true, completion: nil)
-        }else {
-            self.present(UIAlertController.alertaLoginErrado, animated: true, completion: nil)
-        }
+        print(dbgmsg + "Entrar sendo implementado ainda... ")
         
         
     }

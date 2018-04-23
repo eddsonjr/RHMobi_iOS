@@ -56,26 +56,4 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
     }
     
     
-    
-    
-    
-    func salvarVaga(vaga: Vaga){
-        VagaDAO.saveObject(vaga: vaga)
-    }
-    
-    
-    
-    func listarTodasVagasSalvas() -> [VagaEntidade]{
-        return VagaDAO.fecthAllObjec()!
-    }
-    
-    
-    func apagarTodasAsVagas() {
-        VagaDAO.cleanDelete()
-    }
-    
-    
-    
-    
-    
 }

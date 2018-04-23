@@ -287,8 +287,8 @@ class CadastroViewController: UIViewController,UITextFieldDelegate {
     func cadastrarCandidato(){
         
         print(dbgmsg + "Chamando a funcao para cadastrar")
-        self.navigationController?.popViewController(animated: true)
-        viewModel.cadastrar(id: 1, nome: self.nomeTextField.text!, sobrenome: self.sobreNomeTextField.text!, sexo: self.sexo, cpf: self.rgTextField.text!, email: self.emailTextField.text!, senha: self.senhaTextField.text!, celular: self.telefoneTextField.text!, convencional: self.telefone2TextField.text!)
+        print(dbgmsg + "ATENCAO: FALTA IMPLEMENTAR A FUNCAO DE CADASTRAR VIA WEB... ")
+        print(dbgmsg + "Ainda implementado....")
         
         
         

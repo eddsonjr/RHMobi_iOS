@@ -88,57 +88,6 @@ class CadastroViewModel: GenericViewModel {
     
     
     
-    
-    
-    
-    
-    
-    //#################### FUNCOES PARA CADASTRAR O USUARIO ##########################
-    //Mark: Metodos para cadastro do usuiario
-    
-    //Cadastro parcial - sem o relacionamento entre as entidades cv, areasInteresse e vagasAssociadas
-    func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, cpf: String,
-                   email:String, senha:String, celular: String, convencional: String){
-        
-        let candidato = Candidato(id: "1", nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: nil, cv: nil, areasInteresse: nil)
-
-        
-        CandidatoDAO.saveObject(candidato: candidato)
-        
-    }
-    
-    
-    
-    
-    func cadastrar(id: Int, nome: String, sobrenome: String, sexo: String, cpf: String,
-                   email:String, senha:String, celular: String, convencional: String, vagasAssociadas: [Vaga], cv: CV, areasInteresse: [AreasInteresse] ){
-        
-        let candidato = Candidato(id: "1", nome: nome, sobrenome: sobrenome, email: email, senha: senha, cpf: cpf, celular: celular, convencional: convencional, sexo: sexo, vagasAssociadas: vagasAssociadas, cv: cv, areasInteresse: areasInteresse)
-        
-        CandidatoDAO.saveObject(candidato: candidato)
-        
-    }
-    
-    
-    //Listagem de todos os candidatos
-    func listarTodosOsCandidatos() -> [CandidatoEntidade]{
-        return CandidatoDAO.fecthAllObjec()!
-    }
-    
-    
-    
-    func cadastrar(candidato: Candidato){
-        CandidatoDAO.saveObject(candidato: candidato)
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //####################### DOWNLOAD/ENVIO DE DADOS VIA JSON ##########################
     //Mark: Baixando  a lista de areas de interesse
     func baixarListaAreasInteresse(completihonHandler: @escaping ([AreasInteresse])->()){

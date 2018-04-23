@@ -52,14 +52,6 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             self.listaVagas = vaga
             self.vagasTableView.reloadData()
         }
-        
-        
-        
-        
-        //FUNCAO DE TESTES
-        let daoTestes = DAOTeste()
-       // daoTestes.salvarCandidatoTESTE()
-        daoTestes.listarCandidato()
        
     }
 

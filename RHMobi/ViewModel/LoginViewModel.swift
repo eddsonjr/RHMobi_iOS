@@ -21,41 +21,8 @@ class LoginViewModel{
         let emailUsuarioDoUserDefaults = UserDefaults.standard.getUserEmail
         return emailUsuarioDoUserDefaults()
     }
+
     
-    
-    func logar(email: String, senha: String) -> Bool{
-        if CandidatoDAO.fectchCandidato(email: email, senha: senha) {
-            print(dbgmsg + "Usuario encontrado!")
-            return true
-        }else{
-            print(dbgmsg + "Usuario nao encontrado!")
-            return false
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //Para debug
-    func getAllCandidatos() {
-        let candidatos = CandidatoDAO.fecthAllObjec()
-        
-        for c in candidatos! {
-            print(dbgmsg + "Candidato nome: \(c.nome)")
-            
-        }
-    }
 
     
 }
