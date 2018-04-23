@@ -3,7 +3,6 @@
     <entity name="AreasInteresseEntidade" representedClassName="AreasInteresseEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="candidato" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CandidatoEntidade" inverseName="areasInteresse" inverseEntity="CandidatoEntidade" syncable="YES"/>
         <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="areasInteresseRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="CandidatoEntidade" representedClassName="CandidatoEntidade" syncable="YES" codeGenerationType="class">
@@ -16,7 +15,6 @@
         <attribute name="senha" attributeType="String" syncable="YES"/>
         <attribute name="sexo" attributeType="String" syncable="YES"/>
         <attribute name="sobrenome" attributeType="String" syncable="YES"/>
-        <relationship name="areasInteresse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="candidato" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
     </entity>
     <entity name="CanditaturaEntidade" representedClassName="CanditaturaEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="idCandidato" optional="YES" attributeType="String" syncable="YES"/>
@@ -60,8 +58,8 @@
         <relationship name="favorito" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" inverseName="vaga" inverseEntity="FavoritoEntidade" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="105"/>
-        <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="193"/>
+        <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="88"/>
+        <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="178"/>
         <element name="CanditaturaEntidade" positionX="-558" positionY="89" width="128" height="88"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="88"/>
