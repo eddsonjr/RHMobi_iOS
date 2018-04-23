@@ -22,7 +22,7 @@ class FavoritoDAO: NSObject {
     }
     
     
-    func salvarFavorito(favorito: Favorito) {
+    class func salvarFavorito(favorito: Favorito) {
         let dbgmsg = "[FavoritoDAO]: "
         let context = FavoritoDAO.getContext()
         
