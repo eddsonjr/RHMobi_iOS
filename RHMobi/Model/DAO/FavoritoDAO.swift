@@ -249,13 +249,9 @@ class FavoritoDAO: NSObject {
             for i in 0...arrayDeVagas.count-1 {
                 if arrayDeVagas[i].id == vaga.id {
                     print(dbgmsg + "Essa vaga ja existe, apagando ela....")
-
-                    //Removendo o do array
-                    arrayDeVagas.remove(at: i)
-                    let newNSSet: NSSet = NSSet(array: arrayDeVagas)
-                    print(dbgmsg + "Removido uma vaga. Agora este candidato possui \(newNSSet.count) vagas...")
-                    
-
+                
+                    favoritos?.first?.removeFromVagaRelacao(converterVagaParaVagaEntidade(vaga: vaga))
+                    print(dbgmsg + "Removido uma vaga. Agora este candidato possui \(favoritos?.first?.vagaRelacao?.count) vagas favoritadas...")
                 }else{
                     print(dbgmsg + "Essa vaga ainda nao existe, salvando - a pela primeira vez...")
                     arrayDeVagas.append(converterVagaParaVagaEntidade(vaga: vaga))
@@ -270,14 +266,37 @@ class FavoritoDAO: NSObject {
     }
 
 
+    
+    class func updateFavoritoEntidade(favoritoEntidade: FavoritoEntidade,vagasRelacao: NSSet) {
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+        
+        print(dbgmsg + "Atualizando a relacao entre favoritos e vaga....")
+        favoritoEntidade.addToVagaRelacao(vagasRelacao)
+      
+        //Tentando salvar
+        do {
+            try context.save()
+            print(dbgmsg + "Atualizado o \(favoritoEntidade.idUsuario) com SUCESSO")
+        }catch let err{
+            print(dbgmsg + "ERRO AO ATUALIZAR... \(favoritoEntidade.idUsuario)")
+            print(err)
+        }
+        
+        
+        
+        
+        
+    }
+    
 
 
     //Funcao para converter Vaga para VagaEntidade
     class func converterVagaParaVagaEntidade(vaga: Vaga) -> VagaEntidade{
         let context = getContext()
-
-        let vagaEntidade: VagaEntidade = VagaEntidade()
-
+        
+        let vagaEntidade = VagaEntidade.init(entity: NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)! , insertInto: context)
+        
         vagaEntidade.id = vaga.id
         vagaEntidade.nome = vaga.nome
         vagaEntidade.tipoContrato = vaga.tipoContrato
@@ -289,12 +308,25 @@ class FavoritoDAO: NSObject {
         vagaEntidade.imgUrl = vaga.imgUrl
         vagaEntidade.vagaStatus = vaga.vagaStatus
 
-        let nssetAreasInteresse: NSSet = NSSet(arrayLiteral: vaga.areasInteresse)
-        vagaEntidade.areasInteresseRelacao = nssetAreasInteresse
+        var areaInteresseArray = [AreasInteresseEntidade]()
+        let areasInteresseNSSetRelacao: NSSet?
+        
+        for area in (vaga.areasInteresse) {
+            let areaEntidade: AreasInteresseEntidade =  NSEntityDescription.insertNewObject(forEntityName: "AreasInteresseEntidade", into: context) as! AreasInteresseEntidade
+            areaEntidade.setValue(area.id, forKey: "id")
+            areaEntidade.setValue(area.nome, forKey: "nome")
+            areaInteresseArray.append(areaEntidade)
+        }
+        
+        
+        
+        //Criando a relacao entre areas de interesse e vaga
+        areasInteresseNSSetRelacao = NSSet(array: areaInteresseArray)
+        vagaEntidade.addToAreasInteresseRelacao(areasInteresseNSSetRelacao!)
         
         
         //Criando uma entidade de cliente
-        let clienteEntidade: ClienteEntidade = ClienteEntidade()
+        let clienteEntidade: ClienteEntidade = NSEntityDescription.insertNewObject(forEntityName: "ClienteEntidade", into: context) as! ClienteEntidade
         clienteEntidade.bairro = vaga.cliente.bairro
         clienteEntidade.cep = vaga.cliente.cep
         clienteEntidade.cidade = vaga.cliente.cidade
@@ -305,12 +337,10 @@ class FavoritoDAO: NSObject {
         clienteEntidade.ramoAtuacao = vaga.cliente.ramoAtuacao
         clienteEntidade.razaoSocial = vaga.cliente.razaoSocial
         
-        vagaEntidade.clienteRelacao = clienteEntidade
+        
+        
         
         return vagaEntidade
-
-
-
 
     }
 

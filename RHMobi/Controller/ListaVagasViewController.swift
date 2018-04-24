@@ -59,6 +59,7 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         let daoTestes = DAOTeste()
         //daoTestes.apagarTodosFavoritos()
         daoTestes.atualizarListaVagasFavorito()
+        //daoTestes.listarTodosOsFavoritos()
         
         
     }
