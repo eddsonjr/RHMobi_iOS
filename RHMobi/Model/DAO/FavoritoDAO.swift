@@ -22,10 +22,6 @@ class FavoritoDAO: NSObject {
     }
     
     
-    
-    
-    
-    
     class func salvarFavorito(favorito: Favorito) {
         let dbgmsg = "[FavoritoDAO]: "
         let context = FavoritoDAO.getContext()
@@ -127,11 +123,86 @@ class FavoritoDAO: NSObject {
             print(dbgmsg + "ERRO AO SALVAR O FAVORITO DO CANDIDAO \(favorito.idCandidato)")
             print(err)
         }
-        
-        
-        
-        
     }
+    
+    
+    
+    
+    //Retornando todos os favoritos
+    class func listarTodosFavoritos() -> [FavoritoEntidade]? {
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+        var favoritos:  [FavoritoEntidade]? = nil
+     
+        do{
+            favoritos = try context.fetch(FavoritoEntidade.fetchRequest())
+            print(dbgmsg + "Quantidade de vagas encontradas no banco: \(favoritos?.count)")
+            return favoritos
+        }catch let err{
+            print(dbgmsg + "erro: \(err)")
+            return favoritos
+        }
+    }
+    
+    
+    
+    
+    //Pesquisando favoritos com base em predicado
+    class func filtrarDadosFavorito(stringToNSPredicate: String, atributoForWhere: String) -> [FavoritoEntidade]?{
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+        let fetchRequest: NSFetchRequest<FavoritoEntidade> = FavoritoEntidade.fetchRequest()
+        var favoritos:[FavoritoEntidade]?  = nil
+        
+        
+        var predicate = NSPredicate(format: stringToNSPredicate,atributoForWhere)
+        fetchRequest.predicate = predicate
+        do{
+            favoritos = try context.fetch(fetchRequest)
+            print(dbgmsg + "[Busca]: Predicado: \(stringToNSPredicate) | where: \(atributoForWhere)")
+            print(dbgmsg + "Encontrados \(favoritos?.count) com essa busca especifica")
+            return favoritos
+        }catch let err{
+            print()
+            return favoritos
+        }
+    }
+    
+    
+    
+    //Apagando todos os favoritos da base de dados
+    class func removerTodosFavoritos() -> Bool {
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+        let delete = NSBatchDeleteRequest(fetchRequest: FavoritoEntidade.fetchRequest())
+        do {
+            try context.execute(delete)
+            print(dbgmsg + "Apagado todos os dados de favorito do banco de dados")
+            return true
+        }catch {
+            return false
+        }
+    }
+    
+    
+    //Apagando um determinado favorito
+    class func removerFavorito(favoritoEntidade: FavoritoEntidade) -> Bool{
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+        context.delete(favoritoEntidade)
+        
+        do{
+            try context.save()
+            return true
+        }catch let err {
+            print(dbgmsg + "Erro ao apagar favorito solicitado")
+            return false
+        }
+    }
+    
+    
+    
+    
     
     
     
