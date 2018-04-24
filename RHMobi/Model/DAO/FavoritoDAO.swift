@@ -156,6 +156,8 @@ class FavoritoDAO: NSObject {
         
         
         var predicate = NSPredicate(format: stringToNSPredicate,atributoForWhere)
+        //var predicate = NSPredicate(format: stringToNSPredicate, key, atributoForWhere)
+        
      
         fetchRequest.predicate = predicate
         do{

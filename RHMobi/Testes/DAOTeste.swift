@@ -99,11 +99,11 @@ class DAOTeste {
     
     func fazerPesquisas() {
         print(dbgmsg +  "Fazendo buscas")
-        let stringToNSPredicate = "idCandidato == @%"
+        let stringToNSPredicate = "idUsuario == %@"
         let whereClause = "C001"
         
         let favorito = FavoritoDAO.filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: whereClause)
-        print(dbgmsg + "encontrados \(favorito?.count) nesta pesquisa....")
+        print(dbgmsg + "Encontrado(s) \(favorito?.count) nesta pesquisa....")
         
         
     }
