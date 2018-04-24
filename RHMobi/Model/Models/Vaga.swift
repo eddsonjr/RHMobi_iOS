@@ -29,8 +29,7 @@ class Vaga: NSObject {
    
     
     
-    //Construtores
-    
+ 
     
     //Construtor completo
     init(id: String, nome: String, tipoContrato: String, funcao: String, experiencia: String,

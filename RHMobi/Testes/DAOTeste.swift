@@ -15,9 +15,6 @@ class DAOTeste {
     
     private final let dbgmsg = "[DAOTeste]: "
     
-
-    
-    
     //############# FUNCAO DE TESTES DO DAO DE FAVORITAR ####################
     func salvarFavorito(){
         
@@ -49,7 +46,64 @@ class DAOTeste {
         
         //Salvando diretamente via FavoritoDAO
         FavoritoDAO.salvarFavorito(favorito: favorito)
+
+    }
+    
+    
+    
+    //Mark: Funcao para listar todos os favoritos
+    func listarTodosOsFavoritos() {
+        print(dbgmsg + "Buscando por todos os favoritos registrados no banco....")
+        let favoritoEtidade = FavoritoDAO.listarTodosFavoritos()
         
+        for favorito in favoritoEtidade! {
+            print(dbgmsg + "Favorito usuario id: \(favorito.idUsuario)")
+            print(dbgmsg + "Favorito quantidade de Vagas: \(favorito.vagaRelacao?.count)")
+            
+            for vaga in favorito.vagaRelacao! {
+                let v = vaga as! VagaEntidade
+                print(dbgmsg + "Vaga nome: \(v.nome)")
+                print(dbgmsg + "Nesta vaga temos \(v.areasInteresseRelacao?.count) areas de interesse")
+                print(dbgmsg + "Cliente desta vaga: \(v.clienteRelacao?.razaoSocial)")
+            }
+            
+        }
+        
+    }
+    
+    
+    func apagarTodosFavoritos() {
+        print(dbgmsg + "Apagando todos os favoritos da base de dados...")
+        if(FavoritoDAO.removerTodosFavoritos()){
+            print(dbgmsg + "Todos os favoritos foram removidos da base de dados....")
+        }else{
+            print(dbgmsg + "Error ao remover todos os favoritos.....")
+        }
+    
+    }
+    
+    
+    func apagarUmDeterminadoFavorito(){
+        print(dbgmsg + "Apagando um determinado favorito....")
+        
+        let favoritosBase = FavoritoDAO.listarTodosFavoritos()
+        let f = favoritosBase![0] //Isso pode dar bug! Cuidado
+        
+        if(FavoritoDAO.removerFavorito(favoritoEntidade: f)){
+            print(dbgmsg + "favorito especifico removido com sucesso...")
+        }else{
+            print(dbgmsg + "favorito nao pode ser removido")
+        }
+    }
+    
+    
+    func fazerPesquisas() {
+        print(dbgmsg +  "Fazendo buscas")
+        let stringToNSPredicate = "idCandidato == @%"
+        let whereClause = "C001"
+        
+        let favorito = FavoritoDAO.filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: whereClause)
+        print(dbgmsg + "encontrados \(favorito?.count) nesta pesquisa....")
         
         
     }

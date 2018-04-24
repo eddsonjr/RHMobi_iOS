@@ -56,7 +56,12 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         
         //TESTE DO FAVORITAR
         let daoTeste: DAOTeste = DAOTeste()
-        daoTeste.salvarFavorito()
+        //daoTeste.apagarTodosFavoritos()
+//        daoTeste.apagarUmDeterminadoFavorito()
+//        daoTeste.listarTodosOsFavoritos()
+//        daoTeste.listarTodosOsFavoritos()
+//        daoTeste.salvarFavorito()
+        daoTeste.fazerPesquisas()
         
         
         

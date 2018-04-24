@@ -136,7 +136,7 @@ class FavoritoDAO: NSObject {
      
         do{
             favoritos = try context.fetch(FavoritoEntidade.fetchRequest())
-            print(dbgmsg + "Quantidade de vagas encontradas no banco: \(favoritos?.count)")
+            print(dbgmsg + "Quantidade de favoritos encontrados no banco: \(favoritos?.count)")
             return favoritos
         }catch let err{
             print(dbgmsg + "erro: \(err)")
@@ -156,6 +156,7 @@ class FavoritoDAO: NSObject {
         
         
         var predicate = NSPredicate(format: stringToNSPredicate,atributoForWhere)
+     
         fetchRequest.predicate = predicate
         do{
             favoritos = try context.fetch(fetchRequest)
@@ -201,6 +202,7 @@ class FavoritoDAO: NSObject {
     }
     
     
+
     
     
     
