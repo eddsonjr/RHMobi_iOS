@@ -31,7 +31,7 @@
         <attribute name="logradouro" attributeType="String" syncable="YES"/>
         <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="cliente" inverseEntity="VagaEntidade" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="clienteRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="CVEntidade" representedClassName="CVEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="dataCriacao" optional="YES" attributeType="String" syncable="YES"/>
@@ -53,7 +53,7 @@
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vagaStatus" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areasInteresseRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vagaRelacao" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
-        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
+        <relationship name="clienteRelacao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
         <relationship name="favoritoRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" inverseName="vagaRelacao" inverseEntity="FavoritoEntidade" syncable="YES"/>
     </entity>
     <elements>

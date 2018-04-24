@@ -22,6 +22,10 @@ class FavoritoDAO: NSObject {
     }
     
     
+    
+    
+    
+    
     class func salvarFavorito(favorito: Favorito) {
         let dbgmsg = "[FavoritoDAO]: "
         let context = FavoritoDAO.getContext()
@@ -95,7 +99,7 @@ class FavoritoDAO: NSObject {
             
             
             //Criando o relacionamento entre  cliente e vaga
-            vagaEntidade.setValue(clienteEntidade, forKey: "cliente")
+            vagaEntidade.setValue(clienteEntidade, forKey: "clienteRelacao")
             
             
             //Dando append no array de vagas

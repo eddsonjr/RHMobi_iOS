@@ -52,10 +52,17 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             self.listaVagas = vaga
             self.vagasTableView.reloadData()
         }
+        
+        
+        //TESTE DO FAVORITAR
+        let daoTeste: DAOTeste = DAOTeste()
+        daoTeste.salvarFavorito()
+        
+        
+        
+        
        
     }
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
