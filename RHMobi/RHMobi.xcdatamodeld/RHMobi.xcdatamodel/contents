@@ -29,6 +29,7 @@
         <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="prazo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requisitos" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vagaStatus" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="areasInteresseRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vagaRelacao" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
@@ -39,6 +40,6 @@
         <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="88"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
         <element name="FavoritoEntidade" positionX="-270" positionY="338" width="128" height="73"/>
-        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="223"/>
+        <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="238"/>
     </elements>
 </model>

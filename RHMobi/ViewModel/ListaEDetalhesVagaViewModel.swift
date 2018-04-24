@@ -56,4 +56,15 @@ class ListaEDetalheVagaViewModel: GenericViewModel {
     }
     
     
+    //Mark: Funcao para Favoritar uma vaga para este candidato
+    func favoritarVaga(vaga: Vaga, idCandidato: String) {
+        let vagas: [Vaga] = [vaga]
+        print(dbgmsg + "Favoritando a vaga: \(vaga.nome)  para o candidato: \(idCandidato)....")
+        let favorito: Favorito = Favorito(idCandidato: idCandidato, vagasFavoritadas: vagas)
+    }
+    
+    
+    
+    
+    
 }

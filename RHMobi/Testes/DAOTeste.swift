@@ -109,17 +109,29 @@ class DAOTeste {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    func atualizarListaVagasFavorito() {
+        print(dbgmsg +  "Atualizando lista de favoritos")
+        let idCandidato = "C001"
+        
+        
+        let areaDeInteresses = [AreasInteresse.init(id: "B0", nome:  "AREA DE INTERESSE 1"),
+                                AreasInteresse.init(id: "B1", nome: "AREA DE INTERESSE 2"),
+                                AreasInteresse.init(id: "B2", nome: "AREA DE INTERESSE 3")]
+        
+        let cliente = Cliente(id: "1C", cnpj: "00000000", razaoSocial: "RAZAO SOCIAL TESTES",
+                              ramoAtuacao: "TESTE", logradouro: "RUA NAO EXISTE, 00", bairro: "Z", cep: "000001",
+                              cidade: "CIDADE TESTES", estado: "ESTADO TESTES")
+        
+        let vaga = Vaga(id: "A1", nome: "VAGA DE TESTES", tipoContrato: "CONTRATO DE TESTES",
+                        funcao: "FUNCAO DE TESTES", experiencia: "1 ANO", prazo: "00/00/00",
+                        descricao: "DESCRICAO DA VAGA DE TESTES",
+                        requisitos: "REQUISITOS PARA FAZER CORE DATA FUNCIONAR SAO INDISPENSAVEIS",
+                        areasInteresse: areaDeInteresses, imgUrl: "",
+                        vagaStatus: StatusVagaEnumHelper.emAberto.rawValue, cliente: cliente)
+        
+        
+        FavoritoDAO.atualizarVagasDoFavorito(idCandidato: idCandidato, vaga: vaga)
+    }
     
     
 }

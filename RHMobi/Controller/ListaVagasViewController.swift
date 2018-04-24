@@ -54,19 +54,13 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
         }
         
         
-        //TESTE DO FAVORITAR
-        let daoTeste: DAOTeste = DAOTeste()
-        //daoTeste.apagarTodosFavoritos()
-//        daoTeste.apagarUmDeterminadoFavorito()
-//        daoTeste.listarTodosOsFavoritos()
-//        daoTeste.listarTodosOsFavoritos()
-//        daoTeste.salvarFavorito()
-        daoTeste.fazerPesquisas()
+        
+        //TESTES
+        let daoTestes = DAOTeste()
+        //daoTestes.apagarTodosFavoritos()
+        daoTestes.atualizarListaVagasFavorito()
         
         
-        
-        
-       
     }
     
     override func didReceiveMemoryWarning() {
@@ -131,15 +125,9 @@ class ListaVagasViewController: UIViewController,UITableViewDelegate,UITableView
             VagaHelper.vaga = self.listaVagas[(self.vagasTableView.indexPathForSelectedRow?.row)!]
             performSegue(withIdentifier: "segueDetalhesVaga", sender: self)
         }
-        
-        
-        
-
     }
     
-    
-    
-    
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 131

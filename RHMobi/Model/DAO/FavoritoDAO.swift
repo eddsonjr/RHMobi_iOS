@@ -156,9 +156,7 @@ class FavoritoDAO: NSObject {
         
         
         var predicate = NSPredicate(format: stringToNSPredicate,atributoForWhere)
-        //var predicate = NSPredicate(format: stringToNSPredicate, key, atributoForWhere)
-        
-     
+
         fetchRequest.predicate = predicate
         do{
             favoritos = try context.fetch(fetchRequest)
@@ -169,6 +167,28 @@ class FavoritoDAO: NSObject {
             print()
             return favoritos
         }
+    }
+    
+    
+    
+    //Retorna somente as vagas daquele candidato
+    class func retornarSomenteVagasDoCandidato(idCandidato: String) -> [VagaEntidade]{
+        let dbgmsg = "[FavoritoDAO]: "
+        
+        let stringToNSPredicate = "idUsuario == %@"
+        let arrayDeFavoritosDesteCandidatoEntidade = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: idCandidato)
+        var arrayVagas = [VagaEntidade]()
+        
+        if(arrayDeFavoritosDesteCandidatoEntidade?.first?.vagaRelacao != nil) {
+            for vaga in (arrayDeFavoritosDesteCandidatoEntidade?.first?.vagaRelacao)! {
+                let v = vaga as! VagaEntidade
+                arrayVagas.append(v)
+            }
+        }
+
+        print(dbgmsg + "Retornando \(arrayVagas.count) vagas do candidato \(idCandidato) ")
+        return arrayVagas
+        
     }
     
     
@@ -204,6 +224,95 @@ class FavoritoDAO: NSObject {
     }
     
     
+    
+    
+    
+    
+    
+    
+    
+
+    class func atualizarVagasDoFavorito(idCandidato: String, vaga: Vaga){
+        let dbgmsg = "[FavoritoDAO]: "
+        let context = getContext()
+
+        //Primeiramente, fazendo uma busca para saber qual candidato pegar
+        let stringToNSPredicate = "idUsuario == %@"
+
+        let favoritos = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: idCandidato)
+
+
+        //Verificando agora se a vaga passada corresponde a alguma vaga encontrada na busca
+        var arrayDeVagas = retornarSomenteVagasDoCandidato(idCandidato: idCandidato)
+
+        if(arrayDeVagas.count > 0){
+            for i in 0...arrayDeVagas.count-1 {
+                if arrayDeVagas[i].id == vaga.id {
+                    print(dbgmsg + "Essa vaga ja existe, apagando ela....")
+
+                    //Removendo o do array
+                    arrayDeVagas.remove(at: i)
+                    let newNSSet: NSSet = NSSet(array: arrayDeVagas)
+                    print(dbgmsg + "Removido uma vaga. Agora este candidato possui \(newNSSet.count) vagas...")
+                    
+
+                }else{
+                    print(dbgmsg + "Essa vaga ainda nao existe, salvando - a pela primeira vez...")
+                    arrayDeVagas.append(converterVagaParaVagaEntidade(vaga: vaga))
+                }
+            }
+        }else{
+            print(dbgmsg + "Nao ha nenhum cadastro de usuario (candidato) feito no sistema")
+            print(dbgmsg + "Cadastrando pela primeira vez esse favorito....")
+            let favorito: Favorito = Favorito(idCandidato: idCandidato, vagasFavoritadas: [vaga])
+            salvarFavorito(favorito: favorito)
+        }
+    }
+
+
+
+
+    //Funcao para converter Vaga para VagaEntidade
+    class func converterVagaParaVagaEntidade(vaga: Vaga) -> VagaEntidade{
+        let context = getContext()
+
+        let vagaEntidade: VagaEntidade = VagaEntidade()
+
+        vagaEntidade.id = vaga.id
+        vagaEntidade.nome = vaga.nome
+        vagaEntidade.tipoContrato = vaga.tipoContrato
+        vagaEntidade.funcao = vaga.funcao
+        vagaEntidade.experiencia = vaga.experiencia
+        vagaEntidade.prazo = vaga.prazo
+        vagaEntidade.descricao = vaga.descricao
+        vagaEntidade.requisitos = vaga.requisitos
+        vagaEntidade.imgUrl = vaga.imgUrl
+        vagaEntidade.vagaStatus = vaga.vagaStatus
+
+        let nssetAreasInteresse: NSSet = NSSet(arrayLiteral: vaga.areasInteresse)
+        vagaEntidade.areasInteresseRelacao = nssetAreasInteresse
+        
+        
+        //Criando uma entidade de cliente
+        let clienteEntidade: ClienteEntidade = ClienteEntidade()
+        clienteEntidade.bairro = vaga.cliente.bairro
+        clienteEntidade.cep = vaga.cliente.cep
+        clienteEntidade.cidade = vaga.cliente.cidade
+        clienteEntidade.cnpj = vaga.cliente.cnpj
+        clienteEntidade.estado = vaga.cliente.estado
+        clienteEntidade.id = vaga.cliente.id
+        clienteEntidade.logradouro = vaga.cliente.logradouro
+        clienteEntidade.ramoAtuacao = vaga.cliente.ramoAtuacao
+        clienteEntidade.razaoSocial = vaga.cliente.razaoSocial
+        
+        vagaEntidade.clienteRelacao = clienteEntidade
+        
+        return vagaEntidade
+
+
+
+
+    }
 
     
     
