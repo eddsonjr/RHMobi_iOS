@@ -38,7 +38,7 @@ class FavoritoDAO: NSObject {
         
         //Setando os valores de vagas
         var vagasNSSetRelacao: NSSet?
-        var arrayDeVagas = [Vaga]()
+        var arrayDeVagas = [VagaEntidade]()
         
         print(dbgmsg + "Quantidade de vagas a serem salvas no favorito do usuario \(favorito.idCandidato): \(favorito.vagasFavoritadas?.count)....")
         
@@ -103,7 +103,7 @@ class FavoritoDAO: NSObject {
             
             
             //Dando append no array de vagas
-            arrayDeVagas.append(vaga)
+            arrayDeVagas.append(vagaEntidade)
         }
         
         

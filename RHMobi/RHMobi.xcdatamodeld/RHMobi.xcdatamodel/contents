@@ -5,22 +5,6 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="areasInteresseRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
-    <entity name="CandidatoEntidade" representedClassName="CandidatoEntidade" syncable="YES" codeGenerationType="class">
-        <attribute name="celular" attributeType="String" syncable="YES"/>
-        <attribute name="convencional" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="cpf" attributeType="String" syncable="YES"/>
-        <attribute name="email" attributeType="String" syncable="YES"/>
-        <attribute name="id" attributeType="String" syncable="YES"/>
-        <attribute name="nome" attributeType="String" syncable="YES"/>
-        <attribute name="senha" attributeType="String" syncable="YES"/>
-        <attribute name="sexo" attributeType="String" syncable="YES"/>
-        <attribute name="sobrenome" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="CanditaturaEntidade" representedClassName="CanditaturaEntidade" syncable="YES" codeGenerationType="class">
-        <attribute name="idCandidato" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="idVaga" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="statusCV" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
     <entity name="ClienteEntidade" representedClassName="ClienteEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="bairro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cep" optional="YES" attributeType="String" syncable="YES"/>
@@ -32,11 +16,6 @@
         <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="clienteRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
-    </entity>
-    <entity name="CVEntidade" representedClassName="CVEntidade" syncable="YES" codeGenerationType="class">
-        <attribute name="dataCriacao" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="FavoritoEntidade" representedClassName="FavoritoEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="idUsuario" optional="YES" attributeType="String" syncable="YES"/>
@@ -58,10 +37,7 @@
     </entity>
     <elements>
         <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="88"/>
-        <element name="CandidatoEntidade" positionX="-477" positionY="455" width="128" height="178"/>
-        <element name="CanditaturaEntidade" positionX="-558" positionY="89" width="128" height="88"/>
         <element name="ClienteEntidade" positionX="25" positionY="99" width="128" height="193"/>
-        <element name="CVEntidade" positionX="-720" positionY="234" width="128" height="88"/>
         <element name="FavoritoEntidade" positionX="-270" positionY="338" width="128" height="73"/>
         <element name="VagaEntidade" positionX="-272" positionY="-70" width="128" height="223"/>
     </elements>
