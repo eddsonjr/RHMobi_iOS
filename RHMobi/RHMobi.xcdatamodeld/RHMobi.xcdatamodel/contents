@@ -3,7 +3,7 @@
     <entity name="AreasInteresseEntidade" representedClassName="AreasInteresseEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="areasInteresseRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
+        <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VagaEntidade" inverseName="areasInteresseRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="ClienteEntidade" representedClassName="ClienteEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="bairro" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,11 +15,11 @@
         <attribute name="logradouro" attributeType="String" syncable="YES"/>
         <attribute name="ramoAtuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="razaoSocial" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="clienteRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
+        <relationship name="vaga" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VagaEntidade" inverseName="clienteRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="FavoritoEntidade" representedClassName="FavoritoEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="idUsuario" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VagaEntidade" inverseName="favoritoRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
+        <relationship name="vagaRelacao" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VagaEntidade" inverseName="favoritoRelacao" inverseEntity="VagaEntidade" syncable="YES"/>
     </entity>
     <entity name="VagaEntidade" representedClassName="VagaEntidade" syncable="YES" codeGenerationType="class">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
@@ -32,9 +32,9 @@
         <attribute name="requisitos" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipoContrato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vagaStatus" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="areasInteresseRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreasInteresseEntidade" inverseName="vagaRelacao" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
-        <relationship name="clienteRelacao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
-        <relationship name="favoritoRelacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FavoritoEntidade" inverseName="vagaRelacao" inverseEntity="FavoritoEntidade" syncable="YES"/>
+        <relationship name="areasInteresseRelacao" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AreasInteresseEntidade" inverseName="vagaRelacao" inverseEntity="AreasInteresseEntidade" syncable="YES"/>
+        <relationship name="clienteRelacao" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ClienteEntidade" inverseName="vaga" inverseEntity="ClienteEntidade" syncable="YES"/>
+        <relationship name="favoritoRelacao" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FavoritoEntidade" inverseName="vagaRelacao" inverseEntity="FavoritoEntidade" syncable="YES"/>
     </entity>
     <elements>
         <element name="AreasInteresseEntidade" positionX="-38" positionY="392" width="128" height="88"/>

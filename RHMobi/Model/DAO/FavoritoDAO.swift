@@ -250,8 +250,20 @@ class FavoritoDAO: NSObject {
                 if arrayDeVagas[i].id == vaga.id {
                     print(dbgmsg + "Essa vaga ja existe, apagando ela....")
                 
-                    favoritos?.first?.removeFromVagaRelacao(converterVagaParaVagaEntidade(vaga: vaga))
+                    //favoritos?.first?.removeFromVagaRelacao(converterVagaParaVagaEntidade(vaga: vaga))
+                    context.delete(converterVagaParaVagaEntidade(vaga: vaga))
                     print(dbgmsg + "Removido uma vaga. Agora este candidato possui \(favoritos?.first?.vagaRelacao?.count) vagas favoritadas...")
+                    
+                    //Tentando salvar
+                    do {
+                        try context.save()
+                        print(dbgmsg + "Apagado a vaga favoritada \(vaga.id) do usuario \(favoritos?.first?.idUsuario) com SUCESSO")
+                    }catch let err{
+                        print(dbgmsg + "ERRO AO REMOVER FAVORITO \(favoritos?.first?.idUsuario)")
+                        print(err)
+                    }
+                    
+                    
                 }else{
                     print(dbgmsg + "Essa vaga ainda nao existe, salvando - a pela primeira vez...")
                     arrayDeVagas.append(converterVagaParaVagaEntidade(vaga: vaga))
@@ -297,17 +309,19 @@ class FavoritoDAO: NSObject {
         
         let vagaEntidade = VagaEntidade.init(entity: NSEntityDescription.entity(forEntityName: "VagaEntidade", in: context)! , insertInto: context)
         
-        vagaEntidade.id = vaga.id
-        vagaEntidade.nome = vaga.nome
-        vagaEntidade.tipoContrato = vaga.tipoContrato
-        vagaEntidade.funcao = vaga.funcao
-        vagaEntidade.experiencia = vaga.experiencia
-        vagaEntidade.prazo = vaga.prazo
-        vagaEntidade.descricao = vaga.descricao
-        vagaEntidade.requisitos = vaga.requisitos
-        vagaEntidade.imgUrl = vaga.imgUrl
-        vagaEntidade.vagaStatus = vaga.vagaStatus
-
+        //Setando os valores da vaga na entidade da vaga para salvar os dados no banco
+        vagaEntidade.setValue(vaga.id, forKey: "id")
+        vagaEntidade.setValue(vaga.nome, forKey: "nome")
+        vagaEntidade.setValue(vaga.descricao, forKey: "descricao")
+        vagaEntidade.setValue(vaga.funcao, forKey: "funcao")
+        vagaEntidade.setValue(vaga.imgUrl, forKey: "imgUrl")
+        vagaEntidade.setValue(vaga.prazo, forKey: "prazo")
+        vagaEntidade.setValue(vaga.experiencia, forKey: "experiencia")
+        vagaEntidade.setValue(vaga.vagaStatus, forKey: "vagaStatus")
+        vagaEntidade.setValue(vaga.tipoContrato, forKey: "tipoContrato")
+        
+        
+        
         var areaInteresseArray = [AreasInteresseEntidade]()
         let areasInteresseNSSetRelacao: NSSet?
         
@@ -327,17 +341,22 @@ class FavoritoDAO: NSObject {
         
         //Criando uma entidade de cliente
         let clienteEntidade: ClienteEntidade = NSEntityDescription.insertNewObject(forEntityName: "ClienteEntidade", into: context) as! ClienteEntidade
-        clienteEntidade.bairro = vaga.cliente.bairro
-        clienteEntidade.cep = vaga.cliente.cep
-        clienteEntidade.cidade = vaga.cliente.cidade
-        clienteEntidade.cnpj = vaga.cliente.cnpj
-        clienteEntidade.estado = vaga.cliente.estado
-        clienteEntidade.id = vaga.cliente.id
-        clienteEntidade.logradouro = vaga.cliente.logradouro
-        clienteEntidade.ramoAtuacao = vaga.cliente.ramoAtuacao
-        clienteEntidade.razaoSocial = vaga.cliente.razaoSocial
+        
+        clienteEntidade.setValue(vaga.cliente.id, forKey: "id")
+        clienteEntidade.setValue(vaga.cliente.cnpj, forKey: "cnpj")
+        clienteEntidade.setValue(vaga.cliente.razaoSocial, forKey: "razaoSocial")
+        clienteEntidade.setValue(vaga.cliente.ramoAtuacao, forKey: "ramoAtuacao")
+        clienteEntidade.setValue(vaga.cliente.logradouro, forKey: "logradouro")
+        clienteEntidade.setValue(vaga.cliente.bairro, forKey: "bairro")
+        clienteEntidade.setValue(vaga.cliente.cep, forKey: "cep")
+        clienteEntidade.setValue(vaga.cliente.cidade, forKey: "cidade")
+        clienteEntidade.setValue(vaga.cliente.estado, forKey: "estado")
         
         
+        vagaEntidade.setValue(clienteEntidade, forKey: "clienteRelacao")
+        
+        
+        print("dadosVaga: \(vagaEntidade.id) | clinete: \(vagaEntidade.clienteRelacao?.razaoSocial) | qt. Areas: \(vagaEntidade.areasInteresseRelacao?.count)")
         
         
         return vagaEntidade
