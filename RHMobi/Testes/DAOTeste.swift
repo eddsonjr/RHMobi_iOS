@@ -111,7 +111,7 @@ class DAOTeste {
     
     func atualizarListaVagasFavorito() {
         print(dbgmsg +  "Atualizando lista de favoritos")
-        let idCandidato = "C001"
+        let idCandidato = "C002"
         
         
         let areaDeInteresses = [AreasInteresse.init(id: "B0", nome:  "AREA DE INTERESSE 1"),
@@ -122,10 +122,17 @@ class DAOTeste {
                               ramoAtuacao: "TESTE", logradouro: "RUA NAO EXISTE, 00", bairro: "Z", cep: "000001",
                               cidade: "CIDADE TESTES", estado: "ESTADO TESTES")
         
-        let vaga = Vaga(id: "A1", nome: "VAGA DE TESTES", tipoContrato: "CONTRATO DE TESTES",
-                        funcao: "FUNCAO DE TESTES", experiencia: "1 ANO", prazo: "00/00/00",
-                        descricao: "DESCRICAO DA VAGA DE TESTES",
-                        requisitos: "REQUISITOS PARA FAZER CORE DATA FUNCIONAR SAO INDISPENSAVEIS",
+//        let vaga = Vaga(id: "A1", nome: "VAGA DE TESTES", tipoContrato: "CONTRATO DE TESTES",
+//                        funcao: "FUNCAO DE TESTES", experiencia: "1 ANO", prazo: "00/00/00",
+//                        descricao: "DESCRICAO DA VAGA DE TESTES",
+//                        requisitos: "REQUISITOS PARA FAZER CORE DATA FUNCIONAR SAO INDISPENSAVEIS",
+//                        areasInteresse: areaDeInteresses, imgUrl: "",
+//                        vagaStatus: StatusVagaEnumHelper.emAberto.rawValue, cliente: cliente)
+//
+        let vaga = Vaga(id: "A2", nome: "VAGA DE TESTES2", tipoContrato: "CONTRATO DE TESTES2",
+                        funcao: "FUNCAO DE TESTES2", experiencia: "1 ANO", prazo: "00/00/00",
+                        descricao: "DESCRICAO DA VAGA DE TESTES2",
+                        requisitos: "REQUISITOS PARA FAZER CORE DATA FUNCIONAR SAO INDISPENSAVEIS2",
                         areasInteresse: areaDeInteresses, imgUrl: "",
                         vagaStatus: StatusVagaEnumHelper.emAberto.rawValue, cliente: cliente)
         

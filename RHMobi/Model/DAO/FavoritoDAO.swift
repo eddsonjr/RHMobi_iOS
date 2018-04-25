@@ -161,7 +161,7 @@ class FavoritoDAO: NSObject {
         do{
             favoritos = try context.fetch(fetchRequest)
             print(dbgmsg + "[Busca]: Predicado: \(stringToNSPredicate) | where: \(atributoForWhere)")
-            print(dbgmsg + "Encontrados \(favoritos?.count) com essa busca especifica")
+            print(dbgmsg + "Encontrados \(favoritos?.count) favoritos com essa busca especifica")
             return favoritos
         }catch let err{
             print()
@@ -228,7 +228,7 @@ class FavoritoDAO: NSObject {
     
     //Removendo uma vaga de testes
     class func removeTeste(){
-
+        let dbgmsg = "[FavoritoDAO]: "
         let context = getContext()
         let stringToNSPredicate = "idUsuario == %@"
         let favoritos = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: "C001")
@@ -250,11 +250,25 @@ class FavoritoDAO: NSObject {
     
     
     class func removerFavoritoDoCandidato(idCandidato: String, vaga: Vaga){
-        
+        let dbgmsg = "[FavoritoDAO]: "
         let context = getContext()
+        var vagaEncontrada = false
+        
         let stringToNSPredicate = "idUsuario == %@"
+        
         let favoritos = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: idCandidato)
+ 
     
+        if favoritos == nil || (favoritos?.isEmpty)!{
+            print(dbgmsg + "Nao ha favoritos salvos...")
+            print(dbgmsg + "Nao ha nenhum cadastro de usuario (candidato) feito no sistema")
+            print(dbgmsg + "Cadastrando pela primeira vez esse favorito....")
+            let favorito: Favorito = Favorito(idCandidato: idCandidato, vagasFavoritadas: [vaga])
+            salvarFavorito(favorito: favorito)
+            
+            return
+        }
+        
         
         let favorito = favoritos?.first
         let vagasNSSet = favorito?.vagaRelacao
@@ -262,23 +276,34 @@ class FavoritoDAO: NSObject {
         
         for v in vagas {
             if v.id == vaga.id {
-                print("Vaga encontrada... removendo essa vaga do favorito")
+                print(dbgmsg + "Vaga encontrada... removendo essa vaga do favorito")
                 context.delete(v)
-                
+                vagaEncontrada = true
+                do{
+                    try context.save()
+                    print(dbgmsg + "Atualizado com sucesso")
+                }catch let err {
+                    print(dbgmsg + "Erro ao atualizar.... ")
+                    print(err)
+                }
             }
         }
         
         
-        
-        do{
-            try context.save()
-            print("Removido a vaga com sucesso!")
-        }catch let err {
-            print("Erro ao apagar ")
+        if(!vagaEncontrada){
+            print(dbgmsg + "Essa vaga nao foi encontrada... Salvando ela")
+            let novaVaga = converterVagaParaVagaEntidade(vaga: vaga)
+            context.insert(novaVaga)
+            favorito?.addToVagaRelacao(novaVaga)
+            
+            do{
+                try context.save()
+                print(dbgmsg + "Atualizado com sucesso")
+            }catch let err {
+                print(dbgmsg + "Erro ao atualizar.... ")
+                print(err)
+            }
         }
-        
-        
-        
         
     }
     
