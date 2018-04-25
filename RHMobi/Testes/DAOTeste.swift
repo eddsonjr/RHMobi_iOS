@@ -130,7 +130,10 @@ class DAOTeste {
                         vagaStatus: StatusVagaEnumHelper.emAberto.rawValue, cliente: cliente)
         
         
-        FavoritoDAO.atualizarVagasDoFavorito(idCandidato: idCandidato, vaga: vaga)
+        //FavoritoDAO.atualizarVagasDoFavorito(idCandidato: idCandidato, vaga: vaga)
+        //FavoritoDAO.removeTeste()
+        FavoritoDAO.removerFavoritoDoCandidato(idCandidato: idCandidato, vaga: vaga)
+        
     }
     
     

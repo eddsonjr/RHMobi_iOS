@@ -226,6 +226,63 @@ class FavoritoDAO: NSObject {
     
     
     
+    //Removendo uma vaga de testes
+    class func removeTeste(){
+
+        let context = getContext()
+        let stringToNSPredicate = "idUsuario == %@"
+        let favoritos = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: "C001")
+        
+        let favorito = favoritos?.first
+        let vagasNSSet = favorito?.vagaRelacao
+        let vagas = (vagasNSSet?.allObjects as! [VagaEntidade])
+        
+        
+        context.delete(vagas.first!)
+        
+        do{
+            try context.save()
+            print("Removido a vaga com sucesso!")
+        }catch let err {
+            print("Erro ao apagar ")
+        }
+    }
+    
+    
+    class func removerFavoritoDoCandidato(idCandidato: String, vaga: Vaga){
+        
+        let context = getContext()
+        let stringToNSPredicate = "idUsuario == %@"
+        let favoritos = filtrarDadosFavorito(stringToNSPredicate: stringToNSPredicate, atributoForWhere: idCandidato)
+    
+        
+        let favorito = favoritos?.first
+        let vagasNSSet = favorito?.vagaRelacao
+        let vagas = (vagasNSSet?.allObjects as! [VagaEntidade])
+        
+        for v in vagas {
+            if v.id == vaga.id {
+                print("Vaga encontrada... removendo essa vaga do favorito")
+                context.delete(v)
+                
+            }
+        }
+        
+        
+        
+        do{
+            try context.save()
+            print("Removido a vaga com sucesso!")
+        }catch let err {
+            print("Erro ao apagar ")
+        }
+        
+        
+        
+        
+    }
+    
+    
     
     
     
@@ -251,7 +308,7 @@ class FavoritoDAO: NSObject {
                     print(dbgmsg + "Essa vaga ja existe, apagando ela....")
                 
                     //favoritos?.first?.removeFromVagaRelacao(converterVagaParaVagaEntidade(vaga: vaga))
-                    context.delete(converterVagaParaVagaEntidade(vaga: vaga))
+                    context.delete((favoritos?.first)!)
                     print(dbgmsg + "Removido uma vaga. Agora este candidato possui \(favoritos?.first?.vagaRelacao?.count) vagas favoritadas...")
                     
                     //Tentando salvar
